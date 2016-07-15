@@ -56,6 +56,7 @@ namespace AllfleXML.FlexOrder
         }
     }
 
+    [Serializable]
     public class OrderHeader
     {
         public string CustomerNumber { get; set; }
@@ -83,6 +84,7 @@ namespace AllfleXML.FlexOrder
         public List<OrderLineHeader> OrderLineHeaders = new List<OrderLineHeader>();
     }
 
+    [Serializable]
     public class OrderLineHeader
     {
         public string SkuName { get; set; }
@@ -94,18 +96,21 @@ namespace AllfleXML.FlexOrder
         public List<OrderLineCustom> OrderLineCustom = new List<OrderLineCustom>();
     }
 
+    [Serializable]
     public class OrderLineMarkingDetail
     {
         public List<Variable> Variables = new List<Variable>();
         public string Comment { get; set; }
     }
 
+    [Serializable]
     public class OrderLineCustom
     {
         public List<Variable> Variables = new List<Variable>();
         public string Comment { get; set; }
     }
 
+    [Serializable]
     public class Variable
     {
         public string Name { get; set; }

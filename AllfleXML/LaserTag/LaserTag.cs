@@ -379,6 +379,8 @@ namespace AllfleXML.LaserTag
         }
     }
 
+    [Serializable]
+    [Obsolete("LaserTag.OrderHeader is deprecated, please use FlexOrder.OrderHeader instead.")]
     public class OrderHeader
     {
         public List<OrderLineHeader> OrderLineHeaders = new List<OrderLineHeader>();
@@ -429,6 +431,8 @@ namespace AllfleXML.LaserTag
         public string RushOrder { get; set; }
     }
 
+    [Serializable]
+    [Obsolete("LaserTag.OrderLineHeader is deprecated, please use FlexOrder.OrderLineHeader instead.")]
     public class OrderLineHeader
     {
         public List<LineTemplateDetail> OrderLineTemplateDetails = new List<LineTemplateDetail>();
@@ -455,6 +459,8 @@ namespace AllfleXML.LaserTag
         public string OptionFive { get; set; }
     }
 
+    [Serializable]
+    [Obsolete("LaserTag.LineTemplateDetail is deprecated, please use FlexOrder.LineTemplateDetail instead.")]
     public class LineTemplateDetail
     {
         public string SKU { get; set; }

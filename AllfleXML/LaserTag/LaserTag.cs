@@ -20,7 +20,11 @@ namespace AllfleXML.LaserTag
 
         public static List<OrderHeader> Import(string xmlFilePath)
         {
-            var document = XDocument.Load(xmlFilePath);
+            return Import(XDocument.Load(xmlFilePath));
+        }
+
+        public static List<OrderHeader> Import(XDocument document)
+        {
             if (!Validate(document))
             {
                 throw new XmlSchemaValidationException("XML Document is invalid");
@@ -29,7 +33,7 @@ namespace AllfleXML.LaserTag
             List<OrderHeader> result;
 
             var serializer = new XmlSerializer(typeof(List<OrderHeader>));
-            using (var reader = XmlReader.Create(xmlFilePath))
+            using (var reader = document.CreateReader())
             {
                 result = (List<OrderHeader>)serializer.Deserialize(reader);
             }
@@ -37,7 +41,7 @@ namespace AllfleXML.LaserTag
             return result;
         }
 
-        public static string Export(List<OrderHeader> orders)
+        public static XDocument Export(List<OrderHeader> orders)
         {
             throw new NotImplementedException();
         }

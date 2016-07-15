@@ -13,7 +13,11 @@ namespace AllfleXML.FlexOrder
     {
         public static OrderHeader Import(string xmlFilePath)
         {
-            var document = XDocument.Load(xmlFilePath);
+            return Import(XDocument.Load(xmlFilePath));
+        }
+
+        public static OrderHeader Import(XDocument document)
+        {
             if (!Validate(document))
             {
                 throw new XmlSchemaValidationException("XML Document is invalid");
@@ -21,16 +25,16 @@ namespace AllfleXML.FlexOrder
 
             OrderHeader result;
 
-            var serializer = new XmlSerializer(typeof (OrderHeader));
-            using (var reader = XmlReader.Create(xmlFilePath))
+            var serializer = new XmlSerializer(typeof(OrderHeader));
+            using (var reader = document.CreateReader())
             {
-                result = (OrderHeader) serializer.Deserialize(reader);
+                result = (OrderHeader)serializer.Deserialize(reader);
             }
 
             return result;
         }
 
-        public static string Export(OrderHeader order)
+        public static XDocument Export(OrderHeader order)
         {
             throw new NotImplementedException();
         }

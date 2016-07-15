@@ -12,12 +12,30 @@ namespace AllfleXML.ID1Order
     [Obsolete("ID1Order.Parser is deprecated, please use FlexOrder.Parser instead.")]
     public class Parser
     {
-        public static ID1Order Import(string xmlFilePath)
+        public static List<ID1Order> Import(string xmlFilePath)
         {
-            throw new NotImplementedException();
+            return Import(XDocument.Load(xmlFilePath));
         }
 
-        public static string Export(ID1Order order)
+        public static List<ID1Order> Import(XDocument document)
+        {
+            if (!Validate(document))
+            {
+                throw new XmlSchemaValidationException("XML Document is invalid");
+            }
+
+            Document result;
+
+            var serializer = new XmlSerializer(typeof(ID1Order));
+            using (var reader = document.CreateReader())
+            {
+                result = (Document)serializer.Deserialize(reader);
+            }
+
+            return result.ID1Order;
+        }
+
+        public static XDocument Export(ID1Order order)
         {
             throw new NotImplementedException();
         }

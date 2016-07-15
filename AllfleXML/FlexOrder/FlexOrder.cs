@@ -7,9 +7,9 @@ using System.Xml.Linq;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace AllfleXML
+namespace AllfleXML.FlexOrder
 {
-    public static class FlexOrder
+    public static class Parser
     {
         public static OrderHeader Import(string xmlFilePath)
         {
@@ -44,7 +44,7 @@ namespace AllfleXML
         {
             var xsDocument = new XmlSchemaSet();
             var assembly = Assembly.Load("AllfleXML");
-            using (var stream = assembly.GetManifestResourceStream("AllfleXML.FlexOrder.xsd"))
+            using (var stream = assembly.GetManifestResourceStream("AllfleXML.FlexOrder.FlexOrder.xsd"))
             using (var reader = new StreamReader(stream))
             {
                 xsDocument.Add(null, XmlReader.Create(reader));

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xsd:element name="Document">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="OrderHeader" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>Order Header</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Order Header
+            </xs:documentation>
+          </xs:annotation>
+          <xsd:complexType>
+            <xsd:all>
+              <xs:element name="CustomerNumber">
+                <xs:annotation>
+                  <xs:appinfo>Customer Account Number</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) The account number used to identify the buyer by the seller.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="15"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xsd:element name="OrderDate" type="xsd:unsignedInt" />
+              <xsd:element name="OrderBy" type="xsd:string" />
+              <xs:element name="PremiseId" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Premises Identification Number</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Official USDA Premises Identification Number (PIN)
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0"/>
+                    <xs:maxLength value="8"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Order Notes</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Notes about the order.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xsd:element name="ShipVia" />
+              <xsd:element name="ShipComp" />
+              <xsd:element name="POBPoint" />
+              <xsd:element name="TermsCode" />
+              <xs:element name="PO">
+                <xs:annotation>
+                  <xs:appinfo>Purchase Order Number</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) Purchase Order Number used by the buyer to identify the order.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="21"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xsd:element name="PickDate" />
+              <xsd:element name="ExtraChargeCode" />
+              <xsd:element name="ExtraChargeAccount" />
+              <xsd:element name="TaxCode" />
+              <xsd:element name="SalesRepCode" />
+              <xsd:element name="OrderType" type="xsd:string" />
+              <xsd:element name="OrderClass" />
+              <xsd:element name="SalesRepCommission" />
+              <xsd:element name="CommissionCode" />
+              <xsd:element name="PickPriorityCode" />
+              <xsd:element name="DueDate" />
+              <xsd:element name="DivisionCode" />
+              <xsd:element name="UnknownFeild01" />
+              <xsd:element name="UnknownFeild02" />
+              <xsd:element name="UnknownFeild03" />
+              <xsd:element name="UnknownFeild04" />
+              <xsd:element name="UnknownFeild05" />
+              <xsd:element name="UnknownFeild06" />
+              <xsd:element name="UnknownFeild07" />
+              <xsd:element name="UnknownFeild08" />
+              <xsd:element name="UnknownFeild09" />
+              <xsd:element name="UnknownFeild10" />
+              <xsd:element name="UnknownFeild11" />
+              <xsd:element name="UnknownFeild12" />
+              <xsd:element name="BookFacCode" />
+              <xsd:element name="DirShipFlag" type="xs:string" />
+              <xs:element name="ShipToName">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Name</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) Residence or buisness name of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="65"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToContact" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Contact</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Depreciated) Name of the recipient of the order at the order's shipping destination. Unused by manufacture, please use ShipToName.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ShipToPhone" minOccurs="0">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Contact Phone Number</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Telephone number where the shipping contact can be reached.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0"/>
+                    <xs:maxLength value="21"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToAddress1">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Address 1</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) Street address line #1 of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="61"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToAddress2">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Address 2</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Street address line #2 of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="0"/>
+                    <xs:maxLength value="61"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToCity">
+                <xs:annotation>
+                  <xs:appinfo>Shipping City</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) City of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="35"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToState">
+                <xs:annotation>
+                  <xs:appinfo>Shipping State</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) State of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="29"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToZipCode">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Postal Code</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) Postal code of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                    <xs:maxLength value="11"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipToCountry" type="xs:string">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Country</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Country of the order's shipping destination.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xsd:element name="ShipToCode" minOccurs="0" />
+              <xs:element name="RushOrder" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                  <xs:appinfo>Rush Order</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Rush Order Flag.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xsd:element name="OrderLineHeaders">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="unbounded" name="OrderLineHeader">
+                      <xs:annotation>
+                        <xs:appinfo>Order Line Header</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          Order Line
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xsd:complexType>
+                        <xsd:all>
+                          <xsd:element name="RequiredDeliveryDate" />
+                          <xsd:element name="QTY" type="xsd:unsignedShort">
+                            <xs:annotation>
+                              <xs:appinfo>Quantity</xs:appinfo>
+                              <xs:documentation xml:lang="en">
+                                (Required) The amount of the SKU being orderd.
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xsd:element>
+                          <xs:element name="Quantity" type="xs:unsignedShort">
+                            <xs:annotation>
+                              <xs:appinfo>Quantity</xs:appinfo>
+                              <xs:documentation xml:lang="en">
+                                (Required) The amount of the SKU being orderd.
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xsd:element name="SellingPrice" />
+                          <xsd:element name="Description" />
+                          <xs:element name="SKU">
+                            <xs:annotation>
+                              <xs:appinfo>Stock Keeping Unit</xs:appinfo>
+                              <xs:documentation xml:lang="en">
+                                (Required) SKU the buyer is ordering.
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="31"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xsd:element name="SODShipComp" />
+                          <xsd:element name="CatalogCode" />
+                          <xsd:element name="DeliveryRemarks" type="xsd:string" />
+                          <xsd:element name="TaxFlag" />
+                          <xsd:element name="OrderLineTemplateDetails">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="LineTemplateDetail" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:annotation>
+                                    <xs:appinfo>Template</xs:appinfo>
+                                    <xs:documentation xml:lang="en">
+                                      Special Marking Details (Color, Template, Drawing)
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                  <xsd:complexType>
+                                    <xsd:all>
+                                      <xs:element name="SKU">
+                                        <xs:annotation>
+                                          <xs:appinfo>Stock Keeping Unit</xs:appinfo>
+                                          <xs:documentation xml:lang="en">
+                                            (Required) SKU the buyer is ordering.
+                                          </xs:documentation>
+                                        </xs:annotation>
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:minLength value="1"/>
+                                            <xs:maxLength value="31"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xsd:element name="Variables">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="string" type="xsd:string" maxOccurs="unbounded" />
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                    </xsd:all>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:all>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:all>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="OrderHeader">
+    <xs:annotation>
+      <xs:appinfo>Order Header</xs:appinfo>
+      <xs:documentation xml:lang="en">
+        Order Header
+      </xs:documentation>
+    </xs:annotation>
+    <xsd:complexType>
+      <xsd:all>
+        <xs:element name="CustomerNumber">
+          <xs:annotation>
+            <xs:appinfo>Customer Account Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) The account number used to identify the buyer by the seller.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="15"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xsd:element name="OrderDate" type="xsd:unsignedInt" />
+        <xsd:element name="OrderBy" type="xsd:string" />
+        <xs:element name="PremiseId" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Premises Identification Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Official USDA Premises Identification Number (PIN)
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0"/>
+              <xs:maxLength value="8"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Order Notes</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Notes about the order.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xsd:element name="ShipVia" />
+        <xsd:element name="ShipComp" />
+        <xsd:element name="POBPoint" />
+        <xsd:element name="TermsCode" />
+        <xs:element name="PO">
+          <xs:annotation>
+            <xs:appinfo>Purchase Order Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) Purchase Order Number used by the buyer to identify the order.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="21"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xsd:element name="PickDate" />
+        <xsd:element name="ExtraChargeCode" />
+        <xsd:element name="ExtraChargeAccount" />
+        <xsd:element name="TaxCode" />
+        <xsd:element name="SalesRepCode" />
+        <xsd:element name="OrderType" type="xsd:string" />
+        <xsd:element name="OrderClass" />
+        <xsd:element name="SalesRepCommission" />
+        <xsd:element name="CommissionCode" />
+        <xsd:element name="PickPriorityCode" />
+        <xsd:element name="DueDate" />
+        <xsd:element name="DivisionCode" />
+        <xsd:element name="UnknownFeild01" />
+        <xsd:element name="UnknownFeild02" />
+        <xsd:element name="UnknownFeild03" />
+        <xsd:element name="UnknownFeild04" />
+        <xsd:element name="UnknownFeild05" />
+        <xsd:element name="UnknownFeild06" />
+        <xsd:element name="UnknownFeild07" />
+        <xsd:element name="UnknownFeild08" />
+        <xsd:element name="UnknownFeild09" />
+        <xsd:element name="UnknownFeild10" />
+        <xsd:element name="UnknownFeild11" />
+        <xsd:element name="UnknownFeild12" />
+        <xsd:element name="BookFacCode" />
+        <xsd:element name="DirShipFlag" type="xs:string" />
+        <xs:element name="ShipToName">
+          <xs:annotation>
+            <xs:appinfo>Shipping Name</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) Residence or buisness name of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="65"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToContact" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:appinfo>Shipping Contact</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Depreciated) Name of the recipient of the order at the order's shipping destination. Unused by manufacture, please use ShipToName.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ShipToPhone" minOccurs="0">
+          <xs:annotation>
+            <xs:appinfo>Shipping Contact Phone Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Telephone number where the shipping contact can be reached.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0"/>
+              <xs:maxLength value="21"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToAddress1">
+          <xs:annotation>
+            <xs:appinfo>Shipping Address 1</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) Street address line #1 of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="61"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToAddress2">
+          <xs:annotation>
+            <xs:appinfo>Shipping Address 2</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Street address line #2 of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="0"/>
+              <xs:maxLength value="61"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToCity">
+          <xs:annotation>
+            <xs:appinfo>Shipping City</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) City of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="35"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToState">
+          <xs:annotation>
+            <xs:appinfo>Shipping State</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) State of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="29"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToZipCode">
+          <xs:annotation>
+            <xs:appinfo>Shipping Postal Code</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) Postal code of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="11"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="ShipToCountry" type="xs:string">
+          <xs:annotation>
+            <xs:appinfo>Shipping Country</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Country of the order's shipping destination.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xsd:element name="ShipToCode" minOccurs="0" />
+        <xs:element name="RushOrder" type="xs:string" minOccurs="0">
+          <xs:annotation>
+            <xs:appinfo>Rush Order</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Rush Order Flag.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xsd:element name="OrderLineHeaders">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="OrderLineHeader">
+                <xs:annotation>
+                  <xs:appinfo>Order Line Header</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Order Line
+                  </xs:documentation>
+                </xs:annotation>
+                <xsd:complexType>
+                  <xsd:all>
+                    <xsd:element name="RequiredDeliveryDate" />
+                    <xsd:element name="QTY" type="xsd:unsignedShort">
+                      <xs:annotation>
+                        <xs:appinfo>Quantity</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) The amount of the SKU being orderd.
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xsd:element>
+                    <xs:element name="Quantity" type="xs:unsignedShort">
+                      <xs:annotation>
+                        <xs:appinfo>Quantity</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) The amount of the SKU being orderd.
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xsd:element name="SellingPrice" />
+                    <xsd:element name="Description" />
+                    <xs:element name="SKU">
+                      <xs:annotation>
+                        <xs:appinfo>Stock Keeping Unit</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) SKU the buyer is ordering.
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="31"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xsd:element name="SODShipComp" />
+                    <xsd:element name="CatalogCode" />
+                    <xsd:element name="DeliveryRemarks" type="xsd:string" />
+                    <xsd:element name="TaxFlag" />
+                    <xsd:element name="OrderLineTemplateDetails">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="LineTemplateDetail" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:appinfo>Template</xs:appinfo>
+                              <xs:documentation xml:lang="en">
+                                Special Marking Details (Color, Template, Drawing)
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xsd:complexType>
+                              <xsd:all>
+                                <xs:element name="SKU">
+                                  <xs:annotation>
+                                    <xs:appinfo>Stock Keeping Unit</xs:appinfo>
+                                    <xs:documentation xml:lang="en">
+                                      (Required) SKU the buyer is ordering.
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:minLength value="1"/>
+                                      <xs:maxLength value="31"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xsd:element name="Variables">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="string" type="xsd:string" maxOccurs="unbounded" />
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:all>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:all>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:all>
+    </xsd:complexType>
+  </xsd:element>
+</xs:schema>

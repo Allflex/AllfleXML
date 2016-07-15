@@ -42,7 +42,15 @@ namespace AllfleXML.ID1Order
             return isValid;
         }
     }
-    
+
+    [Serializable]
+    [XmlRoot]
+    //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
+    public class Document
+    {
+        public List<ID1Order> ID1Order { get; set; }
+    }
+
     [Serializable]
     [Obsolete("ID1Order.ID1Order is deprecated, please use FlexOrder.OrderHeader instead.")]
     public class ID1Order

@@ -57,6 +57,14 @@ namespace AllfleXML.FlexOrder
     }
 
     [Serializable]
+    [XmlRoot]
+    //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
+    public class Document
+    {
+        public List<OrderHeader> OrderHeader { get; set; }
+    }
+
+    [Serializable]
     public class OrderHeader
     {
         public string CustomerNumber { get; set; }

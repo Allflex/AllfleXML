@@ -378,6 +378,14 @@ namespace AllfleXML.LaserTag
             return result;
         }
     }
+    
+    [Serializable]
+    [XmlRoot]
+    //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
+    public class Document
+    {
+        public List<OrderHeader> OrderHeader { get; set; }
+    }
 
     [Serializable]
     [Obsolete("LaserTag.OrderHeader is deprecated, please use FlexOrder.OrderHeader instead.")]

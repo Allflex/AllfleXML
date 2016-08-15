@@ -76,7 +76,6 @@ namespace AllfleXML.FlexOrder
 
     [Serializable]
     [XmlRoot]
-    //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
     public class Document
     {
         [XmlElement("OrderHeader")]
@@ -86,31 +85,32 @@ namespace AllfleXML.FlexOrder
     [Serializable]
     public class OrderHeader
     {
-        [XmlElement("CustomerNumber")]
+        [XmlElement("CustomerNumber", IsNullable = false)]
         public string CustomerNumber { get; set; }
         [XmlElement("Comments")]
         public string Comments { get; set; }
         [XmlElement("PremiseID")]
         public string PremiseID { get; set; }
-        [XmlElement("PO")]
+        [XmlElement("PO", IsNullable = false)]
         public string PO { get; set; }
-        [XmlElement("ShipToName")]
+        [XmlElement("ShipToName", IsNullable = false)]
         public string ShipToName { get; set; }
         [XmlElement("ShipToContact")]
-        public string ShipToContact { get; set; }
+        [Obsolete("This field is deprecated. Please use ShipToName instead.")]
+        public string ShipToContact { get; set; } // TODO: Remove from specification
         [XmlElement("ShipToPhone")]
         public string ShipToPhone { get; set; }
-        [XmlElement("ShipToAddress1")]
+        [XmlElement("ShipToAddress1", IsNullable = false)]
         public string ShipToAddress1 { get; set; }
         [XmlElement("ShipToAddress2")]
         public string ShipToAddress2 { get; set; }
         [XmlElement("ShipToAddress3")]
         public string ShipToAddress3 { get; set; }
-        [XmlElement("ShipToCity")]
+        [XmlElement("ShipToCity", IsNullable = false)]
         public string ShipToCity { get; set; }
-        [XmlElement("ShipToState")]
+        [XmlElement("ShipToState", IsNullable = false)]
         public string ShipToState { get; set; }
-        [XmlElement("ShipToPostalCode")]
+        [XmlElement("ShipToPostalCode", IsNullable = false)]
         public string ShipToPostalCode { get; set; }
         [XmlElement("ShipToCountry")]
         public string ShipToCountry { get; set; }
@@ -129,7 +129,8 @@ namespace AllfleXML.FlexOrder
         [XmlElement("UserDefined")]
         public UserDefinedFields UserDefinedFields { get; set; } = new UserDefinedFields();
         [XmlElement("WSOrderId")]
-        public string WSOrderId { get; set; }
+        [Obsolete("This field is deprecated. It will be removed in the next version.")]
+        public string WSOrderId { get; set; } // TODO: Remove from specification
         [XmlElement("Hold")]
         public bool OrderHold { get; set; }
         [XmlElement("OrderLineHeader")]
@@ -155,14 +156,16 @@ namespace AllfleXML.FlexOrder
     [Serializable]
     public class OrderLineHeader
     {
-        [XmlElement("SkuName")]
+        [XmlElement("SkuName", IsNullable = false)]
         public string SkuName { get; set; }
         [XmlElement("PremiseID")]
+        [Obsolete("This field is deprecated. It will be removed in the next version.")]
         public string PremiseID { get; set; } // TODO: Remove from specification
-        [XmlElement("Quantity")]
+        [XmlElement("Quantity", IsNullable = false)]
         public int Quantity { get; set; }
         [XmlElement("Template")]
-        public string Template { get; set; }
+        [Obsolete("This field is deprecated. It will be removed in the next version.")]
+        public string Template { get; set; } // TODO: Remove from specification
         [XmlElement("Comment")]
         public string Comment { get; set; }
         [XmlElement("UserDefined")]
@@ -170,6 +173,7 @@ namespace AllfleXML.FlexOrder
         [XmlElement("OrderLineMarkingDetail")]
         public List<OrderLineMarkingDetail> OrderLineMarkingDetail = new List<OrderLineMarkingDetail>();
         [XmlElement("OrderLineCustom")]
+        [Obsolete("This field is deprecated. It will be removed in the next version.")]
         public List<OrderLineCustom> OrderLineCustom = new List<OrderLineCustom>(); // TODO: Remove from specification
     }
 
@@ -179,16 +183,19 @@ namespace AllfleXML.FlexOrder
         [XmlElement("Variable")]
         public List<Variable> Variables = new List<Variable>();
         [XmlElement("Comment")]
-        public string Comment { get; set; }
+        [Obsolete("This field is deprecated. It will be removed in the next version.")]
+        public string Comment { get; set; } // TODO: Remove from specification
     }
 
     [Serializable]
+    [Obsolete("This class is deprecated. It will be removed in the next version.")]
     public class OrderLineCustom // TODO: Remove from specification
     {
         [XmlElement("Variable")]
         public List<Variable> Variables = new List<Variable>();
         [XmlElement("Comment")]
-        public string Comment { get; set; }
+        [Obsolete("This field is deprecated. It will be removed in the next version.")]
+        public string Comment { get; set; } // TODO: Remove from specification
     }
 
     [Serializable]

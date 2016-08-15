@@ -358,12 +358,11 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <!-- START: Added to facilitate Tagstore -->
                     <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
                         <xs:appinfo>Premises Identification Number</xs:appinfo>
                         <xs:documentation xml:lang="en">
-                          Official USDA Premises Identification Number (PIN)
+                          (Depreciated) Official USDA Premises Identification Number (PIN)
                         </xs:documentation>
                       </xs:annotation>
                       <xs:simpleType>
@@ -373,7 +372,6 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <!-- END: Added to facilitate Tagstore -->
                     <xs:element name="Quantity" type="xs:unsignedShort">
                       <xs:annotation>
                         <xs:appinfo>Quantity</xs:appinfo>

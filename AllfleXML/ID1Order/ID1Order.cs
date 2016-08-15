@@ -63,7 +63,7 @@ namespace AllfleXML.ID1Order
 
     [Serializable]
     [XmlRoot]
-    //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
+    [Obsolete("ID1Order.Document is deprecated, please use FlexOrder.Document instead.")]
     public class Document
     {
         public List<ID1Order> ID1Order { get; set; }

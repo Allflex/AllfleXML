@@ -385,7 +385,7 @@ namespace AllfleXML.LaserTag
     
     [Serializable]
     [XmlRoot]
-    //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
+    [Obsolete("LaserTag.Document is deprecated, please use FlexOrder.Document instead.")]
     public class Document
     {
         public List<OrderHeader> OrderHeader { get; set; }

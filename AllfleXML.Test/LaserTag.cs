@@ -9,25 +9,25 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ImportLaserTag()
         {
-
+            throw new NotImplementedException();
         }
 
         [TestMethod]
         public void ExportLaserTag()
         {
-            
+            throw new NotImplementedException();
         }
 
         [TestMethod]
         public void FailedLaserTagValidation()
         {
-            
+            throw new NotImplementedException();
         }
 
         [TestMethod]
         public void PassedLaserTagValidation()
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

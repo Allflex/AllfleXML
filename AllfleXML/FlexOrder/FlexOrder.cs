@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Xml;
@@ -11,27 +12,27 @@ namespace AllfleXML.FlexOrder
 {
     public static class Parser
     {
-        public static OrderHeader Import(string xmlFilePath)
+        public static List<OrderHeader> Import(string xmlFilePath)
         {
             return Import(XDocument.Load(xmlFilePath));
         }
 
-        public static OrderHeader Import(XDocument document)
+        public static List<OrderHeader> Import(XDocument document)
         {
             if (!Validate(document))
             {
                 throw new XmlSchemaValidationException("XML Document is invalid");
             }
 
-            OrderHeader result;
+            Document result;
 
-            var serializer = new XmlSerializer(typeof(OrderHeader));
-            using (var reader = document.CreateReader())
+            var serializer = new XmlSerializer(typeof(Document));
+            using (var reader = new StringReader(document.ToString()))
             {
-                result = (OrderHeader)serializer.Deserialize(reader);
+                result = (Document)serializer.Deserialize(reader);
             }
 
-            return result;
+            return result.OrderHeaders;
         }
 
         public static XDocument Export(OrderHeader order)
@@ -54,8 +55,21 @@ namespace AllfleXML.FlexOrder
                 xsDocument.Add(null, XmlReader.Create(reader));
             }
 
+            var msg = string.Empty;
+            var exc = new Exception();
+            var severity = 0;
             var isValid = true;
-            xml.Validate(xsDocument, (o, e) => { isValid = false; });
+            xml.Validate(xsDocument, (o, e) =>
+            {
+                isValid = false;
+                msg = e.Message;
+                exc = e.Exception;
+                severity = (int)e.Severity;
+            });
+
+            Debug.Assert(isValid, $"{severity} - {msg}");
+            //if (!isValid) throw new Exception($"{severity} - {msg}", exc);
+
             return isValid;
         }
     }
@@ -65,67 +79,104 @@ namespace AllfleXML.FlexOrder
     //[XmlRoot(Namespace = "http://localhost/", IsNullable = false)]
     public class Document
     {
-        public List<OrderHeader> OrderHeader { get; set; }
+        [XmlElement("OrderHeader")]
+        public List<OrderHeader> OrderHeaders { get; set; }
     }
 
     [Serializable]
     public class OrderHeader
     {
+        [XmlElement("CustomerNumber")]
         public string CustomerNumber { get; set; }
+        [XmlElement("Comments")]
         public string Comments { get; set; }
+        [XmlElement("PremiseID")]
         public string PremiseID { get; set; }
+        [XmlElement("PO")]
         public string PO { get; set; }
+        [XmlElement("ShipToName")]
         public string ShipToName { get; set; }
+        [XmlElement("ShipToContact")]
         public string ShipToContact { get; set; }
+        [XmlElement("ShipToPhone")]
         public string ShipToPhone { get; set; }
+        [XmlElement("ShipToAddress1")]
         public string ShipToAddress1 { get; set; }
+        [XmlElement("ShipToAddress2")]
         public string ShipToAddress2 { get; set; }
+        [XmlElement("ShipToAddress3")]
         public string ShipToAddress3 { get; set; }
+        [XmlElement("ShipToCity")]
         public string ShipToCity { get; set; }
+        [XmlElement("ShipToState")]
         public string ShipToState { get; set; }
+        [XmlElement("ShipToPostalCode")]
         public string ShipToPostalCode { get; set; }
+        [XmlElement("ShipToCountry")]
         public string ShipToCountry { get; set; }
+        [XmlElement("IsRush")]
         public bool IsRush { get; set; }
+        [XmlElement("ShipMethod")]
         public string ShipMethod { get; set; }
+        [XmlElement("ShippingAccountNumber")]
         public string ShippingAccountNumber { get; set; }
+        [XmlElement("EmailListError")]
         public string EmailListError { get; set; }
+        [XmlElement("EmailListTrackingInfo")]
         public string EmailListTrackingInfo { get; set; }
+        [XmlElement("EmailListEIDInfo")]
         public string EmailListEIDInfo { get; set; }
+        [XmlElement("WSOrderId")]
         public string WSOrderId { get; set; }
+        [XmlElement("Hold")]
         public bool OrderHold { get; set; }
+        [XmlElement("OrderLineHeader")]
         public List<OrderLineHeader> OrderLineHeaders = new List<OrderLineHeader>();
     }
 
     [Serializable]
     public class OrderLineHeader
     {
+        [XmlElement("SkuName")]
         public string SkuName { get; set; }
-        public string PremiseID { get; set; }
+        [XmlElement("PremiseID")]
+        public string PremiseID { get; set; } // TODO: Remove from specification
+        [XmlElement("Quantity")]
         public int Quantity { get; set; }
+        [XmlElement("Template")]
         public string Template { get; set; }
+        [XmlElement("Comment")]
         public string Comment { get; set; }
+        [XmlElement("OrderLineMarkingDetail")]
         public List<OrderLineMarkingDetail> OrderLineMarkingDetail = new List<OrderLineMarkingDetail>();
-        public List<OrderLineCustom> OrderLineCustom = new List<OrderLineCustom>();
+        [XmlElement("OrderLineCustom")]
+        public List<OrderLineCustom> OrderLineCustom = new List<OrderLineCustom>(); // TODO: Remove from specification
     }
 
     [Serializable]
     public class OrderLineMarkingDetail
     {
+        [XmlElement("Variable")]
         public List<Variable> Variables = new List<Variable>();
+        [XmlElement("Comment")]
         public string Comment { get; set; }
     }
 
     [Serializable]
-    public class OrderLineCustom
+    public class OrderLineCustom // TODO: Remove from specification
     {
+        [XmlElement("Variable")]
         public List<Variable> Variables = new List<Variable>();
+        [XmlElement("Comment")]
         public string Comment { get; set; }
     }
 
     [Serializable]
     public class Variable
     {
+        [XmlElement("VariableName")]
         public string Name { get; set; }
+        [XmlElement("VariableValue")]
         public string Value { get; set; }
     }
 }

@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+<OrderHeader>
+  <CustomerNumber>USDA2014-2015</CustomerNumber>
+  <PremiseID>ABC1234</PremiseID>
+  <Comments>GOATS</Comments>
+  <PO>OH8930</PO>
+  <ShipToName>John Smith</ShipToName>
+  <ShipToContact />
+  <ShipToPhone />
+  <ShipToAddress1>8814 ROCKY HILL RD. SW </ShipToAddress1>
+  <ShipToAddress2 />
+  <ShipToAddress3 />
+  <ShipToCity>LANCASTER</ShipToCity>
+  <ShipToState>OH</ShipToState>
+  <ShipToPostalCode>43140</ShipToPostalCode>
+  <ShipToCountry />
+  <IsRush>false</IsRush>
+  <ShipMethod>UPS</ShipMethod>
+  <ShippingAccountNumber />
+  <EmailListError />
+  <EmailListTrackingInfo />
+  <EmailListEIDInfo />
+  <WSOrderId />
+  <Hold>false</Hold>
+  <OrderLineHeader>
+    <SkuName>APP-UTT</SkuName>
+    <Quantity>1</Quantity>
+    <Template />
+    <Comment />
+  </OrderLineHeader>
+  <OrderLineHeader>
+    <SkuName>SCR3-PREM-CP74M/CP74F-W</SkuName>
+    <Quantity>20</Quantity>
+    <Template>SCR2_PT_C74</Template>
+    <Comment />
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0020</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0019</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0018</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0017</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0016</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0015</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0014</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0013</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0012</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0011</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0010</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0009</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0008</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0007</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0006</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0005</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0004</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0003</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0002</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>0001</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieSerialNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>ScrapieFlock</VariableName>
+        <VariableValue>OH8930</VariableValue>
+      </Variable>
+      <Comment />
+    </OrderLineMarkingDetail>
+  </OrderLineHeader>
+</OrderHeader>
+</Document>

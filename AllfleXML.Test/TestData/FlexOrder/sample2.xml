@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+<OrderHeader>
+  <CustomerNumber>32404</CustomerNumber>
+  <Comments />
+  <PremiseID>ABC1234</PremiseID>
+  <PO>198664</PO>
+  <ShipToName>(1105108) Jane Doe</ShipToName>
+  <ShipToContact>Jane Doe</ShipToContact>
+  <ShipToPhone>5551234567</ShipToPhone>
+  <ShipToAddress1>Rev. Calvin &amp; Thelma Alcorn</ShipToAddress1>
+  <ShipToAddress2>420 Sicamore St.</ShipToAddress2>
+  <ShipToAddress3 />
+  <ShipToCity>Milner</ShipToCity>
+  <ShipToState>GA</ShipToState>
+  <ShipToPostalCode>30257</ShipToPostalCode>
+  <ShipToCountry>United States</ShipToCountry>
+  <IsRush>0</IsRush>
+  <ShipMethod>UPS</ShipMethod>
+  <ShippingAccountNumber />
+  <EmailListError>tsturm@allflexusa.com</EmailListError>
+  <EmailListTrackingInfo>tsturm@allflexusa.com</EmailListTrackingInfo>
+  <EmailListEIDInfo />
+  <WSOrderId />
+  <OrderLineHeader>
+    <SkuName>ANTXLSet3306LA</SkuName>
+    <Quantity>17</Quantity>
+    <Template>ANTXLSet3306LA</Template>
+    <Comment />
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S251</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S252</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S253</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S254</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S255</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S256</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S257</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S258</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S259</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S260</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S261</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S262</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S263</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S264</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S265</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S266</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+    <OrderLineMarkingDetail>
+      <Variable>
+        <VariableName>Management</VariableName>
+        <VariableValue>S267</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>RegNumber</VariableName>
+        <VariableValue />
+      </Variable>
+      <Variable>
+        <VariableName>State</VariableName>
+        <VariableValue>GA11</VariableValue>
+      </Variable>
+      <Variable>
+        <VariableName>Custom</VariableName>
+        <VariableValue>1105108</VariableValue>
+      </Variable>
+    </OrderLineMarkingDetail>
+  </OrderLineHeader>
+</OrderHeader>
+</Document>

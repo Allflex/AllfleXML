@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document><!-- xmlns="http://www.angus.org/ASRTagOrderXML">-->
+  <OrderHeader>
+    <CustomerNumber>32404</CustomerNumber>
+    <PremiseID>ABC1234</PremiseID>
+    <Comments>I am entering this comment just to say hello.</Comments>
+    <PO>292271</PO>
+    <ShipToName>(1238393) Billy Joe</ShipToName>
+    <ShipToContact>Billy Joe</ShipToContact>
+    <ShipToPhone>5559876543</ShipToPhone>
+    <ShipToAddress1>Billy Joe</ShipToAddress1>
+    <ShipToAddress2>9105 Stone Hinge Dr</ShipToAddress2>
+    <ShipToAddress3 />
+    <ShipToCity>Mountain Grove</ShipToCity>
+    <ShipToState>MO</ShipToState>
+    <ShipToPostalCode>65711</ShipToPostalCode>
+    <ShipToCountry>United States</ShipToCountry>
+    <IsRush>0</IsRush>
+    <ShipMethod>UPS</ShipMethod>
+    <ShippingAccountNumber />
+    <EmailListError>tsturm@allflexusa.com</EmailListError>
+    <EmailListTrackingInfo>tsturm@allflexusa.com</EmailListTrackingInfo>
+    <EmailListEIDInfo />
+    <WSOrderId />
+    <OrderLineHeader>
+      <SkuName>ANTXLSET3706LAG</SkuName>
+      <Quantity>10</Quantity>
+      <Template>ANTXLSET3706LAG</Template>
+      <Comment />
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>28</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>29</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>30</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>31</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>32</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>33</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>34</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>35</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>36</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>37</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>RegNumber</VariableName>
+          <VariableValue />
+        </Variable>
+        <Variable>
+          <VariableName>State</VariableName>
+          <VariableValue>MO03</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Custom</VariableName>
+          <VariableValue>1238393</VariableValue>
+        </Variable>
+      </OrderLineMarkingDetail>
+    </OrderLineHeader>
+  </OrderHeader>
+</Document>

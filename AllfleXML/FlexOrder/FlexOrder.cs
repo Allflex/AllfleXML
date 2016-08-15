@@ -126,12 +126,30 @@ namespace AllfleXML.FlexOrder
         public string EmailListTrackingInfo { get; set; }
         [XmlElement("EmailListEIDInfo")]
         public string EmailListEIDInfo { get; set; }
+        [XmlElement("UserDefined")]
+        public UserDefinedFields UserDefinedFields { get; set; } = new UserDefinedFields();
         [XmlElement("WSOrderId")]
         public string WSOrderId { get; set; }
         [XmlElement("Hold")]
         public bool OrderHold { get; set; }
         [XmlElement("OrderLineHeader")]
         public List<OrderLineHeader> OrderLineHeaders = new List<OrderLineHeader>();
+    }
+
+    [Serializable]
+    public class UserDefinedFields
+    {
+        [XmlElement("Field")]
+        public List<UserDefinedField> Fields { get; set; } = new List<UserDefinedField>();
+    }
+
+    [Serializable]
+    public class UserDefinedField
+    {
+        [XmlAttribute("Key")]
+        public string Key { get; set; }
+        [XmlText]
+        public string Value { get; set; }
     }
 
     [Serializable]
@@ -147,6 +165,8 @@ namespace AllfleXML.FlexOrder
         public string Template { get; set; }
         [XmlElement("Comment")]
         public string Comment { get; set; }
+        [XmlElement("UserDefined")]
+        public UserDefinedFields UserDefinedFields { get; set; } = new UserDefinedFields();
         [XmlElement("OrderLineMarkingDetail")]
         public List<OrderLineMarkingDetail> OrderLineMarkingDetail = new List<OrderLineMarkingDetail>();
         [XmlElement("OrderLineCustom")]

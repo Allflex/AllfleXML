@@ -52,10 +52,10 @@
     <Content Include="LaserTag\LaserTag.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FlexOrder\flexorder.xps" />
     <EmbeddedResource Include="FlexOrder\FlexOrder.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="FlexOrder\FlexOrder.xps" />
     <None Include="ID1Order\ID1Order.xps" />
     <EmbeddedResource Include="ID1Order\ID1Order.xsd">
       <SubType>Designer</SubType>

@@ -19,6 +19,11 @@
   <EmailListError>errors1@example.com;errors2@example.com</EmailListError>
   <EmailListTrackingInfo>tracking1@example.com;tracking2@example.com</EmailListTrackingInfo>
   <EmailListEIDInfo>manifest@example.com</EmailListEIDInfo>
+  <UserDefined>
+    <Field key="Field1">ABCDEF</Field>
+    <Field key="Field2">123456</Field>
+    <Field key="Field3">ABC123</Field>
+  </UserDefined>
   <WSOrderId>anyType</WSOrderId>
   <OrderLineHeader>
     <SkuName>SkuName1</SkuName>

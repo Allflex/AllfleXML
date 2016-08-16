@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AllfleXML.Test")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Unit tests for the current supported XML formats submitted to Allflex USA, Inc.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Allflex USA, Inc.")]
 [assembly: AssemblyProduct("AllfleXML.Test")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright © Allflex USA, Inc. 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

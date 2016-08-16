@@ -96,13 +96,15 @@ namespace AllfleXML.Test
         [TestMethod]
         public void FailedFlexOrderValidation()
         {
-            throw new NotImplementedException();
+            var isValid = AllfleXML.FlexOrder.Parser.Validate(@"TestData\ID1Order\sample0.xml");
+            Assert.IsFalse(isValid);
         }
 
         [TestMethod]
         public void PassedFlexOrderValidation()
         {
-            throw new NotImplementedException();
+            var isValid = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            Assert.IsTrue(isValid);
         }
     }
 }

@@ -66,10 +66,7 @@ namespace AllfleXML.FlexOrder
                 exc = e.Exception;
                 severity = (int)e.Severity;
             });
-
-            Debug.Assert(isValid, $"{severity} - {msg}");
-            //if (!isValid) throw new Exception($"{severity} - {msg}", exc);
-
+            
             return isValid;
         }
     }

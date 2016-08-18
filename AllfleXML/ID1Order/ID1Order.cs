@@ -27,7 +27,8 @@ namespace AllfleXML.ID1Order
             ID1Order result;
 
             var serializer = new XmlSerializer(typeof(ID1Order));
-            using (var reader = document.CreateReader())
+            //using (var reader = document.CreateReader())
+            using (var reader = new StringReader(document.ToString()))
             {
                 result = (ID1Order)serializer.Deserialize(reader);
             }
@@ -79,6 +80,10 @@ namespace AllfleXML.ID1Order
     [Obsolete("ID1Order.ID1Order is deprecated, please use FlexOrder.OrderHeader instead.")]
     public class ID1Order
     {
+        public string SOPNUMBE { get; set; }
+
+        public string MASTERID { get; set; }
+
         public bool HasDeliveryCharge { get; set; }
         
         [XmlIgnore]
@@ -88,6 +93,15 @@ namespace AllfleXML.ID1Order
         
         public string ReqShipDate { get; set; }
         
+        public int PriorityStatus { get; set; }
+
+        public bool NotBeforeReqShipDate { get; set; }
+
+        [XmlIgnore]
+        public bool NotBeforeReqShipDateSpecified { get; set; }
+
+        public string FREIGHTID { get; set; }
+
         public string CSTPONBR { get; set; }
         
         public string CUSTNMBR { get; set; }
@@ -96,6 +110,9 @@ namespace AllfleXML.ID1Order
         
         public OrderDelivery OrderDelivery { get; set; } = new OrderDelivery();
         
+        [XmlArrayItem("OrderNotes", IsNullable = true)]
+        public List<OrderNote> OrderNotes { get; set; } = new List<OrderNote>();
+
         [XmlArrayItem("OrderLine", IsNullable = false)]
         public List<OrderLine> OrderLines { get; set; } = new List<OrderLine>();
     }
@@ -121,14 +138,33 @@ namespace AllfleXML.ID1Order
         public bool IsRushSpecified { get; set; }
         public string SHIPMTHD { get; set; }
         public string PREMISEID { get; set; }
+        public decimal FREIGHT { get; set; }
     }
-    
+
+    [Serializable]
+    [Obsolete("ID1Order.OrderNote is deprecated, Please use FlexOrder instead.")]
+    public class OrderNote
+    {
+        public string Note { get; set; }
+    }
+
     [Serializable]
     [Obsolete("ID1Order.OrderLine is deprecated, please use FlexOrder.OrderLineHeader instead.")]
     public class OrderLine
     {
+        public int LINESEQ { get; set; }
         public string ITEMNMBR { get; set; }
-        public ushort QTYORDER { get; set; }
+        public string ITEMDESC { get; set; }
+        public decimal QTYORDER { get; set; }
+        public string UOM { get; set; }
+        public string PACKINGID { get; set; }
+        public string MARKINGPRG { get; set; }
+        public string ITEMNUMBER { get; set; }
+        public string QTYBKORD { get; set; }
+        public string UNITPRCE { get; set; }
+        public string CDCNAME { get; set; }
+        [XmlArrayItem("OrderNotes", IsNullable = true)]
+        public List<OrderNote> OrderNotes { get; set; } = new List<OrderNote>();
         [XmlArrayItem("OrderLineDetail", IsNullable = false)]
         public List<OrderLineDetail> OrderLineDetails { get; set; }
     }
@@ -147,6 +183,9 @@ namespace AllfleXML.ID1Order
     [Obsolete("ID1Order.Marking is deprecated, please use FlexOrder.OrderLineMarkingDetail instead.")]
     public class Marking
     {
+        public bool ISINK { get; set; }
+        public int VARLINENRO { get; set; }
+        public string FORMAT { get; set; }
         public string VARKITTYPE { get; set; }
         public string VARKITVALUE { get; set; }
     }

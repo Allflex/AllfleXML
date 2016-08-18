@@ -50,7 +50,7 @@
           </xs:annotation>
         </xs:element>
         <xs:element name="PriorityStatus" type="xs:int" minOccurs="0" maxOccurs="1" />
-        <xs:element name="NotBeforeReqShipDate" type="xs:int" minOccurs="0" maxOccurs="1" />
+        <xs:element name="NotBeforeReqShipDate" type="xs:boolean" minOccurs="0" maxOccurs="1" />
         <xs:element name="FREIGHTID" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="CSTPONBR">
           <xs:annotation>
@@ -330,6 +330,13 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="OrderNotes" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Note" type="xs:string" minOccurs="0" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="OrderLines">
           <xs:complexType>
             <xs:sequence>
@@ -367,7 +374,6 @@
                       </xs:annotation>
                     </xs:element>
                     <xs:element name="UOM" type="xs:string" minOccurs="0" maxOccurs="1" />
-
                     <xs:element name="PACKINGID" type="xs:string" minOccurs="0" maxOccurs="1" />
                     <xs:element name="MARKINGPRG" type="xs:string" minOccurs="0" maxOccurs="1" />
                     <xs:element name="ITEMNUMBER" type="xs:string" minOccurs="0" maxOccurs="1" />
@@ -381,7 +387,7 @@
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element name="OrderLineDetails" minOccurs="0" maxOccurs="1">
+                    <xs:element name="OrderLinesDetail" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
                         <xs:appinfo>Order Line Details</xs:appinfo>
                         <xs:documentation xml:lang="en">
@@ -390,7 +396,7 @@
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="OrderLineDetail" minOccurs="1" maxOccurs="unbounded">
+                          <xs:element name="OrderLineDetail" minOccurs="0" maxOccurs="unbounded">
                             <xs:annotation>
                               <xs:appinfo>Order Line Detail</xs:appinfo>
                               <xs:documentation xml:lang="en">
@@ -399,7 +405,7 @@
                             </xs:annotation>
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="QUANTITY" type="xs:unsignedShort">
+                                <xs:element name="QUANTITY" type="xs:decimal">
                                   <xs:annotation>
                                     <xs:appinfo>Marking Quantity</xs:appinfo>
                                     <xs:documentation xml:lang="en">
@@ -407,7 +413,7 @@
                                     </xs:documentation>
                                   </xs:annotation>
                                 </xs:element>
-                                <xs:element name="OrderLineMarkings">
+                                <xs:element name="OrderLinesMarking">
                                   <xs:annotation>
                                     <xs:appinfo>Order Line Marking</xs:appinfo>
                                     <xs:documentation xml:lang="en">
@@ -419,6 +425,9 @@
                                       <xs:element name="OrderLineMarking" minOccurs="1" maxOccurs="unbounded">
                                         <xs:complexType>
                                           <xs:sequence>
+                                            <xs:element name="ISINK" type="xs:boolean" minOccurs="0" maxOccurs="1" />
+                                            <xs:element name="VARLINENRO" type="xs:int" minOccurs="0" maxOccurs="1" />
+                                            <xs:element name="FORMAT" type="xs:string" minOccurs="0" maxOccurs="1" />
                                             <xs:element name="VARKITTYPE" type="xs:string" />
                                             <xs:element name="VARKITVALUE" type="xs:string" />
                                           </xs:sequence>

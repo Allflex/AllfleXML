@@ -9,9 +9,25 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
+        <xs:element name="SOPNUMBE" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Sales Order Processing Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Purchase Order Number used by the manufacture to identify the order.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="MASTERID" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Master Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Identifying Number used by the manufacture to identify the order.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
         <xs:element name="HasDeliveryCharge" type="xs:boolean" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:appinfo>Delivery Charve</xs:appinfo>
+            <xs:appinfo>Delivery Charge</xs:appinfo>
             <xs:documentation xml:lang="en">
               If the order has a Delivery Charge.
             </xs:documentation>
@@ -33,6 +49,9 @@
             </xs:documentation>
           </xs:annotation>
         </xs:element>
+        <xs:element name="PriorityStatus" type="xs:int" minOccurs="0" maxOccurs="1" />
+        <xs:element name="NotBeforeReqShipDate" type="xs:int" minOccurs="0" maxOccurs="1" />
+        <xs:element name="FREIGHTID" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="CSTPONBR">
           <xs:annotation>
             <xs:appinfo>Purchase Order Number</xs:appinfo>
@@ -307,6 +326,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="FREIGHT" type="xs:decimal" minOccurs="0" maxOccurs="1" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -322,6 +342,7 @@
                 </xs:annotation>
                 <xs:complexType>
                   <xs:sequence>
+                    <xs:element name="LINESEQ" type="xs:int" minOccurs="0" maxOccurs="1" />
                     <xs:element name="ITEMNMBR">
                       <xs:annotation>
                         <xs:appinfo>Item Number, Product Code, Stock Keeping Unit.</xs:appinfo>
@@ -336,13 +357,29 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xs:element name="QTYORDER" type="xs:unsignedShort">
+                    <xs:element name="ITEMDESC" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="QTYORDER" type="xs:decimal">
                       <xs:annotation>
                         <xs:appinfo>Item Quantity</xs:appinfo>
                         <xs:documentation xml:lang="en">
                           (Required) The amount of the SKU being orderd.
                         </xs:documentation>
                       </xs:annotation>
+                    </xs:element>
+                    <xs:element name="UOM" type="xs:string" minOccurs="0" maxOccurs="1" />
+
+                    <xs:element name="PACKINGID" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="MARKINGPRG" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="ITEMNUMBER" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="QTYBKORD" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="UNITPRCE" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="CDCNAME" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="OrderNotes" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Note" type="xs:string" minOccurs="0" maxOccurs="1" />
+                        </xs:sequence>
+                      </xs:complexType>
                     </xs:element>
                     <xs:element name="OrderLineDetails" minOccurs="0" maxOccurs="1">
                       <xs:annotation>

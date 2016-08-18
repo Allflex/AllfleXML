@@ -24,20 +24,26 @@ namespace AllfleXML.ID1Order
                 throw new XmlSchemaValidationException("XML Document is invalid");
             }
 
-            Document result;
+            ID1Order result;
 
             var serializer = new XmlSerializer(typeof(ID1Order));
             using (var reader = document.CreateReader())
             {
-                result = (Document)serializer.Deserialize(reader);
+                result = (ID1Order)serializer.Deserialize(reader);
             }
 
-            return result.ID1Order;
+            return new List<ID1Order> { result };
         }
 
         public static XDocument Export(ID1Order order)
         {
-            throw new NotImplementedException();
+            var result = new XDocument();
+            using (var writer = result.CreateWriter())
+            {
+                var serializer = new XmlSerializer(order.GetType());
+                serializer.Serialize(writer, order);
+            }
+            return result;
         }
 
         public static bool Validate(string xmlFilePath)

@@ -90,7 +90,10 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ExportFlexOrder()
         {
-            throw new NotImplementedException();
+            var order = new AllfleXML.FlexOrder.OrderHeader();
+
+            var doc = AllfleXML.FlexOrder.Parser.Export(order);
+            Assert.IsNotNull(doc);
         }
 
         [TestMethod]

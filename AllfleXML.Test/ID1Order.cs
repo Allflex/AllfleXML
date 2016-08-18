@@ -90,7 +90,10 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ExportID1Order()
         {
-            throw new NotImplementedException();
+            var order = new AllfleXML.ID1Order.ID1Order();
+
+            var doc = AllfleXML.ID1Order.Parser.Export(order);
+            Assert.IsNotNull(doc);
         }
 
         [TestMethod]

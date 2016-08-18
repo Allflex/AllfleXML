@@ -90,10 +90,13 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ExportFlexOrder()
         {
-            var order = new AllfleXML.FlexOrder.OrderHeader();
+            var order = new AllfleXML.FlexOrder.OrderHeader() {CustomerNumber = "testing"};
 
             var doc = AllfleXML.FlexOrder.Parser.Export(order);
             Assert.IsNotNull(doc);
+
+            var isValid = AllfleXML.FlexOrder.Parser.Validate(doc);
+            Assert.IsTrue(isValid);
         }
 
         [TestMethod]

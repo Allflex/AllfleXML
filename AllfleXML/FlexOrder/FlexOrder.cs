@@ -37,7 +37,13 @@ namespace AllfleXML.FlexOrder
 
         public static XDocument Export(OrderHeader order)
         {
-            throw new NotImplementedException();
+            var result = new XDocument();
+            using (var writer = result.CreateWriter())
+            {
+                var serializer = new XmlSerializer(order.GetType());
+                serializer.Serialize(writer, order);
+            }
+            return result;
         }
 
         public static bool Validate(string xmlFilePath)

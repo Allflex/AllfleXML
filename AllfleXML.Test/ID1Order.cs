@@ -94,6 +94,9 @@ namespace AllfleXML.Test
 
             var doc = AllfleXML.ID1Order.Parser.Export(order);
             Assert.IsNotNull(doc);
+
+            var isValid = AllfleXML.ID1Order.Parser.Validate(doc);
+            Assert.IsTrue(isValid);
         }
 
         [TestMethod]

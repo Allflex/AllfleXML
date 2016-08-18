@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ID1Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HasDeliveryCharge>true</HasDeliveryCharge>
+  <DOCDATE>2015-03-03T09:04:52.081</DOCDATE>
+  <ReqShipDate />
+  <CSTPONBR>141000-99</CSTPONBR>
+  <CUSTNMBR>1000</CUSTNMBR>
+  <ADRSCODE />
+  <OrderDelivery>
+    <ShipToName>STURM SUPPLY, CO.</ShipToName>
+    <ADDRESS1>1705 Brown Rd</ADDRESS1>
+    <ADDRESS2 />
+    <ADDRESS3 />
+    <CITY>DYERSVILLE</CITY>
+    <STATE>IA</STATE>
+    <ZIPCODE>52040</ZIPCODE>
+    <COUNTRY>USA</COUNTRY>
+    <PHONE1 />
+    <PHONE2 />
+    <FAXNUMBR />
+    <SHIPMTHD>UPS GROUND</SHIPMTHD>
+  </OrderDelivery>
+  <OrderLines>
+    <OrderLine>
+      <ITEMNMBR>6253042</ITEMNMBR>
+      <QTYORDER>3</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6253217</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6253301</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6253327</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6253783</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6253958</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6256900</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6520830</ITEMNMBR>
+      <QTYORDER>6</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6524247</ITEMNMBR>
+      <QTYORDER>2</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6524331</ITEMNMBR>
+      <QTYORDER>9</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6524386</ITEMNMBR>
+      <QTYORDER>2</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6525408</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6525453</ITEMNMBR>
+      <QTYORDER>3</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6525479</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6525495</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+  </OrderLines>
+</ID1Order>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AllfleXML.Test
@@ -7,9 +8,83 @@ namespace AllfleXML.Test
     public class ID1Order
     {
         [TestMethod]
-        public void ImportID1Order()
+        public void ImportID1Order0()
         {
-            throw new NotImplementedException();
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample0.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order1()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample1.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order2()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample2.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order3()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample3.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order4()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample4.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order5()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample5.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order6()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample6.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order7()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample7.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order8()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample8.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
+        }
+
+        [TestMethod]
+        public void ImportID1Order9()
+        {
+            var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample9.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.Any());
         }
 
         [TestMethod]
@@ -21,13 +96,15 @@ namespace AllfleXML.Test
         [TestMethod]
         public void FailedID1OrderValidation()
         {
-            throw new NotImplementedException();
+            var isValid = AllfleXML.ID1Order.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            Assert.IsFalse(isValid);
         }
 
         [TestMethod]
         public void PassedID1OrderValidation()
         {
-            throw new NotImplementedException();
+            var isValid = AllfleXML.ID1Order.Parser.Validate(@"TestData\ID1Order\sample2.xml");
+            Assert.IsTrue(isValid);
         }
     }
 }

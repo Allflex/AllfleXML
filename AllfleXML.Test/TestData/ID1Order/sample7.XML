@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ID1Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <HasDeliveryCharge>true</HasDeliveryCharge>
+  <DOCDATE>2015-03-03T09:04:52.081</DOCDATE>
+  <ReqShipDate />
+  <CSTPONBR>141000-99</CSTPONBR>
+  <CUSTNMBR>1000</CUSTNMBR>
+  <ADRSCODE />
+  <OrderDelivery>
+    <ShipToName>STURM SUPPLY, CO.</ShipToName>
+    <ADDRESS1>1705 Brown Rd</ADDRESS1>
+    <ADDRESS2 />
+    <ADDRESS3 />
+    <CITY>IOWA FALLS</CITY>
+    <STATE>IA</STATE>
+    <ZIPCODE>50126</ZIPCODE>
+    <COUNTRY>USA</COUNTRY>
+    <PHONE1 />
+    <PHONE2 />
+    <FAXNUMBR />
+    <SHIPMTHD>UPS GROUND</SHIPMTHD>
+  </OrderDelivery>
+  <OrderLines>
+    <OrderLine>
+      <ITEMNMBR>6253039</ITEMNMBR>
+      <QTYORDER>8</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6253796</ITEMNMBR>
+      <QTYORDER>1</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6259774</ITEMNMBR>
+      <QTYORDER>2</QTYORDER>
+    </OrderLine>
+    <OrderLine>
+      <ITEMNMBR>6524331</ITEMNMBR>
+      <QTYORDER>6</QTYORDER>
+    </OrderLine>
+  </OrderLines>
+</ID1Order>

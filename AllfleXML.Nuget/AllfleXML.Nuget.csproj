@@ -65,7 +65,14 @@
   <ItemGroup>
     <Content Include="..\AllfleXML\bin\Release\AllfleXML.dll">
       <Link>lib\AllfleXML.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
+      <Project>{5e0162d6-311a-4620-bc2c-fde0223afa1c}</Project>
+      <Name>AllfleXML</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

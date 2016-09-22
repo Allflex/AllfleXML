@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrderLineHeaders>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 923</string>
+            <string>699</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747923</string>
+            <string>6    99</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 924</string>
+            <string>700</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747924</string>
+            <string>7    00</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 925</string>
+            <string>701</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747925</string>
+            <string>7    01</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 926</string>
+            <string>702</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747926</string>
+            <string>7    02</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 927</string>
+            <string>703</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747927</string>
+            <string>7    03</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 928</string>
+            <string>704</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747928</string>
+            <string>7    04</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 929</string>
+            <string>705</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747929</string>
+            <string>7    05</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 930</string>
+            <string>706</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747930</string>
+            <string>7    06</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 931</string>
+            <string>707</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747931</string>
+            <string>7    07</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 932</string>
+            <string>708</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747932</string>
+            <string>7    08</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 933</string>
+            <string>709</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747933</string>
+            <string>7    09</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 934</string>
+            <string>710</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747934</string>
+            <string>7    10</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 935</string>
+            <string>711</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747935</string>
+            <string>7    11</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 936</string>
+            <string>712</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747936</string>
+            <string>7    12</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 937</string>
+            <string>713</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747937</string>
+            <string>7    13</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 938</string>
+            <string>714</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747938</string>
+            <string>7    14</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 939</string>
+            <string>715</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747939</string>
+            <string>7    15</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 940</string>
+            <string>716</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747940</string>
+            <string>7    16</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 941</string>
+            <string>717</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747941</string>
+            <string>7    17</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 942</string>
+            <string>718</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747942</string>
+            <string>7    18</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 943</string>
+            <string>719</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747943</string>
+            <string>7    19</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 944</string>
+            <string>720</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747944</string>
+            <string>7    20</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 945</string>
+            <string>721</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747945</string>
+            <string>7    21</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 946</string>
+            <string>722</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747946</string>
+            <string>7    22</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 947</string>
+            <string>723</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747947</string>
+            <string>7    23</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 948</string>
+            <string>724</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747948</string>
+            <string>7    24</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 949</string>
+            <string>725</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747949</string>
+            <string>7    25</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 950</string>
+            <string>726</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747950</string>
+            <string>7    26</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 951</string>
+            <string>727</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747951</string>
+            <string>7    27</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 952</string>
+            <string>728</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747952</string>
+            <string>7    28</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 953</string>
+            <string>729</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747953</string>
+            <string>7    29</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 954</string>
+            <string>730</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747954</string>
+            <string>7    30</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 955</string>
+            <string>731</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747955</string>
+            <string>7    31</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 956</string>
+            <string>732</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747956</string>
+            <string>7    32</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 957</string>
+            <string>733</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747957</string>
+            <string>7    33</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 958</string>
+            <string>734</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747958</string>
+            <string>7    34</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 959</string>
+            <string>735</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747959</string>
+            <string>7    35</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 960</string>
+            <string>736</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747960</string>
+            <string>7    36</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 961</string>
+            <string>737</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747961</string>
+            <string>7    37</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 962</string>
+            <string>738</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747962</string>
+            <string>7    38</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 963</string>
+            <string>739</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747963</string>
+            <string>7    39</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 964</string>
+            <string>740</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747964</string>
+            <string>7    40</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 965</string>
+            <string>741</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747965</string>
+            <string>7    41</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 966</string>
+            <string>742</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747966</string>
+            <string>7    42</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 967</string>
+            <string>743</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747967</string>
+            <string>7    43</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 968</string>
+            <string>744</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747968</string>
+            <string>7    44</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 969</string>
+            <string>745</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747969</string>
+            <string>7    45</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 970</string>
+            <string>746</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747970</string>
+            <string>7    46</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 971</string>
+            <string>747</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747971</string>
+            <string>7    47</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+          <Variables>
+            <string>NF-USDA-GSTF1/GSM-Y</string>
+            <string> 74 747 972</string>
+            <string>748</string>
+            <string />
+            <string />
+            <string />
+            <string>1</string>
+            <string>84074747972</string>
+            <string>7    48</string>
+            <string />
+            <string>005PL9W</string>
+            <string>USA</string>
+          </Variables>
+        </LineTemplateDetail>
+      </OrderLineTemplateDetails>
+      <RequiredDeliveryDate />
+      <QTY>50</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>NF-USDA-GSTF1/GSM-Y</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks>1@ S:A 74747923 M:699 L:150</DeliveryRemarks>
+      <TaxFlag />
+    </OrderLineHeader>
+  </OrderLineHeaders>
+  <CustomerNumber>31111</CustomerNumber>
+  <OrderDate>020615</OrderDate>
+  <OrderBy>DLS</OrderBy>
+  <PremiseId>005PL9W</PremiseId>
+  <Comments>PIN:005PL9W</Comments>
+  <ShipVia />
+  <ShipComp />
+  <POBPoint />
+  <TermsCode />
+  <PO>211798:</PO>
+  <PickDate />
+  <ExtraChargeCode />
+  <ExtraChargeAccount />
+  <TaxCode />
+  <SalesRepCode />
+  <OrderType>ST</OrderType>
+  <OrderClass />
+  <SalesRepCommission />
+  <CommissionCode />
+  <PickPriorityCode />
+  <DueDate />
+  <DivisionCode />
+  <UnknownFeild01 />
+  <UnknownFeild02 />
+  <UnknownFeild03 />
+  <UnknownFeild04 />
+  <UnknownFeild05 />
+  <UnknownFeild06 />
+  <UnknownFeild07 />
+  <UnknownFeild08 />
+  <UnknownFeild09 />
+  <UnknownFeild10 />
+  <UnknownFeild11 />
+  <UnknownFeild12 />
+  <BookFacCode />
+  <DirShipFlag />
+  <ShipToName> ROGER A. &amp; RICHARD REED</ShipToName>
+  <ShipToAddress1>3217 N TARRANT RD</ShipToAddress1>
+  <ShipToAddress2 />
+  <ShipToCity>MILTON</ShipToCity>
+  <ShipToState>WI</ShipToState>
+  <ShipToZipCode>53563</ShipToZipCode>
+  <ShipToCountry />
+</OrderHeader>

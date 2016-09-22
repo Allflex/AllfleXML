@@ -1,0 +1,1763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrderLineHeaders>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 300</string>
+            <string>200</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 301</string>
+            <string>201</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 302</string>
+            <string>202</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 303</string>
+            <string>203</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 304</string>
+            <string>204</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 305</string>
+            <string>205</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 306</string>
+            <string>206</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 307</string>
+            <string>207</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 308</string>
+            <string>208</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 309</string>
+            <string>209</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 310</string>
+            <string>210</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 311</string>
+            <string>211</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 312</string>
+            <string>212</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 313</string>
+            <string>213</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 314</string>
+            <string>214</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 315</string>
+            <string>215</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 316</string>
+            <string>216</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 317</string>
+            <string>217</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 318</string>
+            <string>218</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 319</string>
+            <string>219</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 320</string>
+            <string>220</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 321</string>
+            <string>221</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 322</string>
+            <string>222</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 323</string>
+            <string>223</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 324</string>
+            <string>224</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 325</string>
+            <string>225</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 326</string>
+            <string>226</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 327</string>
+            <string>227</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 328</string>
+            <string>228</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 329</string>
+            <string>229</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 330</string>
+            <string>230</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 331</string>
+            <string>231</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 332</string>
+            <string>232</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 333</string>
+            <string>233</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 334</string>
+            <string>234</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 335</string>
+            <string>235</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 336</string>
+            <string>236</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 337</string>
+            <string>237</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 338</string>
+            <string>238</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 339</string>
+            <string>239</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 340</string>
+            <string>240</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 341</string>
+            <string>241</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 342</string>
+            <string>242</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 343</string>
+            <string>243</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 344</string>
+            <string>244</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 345</string>
+            <string>245</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 346</string>
+            <string>246</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 347</string>
+            <string>247</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 348</string>
+            <string>248</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 349</string>
+            <string>249</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 350</string>
+            <string>250</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 351</string>
+            <string>251</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 352</string>
+            <string>252</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 353</string>
+            <string>253</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 354</string>
+            <string>254</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 355</string>
+            <string>255</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 356</string>
+            <string>256</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 357</string>
+            <string>257</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 358</string>
+            <string>258</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 359</string>
+            <string>259</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 360</string>
+            <string>260</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 361</string>
+            <string>261</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 362</string>
+            <string>262</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 363</string>
+            <string>263</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 364</string>
+            <string>264</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 365</string>
+            <string>265</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 366</string>
+            <string>266</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 367</string>
+            <string>267</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 368</string>
+            <string>268</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 369</string>
+            <string>269</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 370</string>
+            <string>270</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 371</string>
+            <string>271</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 372</string>
+            <string>272</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 373</string>
+            <string>273</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 374</string>
+            <string>274</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 375</string>
+            <string>275</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 376</string>
+            <string>276</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 377</string>
+            <string>277</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 378</string>
+            <string>278</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 379</string>
+            <string>279</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 380</string>
+            <string>280</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 381</string>
+            <string>281</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 382</string>
+            <string>282</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 383</string>
+            <string>283</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 384</string>
+            <string>284</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 385</string>
+            <string>285</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 386</string>
+            <string>286</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 387</string>
+            <string>287</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 388</string>
+            <string>288</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 389</string>
+            <string>289</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 390</string>
+            <string>290</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 391</string>
+            <string>291</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 392</string>
+            <string>292</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 393</string>
+            <string>293</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 394</string>
+            <string>294</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 395</string>
+            <string>295</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 396</string>
+            <string>296</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 397</string>
+            <string>297</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 398</string>
+            <string>298</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+          <Variables>
+            <string>GNXUSDA-TLF1/LM-BC-W</string>
+            <string>597 41 399</string>
+            <string>299</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+      </OrderLineTemplateDetails>
+      <RequiredDeliveryDate />
+      <QTY>100</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>GNXUSDA-TLF1/LM-BC-W</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks>1@ S: M:200 L:150</DeliveryRemarks>
+      <TaxFlag />
+    </OrderLineHeader>
+  </OrderLineHeaders>
+  <CustomerNumber>32181</CustomerNumber>
+  <OrderDate>030215</OrderDate>
+  <OrderBy>SK</OrderBy>
+  <PremiseId>PIN-006JJN9</PremiseId>
+  <Comments>PIN-006JJN9</Comments>
+  <ShipVia />
+  <ShipComp />
+  <POBPoint />
+  <TermsCode />
+  <PO>4143-3-2-15</PO>
+  <PickDate />
+  <ExtraChargeCode />
+  <ExtraChargeAccount />
+  <TaxCode />
+  <SalesRepCode />
+  <OrderType>ST</OrderType>
+  <OrderClass />
+  <SalesRepCommission />
+  <CommissionCode />
+  <PickPriorityCode />
+  <DueDate />
+  <DivisionCode />
+  <UnknownFeild01 />
+  <UnknownFeild02 />
+  <UnknownFeild03 />
+  <UnknownFeild04 />
+  <UnknownFeild05 />
+  <UnknownFeild06 />
+  <UnknownFeild07 />
+  <UnknownFeild08 />
+  <UnknownFeild09 />
+  <UnknownFeild10 />
+  <UnknownFeild11 />
+  <UnknownFeild12 />
+  <BookFacCode />
+  <DirShipFlag />
+  <ShipToName>ZIEMER STONEY ACRES</ShipToName>
+  <ShipToAddress1>3018 ELM RD</ShipToAddress1>
+  <ShipToAddress2 />
+  <ShipToCity>CEDARBURG</ShipToCity>
+  <ShipToState>WI</ShipToState>
+  <ShipToZipCode>53012-9419</ShipToZipCode>
+  <ShipToCountry>USA</ShipToCountry>
+  <ShipToCode />
+</OrderHeader>

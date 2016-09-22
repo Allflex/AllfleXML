@@ -21,6 +21,263 @@ namespace AllfleXML.LaserTag
             foreach (var e in doc.Descendants())
                 e.Name = e.Name.LocalName;
         }
+
+        public static FlexOrder.Document ToflexOrder(this Document document)
+        {
+            return new FlexOrder.Document
+            {
+                OrderHeaders = document.OrderHeader.Select(o => o.ToFlexOrder()).ToList()
+            };
+        }
+
+        public static FlexOrder.OrderHeader ToFlexOrder(this OrderHeader order)
+        {
+            #region User Defined Fields
+
+            var fields = new FlexOrder.UserDefinedFields { Fields = new List<FlexOrder.UserDefinedField>() };
+
+            //OrderDate
+            if (!string.IsNullOrWhiteSpace(order.OrderDate))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "OrderDate", Value = order.OrderDate });
+
+            //OrderBy
+            if (!string.IsNullOrWhiteSpace(order.OrderBy))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "OrderBy", Value = order.OrderBy });
+
+            //Comments
+            if (!string.IsNullOrWhiteSpace(order.Comments))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "Comments", Value = order.Comments });
+
+            //ShipComp
+            if (!string.IsNullOrWhiteSpace(order.ShipComp))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "ShipComp", Value = order.ShipComp });
+
+            //POBPoint
+            if (!string.IsNullOrWhiteSpace(order.POBPoint))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "POBPoint", Value = order.POBPoint });
+
+            //TermsCode 
+            if (!string.IsNullOrWhiteSpace(order.TermsCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "TermsCode", Value = order.TermsCode });
+
+            //PickDate 
+            if (!string.IsNullOrWhiteSpace(order.PickDate))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "PickDate", Value = order.PickDate });
+
+            //ExtraChargeCode 
+            if (!string.IsNullOrWhiteSpace(order.ExtraChargeCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "ExtraChargeCode", Value = order.ExtraChargeCode });
+
+            //ExtraChargeAccount 
+            if (!string.IsNullOrWhiteSpace(order.ExtraChargeAccount))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "ExtraChargeAccount", Value = order.ExtraChargeAccount });
+
+            //TaxCode 
+            if (!string.IsNullOrWhiteSpace(order.TaxCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "TaxCode", Value = order.TaxCode });
+
+            //SalesRepCode 
+            if (!string.IsNullOrWhiteSpace(order.SalesRepCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "SalesRepCode", Value = order.SalesRepCode });
+
+            //OrderType 
+            if (!string.IsNullOrWhiteSpace(order.OrderType))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "OrderType", Value = order.OrderType });
+
+            //OrderClass 
+            if (!string.IsNullOrWhiteSpace(order.OrderClass))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "OrderClass", Value = order.OrderClass });
+
+            //SalesRepCommission 
+            if (!string.IsNullOrWhiteSpace(order.SalesRepCommission))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "SalesRepCommission", Value = order.SalesRepCommission });
+
+            //CommissionCode 
+            if (!string.IsNullOrWhiteSpace(order.CommissionCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "CommissionCode", Value = order.CommissionCode });
+
+            //PickPriorityCode 
+            if (!string.IsNullOrWhiteSpace(order.PickPriorityCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "PickPriorityCode", Value = order.PickPriorityCode });
+
+            //DueDate 
+            if (!string.IsNullOrWhiteSpace(order.DueDate))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "DueDate", Value = order.DueDate });
+
+            //DivisionCode 
+            if (!string.IsNullOrWhiteSpace(order.DivisionCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "DivisionCode", Value = order.DivisionCode });
+
+            //UnknownFeild01 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild01))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild01", Value = order.UnknownFeild01 });
+
+            //UnknownFeild02 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild02))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild02", Value = order.UnknownFeild02 });
+
+            //UnknownFeild03 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild03))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild03", Value = order.UnknownFeild03 });
+
+            //UnknownFeild04 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild04))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild04", Value = order.UnknownFeild04 });
+
+            //UnknownFeild05 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild05))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild05", Value = order.UnknownFeild05 });
+
+            //UnknownFeild06 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild06))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild06", Value = order.UnknownFeild06 });
+
+            //UnknownFeild07 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild07))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild07", Value = order.UnknownFeild07 });
+
+            //UnknownFeild08 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild08))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild08", Value = order.UnknownFeild08 });
+
+            //UnknownFeild09 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild09))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild09", Value = order.UnknownFeild09 });
+
+            //UnknownFeild10 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild10))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild10", Value = order.UnknownFeild10 });
+
+            //UnknownFeild11 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild11))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild11", Value = order.UnknownFeild11 });
+
+            //UnknownFeild12 
+            if (!string.IsNullOrWhiteSpace(order.UnknownFeild12))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "UnknownFeild12", Value = order.UnknownFeild12 });
+
+            //BookFacCode 
+            if (!string.IsNullOrWhiteSpace(order.BookFacCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "BookFacCode", Value = order.BookFacCode });
+
+            //DirShipFlag 
+            if (!string.IsNullOrWhiteSpace(order.DirShipFlag))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "DirShipFlag", Value = order.DirShipFlag });
+
+            //ShipToCode
+            if (!string.IsNullOrWhiteSpace(order.ShipToCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField { Key = "ShipToCode", Value = order.ShipToCode });
+
+            #endregion
+
+            var result = new FlexOrder.OrderHeader
+            {
+                CustomerNumber = order.CustomerNumber,
+                PremiseID = order.PremiseId,
+                PO = order.PO,
+                Comments = order.Comments,
+                ShipToName = order.ShipToName,
+                ShipToAddress1 = order.ShipToAddress1,
+                ShipToAddress2 = order.ShipToAddress2,
+                ShipToCity = order.ShipToCity,
+                ShipToState = order.ShipToState,
+                ShipToPostalCode = order.ShipToZipCode,
+                ShipToCountry = order.ShipToCountry,
+                IsRush = (order.RushOrder.Equals("true") || order.RushOrder.Equals("1")),
+                ShipMethod = order.ShipVia,
+                UserDefinedFields = fields,
+                OrderLineHeaders = order.OrderLineHeaders.Select(v => v.ToFlexOrder()).ToList(),
+            };
+            
+            return result;
+        }
+
+        public static FlexOrder.OrderLineHeader ToFlexOrder(this OrderLineHeader line)
+        {
+            if (line.OrderLineTemplateDetails.Any(s => s.SKU != line.SKU))
+                throw new Exception(
+                    "Invalid file. Some order line details do not match the sku for the main order header record.");
+
+            // we currently do not support formulas or ranges.
+            if (line.OrderLineTemplateDetails.Any() && line.Quantity != line.OrderLineTemplateDetails.Count)
+                throw new Exception("Order line details do not match order quantity.");
+            
+            #region User Defined Fields
+
+            var fields = new FlexOrder.UserDefinedFields {Fields = new List<FlexOrder.UserDefinedField>()};
+
+            if (!string.IsNullOrWhiteSpace(line.RequiredDeliveryDate))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "RequiredDeliveryDate", Value = line.RequiredDeliveryDate});
+
+            if (!string.IsNullOrWhiteSpace(line.SellingPrice))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "SellingPrice", Value = line.SellingPrice});
+
+            if (!string.IsNullOrWhiteSpace(line.SODShipComp))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "SODShipComp", Value = line.SODShipComp});
+
+            if (!string.IsNullOrWhiteSpace(line.CatalogCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "CatalogCode", Value = line.CatalogCode});
+
+            if (!string.IsNullOrWhiteSpace(line.DeliveryRemarks))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "DeliveryRemarks", Value = line.DeliveryRemarks});
+
+            if (!string.IsNullOrWhiteSpace(line.TaxFlag))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "TaxFlag", Value = line.TaxFlag});
+
+            if (!string.IsNullOrWhiteSpace(line.SkipAllocationFlag))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "SkipAllocationFlag", Value = line.SkipAllocationFlag});
+
+            if (!string.IsNullOrWhiteSpace(line.ListPrice))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "ListPrice", Value = line.ListPrice});
+
+            if (!string.IsNullOrWhiteSpace(line.SODCommissionFlag))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "SODCommissionFlag", Value = line.SODCommissionFlag});
+
+            if (!string.IsNullOrWhiteSpace(line.SODCommissionCode))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "SODCommissionCode", Value = line.SODCommissionCode});
+
+            if (!string.IsNullOrWhiteSpace(line.ItemsTerms))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "ItemsTerms", Value = line.ItemsTerms});
+
+            if (!string.IsNullOrWhiteSpace(line.MgtNumber))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "MgtNumber", Value = line.MgtNumber});
+
+            if (!string.IsNullOrWhiteSpace(line.OptionOne))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "OptionOne", Value = line.OptionOne});
+
+            if (!string.IsNullOrWhiteSpace(line.OptionTwo))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "OptionTwo", Value = line.OptionTwo});
+
+            if (!string.IsNullOrWhiteSpace(line.OptionThree))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "OptionThree", Value = line.OptionThree});
+
+            if (!string.IsNullOrWhiteSpace(line.OptionFour))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "OptionFour", Value = line.OptionFour});
+
+            if (!string.IsNullOrWhiteSpace(line.OptionFive))
+                fields.Fields.Add(new FlexOrder.UserDefinedField {Key = "OptionFive", Value = line.OptionFive});
+
+            #endregion
+
+            var result = new FlexOrder.OrderLineHeader
+            {
+                SkuName = line.SKU,
+                Quantity = line.Quantity,
+                OrderLineMarkingDetail = line.OrderLineTemplateDetails.Select(d => d.ToFlexOrder()).ToList(),
+                UserDefinedFields = fields,
+            };
+            
+            return result;
+        }
+
+        public static FlexOrder.OrderLineMarkingDetail ToFlexOrder(this LineTemplateDetail detail)
+        {
+            var i = 2;
+            return new FlexOrder.OrderLineMarkingDetail
+            {
+                Variables = detail.Variables.Select(v => new FlexOrder.Variable { Name = $"Variable{i++}", Value = v }).ToList()
+            };
+        }
     }
 
     [Obsolete("LaserTag.Parser is deprecated, please use FlexOrder.Parser instead.")]
@@ -470,7 +727,7 @@ namespace AllfleXML.LaserTag
         public List<LineTemplateDetail> OrderLineTemplateDetails = new List<LineTemplateDetail>();
         public string RequiredDeliveryDate { get; set; }
         public string QTY { get; set; }
-        public int Quantity { get; set; }
+        public int Quantity => Convert.ToInt32(QTY);
         public string SellingPrice { get; set; }
         public string Description { get; set; }
         public string SKU { get; set; }

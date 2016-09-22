@@ -12,12 +12,12 @@ namespace AllfleXML.ID1Order
     [Obsolete("ID1Order.Parser is deprecated, please use FlexOrder.Parser instead.")]
     public class Parser
     {
-        public static List<ID1Order> Import(string xmlFilePath)
+        public static Document Import(string xmlFilePath)
         {
             return Import(XDocument.Load(xmlFilePath));
         }
 
-        public static List<ID1Order> Import(XDocument document)
+        public static Document Import(XDocument document)
         {
             if (!Validate(document))
             {
@@ -33,7 +33,7 @@ namespace AllfleXML.ID1Order
                 result = (ID1Order)serializer.Deserialize(reader);
             }
 
-            return new List<ID1Order> { result };
+            return new Document {ID1Order = new List<ID1Order> {result}};
         }
 
         public static XDocument Export(ID1Order order)

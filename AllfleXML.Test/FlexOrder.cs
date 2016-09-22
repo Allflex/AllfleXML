@@ -11,7 +11,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample1.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -19,7 +19,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample2.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -27,7 +27,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample3.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample4.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample5.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -51,7 +51,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample6.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -59,7 +59,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample7.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -67,7 +67,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample8.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -75,7 +75,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample9.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]
@@ -83,7 +83,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample0.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeaders.Any());
         }
 
         [TestMethod]

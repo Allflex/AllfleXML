@@ -12,7 +12,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample1.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample2.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample3.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -36,7 +36,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample4.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample5.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -52,7 +52,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample6.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -60,7 +60,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample7.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -68,7 +68,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample8.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]
@@ -76,7 +76,7 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample9.xml");
             Assert.IsNotNull(order);
-            Assert.IsTrue(order.Any());
+            Assert.IsTrue(order.OrderHeader.Any());
         }
 
         [TestMethod]

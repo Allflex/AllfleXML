@@ -11,12 +11,12 @@ namespace AllfleXML.FlexOrder
 {
     public static class Parser
     {
-        public static List<OrderHeader> Import(string xmlFilePath)
+        public static Document Import(string xmlFilePath)
         {
             return Import(XDocument.Load(xmlFilePath));
         }
 
-        public static List<OrderHeader> Import(XDocument document)
+        public static Document Import(XDocument document)
         {
             if (!Validate(document))
             {
@@ -31,7 +31,7 @@ namespace AllfleXML.FlexOrder
                 result = (Document)serializer.Deserialize(reader);
             }
 
-            return result.OrderHeaders;
+            return result;
         }
 
         public static XDocument Export(OrderHeader order)

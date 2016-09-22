@@ -287,12 +287,12 @@ namespace AllfleXML.LaserTag
         private const string OrderLineHeaderLineType = "SOD";
         private const string OrderLineItemLineType = "LTD";
 
-        public static List<OrderHeader> Import(string xmlFilePath)
+        public static Document Import(string xmlFilePath)
         {
             return Import(XDocument.Load(xmlFilePath));
         }
 
-        public static List<OrderHeader> Import(XDocument document)
+        public static Document Import(XDocument document)
         {
             document.RemoveNamespaces();
 
@@ -309,7 +309,7 @@ namespace AllfleXML.LaserTag
                 result = (OrderHeader)serializer.Deserialize(reader);
             }
 
-            return new List<OrderHeader> {result};
+            return new Document {OrderHeader = new List<OrderHeader> {result}};
         }
 
         public static XDocument Export(OrderHeader order)
@@ -343,7 +343,7 @@ namespace AllfleXML.LaserTag
             return isValid;
         }
 
-        public static List<OrderHeader> ImportDAT(string fileName)
+        public static Document ImportDAT(string fileName)
         {
             var orders = new List<OrderHeader>();
             
@@ -395,7 +395,7 @@ namespace AllfleXML.LaserTag
                     }
                 }
 
-            return orders;
+            return new Document {OrderHeader = orders};
         }
 
         private static OrderHeader ParseHeaderString(string orderString)

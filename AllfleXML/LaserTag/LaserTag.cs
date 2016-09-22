@@ -11,6 +11,18 @@ using System.Xml.Serialization;
 
 namespace AllfleXML.LaserTag
 {
+    public static class Helper
+    {
+        public static void RemoveNamespaces(this XDocument doc)
+        {
+            doc.Descendants().Attributes().Where(x => x.IsNamespaceDeclaration).Remove();
+            doc.Root?.Descendants().Attributes().Where(x => x.IsNamespaceDeclaration).Remove();
+
+            foreach (var e in doc.Descendants())
+                e.Name = e.Name.LocalName;
+        }
+    }
+
     [Obsolete("LaserTag.Parser is deprecated, please use FlexOrder.Parser instead.")]
     public class Parser
     {
@@ -25,25 +37,33 @@ namespace AllfleXML.LaserTag
 
         public static List<OrderHeader> Import(XDocument document)
         {
+            document.RemoveNamespaces();
+
             if (!Validate(document))
             {
                 throw new XmlSchemaValidationException("XML Document is invalid");
             }
 
-            List<OrderHeader> result;
+            OrderHeader result;
 
-            var serializer = new XmlSerializer(typeof(List<OrderHeader>));
+            var serializer = new XmlSerializer(typeof(OrderHeader));
             using (var reader = document.CreateReader())
             {
-                result = (List<OrderHeader>)serializer.Deserialize(reader);
+                result = (OrderHeader)serializer.Deserialize(reader);
             }
 
-            return result;
+            return new List<OrderHeader> {result};
         }
 
-        public static XDocument Export(List<OrderHeader> orders)
+        public static XDocument Export(OrderHeader order)
         {
-            throw new NotImplementedException();
+            var result = new XDocument();
+            using (var writer = result.CreateWriter())
+            {
+                var serializer = new XmlSerializer(order.GetType());
+                serializer.Serialize(writer, order);
+            }
+            return result;
         }
 
         public static bool Validate(string xmlFilePath)

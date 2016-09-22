@@ -352,7 +352,7 @@
           <xs:simpleType>
             <xs:restriction base="xs:string">
               <xs:minLength value="0"/>
-              <xs:maxLength value="8"/>
+              <xs:maxLength value="11"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>

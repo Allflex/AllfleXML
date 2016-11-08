@@ -1,0 +1,3463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrderLineHeaders>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 910</string>
+            <string>1152</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 911</string>
+            <string>1153</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 912</string>
+            <string>1154</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 913</string>
+            <string>1155</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 914</string>
+            <string>1156</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 915</string>
+            <string>1157</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 916</string>
+            <string>1158</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 917</string>
+            <string>1159</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 918</string>
+            <string>1160</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 919</string>
+            <string>1161</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 920</string>
+            <string>1162</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 921</string>
+            <string>1163</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 922</string>
+            <string>1164</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 923</string>
+            <string>1165</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 924</string>
+            <string>1166</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 925</string>
+            <string>1167</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 926</string>
+            <string>1168</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 927</string>
+            <string>1169</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 928</string>
+            <string>1170</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 929</string>
+            <string>1171</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 930</string>
+            <string>1172</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 931</string>
+            <string>1173</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 932</string>
+            <string>1174</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 933</string>
+            <string>1175</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 934</string>
+            <string>1176</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 935</string>
+            <string>1177</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 936</string>
+            <string>1178</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 937</string>
+            <string>1179</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 938</string>
+            <string>1180</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 939</string>
+            <string>1181</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 940</string>
+            <string>1182</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 941</string>
+            <string>1183</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 942</string>
+            <string>1184</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 943</string>
+            <string>1185</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 944</string>
+            <string>1186</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 945</string>
+            <string>1187</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 946</string>
+            <string>1188</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 947</string>
+            <string>1189</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 948</string>
+            <string>1190</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 949</string>
+            <string>1191</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 950</string>
+            <string>1192</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 951</string>
+            <string>1193</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 952</string>
+            <string>1194</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 953</string>
+            <string>1195</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 954</string>
+            <string>1196</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 955</string>
+            <string>1197</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 956</string>
+            <string>1198</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 957</string>
+            <string>1199</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 958</string>
+            <string>1200</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 959</string>
+            <string>1201</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 960</string>
+            <string>1202</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 961</string>
+            <string>1203</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 962</string>
+            <string>1204</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 963</string>
+            <string>1205</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 964</string>
+            <string>1206</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 965</string>
+            <string>1207</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 966</string>
+            <string>1208</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 967</string>
+            <string>1209</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 968</string>
+            <string>1210</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 969</string>
+            <string>1211</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 970</string>
+            <string>1212</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 971</string>
+            <string>1213</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 972</string>
+            <string>1214</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 973</string>
+            <string>1215</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 974</string>
+            <string>1216</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 975</string>
+            <string>1217</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 976</string>
+            <string>1218</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 977</string>
+            <string>1219</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 978</string>
+            <string>1220</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 979</string>
+            <string>1221</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 980</string>
+            <string>1222</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 981</string>
+            <string>1223</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 982</string>
+            <string>1224</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 983</string>
+            <string>1225</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 984</string>
+            <string>1226</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 985</string>
+            <string>1227</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 986</string>
+            <string>1228</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 987</string>
+            <string>1229</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 988</string>
+            <string>1230</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 989</string>
+            <string>1231</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 990</string>
+            <string>1232</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 991</string>
+            <string>1233</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 992</string>
+            <string>1234</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 993</string>
+            <string>1235</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 994</string>
+            <string>1236</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 995</string>
+            <string>1237</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 996</string>
+            <string>1238</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 997</string>
+            <string>1239</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 998</string>
+            <string>1240</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 44 999</string>
+            <string>1241</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 000</string>
+            <string>1242</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 001</string>
+            <string>1243</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 002</string>
+            <string>1244</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 003</string>
+            <string>1245</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 004</string>
+            <string>1246</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 005</string>
+            <string>1247</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 006</string>
+            <string>1248</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 007</string>
+            <string>1249</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 008</string>
+            <string>1250</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 009</string>
+            <string>1251</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 010</string>
+            <string>1252</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 011</string>
+            <string>1253</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 012</string>
+            <string>1254</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 013</string>
+            <string>1255</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 014</string>
+            <string>1256</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 015</string>
+            <string>1257</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 016</string>
+            <string>1258</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 017</string>
+            <string>1259</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 018</string>
+            <string>1260</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 019</string>
+            <string>1261</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 020</string>
+            <string>1262</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 021</string>
+            <string>1263</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 022</string>
+            <string>1264</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 023</string>
+            <string>1265</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 024</string>
+            <string>1266</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 025</string>
+            <string>1267</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 026</string>
+            <string>1268</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 027</string>
+            <string>1269</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 028</string>
+            <string>1270</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 029</string>
+            <string>1271</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 030</string>
+            <string>1272</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 031</string>
+            <string>1273</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 032</string>
+            <string>1274</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 033</string>
+            <string>1275</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 034</string>
+            <string>1276</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 035</string>
+            <string>1277</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 036</string>
+            <string>1278</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 037</string>
+            <string>1279</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 038</string>
+            <string>1280</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 039</string>
+            <string>1281</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 040</string>
+            <string>1282</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 041</string>
+            <string>1283</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 042</string>
+            <string>1284</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 043</string>
+            <string>1285</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 044</string>
+            <string>1286</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 045</string>
+            <string>1287</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 046</string>
+            <string>1288</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 047</string>
+            <string>1289</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 048</string>
+            <string>1290</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 049</string>
+            <string>1291</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 050</string>
+            <string>1292</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 051</string>
+            <string>1293</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 052</string>
+            <string>1294</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 053</string>
+            <string>1295</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 054</string>
+            <string>1296</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 055</string>
+            <string>1297</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 056</string>
+            <string>1298</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 057</string>
+            <string>1299</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 058</string>
+            <string>1300</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 059</string>
+            <string>1301</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 060</string>
+            <string>1302</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 061</string>
+            <string>1303</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 062</string>
+            <string>1304</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 063</string>
+            <string>1305</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 064</string>
+            <string>1306</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 065</string>
+            <string>1307</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 066</string>
+            <string>1308</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 067</string>
+            <string>1309</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 068</string>
+            <string>1310</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 069</string>
+            <string>1311</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 070</string>
+            <string>1312</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 071</string>
+            <string>1313</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 072</string>
+            <string>1314</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 073</string>
+            <string>1315</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 074</string>
+            <string>1316</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 075</string>
+            <string>1317</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 076</string>
+            <string>1318</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 077</string>
+            <string>1319</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 078</string>
+            <string>1320</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 079</string>
+            <string>1321</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 080</string>
+            <string>1322</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 081</string>
+            <string>1323</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 082</string>
+            <string>1324</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 083</string>
+            <string>1325</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 084</string>
+            <string>1326</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 085</string>
+            <string>1327</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 086</string>
+            <string>1328</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 087</string>
+            <string>1329</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 088</string>
+            <string>1330</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 089</string>
+            <string>1331</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 090</string>
+            <string>1332</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 091</string>
+            <string>1333</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 092</string>
+            <string>1334</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 093</string>
+            <string>1335</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 094</string>
+            <string>1336</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 095</string>
+            <string>1337</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 096</string>
+            <string>1338</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 097</string>
+            <string>1339</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 098</string>
+            <string>1340</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 099</string>
+            <string>1341</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 100</string>
+            <string>1342</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 101</string>
+            <string>1343</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 102</string>
+            <string>1344</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 103</string>
+            <string>1345</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 104</string>
+            <string>1346</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 105</string>
+            <string>1347</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 106</string>
+            <string>1348</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 107</string>
+            <string>1349</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 108</string>
+            <string>1350</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+        <LineTemplateDetail>
+          <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+          <Variables>
+            <string>GNXUSDA-GTXF1/GLM-W</string>
+            <string>597 45 109</string>
+            <string>1351</string>
+            <string>WI</string>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Variables>
+        </LineTemplateDetail>
+      </OrderLineTemplateDetails>
+      <RequiredDeliveryDate />
+      <QTY>200</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>GNXUSDA-GTXF1/GLM-W</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks>1@ S: M:1152 L:150</DeliveryRemarks>
+      <TaxFlag />
+    </OrderLineHeader>
+  </OrderLineHeaders>
+  <CustomerNumber>32181</CustomerNumber>
+  <OrderDate>032515</OrderDate>
+  <OrderBy>SK</OrderBy>
+  <PremiseId>PIN-0044ZZW</PremiseId>
+  <Comments>PIN-0044ZZW</Comments>
+  <ShipVia />
+  <ShipComp />
+  <POBPoint />
+  <TermsCode />
+  <PO>4174-3-25-15</PO>
+  <PickDate />
+  <ExtraChargeCode />
+  <ExtraChargeAccount />
+  <TaxCode />
+  <SalesRepCode />
+  <OrderType>ST</OrderType>
+  <OrderClass />
+  <SalesRepCommission />
+  <CommissionCode />
+  <PickPriorityCode />
+  <DueDate />
+  <DivisionCode />
+  <UnknownFeild01 />
+  <UnknownFeild02 />
+  <UnknownFeild03 />
+  <UnknownFeild04 />
+  <UnknownFeild05 />
+  <UnknownFeild06 />
+  <UnknownFeild07 />
+  <UnknownFeild08 />
+  <UnknownFeild09 />
+  <UnknownFeild10 />
+  <UnknownFeild11 />
+  <UnknownFeild12 />
+  <BookFacCode />
+  <DirShipFlag />
+  <ShipToName>PAUL - KAREN MCCABE</ShipToName>
+  <ShipToAddress1>N328 COUNTY ROAD B</ShipToAddress1>
+  <ShipToAddress2 />
+  <ShipToCity>RANDOM LAKE</ShipToCity>
+  <ShipToState>WI</ShipToState>
+  <ShipToZipCode>53075-1310</ShipToZipCode>
+  <ShipToCountry>USA</ShipToCountry>
+  <ShipToCode />
+</OrderHeader>

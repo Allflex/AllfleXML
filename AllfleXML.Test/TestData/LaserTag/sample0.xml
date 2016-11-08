@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderHeader xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrderLineHeaders>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>10</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>KNIFE</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>15</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>50MR2</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>6</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>GSM-K</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>6</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>GXF/GSM-W</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>2</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>20VM-MSK</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>2</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>5EM-3</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <OrderLineTemplateDetails />
+      <RequiredDeliveryDate />
+      <QTY>4</QTY>
+      <Quantity>0</Quantity>
+      <SellingPrice />
+      <Description />
+      <SKU>50MR2-PO</SKU>
+      <SODShipComp />
+      <CatalogCode />
+      <DeliveryRemarks />
+      <TaxFlag />
+    </OrderLineHeader>
+  </OrderLineHeaders>
+  <CustomerNumber>32529</CustomerNumber>
+  <OrderDate>150330</OrderDate>
+  <OrderBy />
+  <PremiseId />
+  <Comments />
+  <ShipVia />
+  <ShipComp />
+  <POBPoint />
+  <TermsCode />
+  <PO>605634</PO>
+  <PickDate />
+  <ExtraChargeCode />
+  <ExtraChargeAccount />
+  <TaxCode />
+  <SalesRepCode />
+  <OrderType>EDI</OrderType>
+  <OrderClass />
+  <SalesRepCommission />
+  <CommissionCode />
+  <PickPriorityCode />
+  <DueDate>033015</DueDate>
+  <DivisionCode />
+  <UnknownFeild01 />
+  <UnknownFeild02 />
+  <UnknownFeild03 />
+  <UnknownFeild04 />
+  <UnknownFeild05 />
+  <UnknownFeild06 />
+  <UnknownFeild07 />
+  <UnknownFeild08 />
+  <UnknownFeild09 />
+  <UnknownFeild10 />
+  <UnknownFeild11 />
+  <UnknownFeild12 />
+  <BookFacCode />
+  <DirShipFlag />
+  <ShipToName>Hereford</ShipToName>
+  <ShipToAddress1>3473 US Hwy 60</ShipToAddress1>
+  <ShipToAddress2 />
+  <ShipToCity>Hereford</ShipToCity>
+  <ShipToState>TX</ShipToState>
+  <ShipToZipCode>79045</ShipToZipCode>
+  <ShipToCountry />
+</OrderHeader>

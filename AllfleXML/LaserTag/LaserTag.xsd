@@ -50,10 +50,10 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xsd:element name="ShipVia" />
-              <xsd:element name="ShipComp" />
-              <xsd:element name="POBPoint" />
-              <xsd:element name="TermsCode" />
+              <xsd:element name="ShipVia" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="ShipComp" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="POBPoint" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="TermsCode" type="xs:string" minOccurs="0" maxOccurs="1" />
               <xs:element name="PO">
                 <xs:annotation>
                   <xs:appinfo>Purchase Order Number</xs:appinfo>
@@ -68,32 +68,32 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xsd:element name="PickDate" />
-              <xsd:element name="ExtraChargeCode" />
-              <xsd:element name="ExtraChargeAccount" />
-              <xsd:element name="TaxCode" />
-              <xsd:element name="SalesRepCode" />
+              <xsd:element name="PickDate" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="ExtraChargeCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="ExtraChargeAccount" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="TaxCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="SalesRepCode" type="xs:string" minOccurs="0" maxOccurs="1" />
               <xsd:element name="OrderType" type="xsd:string" />
-              <xsd:element name="OrderClass" />
-              <xsd:element name="SalesRepCommission" />
-              <xsd:element name="CommissionCode" />
-              <xsd:element name="PickPriorityCode" />
-              <xsd:element name="DueDate" />
-              <xsd:element name="DivisionCode" />
-              <xsd:element name="UnknownFeild01" />
-              <xsd:element name="UnknownFeild02" />
-              <xsd:element name="UnknownFeild03" />
-              <xsd:element name="UnknownFeild04" />
-              <xsd:element name="UnknownFeild05" />
-              <xsd:element name="UnknownFeild06" />
-              <xsd:element name="UnknownFeild07" />
-              <xsd:element name="UnknownFeild08" />
-              <xsd:element name="UnknownFeild09" />
-              <xsd:element name="UnknownFeild10" />
-              <xsd:element name="UnknownFeild11" />
-              <xsd:element name="UnknownFeild12" />
-              <xsd:element name="BookFacCode" />
-              <xsd:element name="DirShipFlag" type="xs:string" />
+              <xsd:element name="OrderClass" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="SalesRepCommission" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="CommissionCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="PickPriorityCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="DueDate" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="DivisionCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild01" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild02" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild03" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild04" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild05" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild06" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild07" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild08" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild09" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild10" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild11" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="UnknownFeild12" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="BookFacCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+              <xsd:element name="DirShipFlag" type="xs:string" minOccurs="0" maxOccurs="1" />
               <xs:element name="ShipToName">
                 <xs:annotation>
                   <xs:appinfo>Shipping Name</xs:appinfo>
@@ -229,7 +229,7 @@
                       </xs:annotation>
                       <xsd:complexType>
                         <xsd:all>
-                          <xsd:element name="RequiredDeliveryDate" />
+                          <xsd:element name="RequiredDeliveryDate" type="xs:string" minOccurs="0" maxOccurs="1" />
                           <xsd:element name="QTY" type="xsd:unsignedShort">
                             <xs:annotation>
                               <xs:appinfo>Quantity</xs:appinfo>
@@ -246,8 +246,8 @@
                               </xs:documentation>
                             </xs:annotation>
                           </xs:element>
-                          <xsd:element name="SellingPrice" />
-                          <xsd:element name="Description" />
+                          <xsd:element name="SellingPrice" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xsd:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
                           <xs:element name="SKU">
                             <xs:annotation>
                               <xs:appinfo>Stock Keeping Unit</xs:appinfo>
@@ -262,10 +262,10 @@
                               </xs:restriction>
                             </xs:simpleType>
                           </xs:element>
-                          <xsd:element name="SODShipComp" />
-                          <xsd:element name="CatalogCode" />
-                          <xsd:element name="DeliveryRemarks" type="xsd:string" />
-                          <xsd:element name="TaxFlag" />
+                          <xsd:element name="SODShipComp" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xsd:element name="CatalogCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xsd:element name="DeliveryRemarks" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xsd:element name="TaxFlag" type="xs:string" minOccurs="0" maxOccurs="1" />
                           <xsd:element name="OrderLineTemplateDetails">
                             <xsd:complexType>
                               <xsd:sequence>
@@ -352,7 +352,7 @@
           <xs:simpleType>
             <xs:restriction base="xs:string">
               <xs:minLength value="0"/>
-              <xs:maxLength value="11"/>
+              <xs:maxLength value="8"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -364,10 +364,10 @@
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xsd:element name="ShipVia" />
-        <xsd:element name="ShipComp" />
-        <xsd:element name="POBPoint" />
-        <xsd:element name="TermsCode" />
+        <xsd:element name="ShipVia" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="ShipComp" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="POBPoint" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="TermsCode" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="PO">
           <xs:annotation>
             <xs:appinfo>Purchase Order Number</xs:appinfo>
@@ -382,32 +382,32 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xsd:element name="PickDate" />
-        <xsd:element name="ExtraChargeCode" />
-        <xsd:element name="ExtraChargeAccount" />
-        <xsd:element name="TaxCode" />
-        <xsd:element name="SalesRepCode" />
+        <xsd:element name="PickDate" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="ExtraChargeCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="ExtraChargeAccount" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="TaxCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="SalesRepCode" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xsd:element name="OrderType" type="xsd:string" />
-        <xsd:element name="OrderClass" />
-        <xsd:element name="SalesRepCommission" />
-        <xsd:element name="CommissionCode" />
-        <xsd:element name="PickPriorityCode" />
-        <xsd:element name="DueDate" />
-        <xsd:element name="DivisionCode" />
-        <xsd:element name="UnknownFeild01" />
-        <xsd:element name="UnknownFeild02" />
-        <xsd:element name="UnknownFeild03" />
-        <xsd:element name="UnknownFeild04" />
-        <xsd:element name="UnknownFeild05" />
-        <xsd:element name="UnknownFeild06" />
-        <xsd:element name="UnknownFeild07" />
-        <xsd:element name="UnknownFeild08" />
-        <xsd:element name="UnknownFeild09" />
-        <xsd:element name="UnknownFeild10" />
-        <xsd:element name="UnknownFeild11" />
-        <xsd:element name="UnknownFeild12" />
-        <xsd:element name="BookFacCode" />
-        <xsd:element name="DirShipFlag" type="xs:string" />
+        <xsd:element name="OrderClass" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="SalesRepCommission" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="CommissionCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="PickPriorityCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="DueDate" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="DivisionCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild01" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild02" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild03" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild04" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild05" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild06" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild07" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild08" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild09" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild10" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild11" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="UnknownFeild12" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="BookFacCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+        <xsd:element name="DirShipFlag" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="ShipToName">
           <xs:annotation>
             <xs:appinfo>Shipping Name</xs:appinfo>
@@ -543,7 +543,7 @@
                 </xs:annotation>
                 <xsd:complexType>
                   <xsd:all>
-                    <xsd:element name="RequiredDeliveryDate" />
+                    <xsd:element name="RequiredDeliveryDate" type="xs:string" minOccurs="0" maxOccurs="1" />
                     <xsd:element name="QTY" type="xsd:unsignedShort">
                       <xs:annotation>
                         <xs:appinfo>Quantity</xs:appinfo>
@@ -560,8 +560,8 @@
                         </xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xsd:element name="SellingPrice" />
-                    <xsd:element name="Description" />
+                    <xsd:element name="SellingPrice" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xsd:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
                     <xs:element name="SKU">
                       <xs:annotation>
                         <xs:appinfo>Stock Keeping Unit</xs:appinfo>
@@ -576,10 +576,10 @@
                         </xs:restriction>
                       </xs:simpleType>
                     </xs:element>
-                    <xsd:element name="SODShipComp" />
-                    <xsd:element name="CatalogCode" />
-                    <xsd:element name="DeliveryRemarks" type="xsd:string" />
-                    <xsd:element name="TaxFlag" />
+                    <xsd:element name="SODShipComp" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xsd:element name="CatalogCode" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xsd:element name="DeliveryRemarks" type="xs:string" minOccurs="0" maxOccurs="1" />
+                    <xsd:element name="TaxFlag" type="xs:string" minOccurs="0" maxOccurs="1" />
                     <xsd:element name="OrderLineTemplateDetails">
                       <xsd:complexType>
                         <xsd:sequence>

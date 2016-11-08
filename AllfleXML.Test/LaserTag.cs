@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -138,7 +139,41 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ExportLaserTag()
         {
-            var order = new AllfleXML.LaserTag.OrderHeader { CustomerNumber = "testing" };
+            var order = new AllfleXML.LaserTag.OrderHeader
+            {
+                CustomerNumber = "testing",
+                Comments = "PIN:005S55A",
+                OrderBy = "BH",
+                OrderDate = "031316",
+                OrderType = "ST",
+                PO = "TESTTSU4",
+                PremiseId = "005S55A",
+                ShipToAddress1 = "ATTN BOB LITTLE",
+                ShipToAddress2 = "664 E BLUE SKU ST",
+                ShipToCity = "SHAWANO",
+                ShipToCountry = "USA",
+                ShipToName = "CRI",
+                ShipToState = "WI",
+                ShipToZipCode = "54166",
+                OrderLineHeaders = new List<AllfleXML.LaserTag.OrderLineHeader>
+                {
+                    new AllfleXML.LaserTag.OrderLineHeader
+                    {
+                        QTY = "1",
+                        Quantity = 1,
+                        SKU = "TSUGNXUSDATXF2/LM-PK",
+                        DeliveryRemarks = "1@ S: M:101 L:150",
+                        OrderLineTemplateDetails = new List<AllfleXML.LaserTag.LineTemplateDetail>
+                        {
+                            new AllfleXML.LaserTag.LineTemplateDetail
+                            {
+                                SKU = "TSUGNXUSDATXF2/LM-PK",
+                                Variables = new []{"var1", "var2"}
+                            }
+                        }
+                    }
+                }
+            };
 
             var doc = AllfleXML.LaserTag.Parser.Export(order);
             Assert.IsNotNull(doc);

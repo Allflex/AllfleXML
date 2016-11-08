@@ -727,7 +727,13 @@ namespace AllfleXML.LaserTag
         public List<LineTemplateDetail> OrderLineTemplateDetails = new List<LineTemplateDetail>();
         public string RequiredDeliveryDate { get; set; }
         public string QTY { get; set; }
-        public int Quantity => Convert.ToInt32(QTY);
+
+        public int Quantity
+        {
+            get { return Convert.ToInt32(QTY); }
+            set { QTY = value.ToString(); }
+        }
+
         public string SellingPrice { get; set; }
         public string Description { get; set; }
         public string SKU { get; set; }

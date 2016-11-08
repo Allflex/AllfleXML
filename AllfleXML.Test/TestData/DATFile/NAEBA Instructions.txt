@@ -1,0 +1,14 @@
+NAEBA
+
+(GPF) or sheep tags - no touch
+
+two order lines for front and back
+-r denotes "reverse"
+last fields has suffix -LF (Large Front)?
+laser fields has suffix -LB (large back)?
+
+add back variables after front vbariables
+
+
+sample8 and sample8_fixed show process
+

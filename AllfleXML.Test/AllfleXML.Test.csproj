@@ -60,6 +60,7 @@
     <Compile Include="LaserTag.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TestData\DATFile\NAEBA Instructions.txt" />
     <Content Include="TestData\FlexOrder\sample1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -157,7 +158,16 @@
       <Name>AllfleXML</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="TestData\DATFile\sample1.dat" />
+    <None Include="TestData\DATFile\sample2.dat" />
+    <None Include="TestData\DATFile\sample4.dat" />
+    <None Include="TestData\DATFile\sample5.dat" />
+    <None Include="TestData\DATFile\sample6.dat" />
+    <None Include="TestData\DATFile\sample8.dat" />
+    <None Include="TestData\DATFile\sample8_fixed.dat" />
+    <None Include="TestData\DATFile\sample9.dat" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

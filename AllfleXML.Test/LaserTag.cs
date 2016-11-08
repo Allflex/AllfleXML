@@ -8,6 +8,78 @@ namespace AllfleXML.Test
     public class LaserTag
     {
         [TestMethod]
+        public void ImportDATFile1()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample1.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile2()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample2.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile3()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample3.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile4()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample4.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile5()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample5.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile6()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample6.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile7()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample7.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile8()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample8.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
+        public void ImportDATFile9()
+        {
+            var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFiles\sample9.dat");
+            Assert.IsNotNull(orders);
+            Assert.IsTrue(orders.OrderHeader.Any());
+        }
+
+        [TestMethod]
         public void ImportLaserTag1()
         {
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample1.xml");

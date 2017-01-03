@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AllfleXML.Test
@@ -89,7 +90,29 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ExportFlexOrder()
         {
-            var order = new AllfleXML.FlexOrder.OrderHeader() {CustomerNumber = "testing"};
+            var order = new AllfleXML.FlexOrder.OrderHeader
+            {
+                CustomerNumber = "testing",
+                PremiseID = "ABC1234",
+                PO = "123456",
+                ShipToName = "Jane Doe",
+                ShipToContact = "Jane Doe",
+                ShipToPhone = "5551234567",
+                ShipToAddress1 = "Rev. Calvin & Thelma Alcorn",
+                ShipToCity = "Dallas",
+                ShipToState = "TX",
+                ShipToPostalCode = "76021",
+                ShipToCountry = "US",
+                ShipMethod = "UPS",
+                OrderLineHeaders = new List<AllfleXML.FlexOrder.OrderLineHeader>
+                {
+                    new AllfleXML.FlexOrder.OrderLineHeader
+                    {
+                        SkuName = "ANTXLSet3306LA",
+                        Quantity = 17,
+                    }
+                }
+            };
 
             var doc = AllfleXML.FlexOrder.Parser.Export(order);
             Assert.IsNotNull(doc);

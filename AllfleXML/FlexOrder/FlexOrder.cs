@@ -36,11 +36,16 @@ namespace AllfleXML.FlexOrder
 
         public static XDocument Export(OrderHeader order)
         {
+            return Export(new Document { OrderHeaders = new List<OrderHeader> { order } });
+        }
+
+        public static XDocument Export(Document document)
+        {
             var result = new XDocument();
             using (var writer = result.CreateWriter())
             {
-                var serializer = new XmlSerializer(order.GetType());
-                serializer.Serialize(writer, order);
+                var serializer = new XmlSerializer(document.GetType());
+                serializer.Serialize(writer, document);
             }
             return result;
         }

@@ -160,7 +160,6 @@ namespace AllfleXML.Test
                     new AllfleXML.LaserTag.OrderLineHeader
                     {
                         QTY = "1",
-                        Quantity = 1,
                         SKU = "TSUGNXUSDATXF2/LM-PK",
                         DeliveryRemarks = "1@ S: M:101 L:150",
                         OrderLineTemplateDetails = new List<AllfleXML.LaserTag.LineTemplateDetail>

@@ -120,7 +120,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ShipToAddress2">
+              <xs:element name="ShipToAddress2" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Address 2</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -134,7 +134,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ShipToAddress3">
+              <xs:element name="ShipToAddress3" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Address 3</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -198,7 +198,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="IsRush" type="xs:boolean">
+              <xs:element name="IsRush" type="xs:boolean" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Rush Order</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -214,7 +214,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="ShippingAccountNumber" type="xs:string">
+              <xs:element name="ShippingAccountNumber" type="xs:string" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Account Number</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -222,7 +222,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="EmailListError" type="xs:anyURI" nillable="true">
+              <xs:element name="EmailListError" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Email List for Errors</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -230,7 +230,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="EmailListTrackingInfo" type="xs:anyURI" nillable="true">
+              <xs:element name="EmailListTrackingInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Email List for Tracking Information</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -238,7 +238,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="EmailListEIDInfo" type="xs:anyURI" nillable="true">
+              <xs:element name="EmailListEIDInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Email List for Tag Manifest</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -246,7 +246,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <!--<xs:element name="EmailListError" nillable="true">
+              <!--<xs:element name="EmailListError" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Email List for Errors</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -259,7 +259,7 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="EmailListTrackingInfo" nillable="true">
+        <xs:element name="EmailListTrackingInfo" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Email List for Tracking Information</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -272,7 +272,7 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="EmailListEIDInfo" nillable="true">
+        <xs:element name="EmailListEIDInfo" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Email List for Tag Manifest</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -319,7 +319,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="WSOrderId">
+              <xs:element name="WSOrderId" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>WSOrderId</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -380,7 +380,7 @@
                         </xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="Template" type="xs:string">
+                    <xs:element name="Template" type="xs:string" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
                         <xs:appinfo>Template</xs:appinfo>
                         <xs:documentation xml:lang="en">

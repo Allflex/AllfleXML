@@ -63,16 +63,24 @@
     <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\AllfleXML\bin\Release\AllfleXML.dll">
-      <Link>lib\AllfleXML.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
       <Project>{5e0162d6-311a-4620-bc2c-fde0223afa1c}</Project>
       <Name>AllfleXML</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\AllfleXML\bin\Release45\AllfleXML.dll">
+      <Link>lib\net45\AllfleXML.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\AllfleXML\bin\Release461\AllfleXML.dll">
+      <Link>lib\net461\AllfleXML.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\AllfleXML\bin\Release\AllfleXML.dll">
+      <Link>lib\net40\AllfleXML.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\" />
-    <Folder Include="src\" />
+    <Folder Include="lib\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">

@@ -8,7 +8,7 @@
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
-      <xs:sequence>
+      <xs:all>
         <xs:element name="SOPNUMBE" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Sales Order Processing Number</xs:appinfo>
@@ -33,7 +33,7 @@
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="DOCDATE" type="xs:string">
+        <xs:element name="DOCDATE" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Order Date</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -41,7 +41,7 @@
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="ReqShipDate" type="xs:string">
+        <xs:element name="ReqShipDate" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Required Shipping Date.</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -80,7 +80,7 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="ADRSCODE">
+        <xs:element name="ADRSCODE" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Customer Address Code</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -94,9 +94,9 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="OrderDelivery" minOccurs="0" maxOccurs="1">
+        <xs:element name="OrderDelivery">
           <xs:complexType>
-            <xs:sequence>
+            <xs:all>
               <xs:element name="ShipToName">
                 <xs:annotation>
                   <xs:appinfo>Shipping Name</xs:appinfo>
@@ -125,7 +125,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ADDRESS2">
+              <xs:element name="ADDRESS2" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Address 2</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -139,7 +139,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ADDRESS3">
+              <xs:element name="ADDRESS3" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Address 3</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -195,7 +195,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="COUNTRY" type="xs:string">
+              <xs:element name="COUNTRY" type="xs:string" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Country</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -203,7 +203,7 @@
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="PHONE1">
+              <xs:element name="PHONE1" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Contact Phone Number 1</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -217,7 +217,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="PHONE2">
+              <xs:element name="PHONE2" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Contact Phone Number 2</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -231,7 +231,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FAXNUMBR">
+              <xs:element name="FAXNUMBR" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Contact FAX Number</xs:appinfo>
                   <xs:documentation xml:lang="en">
@@ -327,7 +327,7 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="FREIGHT" type="xs:decimal" minOccurs="0" maxOccurs="1" />
-            </xs:sequence>
+            </xs:all>
           </xs:complexType>
         </xs:element>
         <xs:element name="OrderNotes" minOccurs="0" maxOccurs="1">
@@ -348,7 +348,7 @@
                   </xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
-                  <xs:sequence>
+                  <xs:all>
                     <xs:element name="LINESEQ" type="xs:int" minOccurs="0" maxOccurs="1" />
                     <xs:element name="ITEMNMBR">
                       <xs:annotation>
@@ -404,7 +404,7 @@
                               </xs:documentation>
                             </xs:annotation>
                             <xs:complexType>
-                              <xs:sequence>
+                              <xs:all>
                                 <xs:element name="QUANTITY" type="xs:decimal">
                                   <xs:annotation>
                                     <xs:appinfo>Marking Quantity</xs:appinfo>
@@ -424,31 +424,31 @@
                                     <xs:sequence>
                                       <xs:element name="OrderLineMarking" minOccurs="1" maxOccurs="unbounded">
                                         <xs:complexType>
-                                          <xs:sequence>
+                                          <xs:all>
                                             <xs:element name="ISINK" type="xs:boolean" minOccurs="0" maxOccurs="1" />
                                             <xs:element name="VARLINENRO" type="xs:int" minOccurs="0" maxOccurs="1" />
                                             <xs:element name="FORMAT" type="xs:string" minOccurs="0" maxOccurs="1" />
                                             <xs:element name="VARKITTYPE" type="xs:string" />
                                             <xs:element name="VARKITVALUE" type="xs:string" />
-                                          </xs:sequence>
+                                          </xs:all>
                                         </xs:complexType>
                                       </xs:element>
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>
-                              </xs:sequence>
+                              </xs:all>
                             </xs:complexType>
                           </xs:element>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
-                  </xs:sequence>
+                  </xs:all>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-      </xs:sequence>
+      </xs:all>
     </xs:complexType>
   </xs:element>
 </xs:schema>

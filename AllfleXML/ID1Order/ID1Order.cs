@@ -62,8 +62,17 @@ namespace AllfleXML.ID1Order
                 xsDocument.Add(null, XmlReader.Create(reader));
             }
 
+            var msg = string.Empty;
+            var exc = new Exception();
+            var severity = 0;
             var isValid = true;
-            xml.Validate(xsDocument, (o, e) => { isValid = false; });
+            xml.Validate(xsDocument, (o, e) =>
+            {
+                isValid = false;
+                msg = e.Message;
+                exc = e.Exception;
+                severity = (int) e.Severity;
+            });
             return isValid;
         }
     }

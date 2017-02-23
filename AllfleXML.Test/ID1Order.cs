@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+using AllfleXML.ID1Order;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AllfleXML.Test
@@ -89,7 +91,28 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ExportID1Order()
         {
-            var order = new AllfleXML.ID1Order.ID1Order();
+            var order = new AllfleXML.ID1Order.ID1Order
+            {
+                CUSTNMBR = "testing",
+                CSTPONBR = "test1234",
+                OrderDelivery = new OrderDelivery
+                {
+                    ShipToName = "Customer",
+                    ADDRESS1 = "123 ABC St.",
+                    ADDRESS2 = "SUITE 100",
+                    CITY = "Dallas",
+                    STATE = "TX",
+                    ZIPCODE = "76021"
+                },
+                OrderLines = new List<OrderLine>
+                {
+                    new OrderLine
+                    {
+                        ITEMNMBR = "APP-UTT",
+                        QTYORDER = 60
+                    }
+                }
+            };
 
             var doc = AllfleXML.ID1Order.Parser.Export(order);
             Assert.IsNotNull(doc);

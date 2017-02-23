@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -30,6 +31,8 @@ namespace AllfleXML.FlexOrder
             var rootElement = document.Document?.Root?.Name.ToString();
             if (rootElement == "OrderHeader")
             {
+                // TODO: Deprecate this.
+                Trace.WriteLine("Document users OrderHeader as root node. This feature is obsolete, please wrap the OrderHeader node in a Document node.");
                 result = new Document {OrderHeaders = new List<OrderHeader>()};
                 var serializer = new XmlSerializer(typeof(OrderHeader));
                 using (var reader = new StringReader(document.ToString()))

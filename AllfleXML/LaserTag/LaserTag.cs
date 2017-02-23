@@ -22,7 +22,7 @@ namespace AllfleXML.LaserTag
                 e.Name = e.Name.LocalName;
         }
 
-        public static FlexOrder.Document ToflexOrder(this Document document)
+        public static FlexOrder.Document ToFlexOrder(this Document document)
         {
             return new FlexOrder.Document
             {

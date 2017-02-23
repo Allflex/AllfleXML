@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AllfleXML.Nuget</RootNamespace>
     <AssemblyName>AllfleXML.Nuget</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -60,13 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\" />
-    <Folder Include="lib\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
-      <Project>{5e0162d6-311a-4620-bc2c-fde0223afa1c}</Project>
-      <Name>AllfleXML</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\AllfleXML\bin\Release45\AllfleXML.dll">
@@ -81,6 +74,12 @@
       <Link>lib\net40\AllfleXML.dll</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
+      <Project>{5e0162d6-311a-4620-bc2c-fde0223afa1c}</Project>
+      <Name>AllfleXML</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Xml;
 using System.Xml.Linq;
@@ -18,17 +19,31 @@ namespace AllfleXML.FlexOrder
 
         public static Document Import(XDocument document)
         {
-            if (!Validate(document))
+            var validation = Validate(document);
+            if (!validation.Item1)
             {
-                throw new XmlSchemaValidationException("XML Document is invalid");
+                throw new XmlSchemaValidationException(validation.Item2);
             }
 
             Document result;
 
-            var serializer = new XmlSerializer(typeof(Document));
-            using (var reader = new StringReader(document.ToString()))
+            var rootElement = document.Document?.Root?.Name.ToString();
+            if (rootElement == "OrderHeader")
             {
-                result = (Document)serializer.Deserialize(reader);
+                result = new Document {OrderHeaders = new List<OrderHeader>()};
+                var serializer = new XmlSerializer(typeof(OrderHeader));
+                using (var reader = new StringReader(document.ToString()))
+                {
+                    result.OrderHeaders.Add((OrderHeader)serializer.Deserialize(reader));
+                }
+            }
+            else
+            {
+                var serializer = new XmlSerializer(typeof(Document));
+                using (var reader = new StringReader(document.ToString()))
+                {
+                    result = (Document)serializer.Deserialize(reader);
+                }
             }
 
             return result;
@@ -50,12 +65,12 @@ namespace AllfleXML.FlexOrder
             return result;
         }
 
-        public static bool Validate(string xmlFilePath)
+        public static Tuple<bool, string> Validate(string xmlFilePath)
         {
             return Validate(XDocument.Load(xmlFilePath));
         }
 
-        public static bool Validate(XDocument xml)
+        public static Tuple<bool, string> Validate(XDocument xml)
         {
             var xsDocument = new XmlSchemaSet();
             var assembly = Assembly.Load("AllfleXML");
@@ -65,19 +80,21 @@ namespace AllfleXML.FlexOrder
                 xsDocument.Add(null, XmlReader.Create(reader));
             }
 
-            var msg = string.Empty;
-            var exc = new Exception();
-            var severity = 0;
+            var errors = new List<Tuple<int, string, Exception>>();
             var isValid = true;
             xml.Validate(xsDocument, (o, e) =>
             {
+                errors.Add(new Tuple<int, string, Exception>((int)e.Severity, e.Message, e.Exception));
                 isValid = false;
-                msg = e.Message;
-                exc = e.Exception;
-                severity = (int)e.Severity;
             });
-            
-            return isValid;
+
+            var errs =
+                errors.Select(o => $"Error (Severity: {o.Item1}) - {o.Item2} {o.Item3.Message}")
+                    .Aggregate(string.Empty, (c, e) => $"{c}{e}\n");
+
+            var message = isValid ? string.Empty : errs;
+            var result = new Tuple<bool, string>(isValid, message);
+            return result;
         }
     }
 

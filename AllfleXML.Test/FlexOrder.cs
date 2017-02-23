@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -88,6 +89,16 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void ImportFlexOrderMini()
+        {
+            // TODO: Restrict this possiblity in the future
+            // We will continue to support the missing <Document> node for the time being.
+            var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sampleMini.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.OrderHeaders.Any());
+        }
+
+        [TestMethod]
         public void ExportFlexOrder()
         {
             var order = new AllfleXML.FlexOrder.OrderHeader
@@ -117,22 +128,22 @@ namespace AllfleXML.Test
             var doc = AllfleXML.FlexOrder.Parser.Export(order);
             Assert.IsNotNull(doc);
 
-            var isValid = AllfleXML.FlexOrder.Parser.Validate(doc);
-            Assert.IsTrue(isValid);
+            var result = AllfleXML.FlexOrder.Parser.Validate(doc);
+            Assert.IsTrue(result.Item1);
         }
 
         [TestMethod]
         public void FailedFlexOrderValidation()
         {
-            var isValid = AllfleXML.FlexOrder.Parser.Validate(@"TestData\ID1Order\sample0.xml");
-            Assert.IsFalse(isValid);
+            var result = AllfleXML.FlexOrder.Parser.Validate(@"TestData\ID1Order\sample0.xml");
+            Assert.IsFalse(result.Item1);
         }
 
         [TestMethod]
         public void PassedFlexOrderValidation()
         {
-            var isValid = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
-            Assert.IsTrue(isValid);
+            var result = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            Assert.IsTrue(result.Item1);
         }
     }
 }

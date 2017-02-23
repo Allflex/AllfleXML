@@ -84,7 +84,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ShipToContact" type="xs:string">
+              <xs:element name="ShipToContact" type="xs:string" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                   <xs:appinfo>Shipping Contact</xs:appinfo>
                   <xs:documentation xml:lang="en">

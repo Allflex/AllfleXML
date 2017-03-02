@@ -87,7 +87,8 @@ namespace AllfleXML.FlexOrder
             var isValid = true;
             xml.Validate(xsDocument, (o, e) =>
             {
-                errors.Add(new Tuple<int, string, Exception>((int)e.Severity, e.Message, e.Exception));
+                if (errors.SingleOrDefault(x => x.Item2 == e.Message) == null)
+                    errors.Add(new Tuple<int, string, Exception>((int) e.Severity, e.Message, e.Exception));
                 isValid = false;
             });
 

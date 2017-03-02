@@ -281,7 +281,7 @@ namespace AllfleXML.LaserTag
     }
 
     [Obsolete("LaserTag.Parser is deprecated, please use FlexOrder.Parser instead.")]
-    public class Parser
+    public static class Parser
     {
         private const string OrderHeaderLineType = "SOH";
         private const string OrderLineHeaderLineType = "SOD";
@@ -312,7 +312,7 @@ namespace AllfleXML.LaserTag
             return new Document {OrderHeader = new List<OrderHeader> {result}};
         }
 
-        public static XDocument Export(OrderHeader order)
+        public static XDocument Export(this OrderHeader order)
         {
             var result = new XDocument();
             using (var writer = result.CreateWriter())
@@ -321,6 +321,12 @@ namespace AllfleXML.LaserTag
                 serializer.Serialize(writer, order);
             }
             return result;
+        }
+
+        public static void Save(this OrderHeader order, string xmlFilePath)
+        {
+            var doc = Export(order);
+            doc.Save(xmlFilePath);
         }
 
         public static bool Validate(string xmlFilePath)

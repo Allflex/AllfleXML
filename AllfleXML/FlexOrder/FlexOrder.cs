@@ -52,12 +52,12 @@ namespace AllfleXML.FlexOrder
             return result;
         }
 
-        public static XDocument Export(OrderHeader order)
+        public static XDocument Export(this OrderHeader order)
         {
             return Export(new Document { OrderHeaders = new List<OrderHeader> { order } });
         }
 
-        public static XDocument Export(Document document)
+        public static XDocument Export(this Document document)
         {
             var result = new XDocument();
             using (var writer = result.CreateWriter())
@@ -66,6 +66,18 @@ namespace AllfleXML.FlexOrder
                 serializer.Serialize(writer, document);
             }
             return result;
+        }
+
+        public static void Save(this OrderHeader order, string xmlFilePath)
+        {
+            var doc = Export(order);
+            doc.Save(xmlFilePath);
+        }
+
+        public static void Save(this Document order, string xmlFilePath)
+        {
+            var doc = Export(order);
+            doc.Save(xmlFilePath);
         }
 
         public static Tuple<bool, string> Validate(string xmlFilePath)

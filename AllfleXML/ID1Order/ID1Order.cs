@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 namespace AllfleXML.ID1Order
 {
     [Obsolete("ID1Order.Parser is deprecated, please use FlexOrder.Parser instead.")]
-    public class Parser
+    public static class Parser
     {
         public static Document Import(string xmlFilePath)
         {
@@ -36,7 +36,7 @@ namespace AllfleXML.ID1Order
             return new Document {ID1Order = new List<ID1Order> {result}};
         }
 
-        public static XDocument Export(ID1Order order)
+        public static XDocument Export(this ID1Order order)
         {
             var result = new XDocument();
             using (var writer = result.CreateWriter())
@@ -45,6 +45,12 @@ namespace AllfleXML.ID1Order
                 serializer.Serialize(writer, order);
             }
             return result;
+        }
+
+        public static void Save(this ID1Order order, string xmlFilePath)
+        {
+            var doc = Export(order);
+            doc.Save(xmlFilePath);
         }
 
         public static bool Validate(string xmlFilePath)

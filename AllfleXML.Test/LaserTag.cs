@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using AllfleXML.LaserTag;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AllfleXML.Test
@@ -179,6 +181,65 @@ namespace AllfleXML.Test
 
             var isValid = AllfleXML.LaserTag.Parser.Validate(doc);
             Assert.IsTrue(isValid);
+        }
+
+        [TestMethod]
+        public void SaveLaserTagOrder()
+        {
+            var order = new AllfleXML.LaserTag.OrderHeader
+            {
+                CustomerNumber = "testing",
+                Comments = "PIN:005S55A",
+                OrderBy = "BH",
+                OrderDate = "031316",
+                OrderType = "ST",
+                PO = "TESTTSU4",
+                PremiseId = "005S55A",
+                ShipToAddress1 = "ATTN BOB LITTLE",
+                ShipToAddress2 = "664 E BLUE SKU ST",
+                ShipToCity = "SHAWANO",
+                ShipToCountry = "USA",
+                ShipToName = "CRI",
+                ShipToState = "WI",
+                ShipToZipCode = "54166",
+                OrderLineHeaders = new List<AllfleXML.LaserTag.OrderLineHeader>
+                {
+                    new AllfleXML.LaserTag.OrderLineHeader
+                    {
+                        QTY = "1",
+                        SKU = "TSUGNXUSDATXF2/LM-PK",
+                        DeliveryRemarks = "1@ S: M:101 L:150",
+                        OrderLineTemplateDetails = new List<AllfleXML.LaserTag.LineTemplateDetail>
+                        {
+                            new AllfleXML.LaserTag.LineTemplateDetail
+                            {
+                                SKU = "TSUGNXUSDATXF2/LM-PK",
+                                Variables = new []{"var1", "var2"}
+                            }
+                        }
+                    }
+                }
+            };
+
+            var doc = AllfleXML.LaserTag.Parser.Export(order);
+            Assert.IsNotNull(doc);
+
+            var isValid1 = AllfleXML.LaserTag.Parser.Validate(doc);
+            Assert.IsTrue(isValid1);
+
+            const string fileName = "testLaserTagOrder.xml";
+
+            order.Save(fileName);
+            Assert.IsTrue(File.Exists(fileName));
+
+            var tmp = AllfleXML.LaserTag.Parser.Import(fileName);
+            Assert.IsNotNull(tmp);
+
+            var isValid2 = AllfleXML.LaserTag.Parser.Validate(fileName);
+            Assert.IsTrue(isValid2);
+
+            File.Delete(fileName);
+            Assert.IsFalse(File.Exists(fileName));
         }
 
         [TestMethod]

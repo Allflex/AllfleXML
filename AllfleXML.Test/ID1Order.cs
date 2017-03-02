@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using AllfleXML.ID1Order;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -119,6 +120,53 @@ namespace AllfleXML.Test
 
             var isValid = AllfleXML.ID1Order.Parser.Validate(doc);
             Assert.IsTrue(isValid);
+        }
+
+        [TestMethod]
+        public void SaveID1Order()
+        {
+            var order = new AllfleXML.ID1Order.ID1Order
+            {
+                CUSTNMBR = "testing",
+                CSTPONBR = "test1234",
+                OrderDelivery = new OrderDelivery
+                {
+                    ShipToName = "Customer",
+                    ADDRESS1 = "123 ABC St.",
+                    ADDRESS2 = "SUITE 100",
+                    CITY = "Dallas",
+                    STATE = "TX",
+                    ZIPCODE = "76021"
+                },
+                OrderLines = new List<OrderLine>
+                {
+                    new OrderLine
+                    {
+                        ITEMNMBR = "APP-UTT",
+                        QTYORDER = 60
+                    }
+                }
+            };
+
+            var doc = AllfleXML.ID1Order.Parser.Export(order);
+            Assert.IsNotNull(doc);
+
+            var isValid1 = AllfleXML.ID1Order.Parser.Validate(doc);
+            Assert.IsTrue(isValid1);
+            
+            const string fileName = "testid1Order.xml";
+
+            order.Save(fileName);
+            Assert.IsTrue(File.Exists(fileName));
+
+            var tmp = AllfleXML.ID1Order.Parser.Import(fileName);
+            Assert.IsNotNull(tmp);
+
+            var isValid2 = AllfleXML.ID1Order.Parser.Validate(fileName);
+            Assert.IsTrue(isValid2);
+
+            File.Delete(fileName);
+            Assert.IsFalse(File.Exists(fileName));
         }
 
         [TestMethod]

@@ -100,6 +100,18 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void ImportFlexOrderMulti()
+        {
+            var document = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sampleMulti.xml");
+            Assert.IsNotNull(document);
+
+            foreach (var order in document.OrderHeaders)
+            {
+                Assert.IsTrue(order.OrderLineHeaders.Any());
+            }
+        }
+
+        [TestMethod]
         public void ExportFlexOrder()
         {
             var order = new AllfleXML.FlexOrder.OrderHeader

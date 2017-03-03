@@ -12,9 +12,14 @@ namespace AllfleXML.Test
         [TestMethod]
         public void ImportFlexOrder1()
         {
-            var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample1.xml");
-            Assert.IsNotNull(order);
-            Assert.IsTrue(order.OrderHeaders.Any());
+            var document = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample1.xml");
+            Assert.IsNotNull(document);
+            Assert.IsTrue(document.OrderHeaders.Any());
+
+            foreach (var order in document.OrderHeaders)
+            {
+                Assert.IsTrue(order.OrderLineHeaders.Any());
+            }
         }
 
         [TestMethod]
@@ -94,9 +99,14 @@ namespace AllfleXML.Test
         {
             // TODO: Restrict this possiblity in the future
             // We will continue to support the missing <Document> node for the time being.
-            var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sampleMini.xml");
-            Assert.IsNotNull(order);
-            Assert.IsTrue(order.OrderHeaders.Any());
+            var document = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sampleMini.xml");
+            Assert.IsNotNull(document);
+            Assert.IsTrue(document.OrderHeaders.Any());
+
+            foreach (var order in document.OrderHeaders)
+            {
+                Assert.IsTrue(order.OrderLineHeaders.Any());
+            }
         }
 
         [TestMethod]
@@ -104,6 +114,7 @@ namespace AllfleXML.Test
         {
             var document = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sampleMulti.xml");
             Assert.IsNotNull(document);
+            Assert.IsTrue(document.OrderHeaders.Any());
 
             foreach (var order in document.OrderHeaders)
             {

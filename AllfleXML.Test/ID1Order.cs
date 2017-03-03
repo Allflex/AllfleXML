@@ -15,6 +15,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample0.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -23,6 +24,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample1.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -31,6 +33,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample2.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -39,6 +42,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample3.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -47,6 +51,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample4.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -55,6 +60,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample5.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -63,6 +69,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample6.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -71,6 +78,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample7.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -79,6 +87,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample8.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -87,6 +96,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.ID1Order.Parser.Import(@"TestData\ID1Order\sample9.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.ID1Order.Any());
+            Assert.IsTrue(order.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -159,11 +169,13 @@ namespace AllfleXML.Test
             order.Save(fileName);
             Assert.IsTrue(File.Exists(fileName));
 
-            var tmp = AllfleXML.ID1Order.Parser.Import(fileName);
-            Assert.IsNotNull(tmp);
-
             var isValid2 = AllfleXML.ID1Order.Parser.Validate(fileName);
             Assert.IsTrue(isValid2);
+
+            var tmp = AllfleXML.ID1Order.Parser.Import(fileName);
+            Assert.IsNotNull(tmp);
+            Assert.IsTrue(tmp.ID1Order.Any());
+            Assert.IsTrue(tmp.ID1Order.Select(o => o.OrderLines.Any()).All(o => o));
 
             File.Delete(fileName);
             Assert.IsFalse(File.Exists(fileName));

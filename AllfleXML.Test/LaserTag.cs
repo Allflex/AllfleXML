@@ -16,6 +16,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample1.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -24,6 +25,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample2.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -32,6 +34,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample4.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -40,6 +43,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample5.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -48,6 +52,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample6.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -56,6 +61,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample8.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -64,6 +70,7 @@ namespace AllfleXML.Test
             var orders = AllfleXML.LaserTag.Parser.ImportDAT(@"TestData\DATFile\sample9.dat");
             Assert.IsNotNull(orders);
             Assert.IsTrue(orders.OrderHeader.Any());
+            Assert.IsTrue(orders.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -72,6 +79,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample1.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -80,6 +88,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample2.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -88,6 +97,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample3.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -96,6 +106,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample4.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -104,6 +115,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample5.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -112,6 +124,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample6.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -120,6 +133,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample7.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -128,6 +142,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample8.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -136,6 +151,7 @@ namespace AllfleXML.Test
             var order = AllfleXML.LaserTag.Parser.Import(@"TestData\LaserTag\sample9.xml");
             Assert.IsNotNull(order);
             Assert.IsTrue(order.OrderHeader.Any());
+            Assert.IsTrue(order.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
         }
 
         [TestMethod]
@@ -232,11 +248,13 @@ namespace AllfleXML.Test
             order.Save(fileName);
             Assert.IsTrue(File.Exists(fileName));
 
-            var tmp = AllfleXML.LaserTag.Parser.Import(fileName);
-            Assert.IsNotNull(tmp);
-
             var isValid2 = AllfleXML.LaserTag.Parser.Validate(fileName);
             Assert.IsTrue(isValid2);
+
+            var tmp = AllfleXML.LaserTag.Parser.Import(fileName);
+            Assert.IsNotNull(tmp);
+            Assert.IsTrue(tmp.OrderHeader.Any());
+            Assert.IsTrue(tmp.OrderHeader.Select(o => o.OrderLineHeaders.Any()).All(o => o));
 
             File.Delete(fileName);
             Assert.IsFalse(File.Exists(fileName));

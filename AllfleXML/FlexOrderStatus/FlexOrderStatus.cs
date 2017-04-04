@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -95,8 +94,8 @@ namespace AllfleXML.FlexOrderStatus
         [XmlElement("Guid")]
         public string Guid { get; set; }
 
-        [XmlElement("PO")]
-        public string PO { get; set; }
+        [XmlElement("PurchaseOrderNumber")]
+        public string PurchaseOrderNumber { get; set; }
 
         [XmlElement("MasterId")]
         public int MasterId { get; set; }

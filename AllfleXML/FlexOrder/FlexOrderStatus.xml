@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OrderStatus>
-    <MasterID>123456</MasterID>
-    <AllflexOrderID>CC123456</AllflexOrderID>
-    <Status>Confirmed</Status>
-      <ErrorMessages>
-        <Message>Bad order entry</Message>
-      </ErrorMessages>
-      <ProductionProgress>67</ProductionProgress>
+  <Guid>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</Guid>
+  <PO>3432564</PO>
+  <MasterID>123456</MasterID>
+  <AllflexOrderID>CC123456</AllflexOrderID>
+  <Status>Confirmed</Status>
+  <ErrorMessages>
+    <Message>Bad order entry</Message>
+  </ErrorMessages>
+  <ProductionProgress>67</ProductionProgress>
+  <Shipment>
+    
+  </Shipment>
 </OrderStatus>

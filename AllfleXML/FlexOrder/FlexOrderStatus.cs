@@ -92,6 +92,12 @@ namespace AllfleXML.FlexOrderStatus
     [XmlRoot]
     public class OrderStatus
     {
+        [XmlElement("Guid")]
+        public string Guid { get; set; }
+
+        [XmlElement("PO")]
+        public string PO { get; set; }
+
         [XmlElement("MasterId")]
         public int MasterId { get; set; }
 
@@ -106,6 +112,9 @@ namespace AllfleXML.FlexOrderStatus
         
         [XmlElement("ErrorMessage")]
         public List<ErrorMessage> ErrorMessages { get; set; }
+
+        [XmlElement("Shipping")]
+        public Shipping Shipment { get; set; }
     }
 
     [Serializable]
@@ -113,5 +122,55 @@ namespace AllfleXML.FlexOrderStatus
     {
         [XmlElement("Message")]
         public string Message { get; set; }
+    }
+
+    [Serializable]
+    public class Shipping
+    {
+        [XmlElement("ShipMethod")]
+        public string ShipMethod { get; set; }
+
+        [XmlElement("ShippingAccountNumber")]
+        public string ShippingAccountNumber { get; set; }
+
+        [XmlElement("FreightAmount")]
+        public decimal FreightAmount { get; set; }
+
+        [XmlElement("TrackingNumber")]
+        public string TrackingNumber { get; set; }
+
+        [XmlElement("ShippingDate")]
+        public string ShippingDate { get; set; }
+
+        [XmlElement("Address")]
+        public ShippingAddress Address { get; set; }
+    }
+
+    [Serializable]
+    public class ShippingAddress
+    {
+        [XmlElement("Name")]
+        public string Name { get; set; }
+
+        [XmlElement("Address1")]
+        public string Address1 { get; set; }
+
+        [XmlElement("Address2")]
+        public decimal Address2 { get; set; }
+
+        [XmlElement("Address3")]
+        public string Address3 { get; set; }
+
+        [XmlElement("City")]
+        public string City { get; set; }
+
+        [XmlElement("State")]
+        public string State { get; set; }
+
+        [XmlElement("PostalCode")]
+        public string PostalCode { get; set; }
+
+        [XmlElement("Country")]
+        public string Country { get; set; }
     }
 }

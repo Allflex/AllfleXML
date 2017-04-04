@@ -77,12 +77,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FlexOrder\FlexOrder.cs" />
+    <Compile Include="FlexOrder\FlexOrderStatus.cs" />
     <Compile Include="ID1Order\ID1Order.cs" />
     <Compile Include="LaserTag\LaserTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FlexOrder\FlexOrder.xml" />
+    <Content Include="FlexOrder\FlexOrderStatus.xml" />
     <Content Include="ID1Order\ID1Order.xml" />
     <Content Include="LaserTag\LaserTag.xml" />
   </ItemGroup>
@@ -91,6 +93,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="FlexOrder\FlexOrder.xps" />
+    <None Include="FlexOrder\flexorderstatus.xps" />
+    <EmbeddedResource Include="FlexOrder\FlexOrderStatus.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="ID1Order\ID1Order.xps" />
     <EmbeddedResource Include="ID1Order\ID1Order.xsd">
       <SubType>Designer</SubType>

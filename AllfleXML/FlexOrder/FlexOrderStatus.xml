@@ -10,6 +10,20 @@
   </ErrorMessages>
   <ProductionProgress>67</ProductionProgress>
   <Shipment>
-    
+    <ShipMethod>UPS</ShipMethod>
+    <ShippingAcountNumber>98765432A</ShippingAcountNumber>
+    <FreightAmount>14.56</FreightAmount>
+    <TrackingNumber>1Z3242FFSD324326SA</TrackingNumber>
+    <ShippingDate>05/23/2017</ShippingDate>
+    <Address>
+      <Name>Joe H. Smith</Name>
+      <Address1>123 Main St.</Address1>
+      <Address2></Address2>
+      <Address3></Address3>
+      <City>Everytown</City>
+      <State>TX</State>
+      <PostalCode>12345</PostalCode>
+      <Country>USA</Country>
+    </Address>
   </Shipment>
 </OrderStatus>

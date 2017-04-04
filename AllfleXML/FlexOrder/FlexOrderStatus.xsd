@@ -1,19 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:element name="OrderStatus">
     <xs:complexType>
       <xs:sequence>
-        <xs:element type="xs:int" name="MasterID"/>
-        <xs:element type="xs:string" name="AllflexOrderID"/>
-        <xs:element type="xs:string" name="Status"/>
+        <xs:element name="Guid" type="xs:string"></xs:element>
+        <xs:element name="PO" type="xs:int"></xs:element>
+        <xs:element name="MasterID" type="xs:int"></xs:element>
+        <xs:element name="AllflexOrderID" type="xs:string"></xs:element>
+        <xs:element name="Status" type="xs:string"></xs:element>
         <xs:element name="ErrorMessages">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:string" name="Message"/>
+              <xs:element name="Message" type="xs:string"></xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element type="xs:byte" name="ProductionProgress"/>
+        <xs:element name="ProductionProgress" type="xs:int"></xs:element>
+        <xs:element name="Shipment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShipMethod" type="xs:string"></xs:element>
+              <xs:element name="ShippingAcountNumber" type="xs:string"></xs:element>
+              <xs:element name="FreightAmount" type="xs:double"></xs:element>
+              <xs:element name="TrackingNumber" type="xs:string"></xs:element>
+              <xs:element name="ShippingDate" type="xs:string"></xs:element>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="xs:string"></xs:element>
+                    <xs:element name="Address1" type="xs:string"></xs:element>
+                    <xs:element name="Address2"></xs:element>
+                    <xs:element name="Address3"></xs:element>
+                    <xs:element name="City" type="xs:string"></xs:element>
+                    <xs:element name="State" type="xs:string"></xs:element>
+                    <xs:element name="PostalCode" type="xs:int"></xs:element>
+                    <xs:element name="Country" type="xs:string"></xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

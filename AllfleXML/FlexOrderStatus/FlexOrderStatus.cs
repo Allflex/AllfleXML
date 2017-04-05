@@ -133,13 +133,13 @@ namespace AllfleXML.FlexOrderStatus
         public string ShippingAccountNumber { get; set; }
 
         [XmlElement("FreightAmount")]
-        public decimal FreightAmount { get; set; }
+        public double FreightAmount { get; set; }
 
         [XmlElement("TrackingNumber")]
         public string TrackingNumber { get; set; }
 
         [XmlElement("ShippingDate")]
-        public string ShippingDate { get; set; }
+        public DateTime ShippingDate { get; set; }
 
         [XmlElement("Address")]
         public ShippingAddress Address { get; set; }
@@ -155,7 +155,7 @@ namespace AllfleXML.FlexOrderStatus
         public string Address1 { get; set; }
 
         [XmlElement("Address2")]
-        public decimal Address2 { get; set; }
+        public string Address2 { get; set; }
 
         [XmlElement("Address3")]
         public string Address3 { get; set; }

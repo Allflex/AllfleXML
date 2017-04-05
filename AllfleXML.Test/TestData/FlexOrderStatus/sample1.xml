@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <OrderStatus>
   <Guid>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</Guid>
-  <PurchaseOrderNumber>3432564</PurchaseOrderNumber>
-  <MasterId>123456</MasterId>
+  <PO>3432564</PO>
+  <MasterID>123456</MasterID>
   <AllflexOrderID>CC123456</AllflexOrderID>
   <Status>Confirmed</Status>
   <ErrorMessages>

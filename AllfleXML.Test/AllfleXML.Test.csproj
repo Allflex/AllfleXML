@@ -55,12 +55,16 @@
   </Choose>
   <ItemGroup>
     <Compile Include="FlexOrder.cs" />
+    <Compile Include="FlexOrderStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ID1Order.cs" />
     <Compile Include="LaserTag.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TestData\DATFile\NAEBA Instructions.txt" />
+    <Content Include="TestData\FlexOrderStatus\sample1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\FlexOrder\sample1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

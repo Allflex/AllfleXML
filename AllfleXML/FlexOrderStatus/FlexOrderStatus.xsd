@@ -4,33 +4,26 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Guid" type="xs:string"></xs:element>
-        <xs:element name="PO" type="xs:int"></xs:element>
-        <xs:element name="MasterID" type="xs:int"></xs:element>
-        <xs:element name="AllflexOrderID" type="xs:string"></xs:element>
+        <xs:element name="PurchaseOrderNumber" type="xs:string"></xs:element>
+        <xs:element name="MasterId" type="xs:int"></xs:element>
+        <xs:element name="AllflexOrderId" type="xs:string"></xs:element>
         <xs:element name="Status" type="xs:string"></xs:element>
-        <xs:element name="ErrorMessages">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Message" type="xs:string"></xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
         <xs:element name="ProductionProgress" type="xs:int"></xs:element>
-        <xs:element name="Shipment">
+        <xs:element name="Shipping" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ShipMethod" type="xs:string"></xs:element>
-              <xs:element name="ShippingAcountNumber" type="xs:string"></xs:element>
+              <xs:element name="ShippingAccountNumber" type="xs:string"></xs:element>
               <xs:element name="FreightAmount" type="xs:double"></xs:element>
               <xs:element name="TrackingNumber" type="xs:string"></xs:element>
-              <xs:element name="ShippingDate" type="xs:string"></xs:element>
+              <xs:element name="ShippingDate" type="xs:dateTime"></xs:element>
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Name" type="xs:string"></xs:element>
                     <xs:element name="Address1" type="xs:string"></xs:element>
-                    <xs:element name="Address2"></xs:element>
-                    <xs:element name="Address3"></xs:element>
+                    <xs:element name="Address2" type="xs:string"></xs:element>
+                    <xs:element name="Address3" type="xs:string"></xs:element>
                     <xs:element name="City" type="xs:string"></xs:element>
                     <xs:element name="State" type="xs:string"></xs:element>
                     <xs:element name="PostalCode" type="xs:int"></xs:element>
@@ -41,6 +34,13 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+              <xs:element name="ErrorMessage" minOccurs="0">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Message" type="xs:string"></xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

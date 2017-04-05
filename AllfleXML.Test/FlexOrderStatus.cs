@@ -30,19 +30,7 @@ namespace AllfleXML.Test
                   AllflexOrderId = "CC123456",
                   Status = "Confirmed",
                   ProductionProgress = 67,
-                  ErrorMessages = new List<ErrorMessage>
-                    {
-                        new AllfleXML.FlexOrderStatus.ErrorMessage
-                        {
-                            Message = "This is a test message"
-                        }, 
-
-                        new AllfleXML.FlexOrderStatus.ErrorMessage
-                        {
-                            Message = "This is a second test message"
-                        }
-                    },
-                  Shipment = new Shipping
+                  Shipping = new Shipping
                    {
                         ShipMethod = "UPS",
                         ShippingAccountNumber = "98765432",
@@ -60,7 +48,14 @@ namespace AllfleXML.Test
                             PostalCode = "12345",
                             Country = "USA"
                         }
-                   }
+                   },
+                ErrorMessages = new List<ErrorMessage>
+                    {
+                        new AllfleXML.FlexOrderStatus.ErrorMessage
+                        {
+                            Message = "This is a test message"
+                        }
+                    }
             };
 
             var doc = AllfleXML.FlexOrderStatus.Parser.Export(order);
@@ -81,19 +76,7 @@ namespace AllfleXML.Test
                 AllflexOrderId = "CC123456",
                 Status = "Confirmed",
                 ProductionProgress = 67,
-                ErrorMessages = new List<ErrorMessage>
-                    {
-                        new AllfleXML.FlexOrderStatus.ErrorMessage
-                        {
-                            Message = "This is a test message"
-                        },
-
-                        new AllfleXML.FlexOrderStatus.ErrorMessage
-                        {
-                            Message = "This is a second test message"
-                        }
-                    },
-                Shipment = new Shipping
+                Shipping = new Shipping
                 {
                     ShipMethod = "UPS",
                     ShippingAccountNumber = "98765432",
@@ -111,7 +94,14 @@ namespace AllfleXML.Test
                         PostalCode = "12345",
                         Country = "USA"
                     }
-                }
+                },
+                ErrorMessages = new List<ErrorMessage>
+                    {
+                        new AllfleXML.FlexOrderStatus.ErrorMessage
+                        {
+                            Message = "This is a test message"
+                        }
+                    }
             };
 
             var doc = AllfleXML.FlexOrderStatus.Parser.Export(order);
@@ -146,7 +136,7 @@ namespace AllfleXML.Test
         [TestMethod]
         public void PassedFlexOrderValidation()
         {
-            var result = AllfleXML.FlexOrderStatus.Parser.Validate(@"TestData\FlexOrder\sample1.xml");
+            var result = AllfleXML.FlexOrderStatus.Parser.Validate(@"TestData\FlexOrderStatus\sample1.xml");
             Assert.IsTrue(result.Item1);
         }
     }

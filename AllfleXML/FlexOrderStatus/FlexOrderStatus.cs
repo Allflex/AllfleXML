@@ -62,7 +62,7 @@ namespace AllfleXML.FlexOrderStatus
         {
             var xsDocument = new XmlSchemaSet();
             var assembly = Assembly.Load("AllfleXML");
-            using (var stream = assembly.GetManifestResourceStream("AllfleXML.FlexOrder.FlexOrderStatus.xsd"))
+            using (var stream = assembly.GetManifestResourceStream("AllfleXML.FlexOrderStatus.FlexOrderStatus.xsd"))
             using (var reader = new StreamReader(stream))
             {
                 xsDocument.Add(null, XmlReader.Create(reader));
@@ -108,12 +108,11 @@ namespace AllfleXML.FlexOrderStatus
 
         [XmlElement("ProductionProgress")]
         public int ProductionProgress { get; set; }
-        
-        [XmlElement("ErrorMessage")]
-        public List<ErrorMessage> ErrorMessages { get; set; }
 
         [XmlElement("Shipping")]
-        public Shipping Shipment { get; set; }
+        public Shipping Shipping { get; set; }
+        [XmlElement("ErrorMessage")]
+        public List<ErrorMessage> ErrorMessages { get; set; }
     }
 
     [Serializable]

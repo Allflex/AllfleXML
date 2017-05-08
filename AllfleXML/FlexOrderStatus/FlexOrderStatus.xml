@@ -1,31 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OrderStatus>
-  <Guid>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</Guid>
-  <PurchaseOrderNumber>3432564</PurchaseOrderNumber>
+  <WSOrderId>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</WSOrderId>
+  <PO>3432564</PO>
   <MasterId>123456</MasterId>
-  <AllflexOrderId>CC123456</AllflexOrderId>
+  <OrderId>CC123456</OrderId>
   <Status>Confirmed</Status>
-  <ProductionProgress>67</ProductionProgress>
-  <Shipping>
+  <Progress>67</Progress>
+  <Shipment>
     <ShipMethod>UPS</ShipMethod>
     <ShippingAccountNumber>98765432A</ShippingAccountNumber>
     <FreightAmount>14.56</FreightAmount>
     <TrackingNumber>1Z3242FFSD324326SA</TrackingNumber>
-    <ShippingDate>05/23/2017</ShippingDate>
+    <ShippingDate>2004-04-12T13:20:00</ShippingDate>
     <Address>
       <Name>Joe H. Smith</Name>
+      <Contact>Joe</Contact>
+      <Phone>5551234567</Phone>
       <Address1>123 Main St.</Address1>
-      <Address2></Address2>
-      <Address3></Address3>
+      <Address2>Ste. 789</Address2>
+      <Address3>Door 3</Address3>
       <City>Everytown</City>
       <State>TX</State>
       <PostalCode>12345</PostalCode>
       <Country>USA</Country>
     </Address>
-  </Shipping>
-  <ErrorMessages>
-    <ErrorMessage>
-      <Message>Bad order entry</Message>
-    </ErrorMessage>
-  </ErrorMessages>
+    <OrderLine>
+      <ItemNumber>Test</ItemNumber>
+      <Quantity>3</Quantity>
+      <Template>ExampleTemplate1</Template>
+      <Status>Confirmed</Status>
+      <Progress>67</Progress>
+      <TagManifest>
+        <Container>
+          <ID>C0001</ID>
+          <Type>Case</Type>
+          <Container>
+            <ID>B0001</ID>
+            <Type>Bag</Type>
+            <Tags>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456789</Value>
+                </Variable>
+                <Variable>
+                  <Name>SerialNumber</Name>
+                  <Value>123456789</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>123</Value>
+                </Variable>
+              </TagSet>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456790</Value>
+                </Variable>
+                <Variable>
+                  <Name>SerialNumber</Name>
+                  <Value>234567890</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>124</Value>
+                </Variable>
+              </TagSet>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456791</Value>
+                </Variable>
+                <Variable>
+                  <Name>SerialNumber</Name>
+                  <Value>345678901</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>125</Value>
+                </Variable>
+              </TagSet>
+            </Tags>
+          </Container>
+        </Container>
+      </TagManifest>
+    </OrderLine>
+    <OrderLine>
+      <ItemNumber>Test</ItemNumber>
+      <Quantity>6</Quantity>
+      <Template>ExampleTemplate2</Template>
+      <Status>Confirmed</Status>
+      <Progress>0</Progress>
+      <TagManifest>
+        <Container>
+          <ID>CQB100</ID>
+          <Type>Pallet</Type>
+          <Container>
+            <ID>C0002</ID>
+            <Type>Case</Type>
+            <Container>
+              <ID>B0002</ID>
+              <Type>Bag</Type>
+              <Tags>
+                <TagSet>
+                  <Variable>
+                    <Name>EID</Name>
+                    <Value>985000123456792</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>SerialNumber</Name>
+                    <Value>123456730</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>Management</Name>
+                    <Value>A500</Value>
+                  </Variable>
+                </TagSet>
+                <TagSet>
+                  <Variable>
+                    <Name>EID</Name>
+                    <Value>985000123456793</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>SerialNumber</Name>
+                    <Value>234567831</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>Management</Name>
+                    <Value>B500</Value>
+                  </Variable>
+                </TagSet>
+              </Tags>
+            </Container>
+            <Container>
+              <ID>B0003</ID>
+              <Type>Bag</Type>
+              <Tags>
+                <TagSet>
+                  <Variable>
+                    <Name>EID</Name>
+                    <Value>985000123456794</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>SerialNumber</Name>
+                    <Value>345678932</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>Management</Name>
+                    <Value>C500</Value>
+                  </Variable>
+                </TagSet>
+                <TagSet>
+                  <Variable>
+                    <Name>EID</Name>
+                    <Value>985000123456795</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>SerialNumber</Name>
+                    <Value>345678933</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>Management</Name>
+                    <Value>D500</Value>
+                  </Variable>
+                </TagSet>
+                <TagSet>
+                  <Variable>
+                    <Name>EID</Name>
+                    <Value>985000123456796</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>SerialNumber</Name>
+                    <Value>345678934</Value>
+                  </Variable>
+                  <Variable>
+                    <Name>Management</Name>
+                    <Value>E500</Value>
+                  </Variable>
+                </TagSet>
+              </Tags>
+            </Container>
+          </Container>
+        </Container>
+      </TagManifest>
+    </OrderLine>
+  </Shipment>
+  <Messages>
+    <ErrorMessage>Bad order entry</ErrorMessage>
+    <ErrorMessage>Invalid Address</ErrorMessage>
+  </Messages>
 </OrderStatus>

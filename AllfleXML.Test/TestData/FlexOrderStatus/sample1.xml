@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <OrderStatus>
-  <Guid>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</Guid>
-  <PurchaseOrderNumber>3432564</PurchaseOrderNumber>
+  <WSOrderId>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</WSOrderId>
+  <PO>3432564</PO>
   <MasterId>123456</MasterId>
-  <AllflexOrderId>CC123456</AllflexOrderId>
+  <OrderId>CC123456</OrderId>
   <Status>Confirmed</Status>
-  <ProductionProgress>67</ProductionProgress>
-  <Shipping>
+  <Progress>67</Progress>
+  <Shipment>
     <ShipMethod>UPS</ShipMethod>
     <ShippingAccountNumber>98765432A</ShippingAccountNumber>
     <FreightAmount>14.56</FreightAmount>
@@ -22,8 +22,46 @@
       <PostalCode>12345</PostalCode>
       <Country>USA</Country>
     </Address>
-  </Shipping>
-    <ErrorMessage>
-      <Message>Bad order entry</Message>
-    </ErrorMessage>
+    <OrderLine>
+      <ItemNumber>Test</ItemNumber>
+      <Quantity>2</Quantity>
+      <Template>ExampleTemplate</Template>
+      <Status>Confirmed</Status>
+      <TagManifest>
+        <Container>
+          <ID>C0001</ID>
+          <Type>Case</Type>
+          <Container>
+            <ID>B0001</ID>
+            <Type>Bag</Type>
+            <Tags>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456789</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>123</Value>
+                </Variable>
+              </TagSet>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456790</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>124</Value>
+                </Variable>
+              </TagSet>
+            </Tags>
+          </Container>
+        </Container>
+      </TagManifest>
+    </OrderLine>
+  </Shipment>
+  <Messages>
+    <ErrorMessage>Bad order entry</ErrorMessage>
+  </Messages>
 </OrderStatus>

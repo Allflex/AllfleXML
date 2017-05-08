@@ -1,47 +1,439 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="OrderStatus">
+    <xs:annotation>
+      <xs:appinfo>Order Status</xs:appinfo>
+      <xs:documentation xml:lang="en">
+        Reports all available information on an Orders current status. Including Shipment and Tag Manifest information
+      </xs:documentation>
+    </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Guid" type="xs:string"></xs:element>
-        <xs:element name="PurchaseOrderNumber" type="xs:string"></xs:element>
-        <xs:element name="MasterId" type="xs:int"></xs:element>
-        <xs:element name="AllflexOrderId" type="xs:string"></xs:element>
-        <xs:element name="Status" type="xs:string"></xs:element>
-        <xs:element name="ProductionProgress" type="xs:int"></xs:element>
-        <xs:element name="Shipping" minOccurs="0">
+        <xs:element name="WSOrderId" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>WSOrderId</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Depreciated) Internal use by the manufacture only.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="PO">
+          <xs:annotation>
+            <xs:appinfo>Purchase Order Number</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              (Required) Purchase Order Number used by the buyer to identify the order.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+              <xs:maxLength value="21"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="MasterId" type="xs:int" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Master Identification</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Reference number 1 for internal use
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="OrderId" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Order Idenfication</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Reference number 2 for internal use
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Status" type="xs:string" minOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Error Messages</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Details about an error that has occured
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element> <!-- TODO: Enum -->
+        <xs:element name="Progress" type="xs:int" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Progress</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Indicates the progress of the current stage that is indicated in the status field. Represented as percentage.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Shipment" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>Shipment</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Represents a consignment for this order.
+            </xs:documentation>
+          </xs:annotation>
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ShipMethod" type="xs:string"></xs:element>
-              <xs:element name="ShippingAccountNumber" type="xs:string"></xs:element>
-              <xs:element name="FreightAmount" type="xs:double"></xs:element>
-              <xs:element name="TrackingNumber" type="xs:string"></xs:element>
-              <xs:element name="ShippingDate" type="xs:dateTime"></xs:element>
-              <xs:element name="Address">
+              <xs:element name="ShipMethod" type="xs:string" default="UPS">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Method</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    The package delivery company and method of consignment for order.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ShippingAccountNumber" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Account Number</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    The account number the buyer has with the package delivery company if the buyer is to be charged for shipping directly.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="FreightAmount" type="xs:double" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Freight Amount</xs:appinfo>
+                  <xs:documentation>
+                    Cost of shipping.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="TrackingNumber" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Shipment Tracking Number</xs:appinfo>
+                  <xs:documentation>
+                    Reference number used for checking the status and location of a shipment.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ShippingDate" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Shipping Date</xs:appinfo>
+                  <xs:documentation>
+                    Date that shipment was sent.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Address" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>Shipment Address</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Address that shipment is sent to.
+                  </xs:documentation>
+                </xs:annotation>
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="Name" type="xs:string"></xs:element>
-                    <xs:element name="Address1" type="xs:string"></xs:element>
-                    <xs:element name="Address2" type="xs:string"></xs:element>
-                    <xs:element name="Address3" type="xs:string"></xs:element>
-                    <xs:element name="City" type="xs:string"></xs:element>
-                    <xs:element name="State" type="xs:string"></xs:element>
-                    <xs:element name="PostalCode" type="xs:int"></xs:element>
-                    <xs:element name="Country" type="xs:string"></xs:element>
+                    <xs:element name="Name">
+                      <xs:annotation>
+                        <xs:appinfo>Name</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) Residence or buisness name.
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="65"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Contact" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:appinfo>Contact</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Depreciated) Name of the recipient of the order. Unused, please use Name.
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Phone" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:appinfo>Contact Phone Number</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          Telephone number where the addressed can be reached.
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="0"/>
+                          <xs:maxLength value="21"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Address1">
+                      <xs:annotation>
+                        <xs:appinfo>Address 1</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) Street address line #1.
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="61"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Address2" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:appinfo>Address 2</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          Street address line #2.
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="0"/>
+                          <xs:maxLength value="61"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Address3" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:appinfo>Address 3</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          Street address line #3.
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="0"/>
+                          <xs:maxLength value="61"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="City">
+                      <xs:annotation>
+                        <xs:appinfo>City</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) City
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="35"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="State">
+                      <xs:annotation>
+                        <xs:appinfo>State</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) State
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="29"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="PostalCode">
+                      <xs:annotation>
+                        <xs:appinfo>Postal Code</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) Postal code
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="11"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="Country" type="xs:string">
+                      <xs:annotation>
+                        <xs:appinfo>Country</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          Country
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
+              </xs:element>
+                <xs:element name="OrderLine" minOccurs="1" maxOccurs="unbounded">
+                  <xs:annotation>
+                    <xs:appinfo>Order Line</xs:appinfo>
+                    <xs:documentation xml:lang="en">
+                      Order Line
+                    </xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ItemNumber">
+                        <xs:annotation>
+                          <xs:appinfo>Item Number</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            (Required) SKU the buyer is ordering. Product Code
+                          </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="31"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="Quantity" type="xs:unsignedShort">
+                        <xs:annotation>
+                          <xs:appinfo>Quantity</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            (Required) The amount of the SKU being orderd.
+                          </xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                      <xs:element name="Template" type="xs:string" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                          <xs:appinfo>Template</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            (Deprecated) Special Marking Details (Color, Template, Drawing)
+                          </xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                      <xs:element name="Status" type="xs:string" minOccurs="1">
+                        <xs:annotation>
+                          <xs:appinfo>Error Messages</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            Details about an error that has occured
+                          </xs:documentation>
+                        </xs:annotation>
+                      </xs:element><!-- TODO: Enum -->
+                      <xs:element name="Progress" type="xs:int" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                          <xs:appinfo>Progress</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            Indicates the progress of the current stage that is indicated in the status field. Represented as percentage.
+                          </xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                      <xs:element name="TagManifest" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                          <xs:appinfo>Tag Manifest</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            Manifest representing the markings for each tag.
+                          </xs:documentation>
+                        </xs:annotation>
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="Container" type="ContainerNode">
+                              <xs:annotation>
+                                <xs:appinfo>Packaging Container</xs:appinfo>
+                                <xs:documentation xml:lang="en">
+                                  Packaging that contains product.
+                                </xs:documentation>
+                              </xs:annotation>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Messages" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>Messages</xs:appinfo>
+            <xs:documentation xml:lang="en">
+              Contains important messages that are informative or provide error details.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ErrorMessage" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>Error Messages</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    Details about an error that has occured
+                  </xs:documentation>
+                </xs:annotation>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-              <xs:element name="ErrorMessage" minOccurs="0">
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="Message" type="xs:string"></xs:element>
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:complexType name="ContainerNode">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>Container Identification</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Idenfication number for the Packaging that contains product.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Type" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>Container Type</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Type of packaging material containing product
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element><!-- TODO: enum -->
+      <xs:element name="Container" type="ContainerNode" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>Packaging Container</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Packaging that contains product.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Tags" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Tags</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            List of product and their definitions
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TagSet" maxOccurs="unbounded" minOccurs="0">
+              <xs:annotation>
+                <xs:appinfo>Tag Set</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Represents one Product and it's full definition.
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Variable" maxOccurs="unbounded" minOccurs="0">
+                    <xs:annotation>
+                      <xs:appinfo>Marking Variable</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Key/Value pair of a marking variable.
+                      </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Name" type="xs:string">
+                          <xs:annotation>
+                            <xs:appinfo>Marking Variable Name</xs:appinfo>
+                            <xs:documentation xml:lang="en">
+                              Key of a marking variable.
+                            </xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element name="Value" type="xs:string">
+                          <xs:annotation>
+                            <xs:appinfo>Marking Variable Value</xs:appinfo>
+                            <xs:documentation xml:lang="en">
+                              Value of a marking variable.
+                            </xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>

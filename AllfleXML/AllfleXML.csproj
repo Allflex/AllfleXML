@@ -92,8 +92,8 @@
     <EmbeddedResource Include="FlexOrder\FlexOrder.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="FlexOrderStatus\FlexOrderStatus.xps" />
     <None Include="FlexOrder\FlexOrder.xps" />
-    <None Include="FlexOrderStatus\flexorderstatus.xps" />
     <EmbeddedResource Include="FlexOrderStatus\FlexOrderStatus.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>

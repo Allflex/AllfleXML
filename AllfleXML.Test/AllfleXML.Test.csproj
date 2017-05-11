@@ -62,9 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="TestData\DATFile\NAEBA Instructions.txt" />
-    <Content Include="TestData\FlexOrderStatus\badSample1.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="TestData\FlexOrderStatus\sample1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

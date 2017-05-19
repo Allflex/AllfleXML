@@ -29,6 +29,7 @@ namespace AllfleXML.Test
                 MasterId = 123456,
                 OrderId = "CC123456",
                 Status = "Confirmed",
+                CustomerNumber = "12345",
                 Progress = 67,
                 Shipment = new List<Shipment>()
                 {
@@ -78,6 +79,7 @@ namespace AllfleXML.Test
                 MasterId = 123456,
                 OrderId = "CC123456",
                 Status = "Confirmed",
+                CustomerNumber = "12345",
                 Progress = 67,
                 Shipment = new List<Shipment>()
                 {

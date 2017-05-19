@@ -140,6 +140,15 @@ namespace AllfleXML.FlexOrderStatus
         public string Status { get; set; }
 
         /// <summary>
+        /// Gets or sets the Customer Number of the order.
+        /// </summary>
+        /// <value>
+        /// The customer number.
+        /// </value>
+        [XmlElement("CustomerNumber")]
+        public string CustomerNumber { get; set; }
+
+        /// <summary>
         /// Gets or sets the progress percentage of the order.
         /// </summary>
         /// <value>

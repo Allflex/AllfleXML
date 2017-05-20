@@ -15,8 +15,8 @@ namespace AllfleXML.Test
         {
             var order = AllfleXML.FlexOrderStatus.Parser.Import(@"TestData\FlexOrderStatus\sample1.xml");
             Assert.IsNotNull(order);
-            Assert.IsNotNull(order.Guid);
-            Assert.IsTrue(!string.IsNullOrWhiteSpace(order.Guid));
+            Assert.IsNotNull(order.WSOrderId);
+            Assert.IsTrue(!string.IsNullOrWhiteSpace(order.WSOrderId));
         }
         
         [TestMethod]
@@ -24,20 +24,23 @@ namespace AllfleXML.Test
         {
             var order = new AllfleXML.FlexOrderStatus.OrderStatus
             {
-                  Guid = "8432fe3a-ef38-45bf-af81-f73a5ae7eb8c",
-                  PurchaseOrderNumber = "3432564",
-                  MasterId = 123456,
-                  AllflexOrderId = "CC123456",
-                  Status = "Confirmed",
-                  ProductionProgress = 67,
-                  Shipping = new Shipping
-                   {
+                WSOrderId = "8432fe3a-ef38-45bf-af81-f73a5ae7eb8c",
+                PO = "3432564",
+                MasterId = 123456,
+                OrderId = "CC123456",
+                Status = "Confirmed",
+                CustomerNumber = "12345",
+                Progress = 67,
+                Shipment = new List<Shipment>()
+                {
+                    new Shipment()
+                    {
                         ShipMethod = "UPS",
                         ShippingAccountNumber = "98765432",
                         FreightAmount = 14.56,
                         TrackingNumber = "Z3242FFSD324326SA",
                         ShippingDate = DateTime.Now,
-                        Address = new ShippingAddress
+                        Address = new Address()
                         {
                             Name = "John H. Smith",
                             Address1 = "123 Main Street",
@@ -48,14 +51,15 @@ namespace AllfleXML.Test
                             PostalCode = "12345",
                             Country = "USA"
                         }
-                   },
-                ErrorMessages = new List<ErrorMessage>
-                    {
-                        new AllfleXML.FlexOrderStatus.ErrorMessage
-                        {
-                            Message = "This is a test message"
-                        }
                     }
+                },
+                Messages = new List<Message>
+                {
+                    new AllfleXML.FlexOrderStatus.Message()
+                    {
+                        ErrorMessage = "This is a test message"
+                    }
+                }
             };
 
             var doc = AllfleXML.FlexOrderStatus.Parser.Export(order);
@@ -70,38 +74,42 @@ namespace AllfleXML.Test
         {
             var order = new AllfleXML.FlexOrderStatus.OrderStatus
             {
-                Guid = "8432fe3a-ef38-45bf-af81-f73a5ae7eb8c",
-                PurchaseOrderNumber = "3432564",
+                WSOrderId = "8432fe3a-ef38-45bf-af81-f73a5ae7eb8c",
+                PO = "3432564",
                 MasterId = 123456,
-                AllflexOrderId = "CC123456",
+                OrderId = "CC123456",
                 Status = "Confirmed",
-                ProductionProgress = 67,
-                Shipping = new Shipping
+                CustomerNumber = "12345",
+                Progress = 67,
+                Shipment = new List<Shipment>()
                 {
-                    ShipMethod = "UPS",
-                    ShippingAccountNumber = "98765432",
-                    FreightAmount = 14.56,
-                    TrackingNumber = "Z3242FFSD324326SA",
-                    ShippingDate = DateTime.Now,
-                    Address = new ShippingAddress
+                    new Shipment()
                     {
-                        Name = "John H. Smith",
-                        Address1 = "123 Main Street",
-                        Address2 = "",
-                        Address3 = "",
-                        City = "Everytown",
-                        State = "TX",
-                        PostalCode = "12345",
-                        Country = "USA"
-                    }
-                },
-                ErrorMessages = new List<ErrorMessage>
-                    {
-                        new AllfleXML.FlexOrderStatus.ErrorMessage
+                        ShipMethod = "UPS",
+                        ShippingAccountNumber = "98765432",
+                        FreightAmount = 14.56,
+                        TrackingNumber = "Z3242FFSD324326SA",
+                        ShippingDate = DateTime.Now,
+                        Address = new Address()
                         {
-                            Message = "This is a test message"
+                            Name = "John H. Smith",
+                            Address1 = "123 Main Street",
+                            Address2 = "",
+                            Address3 = "",
+                            City = "Everytown",
+                            State = "TX",
+                            PostalCode = "12345",
+                            Country = "USA"
                         }
                     }
+                },
+                Messages = new List<Message>
+                {
+                    new AllfleXML.FlexOrderStatus.Message()
+                    {
+                        ErrorMessage = "This is a test message"
+                    }
+                }
             };
 
             var doc = AllfleXML.FlexOrderStatus.Parser.Export(order);
@@ -120,7 +128,7 @@ namespace AllfleXML.Test
 
             var document = AllfleXML.FlexOrderStatus.Parser.Import(fileName);
             Assert.IsNotNull(document);
-            Assert.IsTrue(!string.IsNullOrWhiteSpace(document.Guid));
+            Assert.IsTrue(!string.IsNullOrWhiteSpace(document.WSOrderId));
 
             File.Delete(fileName);
             Assert.IsFalse(File.Exists(fileName));

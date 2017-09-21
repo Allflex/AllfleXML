@@ -328,7 +328,6 @@ namespace AllfleXML.FlexOrder
         /// The ws order identifier.
         /// </value>
         [XmlElement("WSOrderId")]
-        [Obsolete("This field is deprecated. It will be removed in the next version.")]
         public string WSOrderId { get; set; } // TODO: Remove from specification
 
         /// <summary>

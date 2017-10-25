@@ -26,6 +26,7 @@
       <Country>USA</Country>
     </Address>
     <OrderLine>
+      <LineNumber>123456</LineNumber>
       <ItemNumber>Test</ItemNumber>
       <Quantity>3</Quantity>
       <Template>ExampleTemplate1</Template>
@@ -87,6 +88,7 @@
       </TagManifest>
     </OrderLine>
     <OrderLine>
+      <LineNumber>123457</LineNumber>
       <ItemNumber>Test</ItemNumber>
       <Quantity>6</Quantity>
       <Template>ExampleTemplate2</Template>

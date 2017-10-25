@@ -50,7 +50,35 @@ namespace AllfleXML.Test
                             State = "TX",
                             PostalCode = "12345",
                             Country = "USA"
+                        },
+
+                        OrderLines = new List<OrderLine>()
+                        {
+                            new OrderLine()
+                            {
+                                LineNumber = 123456,
+                                ItemNumber = "Test",
+                                Quanitity = 3,
+                                Progress = 0,
+                                Status = "Confirmed",
+                                TagManifest = new TagManifest()
+                                {
+                                    Containers = new List<Container>()
+                                    {
+                                        new Container()
+                                        {
+                                            ChildContainers = null,
+                                            ID = "",
+                                            Tags = null,
+                                            Type = "Bag"
+                                        }
+                                    }
+                                },
+                                Template = ""
+                            }
                         }
+
+
                     }
                 },
                 Messages = new List<Message>
@@ -100,6 +128,31 @@ namespace AllfleXML.Test
                             State = "TX",
                             PostalCode = "12345",
                             Country = "USA"
+                        },
+                        OrderLines = new List<OrderLine>()
+                        {
+                            new OrderLine()
+                            {
+                                LineNumber = 123456,
+                                ItemNumber = "Test",
+                                Quanitity = 3,
+                                Progress = 0,
+                                Status = "Confirmed",
+                                TagManifest = new TagManifest()
+                                {
+                                    Containers = new List<Container>()
+                                    {
+                                        new Container()
+                                        {
+                                            ChildContainers = null,
+                                            ID = "",
+                                            Tags = null,
+                                            Type = "Bag"
+                                        }
+                                    }
+                                },
+                                Template = ""
+                            }
                         }
                     }
                 },

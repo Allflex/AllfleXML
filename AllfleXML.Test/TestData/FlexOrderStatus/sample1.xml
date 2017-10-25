@@ -24,6 +24,7 @@
       <Country>USA</Country>
     </Address>
     <OrderLine>
+      <LineNumber>123456</LineNumber>
       <ItemNumber>Test</ItemNumber>
       <Quantity>2</Quantity>
       <Template>ExampleTemplate</Template>

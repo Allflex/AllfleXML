@@ -270,6 +270,18 @@
                   </xs:annotation>
                   <xs:complexType>
                     <xs:sequence>
+                      <xs:element name="LineNumber">
+                        <xs:annotation>
+                          <xs:appinfo>Line Number</xs:appinfo>
+                          <xs:documentation xml:lang="en">
+                            (Required) Line Number for the OrderLine
+                          </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                          <xs:restriction base="xs:int">
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
                       <xs:element name="ItemNumber">
                         <xs:annotation>
                           <xs:appinfo>Item Number</xs:appinfo>

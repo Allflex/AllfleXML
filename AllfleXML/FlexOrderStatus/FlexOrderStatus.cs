@@ -364,6 +364,15 @@ namespace AllfleXML.FlexOrderStatus
     public class OrderLine
     {
         /// <summary>
+        /// Gets or sets the order line number.
+        /// </summary>
+        /// <value>
+        /// The line number for the given order line. 
+        /// </value>
+        [XmlElement("LineNumber")]
+        public int LineNumber { get; set; }
+
+        /// <summary>
         /// Gets or sets the item number.
         /// </summary>
         /// <value>

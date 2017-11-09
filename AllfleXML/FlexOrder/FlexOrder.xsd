@@ -294,7 +294,7 @@
                 </xs:annotation>
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="Field" maxOccurs="unbounded">
+                    <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
                       <xs:annotation>
                         <xs:appinfo>User Defined Field</xs:appinfo>
                         <xs:documentation xml:lang="en">
@@ -405,7 +405,7 @@
                       </xs:annotation>
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="Field" maxOccurs="unbounded">
+                          <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
                             <xs:annotation>
                               <xs:appinfo>User Defined Field</xs:appinfo>
                               <xs:documentation xml:lang="en">

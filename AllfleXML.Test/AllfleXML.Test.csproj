@@ -89,6 +89,9 @@
     <Content Include="TestData\FlexOrder\sample6.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\FlexOrder\sample11.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\FlexOrder\sampleMini.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

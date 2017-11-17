@@ -100,6 +100,15 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void ImportFlexOrderEmptyUserDefined()
+        {
+            var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample11.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.OrderHeaders.Any());
+            Assert.IsTrue(order.OrderHeaders.Select(o => o.OrderLineHeaders.Any()).All(o => o));
+        }
+
+        [TestMethod]
         public void ImportFlexOrderMini()
         {
             // TODO: Restrict this possiblity in the future

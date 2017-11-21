@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Document">
+    <xs:annotation>
+      <xs:appinfo>Document</xs:appinfo>
+      <xs:documentation xml:lang="en">
+        Document Container
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Specification" minOccurs="1" maxOccurs="unbounded">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="Id"></xs:element>
+                           <xs:element name="Name"></xs:element>
+                           <xs:element name="Components">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="Component" maxOccurs="unbounded">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="Index"></xs:element>
+                                                               <xs:element name="Name"></xs:element>
+                                                               <xs:element name="ProductLine"></xs:element>
+                                                               <xs:element name="Shilouette"></xs:element>
+                                                               <xs:element name="Outline"></xs:element>
+                                                               <xs:element name="Features"></xs:element>
+                                                               <xs:element name="Color" ></xs:element>
+                                                               <xs:element name="Colors">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="Color" maxOccurs="unbounded">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="ColorCode" ></xs:element>
+                                                                                                   <xs:element name="Name" ></xs:element>
+                                                                                                   <xs:element name="HexCode" ></xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="Faces">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="ComponentFace">
+                                                                                       <xs:complexType>
+                                                                                             <xs:sequence>
+                                                                                                   <xs:element name="Name" type="xs:string"></xs:element>
+                                                                                                   <xs:element name="Variables">
+                                                                                                         <xs:complexType>
+                                                                                                               <xs:sequence>
+                                                                                                                     <xs:element name="Variable" maxOccurs="unbounded">
+                                                                                                                           <xs:complexType>
+                                                                                                                                 <xs:sequence>
+                                                                                                                                       <xs:element name="Index" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="Name" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="Description" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="Role" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="Type" type="xs:string"></xs:element>
+                                                                                                                                       <xs:element name="Width" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="Height" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="PositionX" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="PositionY" type="xs:int"></xs:element>
+                                                                                                                                       <xs:element name="Text"></xs:element>
+                                                                                                                                       <xs:element name="TextFormat"></xs:element>
+                                                                                                                                       <xs:element name="MaxLength"></xs:element>
+                                                                                                                                       <xs:element name="FontSize"></xs:element>
+                                                                                                                                       <xs:element name="IsFixed"></xs:element>
+                                                                                                                                       <xs:element name="IsInk"></xs:element>
+                                                                                                                                       <xs:element name="LogoImageLocation"></xs:element>
+                                                                                                                                       <xs:element name="Radius"></xs:element>
+                                                                                                                                       <xs:element name="CurveTextAttachTo"></xs:element>
+                                                                                                                                 </xs:sequence>
+                                                                                                                           </xs:complexType>
+                                                                                                                     </xs:element>
+                                                                                                               </xs:sequence>
+                                                                                                         </xs:complexType>
+                                                                                                   </xs:element>
+                                                                                             </xs:sequence>
+                                                                                       </xs:complexType>
+                                                                                 </xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+         </xs:sequence>
+       </xs:complexType>
+     </xs:element>
+   </xs:schema>

@@ -10,7 +10,7 @@ namespace AllfleXML.Test
     [TestClass]
     public class FlexSpec
     {
-        public const string testPath = @"C:\ScaliseProjects\AllfleXML\AllfleXML\FlexSpec\FlexSpec.xml";
+        public const string testPath = @"TestData\FlexOrder\FlexSpec.xml";
 
         [TestMethod]
         public void ImportFlexSpec()

@@ -1,57 +1,228 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Document>
-  <Specification>
-    <Id>Testing</Id>
-    <Name>Testing_Elements</Name>
-    <Components>
-      <Component>
-        <Index>1</Index>
-        <Name>AS</Name>
-        <ProductLine>Allflex</ProductLine>
-        <Shilouette>TestShiloutte</Shilouette>
-        <Outline>TestOutline</Outline>
-        <Features />
-        <Color>Y</Color>
-        <Colors>
-          <Color>
-            <ColorCode>Y</ColorCode>
-            <Name>yellow</Name>
-            <HexCode>e4d84d</HexCode>
-          </Color>
-          <Color>
-            <ColorCode>B</ColorCode>
-            <Name>Blue</Name>
-            <HexCode>71cfeb</HexCode>
-          </Color>
-        </Colors>
-        <Faces>
-          <ComponentFace>
-            <Name>Front</Name>
-            <Variables>
-              <Variable>
-                <Index>0</Index>
-                <Name>var1</Name>
-                <Description />
-                <Role>registration</Role>
-                <Type>curved-text</Type>
-                <Width>56</Width>
-                <Height>12</Height>
-                <PositionX>8</PositionX>
-                <PositionY>7</PositionY>
-                <Text>1234567890</Text>
-                <TextFormat />
-                <MaxLength />
-                <FontSize>20</FontSize>
-                <IsFixed />
-                <IsInk>True</IsInk>
-                <LogoImageLocation />
-                <Radius>51</Radius>
-                <CurveTextAttachTo />
-              </Variable>
-            </Variables>
-          </ComponentFace>
-        </Faces>
-      </Component>
-    </Components>
-  </Specification>
-  </Document>
+	<Specification>
+		<Id>GUID</Id>
+		<Name>GXF_GSM6</Name>
+		<Components>
+			<Component>
+				<Index>1</Index>
+				<Name>SM</Name>
+				<ProductLine>Allflex</ProductLine>
+				<Shilouette>http://localhost:8576/content/images/Renderer/SM-Silhouette.png</Shilouette>
+				<Outline>http://localhost:8576/content/images/Renderer/SM-Outline.png</Outline>
+				<Features>
+					
+				</Features>
+				<Color>Y</Color>
+				<Colors>
+					<Color>
+						<ColorCode>Y</ColorCode>
+						<Name>Yellow</Name>
+						<HexCode>e4d84d</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>B</ColorCode>
+						<Name>Blue</Name>
+						<HexCode>71cfeb</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>CP</ColorCode>
+						<Name>Classic Purple</Name>
+						<HexCode>b04ab7</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>G</ColorCode>
+						<Name>Green</Name>
+						<HexCode>c0e1c2</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>K</ColorCode>
+						<Name>Black</Name>
+						<HexCode>1f1f1f</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>O</ColorCode>
+						<Name>Orange</Name>
+						<HexCode>f7966b</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>PK</ColorCode>
+						<Name>Pink</Name>
+						<HexCode>f498b1</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>R</ColorCode>
+						<Name>Red</Name>
+						<HexCode>f3726d</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>W</ColorCode>
+						<Name>White</Name>
+						<HexCode>f3eded</HexCode>
+					</Color>
+				</Colors>
+				<Faces>
+					<ComponentFace>
+						<Name>Front</Name>
+						<Variables>
+							<Variable>
+								<Index>0</Index> <!-- Unique ID for all variables in the <Specification> -->
+								<Name>var1</Name> <!-- Descriptive name for variable -->
+								<Description></Description> <!-- Optional Description of the variable -->
+								<Role>Registration</Role> <!-- Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc) -->
+								<Type>curved-text</Type> <!-- Required: Values can be 'text', 'curved-text' or 'image' -->
+								<Width>56</Width> <!-- width of the bounding box -->
+								<Height>12</Height> <!-- Height of the bounding box -->
+								<PositionX>8</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
+								<PositionY>7</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
+
+								<Text>1234567890</Text> <!-- The Variable's Default Value --> 
+								<TextFormat></TextFormat> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
+								<MaxLength></MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<FontSize>20</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
+								<IsFixed></IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsInk>false</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
+
+								<LogoImageLocation></LogoImageLocation> <!-- Optional: Only used when `Type` = "image" -->
+
+								<Radius>51</Radius> <!-- Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text -->
+								<CurveTextAttachTo>inside</CurveTextAttachTo> <!-- Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside' -->
+							</Variable>
+							<Variable>
+								<Index>1</Index> <!-- Unique ID for all variables in the <Specification> -->
+								<Name>var2</Name> <!-- Descriptive name for variable -->
+								<Description /> <!-- Optional Description of the variable -->
+								<Role>CustomText</Role> <!-- Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc) -->
+								<Type>curved-text</Type> <!-- Required: Values can be 'text', 'curved-text' or 'image' -->
+								<Width>56</Width> <!-- width of the bounding box -->
+								<Height>12</Height> <!-- Height of the bounding box -->
+								<PositionX>28</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
+								<PositionY>22</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
+
+								<Text>ABCDEFG</Text> <!-- The Variable's Default Value --> 
+								<TextFormat /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
+								<MaxLength /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<FontSize>20</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
+								<IsFixed /> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsInk>false</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
+
+								<LogoImageLocation /> <!-- Optional: Only used when `Type` = "image" -->
+
+								<Radius>32</Radius> <!-- Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text -->
+								<CurveTextAttachTo>outside</CurveTextAttachTo> <!-- Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside' -->
+							</Variable>
+						</Variables>
+					</ComponentFace>
+				</Faces>
+			</Component>
+			<Component>
+				<Index>2</Index>
+				<Name>SXF</Name>
+				<ProductLine>Allflex</ProductLine>
+				<Shilouette>http://localhost:8576/content/images/Renderer/SXF-Silhouette.png</Shilouette>
+				<Outline>http://localhost:8576/content/images/Renderer/SXF-Outline.png</Outline>
+				<Features>
+					
+				</Features>
+				<Color>PK</Color>
+				<Colors>
+					<Color>
+						<ColorCode>Y</ColorCode>
+						<Name>Yellow</Name>
+						<HexCode>e4d84d</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>B</ColorCode>
+						<Name>Blue</Name>
+						<HexCode>71cfeb</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>CP</ColorCode>
+						<Name>Classic Purple</Name>
+						<HexCode>b04ab7</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>G</ColorCode>
+						<Name>Green</Name>
+						<HexCode>c0e1c2</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>K</ColorCode>
+						<Name>Black</Name>
+						<HexCode>1f1f1f</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>O</ColorCode>
+						<Name>Orange</Name>
+						<HexCode>f7966b</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>PK</ColorCode>
+						<Name>Pink</Name>
+						<HexCode>f498b1</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>R</ColorCode>
+						<Name>Red</Name>
+						<HexCode>f3726d</HexCode>
+					</Color>
+					<Color>
+						<ColorCode>W</ColorCode>
+						<Name>White</Name>
+						<HexCode>f3eded</HexCode>
+					</Color>
+				</Colors>
+				<Faces>
+					<ComponentFace>
+						<Name>Front</Name>
+						<Variables>
+							<Variable>
+								<Index>2</Index> <!-- Unique ID for all variables in the <Specification> -->
+								<Name>var3</Name> <!-- Descriptive name for variable -->
+								<Description /> <!-- Optional Description of the variable -->
+								<Role>CustomText</Role> <!-- Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc) -->
+								<Type>text</Type> <!-- Required: Values can be 'text', 'curved-text' or 'image' -->
+								<Width>260</Width> <!-- width of the bounding box -->
+								<Height>40</Height> <!-- Height of the bounding box -->
+								<PositionX>15</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
+								<PositionY>268</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
+
+								<Text>CHASE FARNAN</Text> <!-- The Variable's Default Value --> 
+								<TextFormat></TextFormat> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
+								<MaxLength></MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<FontSize>12</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
+								<IsFixed></IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsInk>false</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
+								<LogoImageLocation></LogoImageLocation> <!-- Optional: Only used when `Type` = "image" -->
+								<Radius>32</Radius> <!-- Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text -->
+								<CurveTextAttachTo>outside</CurveTextAttachTo> <!-- Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside' -->
+							</Variable>
+							<Variable>
+								<Index>3</Index> <!-- Unique ID for all variables in the <Specification> -->
+								<Name>var4</Name> <!-- Descriptive name for variable -->
+								<Description /> <!-- Optional Description of the variable -->
+								<Role>Management</Role> <!-- Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc) -->
+								<Type>text</Type> <!-- Required: Values can be 'text', 'curved-text' or 'image' -->
+								<Width>140</Width> <!-- width of the bounding box -->
+								<Height>135</Height> <!-- Height of the bounding box -->
+								<PositionX>78</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
+								<PositionY>320</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
+
+								<Text>D1</Text> <!-- The Variable's Default Value --> 
+								<TextFormat /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
+								<MaxLength /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<FontSize /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
+								<IsFixed /> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsInk>true</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
+
+								<LogoImageLocation /> <!-- Optional: Only used when `Type` = "image" -->
+
+								<Radius>32</Radius> <!-- Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text -->
+								<CurveTextAttachTo>outside</CurveTextAttachTo> <!-- Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside' -->
+							</Variable>
+						</Variables>
+					</ComponentFace>
+				</Faces>
+			</Component>
+		</Components>
+	</Specification>
+</Document>

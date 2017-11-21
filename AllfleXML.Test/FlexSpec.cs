@@ -10,7 +10,7 @@ namespace AllfleXML.Test
     [TestClass]
     public class FlexSpec
     {
-        public const string testPath = @"TestData\FlexSpec\sampleSpec.xml";
+        public const string testPath = @"C:\ScaliseProjects\AllfleXML\AllfleXML\FlexSpec\FlexSpec.xml";
 
         [TestMethod]
         public void ImportFlexSpec()
@@ -81,7 +81,7 @@ namespace AllfleXML.Test
                                         Text = "1234567890",
                                         TextFormat = string.Empty,
                                         MaxLength = string.Empty,
-                                        FontSize = 20,
+                                        FontSize = "20",
                                         IsFixed = string.Empty,
                                         IsInk = "True",
                                         LogoImageLocation = String.Empty,
@@ -176,7 +176,7 @@ namespace AllfleXML.Test
                                         Text = "1234567890",
                                         TextFormat = string.Empty,
                                         MaxLength = string.Empty,
-                                        FontSize = 20,
+                                        FontSize = "20",
                                         IsFixed = string.Empty,
                                         IsInk = string.Empty,
                                         LogoImageLocation = String.Empty,

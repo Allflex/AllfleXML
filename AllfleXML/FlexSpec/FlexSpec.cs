@@ -342,7 +342,7 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the FontSize.
         /// </summary>
         [XmlElement("FontSize")]
-        public int FontSize { get; set; }
+        public string FontSize { get; set; }
 
         /// <summary>
         /// Gets or sets the IsInk.

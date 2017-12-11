@@ -127,6 +127,7 @@ namespace AllfleXML.FlexSpec
         public List<Specification> Specifications { get; set; }
     }
 
+    [Serializable]
     public class Specification
     {
         /// <summary>
@@ -141,14 +142,22 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
+        /// <value>
+        /// The Name of the specification.
+        /// </value>
         [XmlElement("Name", IsNullable = false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the components.
+        /// </summary>
+        /// <value>
+        /// The Components in the specification
+        /// </value>
         public List<Component> Components { get; set; }
-
     }
+
+    [Serializable]
     public class Component
     {
         /// <summary>
@@ -156,8 +165,7 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Index", IsNullable = false)]
         public int Index { get; set; }
-
-
+        
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -169,8 +177,7 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("ProductLine", IsNullable = false)]
         public string ProductLine { get; set; }
-
-
+        
         /// <summary>
         /// Gets or sets the Shilouette.
         /// </summary>
@@ -204,18 +211,19 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the Faces.
         /// </summary>
         public List<ComponentFace> Faces { get; set; }
-
     }
 
+    [Serializable]
     public class Faces
-    {        /// <summary>
+    {
+        /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
         [XmlElement("ComponentFace", IsNullable = false)]
         public List<ComponentFace> ComponentFace { get; set; }
     }
-
-
+    
+    [Serializable]
     public class Colors
     {
         /// Gets or sets the name of the specification.
@@ -223,8 +231,8 @@ namespace AllfleXML.FlexSpec
         [XmlElement("Color", IsNullable = false)]
         public List<Color> Color { get; set; }
     }
-
-
+    
+    [Serializable]
     public class Color
     {
         /// <summary>
@@ -238,16 +246,15 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Name", IsNullable = false)]
         public string Name { get; set; }
-
-
+        
         /// <summary>
         /// Gets or sets the HexCode.
         /// </summary>
         [XmlElement("HexCode", IsNullable = false)]
         public string HexCode { get; set; }
-
     }
 
+    [Serializable]
     public class ComponentFace
     {
         /// <summary>
@@ -262,6 +269,7 @@ namespace AllfleXML.FlexSpec
         public List<Variable> Variables { get; set; }
     }
 
+    [Serializable]
     public class Variable
     {
         /// <summary>
@@ -371,6 +379,5 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("CurveTextAttachTo")]
         public string CurveTextAttachTo { get; set; }
-
     }
 }

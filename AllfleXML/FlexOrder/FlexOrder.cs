@@ -180,7 +180,7 @@ namespace AllfleXML.FlexOrder
         /// The name of the ship to.
         /// </value>
         [XmlElement("ShipToName", IsNullable = false)]
-        public string ShipToName { get; set; }
+        public string ShipToName { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the contact at the shipping address.
@@ -190,7 +190,7 @@ namespace AllfleXML.FlexOrder
         /// </value>
         [XmlElement("ShipToContact")]
         [Obsolete("This field is deprecated. Please use ShipToName instead.")]
-        public string ShipToContact { get; set; } // TODO: Remove from specification
+        public string ShipToContact { get; set; } // TODO: Remove from specification  // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the phone number of the shipping address.
@@ -199,7 +199,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to phone.
         /// </value>
         [XmlElement("ShipToPhone")]
-        public string ShipToPhone { get; set; }
+        public string ShipToPhone { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the first address line of the shipping address.
@@ -208,7 +208,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to address1.
         /// </value>
         [XmlElement("ShipToAddress1", IsNullable = false)]
-        public string ShipToAddress1 { get; set; }
+        public string ShipToAddress1 { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the second address line of the shipping address.
@@ -217,7 +217,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to address2.
         /// </value>
         [XmlElement("ShipToAddress2")]
-        public string ShipToAddress2 { get; set; }
+        public string ShipToAddress2 { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the third address line of the shipping address
@@ -226,7 +226,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to address3.
         /// </value>
         [XmlElement("ShipToAddress3")]
-        public string ShipToAddress3 { get; set; }
+        public string ShipToAddress3 { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the city of the shipping address.
@@ -235,7 +235,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to city.
         /// </value>
         [XmlElement("ShipToCity", IsNullable = false)]
-        public string ShipToCity { get; set; }
+        public string ShipToCity { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the state of the shipping address.
@@ -244,7 +244,7 @@ namespace AllfleXML.FlexOrder
         /// The state of the ship to.
         /// </value>
         [XmlElement("ShipToState", IsNullable = false)]
-        public string ShipToState { get; set; }
+        public string ShipToState { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the postal code of the shipping address.
@@ -253,7 +253,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to postal code.
         /// </value>
         [XmlElement("ShipToPostalCode", IsNullable = false)]
-        public string ShipToPostalCode { get; set; }
+        public string ShipToPostalCode { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets the country of the shipping address.
@@ -262,7 +262,7 @@ namespace AllfleXML.FlexOrder
         /// The ship to country.
         /// </value>
         [XmlElement("ShipToCountry")]
-        public string ShipToCountry { get; set; }
+        public string ShipToCountry { get; set; } // TODO: Remove "ShipTo" from name of fields in the specification
 
         /// <summary>
         /// Gets or sets a value indicating whether this order is a rush.

@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="FlexOrder.cs" />
     <Compile Include="FlexOrderStatus.cs" />
+    <Compile Include="FlexSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ID1Order.cs" />
     <Compile Include="LaserTag.cs" />
@@ -196,6 +197,9 @@
     <Content Include="TestData\DATFile\sample9.dat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestData\FlexSpec\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

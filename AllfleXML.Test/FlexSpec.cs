@@ -10,14 +10,101 @@ namespace AllfleXML.Test
     [TestClass]
     public class FlexSpec
     {
-        public const string testPath = @"TestData\FlexOrder\FlexSpec.xml";
-
+        //GXF72_DL
         [TestMethod]
-        public void ImportFlexSpec()
+        public void ImportFlexOrder0()
         {
-            var specification = Parser.Import(testPath);
+            var specification = Parser.Import(@"TestData\FlexSpec\GXF72_DL.xml");
             Assert.IsNotNull(specification);
             Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //GNXUS840TXF2LM_TSU
+        [TestMethod]
+        public void ImportFlexOrder1()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\GNXUS840TXF2LM_TSU.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //GTLF2_GSM2
+        [TestMethod]
+        public void ImportFlexOrder2()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\GTLF2_GSM2.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //US8OFPGESM1
+        [TestMethod]
+        public void ImportFlexOrder3()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\US8OFPGESM1.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //US840OHGESM1
+        [TestMethod]
+        public void ImportFlexOrder4()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\US840OHGESM1.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //840OH_GESM
+        [TestMethod]
+        public void ImportFlexOrder5()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\840OH_GESM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //840HDXLFS3SM
+        [TestMethod]
+        public void ImportFlexOrder6()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\840HDXLFS3SM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //NF_US840STF1SM
+        [TestMethod]
+        public void ImportFlexOrder7()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\NF_US840STF1SM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //JYXC2_GSM
+        [TestMethod]
+        public void ImportFlexOrder8()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\JYXC2_GSM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //IMI_840OF_GESM
+        [TestMethod]
+        public void ImportFlexOrder9()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\IMI_840OF_GESM.xml");
             Assert.IsNotNull(specification);
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
@@ -198,6 +285,18 @@ namespace AllfleXML.Test
             Assert.IsTrue(result.Item1);
         }
 
+        [TestMethod]
+        public void FailedFlexSpecValidation()
+        {
+            var result = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            Assert.IsFalse(result.Item1);
+        }
 
+        [TestMethod]
+        public void PassedFlexSpecValidation()
+        {
+            var result = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexSpec\GXF72_DL.xml");
+            Assert.IsTrue(result.Item1);
+        }
     }
 }

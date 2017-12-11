@@ -121,6 +121,12 @@ namespace AllfleXML.FlexOrder
     [XmlRoot]
     public class Document
     {
+        /// <summary>
+        /// Gets or sets the Order Headers
+        /// </summary>
+        /// <value>
+        /// The Order Headers
+        /// </value>
         [XmlElement("OrderHeader")]
         public List<OrderHeader> OrderHeaders { get; set; }
     }

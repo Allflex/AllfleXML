@@ -226,6 +226,7 @@ namespace AllfleXML.FlexSpec
     [Serializable]
     public class Colors
     {
+        /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
         [XmlElement("Color", IsNullable = false)]

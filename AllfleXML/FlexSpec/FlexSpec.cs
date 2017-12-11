@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -14,7 +13,6 @@ namespace AllfleXML.FlexSpec
 {
     public static class Parser
     {
-
         public static Document Import(string xmlFilePath)
         {
             return Import(XDocument.Load(xmlFilePath));

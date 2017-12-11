@@ -80,9 +80,7 @@
   <ItemGroup>
     <Compile Include="FlexOrder\FlexOrder.cs" />
     <Compile Include="FlexOrderStatus\FlexOrderStatus.cs" />
-    <Compile Include="FlexSpec\FlexSpec.cs">
-      <DependentUpon>FlexSpec.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="FlexSpec\FlexSpec.cs" />
     <Compile Include="ID1Order\ID1Order.cs" />
     <Compile Include="LaserTag\LaserTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,23 +93,27 @@
     <Content Include="LaserTag\LaserTag.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="FlexSpec\FlexSpec.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FlexOrder\FlexOrder.xps" />
+    <None Include="FlexOrderStatus\FlexOrderStatus.xps" />
+    <None Include="ID1Order\ID1Order.xps" />
+    <None Include="LaserTag\LaserTag.xps" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="FlexOrder\FlexOrder.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="FlexOrderStatus\FlexOrderStatus.xps" />
-    <None Include="FlexOrder\FlexOrder.xps" />
     <EmbeddedResource Include="FlexOrderStatus\FlexOrderStatus.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="FlexSpec\FlexSpec.json" />
-    <None Include="FlexSpec\FlexSpec.xsd">
+    <EmbeddedResource Include="FlexSpec\FlexSpec.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="ID1Order\ID1Order.xps" />
+    </EmbeddedResource>
     <EmbeddedResource Include="ID1Order\ID1Order.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="LaserTag\LaserTag.xps" />
     <EmbeddedResource Include="LaserTag\LaserTag.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -433,7 +433,6 @@ namespace AllfleXML.FlexOrder
         /// The template.
         /// </value>
         [XmlElement("Template")]
-        [Obsolete("This field is deprecated. It will be removed in the next version.")]
         public string Template { get; set; } // TODO: Remove from specification
         /// <summary>
         /// Gets or sets the comment.

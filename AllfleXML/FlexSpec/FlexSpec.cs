@@ -203,12 +203,6 @@ namespace AllfleXML.FlexSpec
         public string Outline { get; set; }
 
         /// <summary>
-        /// Gets or sets the Features.
-        /// </summary>
-        [XmlElement("Features", IsNullable = false)]
-        public string Features { get; set; }
-
-        /// <summary>
         /// Gets or sets the color.
         /// </summary>
         [XmlElement("Color", IsNullable = false)]
@@ -313,19 +307,19 @@ namespace AllfleXML.FlexSpec
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the PositionX.
+        /// Gets or sets the Description.
         /// </summary>
         [XmlElement("Description")]
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets the PositionX.
+        /// Gets or sets the Role.
         /// </summary>
         [XmlElement("Role", IsNullable = false)]
         public string Role { get; set; }
 
         /// <summary>
-        /// Gets or sets the PositionX.
+        /// Gets or sets the Type.
         /// </summary>
         [XmlElement("Type", IsNullable = false)]
         public string Type { get; set; }
@@ -355,22 +349,22 @@ namespace AllfleXML.FlexSpec
         public int PositionY { get; set; }
 
         /// <summary>
-        /// Gets or sets the Text.
+        /// Gets or sets the DefaultValue.
         /// </summary>
-        [XmlElement("Text")]
-        public string Text { get; set; }
+        [XmlElement("DefaultValue")]
+        public string DefaultValue { get; set; }
 
         /// <summary>
         /// Gets or sets the TextFormat.
         /// </summary>
-        [XmlElement("TextFormat")]
-        public string TextFormat { get; set; }
+        [XmlElement("ValueFormat", IsNullable = true)]
+        public string ValueFormat { get; set; }
 
         /// <summary>
         /// Gets or sets the MaxLength
         /// </summary>
         [XmlElement("MaxLength", IsNullable = false)]
-        public string MaxLength { get; set; }
+        public int MaxLength { get; set; }
 
         /// <summary>
         /// Gets or sets the FontSize.
@@ -379,33 +373,39 @@ namespace AllfleXML.FlexSpec
         public string FontSize { get; set; }
 
         /// <summary>
-        /// Gets or sets the IsInk.
+        /// Gets or sets the IsFixed.
         /// </summary>
-        [XmlElement("IsFixed")]
-        public string IsFixed { get; set; }
+        [XmlElement("IsFixed", IsNullable = false)]
+        public bool IsFixed { get; set; }
+
+        /// <summary>
+        /// Gets or sets the IsLaser.
+        /// </summary>
+        [XmlElement("IsLaser", IsNullable = true)]
+        public bool IsLaser { get; set; } = true;
 
         /// <summary>
         /// Gets or sets the IsInk.
         /// </summary>
         [XmlElement("IsInk", IsNullable = false)]
-        public string IsInk { get; set; }
+        public bool IsInk { get; set; }
 
         /// <summary>
         /// Gets or sets the ImageLocation.
         /// </summary>
-        [XmlElement("LogoImageLocation")]
+        [XmlElement("LogoImageLocation", IsNullable = true)]
         public string LogoImageLocation { get; set; }
 
         /// <summary>
         /// Gets or sets the Radius.
         /// </summary>
-        [XmlElement("Radius")]
-        public int Radius { get; set; }
+        [XmlElement("Radius", IsNullable = true)]
+        public int? Radius { get; set; }
 
         /// <summary>
         /// Gets or sets the CurveTextAttachTo.
         /// </summary>
-        [XmlElement("CurveTextAttachTo")]
+        [XmlElement("CurveTextAttachTo", IsNullable = true)]
         public string CurveTextAttachTo { get; set; }
     }
 }

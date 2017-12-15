@@ -212,7 +212,7 @@ namespace AllfleXML.Test
             {
                 Id = "Testing",
                 Name = "Testing_Elements",
-                Components =  new List<Component>
+                Components = new List<Component>
                 {
                     new Component
                     {
@@ -276,7 +276,7 @@ namespace AllfleXML.Test
                     }
                 }
             };
-        
+
 
             var doc = order.Export();
             Assert.IsNotNull(doc);

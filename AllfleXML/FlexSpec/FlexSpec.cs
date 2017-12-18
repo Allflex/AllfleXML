@@ -241,7 +241,7 @@ namespace AllfleXML.FlexSpec
     }
 
     /// <summary>
-    /// 
+    /// Valid colors of the component.
     /// </summary>
     [Serializable]
     public class Colors
@@ -254,13 +254,14 @@ namespace AllfleXML.FlexSpec
     }
 
     /// <summary>
-    /// 
+    /// Material Color
     /// </summary>
     [Serializable]
     public class Color
     {
         /// <summary>
         /// Gets or sets the ColorCode.
+        /// Identifying code of the Color
         /// </summary>
         [XmlElement("ColorCode", IsNullable = false)]
         public string ColorCode { get; set; }
@@ -270,9 +271,10 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Name", IsNullable = false)]
         public string Name { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the HexCode.
+        /// Hexidecimal Value of the color.
         /// </summary>
         [XmlElement("HexCode", IsNullable = false)]
         public string HexCode { get; set; }

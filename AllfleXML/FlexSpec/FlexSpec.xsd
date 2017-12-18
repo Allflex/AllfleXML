@@ -12,73 +12,75 @@
         <xs:element name="Specification" minOccurs="1" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id"></xs:element>
-              <xs:element name="Name"></xs:element>
+              <xs:element name="Id" />
+              <xs:element name="Name" />
               <xs:element name="Components">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Component" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="Index"></xs:element>
-                          <xs:element name="Name"></xs:element>
-                          <xs:element name="ProductLine"></xs:element>
-                          <xs:element name="Shilouette"></xs:element>
-                          <xs:element name="Outline"></xs:element>
-                          <xs:element name="Color"></xs:element>
-                          <xs:element name="Colors">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="Color" maxOccurs="unbounded">
-                                  <xs:complexType>
-                                    <xs:sequence>
-                                      <xs:element name="ColorCode" ></xs:element>
-                                      <xs:element name="Name" ></xs:element>
-                                      <xs:element name="HexCode" ></xs:element>
-                                    </xs:sequence>
-                                  </xs:complexType>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
+                          <xs:element name="Index" />
+                          <xs:element name="Name" />
+                          <xs:element name="Description" />
+                          <xs:element name="ProductLine" />
+                          <xs:element name="Silhouette" />
+                          <xs:element name="Outline" />
+                          <xs:element name="Color" minOccurs="0" maxOccurs="1" />
                           <xs:element name="Faces">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="ComponentFace">
+                                <xs:element name="Face">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:element name="Name" type="xs:string"></xs:element>
+                                      <xs:element name="Name" type="xs:string" />
                                       <xs:element name="Variables">
                                         <xs:complexType>
                                           <xs:sequence>
                                             <xs:element name="Variable" maxOccurs="unbounded">
                                               <xs:complexType>
                                                 <xs:sequence>
-                                                  <xs:element name="Index" type="xs:int"></xs:element>
-                                                  <xs:element name="Name" type="xs:string"></xs:element>
-                                                  <xs:element name="Description" type="xs:string"></xs:element>
-                                                  <xs:element name="Role" type="xs:string"></xs:element>
-                                                  <xs:element name="Type" type="xs:string"></xs:element>
-                                                  <xs:element name="Width" type="xs:int"></xs:element>
-                                                  <xs:element name="Height" type="xs:int"></xs:element>
-                                                  <xs:element name="PositionX" type="xs:int"></xs:element>
-                                                  <xs:element name="PositionY" type="xs:int"></xs:element>
-                                                  <xs:element name="DefaultValue"></xs:element>
-                                                  <xs:element name="ValueFormat" minOccurs="0" maxOccurs="1"></xs:element>
-                                                  <xs:element name="MaxLength" type="xs:int"></xs:element>
-                                                  <xs:element name="FontSize"></xs:element>
-                                                  <xs:element name="IsFixed" type="xs:boolean"></xs:element>
-                                                  <xs:element name="IsLaser" type="xs:boolean" minOccurs="0" maxOccurs="1"></xs:element>
-                                                  <xs:element name="IsInk" type="xs:boolean"></xs:element>
-                                                  <xs:element name="LogoImageLocation" minOccurs="0" maxOccurs="1"></xs:element>
-                                                  <xs:element name="Radius" type="xs:int" minOccurs="0" maxOccurs="1"></xs:element>
-                                                  <xs:element name="CurveTextAttachTo" minOccurs="0" maxOccurs="1"></xs:element>
+                                                  <xs:element name="Index" type="xs:int" />
+                                                  <xs:element name="Name" type="xs:string" />
+                                                  <xs:element name="Description" type="xs:string" />
+                                                  <xs:element name="Role" type="xs:string" />
+                                                  <xs:element name="Type" type="xs:string" />
+                                                  <xs:element name="Width" type="xs:int" />
+                                                  <xs:element name="Height" type="xs:int" />
+                                                  <xs:element name="PositionX" type="xs:int" />
+                                                  <xs:element name="PositionY" type="xs:int" />
+                                                  <xs:element name="DefaultValue" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="ValueFormat" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="MaxLength" type="xs:int" />
+                                                  <xs:element name="FontSize" />
+                                                  <xs:element name="IsFixed" type="xs:boolean" />
+                                                  <xs:element name="IsLaser" type="xs:boolean" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="IsInk" type="xs:boolean" />
+                                                  <xs:element name="LogoImageLocation" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="Radius" type="xs:int" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="CurveTextAttachTo" minOccurs="0" maxOccurs="1" />
+                                                  <xs:element name="CopyValueFrom" minOccurs="0" maxOccurs="1" />
                                                 </xs:sequence>
                                               </xs:complexType>
                                             </xs:element>
                                           </xs:sequence>
                                         </xs:complexType>
                                       </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Colors">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Color" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ColorCode" />
+                                      <xs:element name="Name" />
+                                      <xs:element name="HexCode" />
                                     </xs:sequence>
                                   </xs:complexType>
                                 </xs:element>

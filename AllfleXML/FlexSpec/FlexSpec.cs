@@ -185,16 +185,22 @@ namespace AllfleXML.FlexSpec
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets the description.
+        /// </summary>
+        [XmlElement("Description", IsNullable = true)]
+        public string Description { get; set; }
+
+        /// <summary>
         /// Gets or sets the product line.
         /// </summary>
         [XmlElement("ProductLine", IsNullable = false)]
         public string ProductLine { get; set; }
-        
+
         /// <summary>
-        /// Gets or sets the Shilouette.
+        /// Gets or sets the Silhouette.
         /// </summary>
-        [XmlElement("Shilouette", IsNullable = false)]
-        public string Shilouette { get; set; }
+        [XmlElement("Silhouette", IsNullable = false)]
+        public string Silhouette { get; set; }
 
         /// <summary>
         /// Gets or sets the Outline.
@@ -309,7 +315,7 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the Description.
         /// </summary>
-        [XmlElement("Description")]
+        [XmlElement("Description", IsNullable = true)]
         public string Description { get; set; }
 
         /// <summary>
@@ -407,5 +413,11 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("CurveTextAttachTo", IsNullable = true)]
         public string CurveTextAttachTo { get; set; }
+
+        /// <summary>
+        /// Name of the variable to copy value from. isFixed must be set to true if this property has a value set.
+        /// </summary>
+        [XmlElement("CopyValueFrom", IsNullable = true)]
+        public string CopyValueFrom { get; set; }
     }
 }

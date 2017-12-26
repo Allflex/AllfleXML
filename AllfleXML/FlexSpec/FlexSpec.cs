@@ -213,18 +213,18 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the color.
         /// </summary>
-        [XmlElement("Color"]
+        [XmlElement("Color")]
         public string Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Faces.
+        /// </summary>
+        public List<Face> Faces { get; set; }
 
         /// <summary>
         /// Gets or sets the color.
         /// </summary>
         public Colors Colors { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Faces.
-        /// </summary>
-        public List<ComponentFace> Faces { get; set; }
     }
 
     /// <summary>
@@ -236,8 +236,8 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
-        [XmlElement("ComponentFace")]
-        public List<ComponentFace> ComponentFace { get; set; }
+        [XmlElement("Face")]
+        public List<Face> Face { get; set; }
     }
 
     /// <summary>
@@ -284,7 +284,7 @@ namespace AllfleXML.FlexSpec
     /// The side of the component. Physical or otherwise (as in the RFID field of a component).
     /// </summary>
     [Serializable]
-    public class ComponentFace
+    public class Face
     {
         /// <summary>
         /// Gets or sets the Name.

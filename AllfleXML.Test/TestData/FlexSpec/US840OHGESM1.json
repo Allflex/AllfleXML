@@ -1,0 +1,283 @@
+{
+  "name": "US840OHGESM1",
+  "id": "3b108225-dd6f-4a24-a9ed-ceb818074377",
+  "components": [
+    {
+      "index": 1,
+      "name": "TFI",
+      "description": "Tamperproof HDX",
+      "productLine": "Allflex",
+      "silhouette": "TFI-Silhouette.png",
+      "outline": "TFI-Outline.png",
+      "faces": [
+        {
+          "name": "Front",
+          "variables": [
+            {
+              "name": "Comp1var1840ProgramableVisu",
+              "index": 1,
+              "positionX": 10,
+              "positionY": 7,
+              "radius": 50,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "inside",
+              "fontSize": 20,
+              "maxLength": 19,
+              "isInk": false,
+              "textFormat": "###_###_###_###_###",
+              "textFrom": "Comp1var2840ProgramableEID",
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var2840ProgramableEID",
+              "index": 2,
+              "positionX": 10,
+              "positionY": 7,
+              "radius": 50,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "999123456789012",
+              "curveTextAttachTo": "inside",
+              "fontSize": 20,
+              "maxLength": 19,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "OTP       "
+            },
+            {
+              "name": "Comp1var3AllflexHDXLogo",
+              "index": 3,
+              "positionX": 25,
+              "positionY": 9,
+              "radius": 0,
+              "type": "Image",
+              "imageLocation": "allflex1.png",
+              "width": 36,
+              "height": 18,
+              "text": null,
+              "curveTextAttachTo": "",
+              "fontSize": 4,
+              "maxLength": 1,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var4USShield",
+              "index": 4,
+              "positionX": 70,
+              "positionY": 12,
+              "radius": 0,
+              "type": "Image",
+              "imageLocation": "usda.png",
+              "width": 18,
+              "height": 18,
+              "text": null,
+              "curveTextAttachTo": "",
+              "fontSize": 4,
+              "maxLength": 1,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            }
+          ]
+        }
+      ],
+      "color": "W",
+      "colors": [
+        {
+          "colorCode": "Y",
+          "name": "Yellow",
+          "hexCode": "fcf263"
+        },
+        {
+          "colorCode": "W",
+          "name": "White",
+          "hexCode": "faf6f7"
+        },
+        {
+          "colorCode": "O",
+          "name": "Orange",
+          "hexCode": "fb7434"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "ESM",
+      "description": "Extended Small Male",
+      "productLine": "Allflex",
+      "silhouette": "ESM-Silhouette.png",
+      "outline": "ESM-Outline.png",
+      "faces": [
+        {
+          "name": "Front",
+          "variables": [
+            {
+              "name": "Comp2var5UNLAWFUL",
+              "index": 5,
+              "positionX": 36,
+              "positionY": 14,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 60,
+              "height": 12,
+              "text": "UNLAWFUL",
+              "curveTextAttachTo": "",
+              "fontSize": 3,
+              "maxLength": 8,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var6TOREMOVE",
+              "index": 6,
+              "positionX": 40,
+              "positionY": 28,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 56,
+              "height": 12,
+              "text": "TO REMOVE",
+              "curveTextAttachTo": "",
+              "fontSize": 3,
+              "maxLength": 9,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var7USShield",
+              "index": 7,
+              "positionX": 15,
+              "positionY": 24,
+              "radius": 0,
+              "type": "Image",
+              "imageLocation": "usda.png",
+              "width": 18,
+              "height": 18,
+              "text": null,
+              "curveTextAttachTo": "",
+              "fontSize": 4,
+              "maxLength": 1,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var8MGTNUMBER",
+              "index": 8,
+              "positionX": 31,
+              "positionY": 40,
+              "radius": 28,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "inside",
+              "fontSize": 17,
+              "maxLength": 5,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Number    "
+            },
+            {
+              "name": "Comp2var9840ProgramableVisu",
+              "index": 9,
+              "positionX": 5,
+              "positionY": 6,
+              "radius": 54,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "inside",
+              "fontSize": 20,
+              "maxLength": 19,
+              "isInk": false,
+              "textFormat": "###_###_###_###_###",
+              "textFrom": "Comp1var2840ProgramableEID",
+              "role": "Text      "
+            }
+          ]
+        }
+      ],
+      "color": "W",
+      "colors": [
+        {
+          "colorCode": "Y",
+          "name": "Yellow",
+          "hexCode": "fff46e"
+        },
+        {
+          "colorCode": "W",
+          "name": "White",
+          "hexCode": "f8efed"
+        },
+        {
+          "colorCode": "R",
+          "name": "Red",
+          "hexCode": "ed7068"
+        },
+        {
+          "colorCode": "PK",
+          "name": "Pink",
+          "hexCode": "f396ab"
+        },
+        {
+          "colorCode": "P",
+          "name": "Purple",
+          "hexCode": "cda6c8"
+        },
+        {
+          "colorCode": "O",
+          "name": "Orange",
+          "hexCode": "f39167"
+        },
+        {
+          "colorCode": "M",
+          "name": "Magenta",
+          "hexCode": "ef72a4"
+        },
+        {
+          "colorCode": "K",
+          "name": "Black",
+          "hexCode": "111111"
+        },
+        {
+          "colorCode": "G",
+          "name": "Green",
+          "hexCode": "c6dfb6"
+        },
+        {
+          "colorCode": "CP",
+          "name": "Classic Purple",
+          "hexCode": "a44e8f"
+        },
+        {
+          "colorCode": "B",
+          "name": "Blue",
+          "hexCode": "86cade"
+        }
+      ]
+    }
+  ]
+}

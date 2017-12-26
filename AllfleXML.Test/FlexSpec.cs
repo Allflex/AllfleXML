@@ -10,6 +10,7 @@ namespace AllfleXML.Test
     [TestClass]
     public class FlexSpec
     {
+        /*
         //GXF72_DL
         [TestMethod]
         public void ImportFlexOrder0()
@@ -29,6 +30,7 @@ namespace AllfleXML.Test
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
         }
+        */
 
         //GTLF2_GSM2
         [TestMethod]
@@ -40,6 +42,7 @@ namespace AllfleXML.Test
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
         }
 
+        /*
         //US8OFPGESM1
         [TestMethod]
         public void ImportFlexOrder3()
@@ -109,6 +112,7 @@ namespace AllfleXML.Test
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
         }
+        */
 
         [TestMethod]
         public void SaveFlexSpec()
@@ -126,7 +130,6 @@ namespace AllfleXML.Test
                         ProductLine = "Allflex",
                         Silhouette = "TestSilhouette",
                         Outline = "TestOutline",
-                        Features = String.Empty,
                         Color = "Y",
                         Colors = new Colors
                         {
@@ -147,9 +150,9 @@ namespace AllfleXML.Test
                             }
                         },
 
-                        Faces = new List<ComponentFace>
+                        Faces = new List<Face>
                         {
-                            new ComponentFace
+                            new Face
                             {
                                 Name = "Front",
                                 Variables = new List<Variable>
@@ -165,13 +168,12 @@ namespace AllfleXML.Test
                                         Height = 12,
                                         PositionX = 8,
                                         PositionY = 7,
-                                        Text = "1234567890",
-                                        TextFormat = string.Empty,
-                                        MaxLength = string.Empty,
+                                        DefaultValue = "1234567890",
+                                        ValueFormat = string.Empty,
                                         FontSize = "20",
-                                        IsFixed = string.Empty,
-                                        IsInk = "True",
-                                        LogoImageLocation = String.Empty,
+                                        IsInk = true,
+                                        IsLaser = true,
+                                        LogoImageLocation = string.Empty,
                                         Radius = 51,
                                         CurveTextAttachTo = string.Empty
                                     }
@@ -221,7 +223,6 @@ namespace AllfleXML.Test
                         ProductLine = "Allflex",
                         Silhouette = "TestSilhouette",
                         Outline = "TestOutline",
-                        Features = String.Empty,
                         Color = "Y",
                         Colors = new Colors
                         {
@@ -242,9 +243,9 @@ namespace AllfleXML.Test
                             }
                         },
 
-                        Faces = new List<ComponentFace>
+                        Faces = new List<Face>
                         {
-                            new ComponentFace
+                            new Face
                             {
                                 Name = "Front",
                                 Variables = new List<Variable>
@@ -260,15 +261,14 @@ namespace AllfleXML.Test
                                         Height = 12,
                                         PositionX = 8,
                                         PositionY = 7,
-                                        Text = "1234567890",
-                                        TextFormat = string.Empty,
-                                        MaxLength = string.Empty,
+                                        DefaultValue = "1234567890",
+                                        ValueFormat = string.Empty,
                                         FontSize = "20",
-                                        IsFixed = string.Empty,
-                                        IsInk = string.Empty,
-                                        LogoImageLocation = String.Empty,
+                                        IsFixed = false,
+                                        IsLaser = true,
+                                        IsInk = false,
                                         Radius = 51,
-                                        CurveTextAttachTo = string.Empty
+                                        CurveTextAttachTo = "outside"
                                     }
                                 }
                             }
@@ -276,8 +276,7 @@ namespace AllfleXML.Test
                     }
                 }
             };
-
-
+            
             var doc = order.Export();
             Assert.IsNotNull(doc);
 
@@ -288,14 +287,14 @@ namespace AllfleXML.Test
         [TestMethod]
         public void FailedFlexSpecValidation()
         {
-            var result = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
             Assert.IsFalse(result.Item1);
         }
 
         [TestMethod]
         public void PassedFlexSpecValidation()
         {
-            var result = AllfleXML.FlexOrder.Parser.Validate(@"TestData\FlexSpec\GXF72_DL.xml");
+            var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexSpec\GTLF2_GSM2.xml");
             Assert.IsTrue(result.Item1);
         }
     }

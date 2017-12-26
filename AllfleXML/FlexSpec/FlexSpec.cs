@@ -400,21 +400,21 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the IsFixed.
         /// Indicates if the variable value is static for the specification. The value can not be changed by instance.
         /// </summary>
-        [XmlElement("IsFixed", IsNullable = false)]
+        [XmlElement("IsFixed")]
         public bool IsFixed { get; set; }
 
         /// <summary>
         /// Gets or sets the IsLaser.
         /// Indicates if the value is laser etched into the product.
         /// </summary>
-        [XmlElement("IsLaser", IsNullable = true)]
+        [XmlElement("IsLaser")]
         public bool IsLaser { get; set; } = true;
 
         /// <summary>
         /// Gets or sets the IsInk.
         /// Required: Determines if a variable value will be inked onto the product (It is possible to ink both TEXT and LOGO)
         /// </summary>
-        [XmlElement("IsInk", IsNullable = false)]
+        [XmlElement("IsInk")]
         public bool IsInk { get; set; }
 
         /// <summary>
@@ -446,4 +446,3 @@ namespace AllfleXML.FlexSpec
         public string CopyValueFrom { get; set; }
     }
 }
-f

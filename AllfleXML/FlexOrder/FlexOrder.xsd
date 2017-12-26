@@ -323,7 +323,7 @@
                 <xs:annotation>
                   <xs:appinfo>WSOrderId</xs:appinfo>
                   <xs:documentation xml:lang="en">
-                    (Depreciated) Internal use by the manufacture only.
+                    Internal use by the manufacture only.
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>
@@ -384,7 +384,7 @@
                       <xs:annotation>
                         <xs:appinfo>Template</xs:appinfo>
                         <xs:documentation xml:lang="en">
-                          (Deprecated) Special Marking Details (Color, Template, Drawing)
+                          FlexSpec Specification Name
                         </xs:documentation>
                       </xs:annotation>
                     </xs:element>

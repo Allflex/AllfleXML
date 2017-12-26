@@ -10,18 +10,109 @@ namespace AllfleXML.Test
     [TestClass]
     public class FlexSpec
     {
-        public const string testPath = @"TestData\FlexOrder\FlexSpec.xml";
-
+        /*
+        //GXF72_DL
         [TestMethod]
-        public void ImportFlexSpec()
+        public void ImportFlexSpec0()
         {
-            var specification = Parser.Import(testPath);
-            Assert.IsNotNull(specification);
-            Assert.IsTrue(specification.Specifications.Any());
+            var specification = Parser.Import(@"TestData\FlexSpec\GXF72_DL.xml");
             Assert.IsNotNull(specification);
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
         }
+
+        //GNXUS840TXF2LM_TSU
+        [TestMethod]
+        public void ImportFlexSpec1()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\GNXUS840TXF2LM_TSU.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+        */
+
+        //GTLF2_GSM2
+        [TestMethod]
+        public void ImportFlexSpec2()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\GTLF2_GSM2.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        /*
+        //US8OFPGESM1
+        [TestMethod]
+        public void ImportFlexSpec3()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\US8OFPGESM1.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //US840OHGESM1
+        [TestMethod]
+        public void ImportFlexSpec4()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\US840OHGESM1.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //840OH_GESM
+        [TestMethod]
+        public void ImportFlexSpec5()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\840OH_GESM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //840HDXLFS3SM
+        [TestMethod]
+        public void ImportFlexSpec6()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\840HDXLFS3SM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //NF_US840STF1SM
+        [TestMethod]
+        public void ImportFlexSpec7()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\NF_US840STF1SM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //JYXC2_GSM
+        [TestMethod]
+        public void ImportFlexSpec8()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\JYXC2_GSM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //IMI_840OF_GESM
+        [TestMethod]
+        public void ImportFlexSpec9()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\IMI_840OF_GESM.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+        */
 
         [TestMethod]
         public void SaveFlexSpec()
@@ -37,9 +128,8 @@ namespace AllfleXML.Test
                         Index = 1,
                         Name = "AS",
                         ProductLine = "Allflex",
-                        Shilouette = "TestShiloutte",
+                        Silhouette = "TestSilhouette",
                         Outline = "TestOutline",
-                        Features = String.Empty,
                         Color = "Y",
                         Colors = new Colors
                         {
@@ -60,9 +150,9 @@ namespace AllfleXML.Test
                             }
                         },
 
-                        Faces = new List<ComponentFace>
+                        Faces = new List<Face>
                         {
-                            new ComponentFace
+                            new Face
                             {
                                 Name = "Front",
                                 Variables = new List<Variable>
@@ -78,13 +168,12 @@ namespace AllfleXML.Test
                                         Height = 12,
                                         PositionX = 8,
                                         PositionY = 7,
-                                        Text = "1234567890",
-                                        TextFormat = string.Empty,
-                                        MaxLength = string.Empty,
+                                        DefaultValue = "1234567890",
+                                        ValueFormat = string.Empty,
                                         FontSize = "20",
-                                        IsFixed = string.Empty,
-                                        IsInk = "True",
-                                        LogoImageLocation = String.Empty,
+                                        IsInk = true,
+                                        IsLaser = true,
+                                        LogoImageLocation = string.Empty,
                                         Radius = 51,
                                         CurveTextAttachTo = string.Empty
                                     }
@@ -125,16 +214,15 @@ namespace AllfleXML.Test
             {
                 Id = "Testing",
                 Name = "Testing_Elements",
-                Components =  new List<Component>
+                Components = new List<Component>
                 {
                     new Component
                     {
                         Index = 1,
                         Name = "AS",
                         ProductLine = "Allflex",
-                        Shilouette = "TestShiloutte",
+                        Silhouette = "TestSilhouette",
                         Outline = "TestOutline",
-                        Features = String.Empty,
                         Color = "Y",
                         Colors = new Colors
                         {
@@ -155,9 +243,9 @@ namespace AllfleXML.Test
                             }
                         },
 
-                        Faces = new List<ComponentFace>
+                        Faces = new List<Face>
                         {
-                            new ComponentFace
+                            new Face
                             {
                                 Name = "Front",
                                 Variables = new List<Variable>
@@ -173,15 +261,14 @@ namespace AllfleXML.Test
                                         Height = 12,
                                         PositionX = 8,
                                         PositionY = 7,
-                                        Text = "1234567890",
-                                        TextFormat = string.Empty,
-                                        MaxLength = string.Empty,
+                                        DefaultValue = "1234567890",
+                                        ValueFormat = string.Empty,
                                         FontSize = "20",
-                                        IsFixed = string.Empty,
-                                        IsInk = string.Empty,
-                                        LogoImageLocation = String.Empty,
+                                        IsFixed = false,
+                                        IsLaser = true,
+                                        IsInk = false,
                                         Radius = 51,
-                                        CurveTextAttachTo = string.Empty
+                                        CurveTextAttachTo = "outside"
                                     }
                                 }
                             }
@@ -189,8 +276,7 @@ namespace AllfleXML.Test
                     }
                 }
             };
-        
-
+            
             var doc = order.Export();
             Assert.IsNotNull(doc);
 
@@ -198,6 +284,18 @@ namespace AllfleXML.Test
             Assert.IsTrue(result.Item1);
         }
 
+        [TestMethod]
+        public void FailedFlexSpecValidation()
+        {
+            var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            Assert.IsFalse(result.Item1);
+        }
 
+        [TestMethod]
+        public void PassedFlexSpecValidation()
+        {
+            var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexSpec\GTLF2_GSM2.xml");
+            Assert.IsTrue(result.Item1);
+        }
     }
 }

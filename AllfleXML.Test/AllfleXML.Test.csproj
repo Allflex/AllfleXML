@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="FlexOrder.cs" />
     <Compile Include="FlexOrderStatus.cs" />
+    <Compile Include="FlexSpec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ID1Order.cs" />
     <Compile Include="LaserTag.cs" />
@@ -102,6 +103,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\FlexOrder\sampleMulti.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\FlexSpec\GTLF2_GSM2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\ID1Order\sample0.xml">
@@ -164,6 +168,9 @@
     <Content Include="TestData\LaserTag\sample9.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\FlexSpec\GTLF2_GSM2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
@@ -197,6 +204,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

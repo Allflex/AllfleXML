@@ -1,0 +1,432 @@
+{
+  "name": "JYXC2_GSM",
+  "id": "19b6662a-aab4-40ae-8525-9e4a1c9b8d7d",
+  "components": [
+    {
+      "index": 1,
+      "name": "TXF",
+      "description": "T/Proof Maxi Female",
+      "productLine": "Allflex",
+      "silhouette": "TXF-Silhouette.png",
+      "outline": "TXF-Outline.png",
+      "faces": [
+        {
+          "name": "Front",
+          "variables": [
+            {
+              "name": "Comp1var4LOGO",
+              "index": 4,
+              "positionX": 103,
+              "positionY": 80,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 90,
+              "height": 50,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 9,
+              "maxLength": 1,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var6PROPERTYID",
+              "index": 6,
+              "positionX": 75,
+              "positionY": 135,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 90,
+              "height": 17,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 14,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var7COUNTRYCODE",
+              "index": 7,
+              "positionX": 176,
+              "positionY": 135,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 40,
+              "height": 15,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 3,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var1REGISTRATIONNUMBER",
+              "index": 1,
+              "positionX": 70,
+              "positionY": 159,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 150,
+              "height": 20,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 20,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "RegNumber "
+            },
+            {
+              "name": "Comp1var5REGISTRATIONNUMBER",
+              "index": 5,
+              "positionX": 0,
+              "positionY": 0,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 12,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var2CUSTOM1",
+              "index": 2,
+              "positionX": 5,
+              "positionY": 186,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 280,
+              "height": 40,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 20,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var3CUSTOM2",
+              "index": 3,
+              "positionX": 5,
+              "positionY": 230,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 280,
+              "height": 40,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 20,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp1var8MGTNUMBER",
+              "index": 8,
+              "positionX": 5,
+              "positionY": 280,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 280,
+              "height": 100,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 5,
+              "isInk": true,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Number    "
+            }
+          ]
+        }
+      ],
+      "color": "B",
+      "colors": [
+        {
+          "colorCode": "Y",
+          "name": "Yellow",
+          "hexCode": "fcf46c"
+        },
+        {
+          "colorCode": "W",
+          "name": "White",
+          "hexCode": "f9f3f3"
+        },
+        {
+          "colorCode": "R",
+          "name": "Red",
+          "hexCode": "ec7068"
+        },
+        {
+          "colorCode": "PK",
+          "name": "Pink",
+          "hexCode": "f59eaf"
+        },
+        {
+          "colorCode": "P",
+          "name": "Purple",
+          "hexCode": "f790f1"
+        },
+        {
+          "colorCode": "O",
+          "name": "Orange",
+          "hexCode": "f39167"
+        },
+        {
+          "colorCode": "M",
+          "name": "Magenta",
+          "hexCode": "e35adb"
+        },
+        {
+          "colorCode": "G",
+          "name": "Green",
+          "hexCode": "c9e4c3"
+        },
+        {
+          "colorCode": "CP",
+          "name": "Classic Purple",
+          "hexCode": "bb58b5"
+        },
+        {
+          "colorCode": "B",
+          "name": "Blue",
+          "hexCode": "8dceec"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "SM",
+      "description": "Small Male",
+      "productLine": "Allflex",
+      "silhouette": "SM-Silhouette.png",
+      "outline": "SM-Outline.png",
+      "faces": [
+        {
+          "name": "Front",
+          "variables": [
+            {
+              "name": "Comp2var11PROPERTYID",
+              "index": 11,
+              "positionX": 20,
+              "positionY": 23,
+              "radius": 40,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "outside",
+              "fontSize": 23,
+              "maxLength": 14,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": "Comp1var2CUSTOM1",
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var5STATE",
+              "index": 5,
+              "positionX": 38,
+              "positionY": 24,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 40,
+              "height": 20,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 2,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var8MGTNUMBER",
+              "index": 8,
+              "positionX": 10,
+              "positionY": 48,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 100,
+              "height": 20,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 20,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var14MGTNUMBER(Double)",
+              "index": 14,
+              "positionX": 20,
+              "positionY": 23,
+              "radius": 40,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "outside",
+              "fontSize": 23,
+              "maxLength": 20,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var15COUNTRYCODE",
+              "index": 15,
+              "positionX": 39,
+              "positionY": 76,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 40,
+              "height": 20,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 3,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": "Comp1var3CUSTOM2",
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var16REGISTRATIONNUMBER",
+              "index": 16,
+              "positionX": 30,
+              "positionY": 97,
+              "radius": 0,
+              "type": "Text",
+              "imageLocation": "",
+              "width": 60,
+              "height": 20,
+              "text": "",
+              "curveTextAttachTo": "",
+              "fontSize": 2,
+              "maxLength": 12,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": "Comp1var4LOGO",
+              "role": "Text      "
+            },
+            {
+              "name": "Comp2var17REGISTRATIONNUMBER",
+              "index": 17,
+              "positionX": 20,
+              "positionY": 23,
+              "radius": 40,
+              "type": "CurvedText",
+              "imageLocation": "",
+              "width": 0,
+              "height": 0,
+              "text": "",
+              "curveTextAttachTo": "outside",
+              "fontSize": 23,
+              "maxLength": 12,
+              "isInk": false,
+              "textFormat": "",
+              "textFrom": null,
+              "role": "Text      "
+            }
+          ]
+        }
+      ],
+      "color": "B",
+      "colors": [
+        {
+          "colorCode": "Y",
+          "name": "Yellow",
+          "hexCode": "e4d84d"
+        },
+        {
+          "colorCode": "W",
+          "name": "White",
+          "hexCode": "f2ecec"
+        },
+        {
+          "colorCode": "R",
+          "name": "Red",
+          "hexCode": "f2716c"
+        },
+        {
+          "colorCode": "PK",
+          "name": "Pink",
+          "hexCode": "f498b1"
+        },
+        {
+          "colorCode": "P",
+          "name": "Purple",
+          "hexCode": "c7a9cf"
+        },
+        {
+          "colorCode": "O",
+          "name": "Orange",
+          "hexCode": "f7966b"
+        },
+        {
+          "colorCode": "M",
+          "name": "Magenta",
+          "hexCode": "f272ab"
+        },
+        {
+          "colorCode": "K",
+          "name": "Black",
+          "hexCode": "111111"
+        },
+        {
+          "colorCode": "G",
+          "name": "Green",
+          "hexCode": "c0e1c2"
+        },
+        {
+          "colorCode": "CP",
+          "name": "Classic Purple",
+          "hexCode": "a3509f"
+        },
+        {
+          "colorCode": "B",
+          "name": "Blue",
+          "hexCode": "70ceea"
+        }
+      ]
+    }
+  ]
+}

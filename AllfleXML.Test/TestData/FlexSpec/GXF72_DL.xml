@@ -1,0 +1,195 @@
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Specification>
+    <Id>0</Id>
+    <Name>GXF72_DL</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>XF</Name>
+        <ProductLine>Allflex</ProductLine>
+        <Shilouette>XF-Silhouette.png</Shilouette>
+        <Outline>XF-Outline.png</Outline>
+        <Faces>
+          <ComponentFace>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>Comp1var1CustomerImage</Name>
+                <Role>LogoSmall </Role>
+                <Type>Image</Type>
+                <Width>90</Width>
+                <Height>60</Height>
+                <PositionX>103</PositionX>
+                <PositionY>93</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>0</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>2</Index>
+                <Name>Comp1var2VARTEXT-20-1</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>186</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>3</Index>
+                <Name>Comp1var3VARTEXT-20-2</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>237</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>4</Index>
+                <Name>Comp1var4VARTEXT-20-3</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>288</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>5</Index>
+                <Name>Comp1var5VARTEXT-20-4</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>339</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+          <ComponentFace>
+            <Name>Back</Name>
+            <Variables>
+              <Variable>
+                <Index>6</Index>
+                <Name>Comp1var6CustomerImage</Name>
+                <Role>LogoSmall </Role>
+                <Type>Image</Type>
+                <Width>90</Width>
+                <Height>60</Height>
+                <PositionX>103</PositionX>
+                <PositionY>93</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>0</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>7</Index>
+                <Name>Comp1var7VARTEXT-20-5</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>186</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>8</Index>
+                <Name>Comp1var8VARTEXT-20-6</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>237</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>9</Index>
+                <Name>Comp1var9VARTEXT-20-7</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>288</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>10</Index>
+                <Name>Comp1var10VARTEXT-20-8</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>339</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+        </Faces>
+      </Component>
+    </Components>
+  </Specification>
+</Document>

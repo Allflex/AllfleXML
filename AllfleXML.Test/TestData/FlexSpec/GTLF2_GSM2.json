@@ -1,0 +1,206 @@
+{
+  "id": "d9665bea-8fac-4145-97e2-1768bdaac109",
+  "name": "GTLF2_GSM2",
+  "components": [
+    {
+      "index": 1,
+      "name": "TLF",
+      "description": "Tamper Proof Large Female",
+      "productLine": "Allflex",
+      "silhouette": "TLF-Silhouette.png",
+      "outline": "TLF-Outline.png",
+      "color": "",
+      "faces": [
+        {
+          "name": "Front",
+          "variables": [
+            {
+              "index": 1,
+              "name": "Comp1var1",
+              "description": "Text",
+              "role": "Text",
+              "type": "Text",
+              "width": 215,
+              "height": 30,
+              "positionX": 5,
+              "positionY": 160,
+              "defaultValue": "",
+              "valueFormat": "",
+              "maxLength": 10,
+              "fontSize": 8,
+              "isFixed": false,
+              "isLaser": true,
+              "isInk": false,
+              "logoImageLocation": "",
+              "radius": 0,
+              "curveTextAttachTo": "",
+              "copyValueFrom": ""
+            },
+            {
+              "index": 2,
+              "name": "Comp1var2",
+              "description": "Management Number",
+              "role": "Number",
+              "type": "Text",
+              "width": 215,
+              "height": 100,
+              "positionX": 5,
+              "positionY": 210,
+              "defaultValue": "",
+              "maxLength": 5,
+              "fontSize": 4,
+              "isFixed": false,
+              "isLaser": true,
+              "isInk": true,
+              "logoImageLocation": "",
+              "radius": 0,
+              "curveTextAttachTo": ""
+            }
+          ]
+        }
+      ],
+      "colors": [
+        {
+          "colorCode": "Y",
+          "name": "Yellow",
+          "hexCode": "fff56f"
+        },
+        {
+          "colorCode": "W",
+          "name": "White",
+          "hexCode": "f2ecec"
+        },
+        {
+          "colorCode": "R",
+          "name": "Red",
+          "hexCode": "f2716c"
+        },
+        {
+          "colorCode": "PK",
+          "name": "Pink",
+          "hexCode": "f498b1"
+        },
+        {
+          "colorCode": "P",
+          "name": "Purple",
+          "hexCode": "b200ff"
+        },
+        {
+          "colorCode": "O",
+          "name": "Orange",
+          "hexCode": "f7966b"
+        },
+        {
+          "colorCode": "G",
+          "name": "Green",
+          "hexCode": "c0e1c2"
+        },
+        {
+          "colorCode": "GP",
+          "name": "General Purple",
+          "hexCode": "c29fc9"
+        },
+        {
+          "colorCode": "CP",
+          "name": "Classic Purple",
+          "hexCode": "a361a8"
+        },
+        {
+          "colorCode": "B",
+          "name": "Blue",
+          "hexCode": "71cfeb"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "SM",
+      "description": "Small Male",
+      "productLine": "Allflex",
+      "silhouette": "SM-Silhouette.png",
+      "outline": "SM-Outline.png",
+      "faces": [
+        {
+          "name": "Front",
+          "variables": [
+            {
+              "index": 3,
+              "name": "Comp2var3",
+              "description": "Management Number",
+              "role": "Number",
+              "type": "Text",
+              "width": 110,
+              "height": 30,
+              "positionX": 4,
+              "positionY": 39,
+              "valueFormat": "##_##",
+              "maxLength": 4,
+              "fontSize": 20,
+              "isFixed": true,
+              "isLaser": true,
+              "isInk": false,
+              "copyValueFrom": "Comp1var2"
+            }
+          ]
+        }
+      ],
+      "colors": [
+        {
+          "colorCode": "Y",
+          "name": "Yellow",
+          "hexCode": "e4d84d"
+        },
+        {
+          "colorCode": "W",
+          "name": "White",
+          "hexCode": "f2ecec"
+        },
+        {
+          "colorCode": "R",
+          "name": "Red",
+          "hexCode": "f2716c"
+        },
+        {
+          "colorCode": "PK",
+          "name": "Pink",
+          "hexCode": "f498b1"
+        },
+        {
+          "colorCode": "P",
+          "name": "Purple",
+          "hexCode": "c7a9cf"
+        },
+        {
+          "colorCode": "O",
+          "name": "Orange",
+          "hexCode": "f7966b"
+        },
+        {
+          "colorCode": "M",
+          "name": "Magenta",
+          "hexCode": "f272ab"
+        },
+        {
+          "colorCode": "K",
+          "name": "Black",
+          "hexCode": "111111"
+        },
+        {
+          "colorCode": "G",
+          "name": "Green",
+          "hexCode": "c0e1c2"
+        },
+        {
+          "colorCode": "CP",
+          "name": "Classic Purple",
+          "hexCode": "a3509f"
+        },
+        {
+          "colorCode": "B",
+          "name": "Blue",
+          "hexCode": "70ceea"
+        }
+      ]
+    }
+  ]
+}

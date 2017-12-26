@@ -2,256 +2,258 @@
     "id": "GUID",
     "name": "GXF_GSM6",
     "components": [
-        {
-          "index": "1",
-          "name": "SM",
-          "description": "Small Male",
-          "productLine": "Allflex",
-          "shilouette": "SM-Silhouette.png",
-          "outline": "SM-Outline.png",
-          "features": [],
-          "color": "Y",
-          "colors": [
+      {
+        "index": "1",
+        "name": "SM",
+        "description": "Small Male",
+        "productLine": "Allflex",
+        "silhouette": "SM-Silhouette.png",
+        "outline": "SM-Outline.png",
+        "features": [],
+        "color": "Y",
+        "colors": [
+          {
+            "ColorCode": "Y",
+            "Name": "Yellow",
+            "HexCode": "e4d84d"
+          },
+          {
+            "ColorCode": "B",
+            "Name": "Blue",
+            "HexCode": "71cfeb"
+          },
+          {
+            "ColorCode": "CP",
+            "Name": "Classic Purple",
+            "HexCode": "b04ab7"
+          },
+          {
+            "ColorCode": "G",
+            "Name": "Green",
+            "HexCode": "c0e1c2"
+          },
+          {
+            "ColorCode": "K",
+            "Name": "Black",
+            "HexCode": "1f1f1f"
+          },
+          {
+            "ColorCode": "O",
+            "Name": "Orange",
+            "HexCode": "f7966b"
+          },
+          {
+            "ColorCode": "PK",
+            "Name": "Pink",
+            "HexCode": "f498b1"
+          },
+          {
+            "ColorCode": "R",
+            "Name": "Red",
+            "HexCode": "f3726d"
+          },
+          {
+            "ColorCode": "W",
+            "Name": "White",
+            "HexCode": "f3eded"
+          }
+        ],
+        "faces": [
+          {
+            "name": "Front",
+            "variables": [
               {
-                "ColorCode": "Y",
-                "Name": "Yellow",
-                "HexCode": "e4d84d"
+                "index": 0,
+                "name": "var1",
+                "description": "",
+                "role": "",
+                "type": "curved-text",
+                "width": 56,
+                "height": 12,
+                "positionX": 8,
+                "positionY": 7,
+
+                "defaultValue": "1234567890",
+                "textFormat": "",
+                "maxLength": 50,
+                "fontSize": 20,
+                "isFixed": false,
+                "isLaser": true,
+                "isInk": false,
+
+                "logoImageLocation": "",
+
+                "radius": 51,
+                "curveTextAttachTo": "inside"
               },
               {
-                "ColorCode": "B",
-                "Name": "Blue",
-                "HexCode": "71cfeb"
-              },
-              {
-                "ColorCode": "CP",
-                "Name": "Classic Purple",
-                "HexCode": "b04ab7"
-              },
-              {
-                "ColorCode": "G",
-                "Name": "Green",
-                "HexCode": "c0e1c2"
-              },
-              {
-                "ColorCode": "K",
-                "Name": "Black",
-                "HexCode": "1f1f1f"
-              },
-              {
-                "ColorCode": "O",
-                "Name": "Orange",
-                "HexCode": "f7966b"
-              },
-              {
-                "ColorCode": "PK",
-                "Name": "Pink",
-                "HexCode": "f498b1"
-              },
-              {
-                "ColorCode": "R",
-                "Name": "Red",
-                "HexCode": "f3726d"
-              },
-              {
-                "ColorCode": "W",
-                "Name": "White",
-                "HexCode": "f3eded"
+                "index": 1,
+                "name": "var2",
+                "description": "",
+                "role": "",
+                "type": "curved-text",
+                "width": 56,
+                "height": 12,
+                "positionX": 28,
+                "positionY": 22,
+
+                "defaultValue": "ABCDEFG",
+                "textFormat": "",
+                "maxLength": 50,
+                "fontSize": 20,
+                "isFixed": false,
+                "isLaser": true,
+                "isInk": false,
+
+                "logoImageLocation": "",
+
+                "radius": 32,
+                "curveTextAttachTo": "outside"
               }
-            ],
-          "faces": [
-            {
-              "name": "Front",
-              "variables": [
-                  {
-                    "index": 0,
-                    "name": "var1",
-                    "description": "",
-                    "role": "",
-                    "type": "curved-text",
-                    "width": 56,
-                    "height": 12,
-                    "positionX": 8,
-                    "positionY": 7,
+            ]
+          }
+        ]
+      },
+      {
+        "index": "2",
+        "name": "SXF",
+        "productLine": "Allflex",
+        "silhouette": "SXF-Silhouette.png",
+        "outline": "SXF-Outline.png",
+        "features": [],
+        "color": "PK",
+        "colors": [
+          {
+            "ColorCode": "Y",
+            "Name": "Yellow",
+            "HexCode": "e4d84d"
+          },
+          {
+            "ColorCode": "B",
+            "Name": "Blue",
+            "HexCode": "71cfeb"
+          },
+          {
+            "ColorCode": "CP",
+            "Name": "Classic Purple",
+            "HexCode": "b04ab7"
+          },
+          {
+            "ColorCode": "G",
+            "Name": "Green",
+            "HexCode": "c0e1c2"
+          },
+          {
+            "ColorCode": "K",
+            "Name": "Black",
+            "HexCode": "1f1f1f"
+          },
+          {
+            "ColorCode": "O",
+            "Name": "Orange",
+            "HexCode": "f7966b"
+          },
+          {
+            "ColorCode": "PK",
+            "Name": "Pink",
+            "HexCode": "f498b1"
+          },
+          {
+            "ColorCode": "R",
+            "Name": "Red",
+            "HexCode": "f3726d"
+          },
+          {
+            "ColorCode": "W",
+            "Name": "White",
+            "HexCode": "f3eded"
+          }
+        ],
+        "faces": [
+          {
+            "name": "Front",
+            "variables": [
+              {
+                "index": 2,
+                "name": "var3",
+                "description": "",
+                "role": "CustomText",
+                "type": "text",
+                "width": 260,
+                "height": 40,
+                "positionX": 15,
+                "positionY": 268,
 
-                    "text": "1234567890",
-                    "textFormat": "",
-                    "maxLength": 50,
-                    "fontSize": 20,
-                    "isFixed": false,
-                    "isInk": false,
+                "defaultValue": "CHASE FARNAN",
+                "textFormat": "",
+                "maxLength": -1,
+                "fontSize": 12,
+                "isFixed": false,
+                "isLaser": true,
+                "isInk": false,
 
-                    "logoImageLocation": "",
+                "logoImageLocation": "",
 
-                    "radius": 51,
-                    "curveTextAttachTo": "inside"
-                  },
-                  {
-                    "index": 1,
-                    "name": "var2",
-                    "description": "",
-                    "role": "",
-                    "type": "curved-text",
-                    "width": 56,
-                    "height": 12,
-                    "positionX": 28,
-                    "positionY": 22,
-                    
-                    "text": "ABCDEFG",
-                    "textFormat": "",
-                    "maxLength": 50,
-                    "fontSize": 20,
-                    "isFixed": false,
-                    "isInk": false,
+                "radius": -1,
+                "curveTextAttachTo": ""
+              },
+              {
+                "index": 3,
+                "name": "var4",
+                "description": "",
+                "role": "Management",
+                "type": "text",
+                "width": 140,
+                "height": 135,
+                "positionX": 78,
+                "positionY": 320,
 
-                    "logoImageLocation": "",
+                "defaultValue": "D1",
+                "textFormat": "",
+                "maxLength": 50,
+                "fontSize": -1,
+                "isFixed": false,
+                "isLaser": true,
+                "isInk": false,
 
-                    "radius": 32,
-                    "curveTextAttachTo": "outside"
-                  }
-                ]
-            }
-          ]
-        },
-        {
-          "index": "2",
-          "name": "SXF",
-          "productLine": "Allflex",
-          "shilouette": "SXF-Silhouette.png",
-          "outline": "SXF-Outline.png",
-          "features": [],
-          "color": "PK",
-          "colors": [
-            {
-              "ColorCode": "Y",
-              "Name": "Yellow",
-              "HexCode": "e4d84d"
-            },
-            {
-              "ColorCode": "B",
-              "Name": "Blue",
-              "HexCode": "71cfeb"
-            },
-            {
-              "ColorCode": "CP",
-              "Name": "Classic Purple",
-              "HexCode": "b04ab7"
-            },
-            {
-              "ColorCode": "G",
-              "Name": "Green",
-              "HexCode": "c0e1c2"
-            },
-            {
-              "ColorCode": "K",
-              "Name": "Black",
-              "HexCode": "1f1f1f"
-            },
-            {
-              "ColorCode": "O",
-              "Name": "Orange",
-              "HexCode": "f7966b"
-            },
-            {
-              "ColorCode": "PK",
-              "Name": "Pink",
-              "HexCode": "f498b1"
-            },
-            {
-              "ColorCode": "R",
-              "Name": "Red",
-              "HexCode": "f3726d"
-            },
-            {
-              "ColorCode": "W",
-              "Name": "White",
-              "HexCode": "f3eded"
-            }
-          ],
-          "faces":
-          [
-            {
-                "name": "Front",
-                "variables": 
-                [
-                    {
-                      "index": 2,
-                      "name": "var3",
-                      "description": "",
-                      "role": "CustomText",
-                      "type": "text",
-                      "width": 260,
-                      "height": 40,
-                      "positionX": 15,
-                      "positionY": 268,
+                "logoImageLocation": "",
 
-                      "text": "CHASE FARNAN",
-                      "textFormat": "",
-                      "maxLength": -1,
-                      "fontSize": 12,
-                      "isFixed": false,
-                      "isInk": "false",
+                "radius": -1,
+                "curveTextAttachTo": ""
+              }
+            ]
+          },
+          {
+            "name": "Back",
+            "variables": [
+              {
+                "index": 4,
+                "name": "var5",
+                "description": "",
+                "role": "Management",
+                "type": "text",
+                "width": 140,
+                "height": 135,
+                "positionX": 78,
+                "positionY": 320,
 
-                      "logoImageLocation": "",
+                "defaultValue": "D1",
+                "textFormat": "",
+                "maxLength": -1,
+                "fontSize": -1,
+                "isFixed": false,
+                "isLaser": true,
+                "isInk": false,
 
-                      "radius": -1,
-                      "curveTextAttachTo": ""
-                    },
-                    {
-                      "index": 3,
-                      "name": "var4",
-                      "description": "",
-                      "role": "Management",
-                      "type": "text",
-                      "width": 140,
-                      "height": 135,
-                      "positionX": 78,
-                      "positionY": 320,
-                      
-                      "text": "D1",
-                      "textFormat": "",
-                      "maxLength": 50,
-                      "fontSize": -1,
-                      "isFixed": false,
-                      "isInk": false,
+                "logoImageLocation": "",
 
-                      "logoImageLocation": "",
-
-                      "radius": -1,
-                      "curveTextAttachTo": ""
-                    }
-                ]
-            },
-            {
-                "name": "Back",
-                "variables":
-                [
-                    {
-                    "index": 4,
-                    "name": "var5",
-                    "description": "",
-                    "role": "Management",
-                    "type": "text",
-                    "width": 140,
-                    "height": 135,
-                    "positionX": 78,
-                    "positionY": 320,
-
-                    "text": "D1",
-                    "textFormat": "",
-                    "maxLength": -1,
-                    "fontSize": -1,
-                    "isFixed": false,
-                    "isInk": false,
-                    
-                    "logoImageLocation": "",
-                    
-                    "radius": -1,
-                    "curveTextAttachTo": ""
-                    }
-                ]
-            }
-          ]
-        }
+                "radius": -1,
+                "curveTextAttachTo": ""
+              }
+            ]
+          }
+        ]
+      }
     ]
 }
 

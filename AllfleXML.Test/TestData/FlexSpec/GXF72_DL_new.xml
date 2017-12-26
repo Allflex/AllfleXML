@@ -1,0 +1,238 @@
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Specification>
+    <Id>0</Id>
+    <Name>GXF72_DL</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>XF</Name>
+        <Description>Maxi Female</Description>
+        <ProductLine>Allflex</ProductLine>
+        <Silhouette>XF-Silhouette.png</Silhouette>
+        <Outline>XF-Outline.png</Outline>
+        <Faces>
+          <Face>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>Comp1var1CustomerImage</Name>
+                <Description />
+                <Role>LogoSmall</Role>
+                <Type>Image</Type>
+                <Width>90</Width>
+                <Height>60</Height>
+                <PositionX>103</PositionX>
+                <PositionY>93</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>10</MaxLength>
+                <FontSize>0</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation>logo.png</LogoImageLocation>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>2</Index>
+                <Name>Comp1var2VARTEXT-20-1</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>186</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>3</Index>
+                <Name>Comp1var3VARTEXT-20-2</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>237</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>4</Index>
+                <Name>Comp1var4VARTEXT-20-3</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>288</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>5</Index>
+                <Name>Comp1var5VARTEXT-20-4</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>339</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+            </Variables>
+          </Face>
+          <Face>
+            <Name>Back</Name>
+            <Variables>
+              <Variable>
+                <Index>6</Index>
+                <Name>Comp1var6CustomerImage</Name>
+                <Description />
+                <Role>LogoSmall</Role>
+                <Type>Image</Type>
+                <Width>90</Width>
+                <Height>60</Height>
+                <PositionX>103</PositionX>
+                <PositionY>93</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>10</MaxLength>
+                <FontSize>0</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation>logo.png</LogoImageLocation>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>7</Index>
+                <Name>Comp1var7VARTEXT-20-5</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>186</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>8</Index>
+                <Name>Comp1var8VARTEXT-20-6</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>237</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>9</Index>
+                <Name>Comp1var9VARTEXT-20-7</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>288</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>10</Index>
+                <Name>Comp1var10VARTEXT-20-8</Name>
+                <Description />
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>50</Height>
+                <PositionX>5</PositionX>
+                <PositionY>339</PositionY>
+                <ValueFormat xsi:nil="true" />
+                <MaxLength>20</MaxLength>
+                <FontSize>10</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <LogoImageLocation />
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+                <CopyValueFrom />
+              </Variable>
+            </Variables>
+          </Face>
+        </Faces>
+      </Component>
+    </Components>
+  </Specification>
+</Document>

@@ -13,7 +13,7 @@ namespace AllfleXML.Test
         /*
         //GXF72_DL
         [TestMethod]
-        public void ImportFlexOrder0()
+        public void ImportFlexSpec0()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\GXF72_DL.xml");
             Assert.IsNotNull(specification);
@@ -23,7 +23,7 @@ namespace AllfleXML.Test
 
         //GNXUS840TXF2LM_TSU
         [TestMethod]
-        public void ImportFlexOrder1()
+        public void ImportFlexSpec1()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\GNXUS840TXF2LM_TSU.xml");
             Assert.IsNotNull(specification);
@@ -34,7 +34,7 @@ namespace AllfleXML.Test
 
         //GTLF2_GSM2
         [TestMethod]
-        public void ImportFlexOrder2()
+        public void ImportFlexSpec2()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\GTLF2_GSM2.xml");
             Assert.IsNotNull(specification);
@@ -45,7 +45,7 @@ namespace AllfleXML.Test
         /*
         //US8OFPGESM1
         [TestMethod]
-        public void ImportFlexOrder3()
+        public void ImportFlexSpec3()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\US8OFPGESM1.xml");
             Assert.IsNotNull(specification);
@@ -55,7 +55,7 @@ namespace AllfleXML.Test
 
         //US840OHGESM1
         [TestMethod]
-        public void ImportFlexOrder4()
+        public void ImportFlexSpec4()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\US840OHGESM1.xml");
             Assert.IsNotNull(specification);
@@ -65,7 +65,7 @@ namespace AllfleXML.Test
 
         //840OH_GESM
         [TestMethod]
-        public void ImportFlexOrder5()
+        public void ImportFlexSpec5()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\840OH_GESM.xml");
             Assert.IsNotNull(specification);
@@ -75,7 +75,7 @@ namespace AllfleXML.Test
 
         //840HDXLFS3SM
         [TestMethod]
-        public void ImportFlexOrder6()
+        public void ImportFlexSpec6()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\840HDXLFS3SM.xml");
             Assert.IsNotNull(specification);
@@ -85,7 +85,7 @@ namespace AllfleXML.Test
 
         //NF_US840STF1SM
         [TestMethod]
-        public void ImportFlexOrder7()
+        public void ImportFlexSpec7()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\NF_US840STF1SM.xml");
             Assert.IsNotNull(specification);
@@ -95,7 +95,7 @@ namespace AllfleXML.Test
 
         //JYXC2_GSM
         [TestMethod]
-        public void ImportFlexOrder8()
+        public void ImportFlexSpec8()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\JYXC2_GSM.xml");
             Assert.IsNotNull(specification);
@@ -105,7 +105,7 @@ namespace AllfleXML.Test
 
         //IMI_840OF_GESM
         [TestMethod]
-        public void ImportFlexOrder9()
+        public void ImportFlexSpec9()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\IMI_840OF_GESM.xml");
             Assert.IsNotNull(specification);

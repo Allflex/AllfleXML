@@ -145,7 +145,7 @@ namespace AllfleXML.FlexSpec
         /// <value>
         /// The Unique identifier for the specification.
         /// </value>
-        [XmlElement("Id", IsNullable = false)]
+        [XmlElement("Id")]
         public string Id { get; set; }
 
         /// <summary>
@@ -154,7 +154,7 @@ namespace AllfleXML.FlexSpec
         /// <value>
         /// The Name of the specification.
         /// </value>
-        [XmlElement("Name", IsNullable = false)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -175,45 +175,45 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the unique ID defining the order of the component.
         /// </summary>
-        [XmlElement("Index", IsNullable = false)]
+        [XmlElement("Index")]
         public int Index { get; set; }
         
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        [XmlElement("Name", IsNullable = false)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the description.
         /// </summary>
-        [XmlElement("Description", IsNullable = true)]
+        [XmlElement("Description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or sets the product line, or brand.
         /// </summary>
-        [XmlElement("ProductLine", IsNullable = false)]
+        [XmlElement("ProductLine")]
         public string ProductLine { get; set; }
 
         /// <summary>
         /// Gets or sets the Silhouette.
         /// Optional: For use by the renderer. The silhouette is the filled component outline to be entirely recolored by the selected color with the outline placed on top.
         /// </summary>
-        [XmlElement("Silhouette", IsNullable = false)]
+        [XmlElement("Silhouette")]
         public string Silhouette { get; set; }
 
         /// <summary>
         /// Gets or sets the Outline.
         /// Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.
         /// </summary>
-        [XmlElement("Outline", IsNullable = false)]
+        [XmlElement("Outline")]
         public string Outline { get; set; }
 
         /// <summary>
         /// Gets or sets the color.
         /// </summary>
-        [XmlElement("Color", IsNullable = false)]
+        [XmlElement("Color"]
         public string Color { get; set; }
 
         /// <summary>
@@ -236,7 +236,7 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
-        [XmlElement("ComponentFace", IsNullable = false)]
+        [XmlElement("ComponentFace")]
         public List<ComponentFace> ComponentFace { get; set; }
     }
 
@@ -249,7 +249,7 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
-        [XmlElement("Color", IsNullable = false)]
+        [XmlElement("Color")]
         public List<Color> Color { get; set; }
     }
 
@@ -263,20 +263,20 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the ColorCode.
         /// Identifying code of the Color
         /// </summary>
-        [XmlElement("ColorCode", IsNullable = false)]
+        [XmlElement("ColorCode")]
         public string ColorCode { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the color.
         /// </summary>
-        [XmlElement("Name", IsNullable = false)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the HexCode.
         /// Hexidecimal Value of the color.
         /// </summary>
-        [XmlElement("HexCode", IsNullable = false)]
+        [XmlElement("HexCode")]
         public string HexCode { get; set; }
     }
 
@@ -290,7 +290,7 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the Name.
         /// Indicates weather the variables are marked on the front or back of a component, or in the RFID field of the component. Values can be 'Front', 'Back', or 'RFID'
         /// </summary>
-        [XmlElement("Name", IsNullable = false)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
         /// <summary>
@@ -309,63 +309,63 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the Index.
         /// Index order of the variable. Unique for all variables in a specification.
         /// </summary>
-        [XmlElement("Index", IsNullable = false)]
+        [XmlElement("Index")]
         public int Index { get; set; }
 
         /// <summary>
         /// Gets or sets the Name.
         /// The name of the variable. Unique for all variables in a specification.
         /// </summary>
-        [XmlElement("Name", IsNullable = false)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the Description.
         /// Optional description of the variable.
         /// </summary>
-        [XmlElement("Description", IsNullable = true)]
+        [XmlElement("Description")]
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or sets the Role.
         /// Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc)
         /// </summary>
-        [XmlElement("Role", IsNullable = false)]
+        [XmlElement("Role")]
         public string Role { get; set; }
 
         /// <summary>
         /// Gets or sets the Type.
         /// Required: Values can be 'text', 'curved-text' or 'image'
         /// </summary>
-        [XmlElement("Type", IsNullable = false)]
+        [XmlElement("Type")]
         public string Type { get; set; }
 
         /// <summary>
         /// Gets or sets the Width.
         /// Width of the variable's bounding box.
         /// </summary>
-        [XmlElement("Width", IsNullable = false)]
+        [XmlElement("Width")]
         public int Width { get; set; }
 
         /// <summary>
         /// Gets or sets the Height.
         /// Height of the variable's bounding box.
         /// </summary>
-        [XmlElement("Height", IsNullable = false)]
+        [XmlElement("Height")]
         public int Height { get; set; }
 
         /// <summary>
         /// Gets or sets the PositionX.
         /// X coordinate of the top left corner of the variable's bounding box.
         /// </summary>
-        [XmlElement("PositionX", IsNullable = false)]
+        [XmlElement("PositionX")]
         public int PositionX { get; set; }
 
         /// <summary>
         /// Gets or sets the PositionY.
         /// Y coordinate of the top left corner of the variable's bounding box.
         /// </summary>
-        [XmlElement("PositionY", IsNullable = false)]
+        [XmlElement("PositionY")]
         public int PositionY { get; set; }
 
         /// <summary>
@@ -379,14 +379,14 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the TextFormat.
         /// Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert
         /// </summary>
-        [XmlElement("ValueFormat", IsNullable = true)]
+        [XmlElement("ValueFormat")]
         public string ValueFormat { get; set; }
 
         /// <summary>
         /// Gets or sets the MaxLength
         /// Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text`
         /// </summary>
-        [XmlElement("MaxLength", IsNullable = false)]
+        [XmlElement("MaxLength")]
         public int MaxLength { get; set; }
 
         /// <summary>
@@ -421,28 +421,28 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the ImageLocation.
         /// Optional: For use by the renderer. Only used when `Type` = "image". Location of the logo image file. the Logo Inditification number should be populated as the variable value.
         /// </summary>
-        [XmlElement("LogoImageLocation", IsNullable = true)]
+        [XmlElement("LogoImageLocation")]
         public string LogoImageLocation { get; set; }
 
         /// <summary>
         /// Gets or sets the Radius.
         /// Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text
         /// </summary>
-        [XmlElement("Radius", IsNullable = true)]
+        [XmlElement("Radius")]
         public int? Radius { get; set; }
 
         /// <summary>
         /// Gets or sets the CurveTextAttachTo.
         /// Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside'
         /// </summary>
-        [XmlElement("CurveTextAttachTo", IsNullable = true)]
+        [XmlElement("CurveTextAttachTo")]
         public string CurveTextAttachTo { get; set; }
 
         /// <summary>
         /// Name of the variable to copy value from. isFixed must be set to true if this property has a value set.
         /// Optional: Accepts the variable name of an existing varialble on this specification. It will set IsFixed to true and makes DefaultValue the same as the provided variable name.
         /// </summary>
-        [XmlElement("CopyValueFrom", IsNullable = true)]
+        [XmlElement("CopyValueFrom")]
         public string CopyValueFrom { get; set; }
     }
 }

@@ -9,9 +9,6 @@
 				<ProductLine>Allflex</ProductLine>
 				<Shilouette>http://localhost:8576/content/images/Renderer/SM-Silhouette.png</Shilouette>
 				<Outline>http://localhost:8576/content/images/Renderer/SM-Outline.png</Outline>
-				<Features>
-					
-				</Features>
 				<Color>Y</Color>
 				<Colors>
 					<Color>
@@ -77,9 +74,9 @@
 
                 <DefaultValue>1234567890</DefaultValue> <!-- The Variable's Default Value -->
                 <ValueFormat></ValueFormat> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
-								<MaxLength></MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<MaxLength>1</MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
 								<FontSize>20</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
-								<IsFixed></IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsFixed>false</IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
                 <IsLaser>true</IsLaser>
                 <IsInk>false</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
 
@@ -99,11 +96,11 @@
 								<PositionX>28</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
 								<PositionY>22</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
 
-								<Text>ABCDEFG</Text> <!-- The Variable's Default Value -->
+								<DefaultValue>ABCDEFG</DefaultValue> <!-- The Variable's Default Value -->
                 <ValueFormat /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
-								<MaxLength /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<MaxLength>1</MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
 								<FontSize>20</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
-								<IsFixed /> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsFixed>false</IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
 								<IsInk>false</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
 
 								<LogoImageLocation /> <!-- Optional: Only used when `Type` = "image" -->
@@ -121,9 +118,6 @@
 				<ProductLine>Allflex</ProductLine>
 				<Shilouette>http://localhost:8576/content/images/Renderer/SXF-Silhouette.png</Shilouette>
 				<Outline>http://localhost:8576/content/images/Renderer/SXF-Outline.png</Outline>
-				<Features>
-					
-				</Features>
 				<Color>PK</Color>
 				<Colors>
 					<Color>
@@ -187,11 +181,11 @@
 								<PositionX>15</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
 								<PositionY>268</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
 
-								<Text>CHASE FARNAN</Text> <!-- The Variable's Default Value -->
+								<DefaultValue>CHASE FARNAN</DefaultValue> <!-- The Variable's Default Value -->
                 <ValueFormat></ValueFormat> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
-								<MaxLength></MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<MaxLength>1</MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
 								<FontSize>12</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
-								<IsFixed></IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsFixed>false</IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
 								<IsInk>false</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
 								<LogoImageLocation></LogoImageLocation> <!-- Optional: Only used when `Type` = "image" -->
 								<Radius>32</Radius> <!-- Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text -->
@@ -208,11 +202,11 @@
 								<PositionX>78</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
 								<PositionY>320</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
 
-								<Text>D1</Text> <!-- The Variable's Default Value -->
+								<DefaultValue>D1</DefaultValue> <!-- The Variable's Default Value -->
                 <ValueFormat /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
-								<MaxLength /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+								<MaxLength>1</MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
 								<FontSize /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
-								<IsFixed /> <!-- Variable value is static for the specification, can not be changed by instance. -->
+								<IsFixed>false</IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
 								<IsInk>true</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
 							</Variable>
 						</Variables>

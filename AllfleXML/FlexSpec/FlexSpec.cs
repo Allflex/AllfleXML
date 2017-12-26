@@ -375,19 +375,19 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the IsFixed.
         /// </summary>
-        [XmlElement("IsFixed", IsNullable = false)]
+        [XmlElement("IsFixed")]
         public bool IsFixed { get; set; }
 
         /// <summary>
         /// Gets or sets the IsLaser.
         /// </summary>
-        [XmlElement("IsLaser", IsNullable = true)]
+        [XmlElement("IsLaser")]
         public bool IsLaser { get; set; } = true;
 
         /// <summary>
         /// Gets or sets the IsInk.
         /// </summary>
-        [XmlElement("IsInk", IsNullable = false)]
+        [XmlElement("IsInk")]
         public bool IsInk { get; set; }
 
         /// <summary>

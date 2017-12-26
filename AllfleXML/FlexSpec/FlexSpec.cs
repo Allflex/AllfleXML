@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -14,7 +13,6 @@ namespace AllfleXML.FlexSpec
 {
     public static class Parser
     {
-
         public static Document Import(string xmlFilePath)
         {
             return Import(XDocument.Load(xmlFilePath));
@@ -125,10 +123,20 @@ namespace AllfleXML.FlexSpec
     [XmlRoot]
     public class Document
     {
+        /// <summary>
+        /// Gets or sets the Specification
+        /// </summary>
+        /// <value>
+        /// The Specification
+        /// </value>
         [XmlElement("Specification")]
         public List<Specification> Specifications { get; set; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class Specification
     {
         /// <summary>
@@ -143,14 +151,25 @@ namespace AllfleXML.FlexSpec
         /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
+        /// <value>
+        /// The Name of the specification.
+        /// </value>
         [XmlElement("Name", IsNullable = false)]
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the components.
+        /// </summary>
+        /// <value>
+        /// The Components in the specification
+        /// </value>
         public List<Component> Components { get; set; }
-
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class Component
     {
         /// <summary>
@@ -158,8 +177,7 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Index", IsNullable = false)]
         public int Index { get; set; }
-
-
+        
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -171,8 +189,7 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("ProductLine", IsNullable = false)]
         public string ProductLine { get; set; }
-
-
+        
         /// <summary>
         /// Gets or sets the Shilouette.
         /// </summary>
@@ -184,12 +201,6 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Outline", IsNullable = false)]
         public string Outline { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Features.
-        /// </summary>
-        [XmlElement("Features", IsNullable = false)]
-        public string Features { get; set; }
 
         /// <summary>
         /// Gets or sets the color.
@@ -206,27 +217,38 @@ namespace AllfleXML.FlexSpec
         /// Gets or sets the Faces.
         /// </summary>
         public List<ComponentFace> Faces { get; set; }
-
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class Faces
-    {        /// <summary>
+    {
+        /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
         [XmlElement("ComponentFace", IsNullable = false)]
         public List<ComponentFace> ComponentFace { get; set; }
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class Colors
     {
+        /// <summary>
         /// Gets or sets the name of the specification.
         /// </summary>
         [XmlElement("Color", IsNullable = false)]
         public List<Color> Color { get; set; }
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class Color
     {
         /// <summary>
@@ -240,16 +262,18 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Name", IsNullable = false)]
         public string Name { get; set; }
-
-
+        
         /// <summary>
         /// Gets or sets the HexCode.
         /// </summary>
         [XmlElement("HexCode", IsNullable = false)]
         public string HexCode { get; set; }
-
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class ComponentFace
     {
         /// <summary>
@@ -264,6 +288,10 @@ namespace AllfleXML.FlexSpec
         public List<Variable> Variables { get; set; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [Serializable]
     public class Variable
     {
         /// <summary>
@@ -279,19 +307,19 @@ namespace AllfleXML.FlexSpec
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the PositionX.
+        /// Gets or sets the Description.
         /// </summary>
         [XmlElement("Description")]
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets the PositionX.
+        /// Gets or sets the Role.
         /// </summary>
         [XmlElement("Role", IsNullable = false)]
         public string Role { get; set; }
 
         /// <summary>
-        /// Gets or sets the PositionX.
+        /// Gets or sets the Type.
         /// </summary>
         [XmlElement("Type", IsNullable = false)]
         public string Type { get; set; }
@@ -321,22 +349,22 @@ namespace AllfleXML.FlexSpec
         public int PositionY { get; set; }
 
         /// <summary>
-        /// Gets or sets the Text.
+        /// Gets or sets the DefaultValue.
         /// </summary>
-        [XmlElement("Text")]
-        public string Text { get; set; }
+        [XmlElement("DefaultValue")]
+        public string DefaultValue { get; set; }
 
         /// <summary>
         /// Gets or sets the TextFormat.
         /// </summary>
-        [XmlElement("TextFormat")]
-        public string TextFormat { get; set; }
+        [XmlElement("ValueFormat", IsNullable = true)]
+        public string ValueFormat { get; set; }
 
         /// <summary>
         /// Gets or sets the MaxLength
         /// </summary>
         [XmlElement("MaxLength", IsNullable = false)]
-        public string MaxLength { get; set; }
+        public int MaxLength { get; set; }
 
         /// <summary>
         /// Gets or sets the FontSize.
@@ -345,34 +373,39 @@ namespace AllfleXML.FlexSpec
         public string FontSize { get; set; }
 
         /// <summary>
-        /// Gets or sets the IsInk.
+        /// Gets or sets the IsFixed.
         /// </summary>
         [XmlElement("IsFixed")]
-        public string IsFixed { get; set; }
+        public bool IsFixed { get; set; }
+
+        /// <summary>
+        /// Gets or sets the IsLaser.
+        /// </summary>
+        [XmlElement("IsLaser")]
+        public bool IsLaser { get; set; } = true;
 
         /// <summary>
         /// Gets or sets the IsInk.
         /// </summary>
-        [XmlElement("IsInk", IsNullable = false)]
-        public string IsInk { get; set; }
+        [XmlElement("IsInk")]
+        public bool IsInk { get; set; }
 
         /// <summary>
         /// Gets or sets the ImageLocation.
         /// </summary>
-        [XmlElement("LogoImageLocation")]
+        [XmlElement("LogoImageLocation", IsNullable = true)]
         public string LogoImageLocation { get; set; }
 
         /// <summary>
         /// Gets or sets the Radius.
         /// </summary>
-        [XmlElement("Radius")]
-        public int Radius { get; set; }
+        [XmlElement("Radius", IsNullable = true)]
+        public int? Radius { get; set; }
 
         /// <summary>
         /// Gets or sets the CurveTextAttachTo.
         /// </summary>
-        [XmlElement("CurveTextAttachTo")]
+        [XmlElement("CurveTextAttachTo", IsNullable = true)]
         public string CurveTextAttachTo { get; set; }
-
     }
 }

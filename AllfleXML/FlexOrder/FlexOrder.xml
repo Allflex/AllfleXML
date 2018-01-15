@@ -28,6 +28,7 @@
   <OrderLineHeader>
     <SkuName>SkuName1</SkuName>
     <Quantity>0</Quantity>
+    <UnitOfMeasure>0</UnitOfMeasure>
     <Template>Template1</Template>
     <Comment>Comment1</Comment>
     <OrderLineMarkingDetail>
@@ -79,6 +80,7 @@
   <OrderLineHeader>
     <SkuName>SkuName2</SkuName>
     <Quantity>65535</Quantity>
+    <UnitOfMeasure>1</UnitOfMeasure>
     <Template>Template2</Template>
     <Comment>Comment2</Comment>
     <OrderLineMarkingDetail>
@@ -130,6 +132,7 @@
   <OrderLineHeader>
     <SkuName>SkuName3</SkuName>
     <Quantity>1</Quantity>
+    <UnitOfMeasure>1</UnitOfMeasure>
     <Template>Template3</Template>
     <Comment>Comment3</Comment>
     <OrderLineMarkingDetail>

@@ -27,6 +27,7 @@
     <OrderLineHeader>
       <SkuName>RA-GTXF4/GSM-Y</SkuName>
       <Quantity>50</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <OrderLineMarkingDetail>
         <Variable>
           <VariableName>Serial</VariableName>
@@ -356,6 +357,7 @@
     <OrderLineHeader>
       <SkuName>RA-GTXF4/GSM-Y</SkuName>
       <Quantity>75</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <OrderLineMarkingDetail>
         <Variable>
           <VariableName>Serial</VariableName>
@@ -835,6 +837,7 @@
     <OrderLineHeader>
       <SkuName>RA-GTXF4/GSM-G</SkuName>
       <Quantity>100</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <OrderLineMarkingDetail>
         <Variable>
           <VariableName>Serial</VariableName>
@@ -1464,6 +1467,7 @@
     <OrderLineHeader>
       <SkuName>RA-GTXF4/GSM-G</SkuName>
       <Quantity>75</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <OrderLineMarkingDetail>
         <Variable>
           <VariableName>Serial</VariableName>
@@ -1943,6 +1947,7 @@
     <OrderLineHeader>
       <SkuName>RA-FDX982/GTXF2-GSM-Y</SkuName>
       <Quantity>25</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <OrderLineMarkingDetail>
         <Variable>
           <VariableName>Serial</VariableName>
@@ -2122,6 +2127,7 @@
     <OrderLineHeader>
       <SkuName>RA-FDX982/GTXF4-GSM-G</SkuName>
       <Quantity>25</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <OrderLineMarkingDetail>
         <Variable>
           <VariableName>Serial</VariableName>

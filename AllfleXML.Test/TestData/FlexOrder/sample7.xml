@@ -25,6 +25,7 @@
     <OrderLineHeader>
       <SkuName>TXLSet2206LG</SkuName>
       <Quantity>240</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <Template>TXLSet2206LG</Template>
       <Comment />
       <OrderLineMarkingDetail>
@@ -4351,6 +4352,7 @@
     <OrderLineHeader>
       <SkuName>AC7066-F</SkuName>
       <Quantity>1</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <Template />
       <Comment />
     </OrderLineHeader>

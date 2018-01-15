@@ -25,12 +25,14 @@
     <OrderLineHeader>
       <SkuName>APP-UTT</SkuName>
       <Quantity>1</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <Template />
       <Comment />
     </OrderLineHeader>
     <OrderLineHeader>
       <SkuName>TESET25-ALC-7</SkuName>
       <Quantity>1000</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <Template />
       <Comment>Job notes go here</Comment>
       <OrderLineMarkingDetail>
@@ -48,6 +50,7 @@
     <OrderLineHeader>
       <SkuName>TESET65-ALC-7</SkuName>
       <Quantity>3</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <Template />
       <Comment>Job notes go here</Comment>
       <OrderLineMarkingDetail>

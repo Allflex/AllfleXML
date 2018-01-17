@@ -131,9 +131,7 @@ namespace AllfleXML.Test
                         Silhouette = "TestSilhouette",
                         Outline = "TestOutline",
                         Color = "Y",
-                        Colors = new Colors
-                        {
-                            Color = new List<Color>
+                        Colors = new List<Color>
                             {
                                 new Color
                                 {
@@ -147,7 +145,6 @@ namespace AllfleXML.Test
                                     Name = "Blue",
                                     HexCode = "71cfeb"
                                 }
-                            }
                         },
 
                         Faces = new List<Face>
@@ -224,9 +221,7 @@ namespace AllfleXML.Test
                         Silhouette = "TestSilhouette",
                         Outline = "TestOutline",
                         Color = "Y",
-                        Colors = new Colors
-                        {
-                            Color = new List<Color>
+                        Colors = new List<Color>
                             {
                                 new Color
                                 {
@@ -240,7 +235,6 @@ namespace AllfleXML.Test
                                     Name = "Blue",
                                     HexCode = "71cfeb"
                                 }
-                            }
                         },
 
                         Faces = new List<Face>
@@ -276,7 +270,7 @@ namespace AllfleXML.Test
                     }
                 }
             };
-            
+
             var doc = order.Export();
             Assert.IsNotNull(doc);
 

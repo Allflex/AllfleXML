@@ -177,7 +177,7 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Index")]
         public int Index { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
@@ -222,36 +222,11 @@ namespace AllfleXML.FlexSpec
         public List<Face> Faces { get; set; }
 
         /// <summary>
-        /// Gets or sets the color.
+        /// Valid colors of the component.
         /// </summary>
-        public Colors Colors { get; set; }
+        public List<Color> Colors { get; set; }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    [Serializable]
-    public class Faces
-    {
-        /// <summary>
-        /// Gets or sets the name of the specification.
-        /// </summary>
-        [XmlElement("Face")]
-        public List<Face> Face { get; set; }
-    }
-
-    /// <summary>
-    /// Valid colors of the component.
-    /// </summary>
-    [Serializable]
-    public class Colors
-    {
-        /// <summary>
-        /// Gets or sets the name of the specification.
-        /// </summary>
-        [XmlElement("Color")]
-        public List<Color> Color { get; set; }
-    }
 
     /// <summary>
     /// Material Color

@@ -226,6 +226,15 @@ namespace AllfleXML.FlexSpec
         public string Color { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether the color of this component is choosen by the customer or the specification.
+        /// </summary>
+        /// <value>
+        ///   <c>false</c> if the color is choosen by the customer; otherwise, <c>true</c>.
+        /// </value>
+        [XmlElement("FixedColor")]
+        public bool FixedColor { get; set; }
+
+        /// <summary>
         /// Gets or sets the item number.
         /// </summary>
         [XmlElement("ItemNumber")]

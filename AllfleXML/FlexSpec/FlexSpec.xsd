@@ -128,6 +128,14 @@
                       </xs:documentation>
                     </xs:annotation>
                   </xs:element>
+                  <xs:element name="FixedColor" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Fixed Color</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Flag that determines if the color of this component is choosen by the customer or by the specification.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
                   <xs:element name="Faces">
                     <xs:complexType>
                       <xs:sequence>

@@ -1,38 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <OrderHeader>
-  <CustomerNumber>32000</CustomerNumber>
-  <PremiseID />
-  <Comments>|090612121212|</Comments>
-  <PO>CMIWEB-6251</PO>
-  <ShipToName>Marty &amp; Margret Ranch Co </ShipToName>
-  <ShipToContact>Betty Su</ShipToContact>
-  <ShipToPhone />
-  <ShipToAddress1>6400 Green Rd.</ShipToAddress1>
-  <ShipToAddress2 />
-  <ShipToAddress3 />
-  <ShipToCity>Guadalupe</ShipToCity>
-  <ShipToState>CA</ShipToState>
-  <ShipToPostalCode>93434</ShipToPostalCode>
-  <ShipToCountry>United States</ShipToCountry>
-  <IsRush>true</IsRush>
-  <ShipMethod>UPS</ShipMethod>
-  <ShippingAccountNumber />
-  <EmailListError />
-  <EmailListTrackingInfo />
-  <EmailListEIDInfo />
-  <UserDefined>
-    <Field Key="ProducerId">ABC123</Field>
-    <Field Key="GroupId">ABC123</Field>
-  </UserDefined>
-  <WSOrderId />
-  <Hold>false</Hold>
-  <OrderLineHeader>
-    <SkuName>IMI-FDXOTP982-BG/GESM-G-20</SkuName>
-    <Quantity>10</Quantity>
-    <Template>IMI_9OFGESM1_20</Template>
-    <Comment />
-    <UserDefined>
-      <Field Key="Key1">ABC123</Field>
-    </UserDefined>
-  </OrderLineHeader>
+	<CustomerNumber>32289</CustomerNumber>
+	<PO>SOUN010969873</PO>
+	<ShipToName>PETCO Support Services San Pedro 196 - dept 4033</ShipToName>
+	<ShipToPhone>9413593863</ShipToPhone>
+	<ShipToAddress1>852 N. Western Ave</ShipToAddress1>
+	<ShipToAddress2>Tony Hendricks 9418932452</ShipToAddress2>
+	<ShipToCity>San Pedro</ShipToCity>
+	<ShipToState>CA</ShipToState>
+	<ShipToPostalCode>90731</ShipToPostalCode>
+	<ShipToCountry>US</ShipToCountry>
+	<IsRush>true</IsRush>
+	<ShipMethod>NDA SAVER</ShipMethod>
+	<ShippingAccountNumber>X34W27</ShippingAccountNumber>
+	<EmailListError>allflex@petcareinsurance.com;BBrown@allflexusa.com;FarruggioC@PethealthInc.com;Karen.Ghuman@Pethealthinc.com;Marie.Genova@Pethealthinc.com;BlattlerM@PethealthInc.com;Rachel.Parr@Pethealthinc.com;Susan.Holt2@Pethealthinc.com</EmailListError>
+	<UserDefined>
+	  <Field Key="ClientAccountNumber">4033</Field>
+	  <Field Key="ClientPurchaseOrderNumber">1710715</Field>
+	</UserDefined>
+	<WSOrderId>7019666b-5b08-449b-8626-9a73c03f9e98</WSOrderId>
+	<Hold>false</Hold>
+	<OrderLineHeader>
+	  <SkuName>PH-MINI8S/US-E</SkuName>
+	  <Quantity>1</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
+	</OrderLineHeader>
 </OrderHeader>

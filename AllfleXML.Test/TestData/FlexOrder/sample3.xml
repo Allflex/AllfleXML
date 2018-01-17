@@ -25,6 +25,7 @@
     <OrderLineHeader>
       <SkuName>ANTXLSET3706LAG</SkuName>
       <Quantity>10</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
       <Template>ANTXLSET3706LAG</Template>
       <Comment />
       <OrderLineMarkingDetail>

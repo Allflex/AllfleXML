@@ -25,6 +25,7 @@
     <SkuName>EXT Set</SkuName>
     <PremiseID />
     <Quantity>50</Quantity>
+	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>EXT Set</Template>
     <Comment />
     <OrderLineCustom>
@@ -1558,6 +1559,7 @@
     <SkuName>LG Set</SkuName>
     <PremiseID />
     <Quantity>75</Quantity>
+	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>LG Set</Template>
     <Comment />
     <OrderLineCustom>

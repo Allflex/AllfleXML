@@ -380,6 +380,14 @@
                         </xs:documentation>
                       </xs:annotation>
                     </xs:element>
+                    <xs:element name="UnitOfMeasure" type="xs:unsignedShort">
+                      <xs:annotation>
+                        <xs:appinfo>UnitOfMeasure</xs:appinfo>
+                        <xs:documentation xml:lang="en">
+                          (Required) Denomination of the Quantity.
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="Template" type="xs:string" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
                         <xs:appinfo>Template</xs:appinfo>
@@ -903,6 +911,14 @@
                   <xs:appinfo>Quantity</xs:appinfo>
                   <xs:documentation xml:lang="en">
                     (Required) The amount of the SKU being orderd.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="UnitOfMeasure" type="xs:unsignedShort">
+                <xs:annotation>
+                  <xs:appinfo>UnitOfMeasure</xs:appinfo>
+                  <xs:documentation xml:lang="en">
+                    (Required) Denomination of Quantity.
                   </xs:documentation>
                 </xs:annotation>
               </xs:element>

@@ -24,6 +24,7 @@
     <OrderLineHeader>
       <SkuName>PH-MINI8S/US-E</SkuName>
       <Quantity>1</Quantity>
+	  <UnitOfMeasure>1</UnitOfMeasure>
     </OrderLineHeader>
   </OrderHeader>
 </Document>

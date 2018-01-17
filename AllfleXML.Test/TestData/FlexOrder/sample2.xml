@@ -25,6 +25,7 @@
   <OrderLineHeader>
     <SkuName>ANTXLSet3306LA</SkuName>
     <Quantity>17</Quantity>
+	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>ANTXLSet3306LA</Template>
     <Comment />
     <OrderLineMarkingDetail>

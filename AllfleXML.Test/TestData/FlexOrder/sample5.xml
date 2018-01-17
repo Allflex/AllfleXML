@@ -25,6 +25,7 @@
     <SkuName>ANE Set</SkuName>
     <PremiseID>ABC1234</PremiseID>
     <Quantity>50</Quantity>
+	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>ANE Set</Template>
     <Comment />
     <OrderLineCustom>

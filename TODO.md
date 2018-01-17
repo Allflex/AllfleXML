@@ -3,7 +3,9 @@
 - [ ] Make the Variable Name unique in the specification
 - [ ] Make the Variable Index unique in the specification
 - [ ] Make the Variable Type an enumerable
-
+- [ ] Implement Packaging options in FlexSpec
+- [ ] Replace FlexOrder UnitOfMeasure with FlexSpec Packaging Selection
+- [ ] Add index to FlexOrder variable
 
 ---
 

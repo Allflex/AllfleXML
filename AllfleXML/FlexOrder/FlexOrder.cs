@@ -432,7 +432,7 @@ namespace AllfleXML.FlexOrder
         /// <value>
         /// The unit of measure.
         /// </value>
-        [XmlElement("UnitOfMeasure", IsNullable = false)]
+        [XmlElement("UnitOfMeasure")]
         public int UnitOfMeasure { get; set; }
         /// <summary>
         /// Gets or sets the template.

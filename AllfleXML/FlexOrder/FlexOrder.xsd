@@ -380,11 +380,11 @@
                         </xs:documentation>
                       </xs:annotation>
                     </xs:element>
-                    <xs:element name="UnitOfMeasure" type="xs:unsignedShort">
+                    <xs:element name="UnitOfMeasure" type="xs:unsignedShort" minOccurs="0" maxOccurs="1">
                       <xs:annotation>
                         <xs:appinfo>UnitOfMeasure</xs:appinfo>
                         <xs:documentation xml:lang="en">
-                          (Required) Denomination of the Quantity.
+                          Denomination of the Quantity.
                         </xs:documentation>
                       </xs:annotation>
                     </xs:element>

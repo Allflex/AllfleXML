@@ -24,14 +24,12 @@
   <OrderLineHeader>
     <SkuName>AC7066</SkuName>
     <Quantity>1</Quantity>
-	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>AC7066</Template>
     <Comment />
   </OrderLineHeader>
   <OrderLineHeader>
     <SkuName>UST08</SkuName>
     <Quantity>1</Quantity>
-	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>UST08</Template>
     <Comment />
   </OrderLineHeader>
@@ -39,7 +37,6 @@
     <SkuName>EXT Set</SkuName>
     <PremiseID />
     <Quantity>160</Quantity>
-	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>EXT Set</Template>
     <Comment />
     <OrderLineCustom>

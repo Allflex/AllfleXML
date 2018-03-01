@@ -26,14 +26,12 @@
   <OrderLineHeader>
     <SkuName>APP-UTT</SkuName>
     <Quantity>1</Quantity>
-	<UnitOfMeasure>1</UnitOfMeasure>
     <Template />
     <Comment />
   </OrderLineHeader>
   <OrderLineHeader>
     <SkuName>SCR3-PREM-CP74M/CP74F-W</SkuName>
     <Quantity>20</Quantity>
-	<UnitOfMeasure>1</UnitOfMeasure>
     <Template>SCR2_PT_C74</Template>
     <Comment />
     <OrderLineMarkingDetail>

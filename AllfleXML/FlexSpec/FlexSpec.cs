@@ -217,6 +217,12 @@ namespace AllfleXML.FlexSpec
         public string Color { get; set; }
 
         /// <summary>
+        /// Gets or sets the color.
+        /// </summary>
+        [XmlElement("ItemNumber")]
+        public string ItemNumber { get; set; }
+
+        /// <summary>
         /// Gets or sets the Faces.
         /// </summary>
         public List<Face> Faces { get; set; }

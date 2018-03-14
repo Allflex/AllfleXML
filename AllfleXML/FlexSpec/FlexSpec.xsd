@@ -112,7 +112,7 @@
                             <xs:annotation>
                               <xs:appinfo>Component Item Number</xs:appinfo>
                               <xs:documentation xml:lang="en">
-                                Optional: Reference to the ERP item number that matches the component name and color configuration.
+                                Optional: Reference to the ERP item number for the raw material component used in the kit.
                               </xs:documentation>
                             </xs:annotation>
                           </xs:element>

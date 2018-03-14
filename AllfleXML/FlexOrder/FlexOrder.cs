@@ -11,6 +11,9 @@ using System.Xml.Serialization;
 
 namespace AllfleXML.FlexOrder
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class Parser
     {
         public static Document Import(string xmlFilePath)
@@ -54,7 +57,15 @@ namespace AllfleXML.FlexOrder
 
         public static XDocument Export(this OrderHeader order)
         {
-            return Export(new Document { OrderHeaders = new List<OrderHeader> { order } });
+            var result = new XDocument();
+            using (var writer = result.CreateWriter())
+            {
+                var serializer = new XmlSerializer(order.GetType());
+                var ns = new XmlSerializerNamespaces();
+                ns.Add("", "");
+                serializer.Serialize(writer, order, ns);
+            }
+            return result;
         }
 
         public static XDocument Export(this Document document)
@@ -63,7 +74,9 @@ namespace AllfleXML.FlexOrder
             using (var writer = result.CreateWriter())
             {
                 var serializer = new XmlSerializer(document.GetType());
-                serializer.Serialize(writer, document);
+                var ns = new XmlSerializerNamespaces();
+                ns.Add("", "");
+                serializer.Serialize(writer, document, ns);
             }
             return result;
         }

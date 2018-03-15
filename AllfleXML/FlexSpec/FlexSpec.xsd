@@ -108,6 +108,14 @@
                               </xs:documentation>
                             </xs:annotation>
                           </xs:element>
+                          <xs:element name="ItemNumber" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                              <xs:appinfo>Component Item Number</xs:appinfo>
+                              <xs:documentation xml:lang="en">
+                                Optional: Reference to the ERP item number for the raw material component used in the kit.
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
                           <xs:element name="Faces">
                             <xs:complexType>
                               <xs:sequence>

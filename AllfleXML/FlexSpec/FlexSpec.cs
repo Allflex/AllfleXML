@@ -158,6 +158,15 @@ namespace AllfleXML.FlexSpec
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets the name of the marking code/laser template.
+        /// </summary>
+        /// <value>
+        /// The Name of the marking code/laser template.
+        /// </value>
+        [XmlElement("MarkingCode")]
+        public string MarkingCode { get; set; }
+
+        /// <summary>
         /// Gets or sets the components.
         /// </summary>
         /// <value>

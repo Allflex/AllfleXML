@@ -4,388 +4,388 @@
     <xs:annotation>
       <xs:appinfo>Document</xs:appinfo>
       <xs:documentation xml:lang="en">
-        Document Container
+        Document Container for multiple specifications
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Specification" minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="Specification" type="SpecificationNode" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>Marking Specification</xs:appinfo>
             <xs:documentation xml:lang="en">
               Marking specification for a product offering.
             </xs:documentation>
           </xs:annotation>
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id">
-                <xs:annotation>
-                  <xs:appinfo>Specification Identifier</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Unique identifier for the specification.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Name">
-                <xs:annotation>
-                  <xs:appinfo>Specification Name</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Name of the specification.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="MarkingCode" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Marking Code</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Optional: The laser template.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Components">
-                <xs:annotation>
-                  <xs:appinfo>Components</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Components included in this specificaiton.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="Component" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:appinfo>Component</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          Raw component definition
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="Index">
-                            <xs:annotation>
-                              <xs:appinfo>Component Index</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Unique ID defining the order of the component.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="Name">
-                            <xs:annotation>
-                              <xs:appinfo>Component Name</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Name of the component.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="Description" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Component Description</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Description of the component
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="ProductLine" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Component Product Line</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Product line, or brand, of the component.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="Silhouette" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Silhouette image</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Optional: For use by the renderer. The silhouette is the filled component outline to be entirely recolored by the selected color with the outline placed on top.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="Outline" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Outline image</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="Color" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Selected Color</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Current selected color of the component.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="ItemNumber" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Component Item Number</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Optional: Reference to the ERP item number for the raw material component used in the kit.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="Faces">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="Face">
-                                  <xs:annotation>
-                                    <xs:appinfo>Component Face</xs:appinfo>
-                                    <xs:documentation xml:lang="en">
-                                      The side of the component being described. Chould be physical or otherwise (as in the RFID field of a component).
-                                    </xs:documentation>
-                                  </xs:annotation>
-                                  <xs:complexType>
-                                    <xs:sequence>
-                                      <xs:element name="Name" type="xs:string">
-                                        <xs:annotation>
-                                          <xs:appinfo>Face Name</xs:appinfo>
-                                          <xs:documentation xml:lang="en">
-                                            Indicates weather the variables are marked on the front or back of a component, or in the RFID field of the component. Values can be 'Front', 'Back', or 'RFID'
-                                          </xs:documentation>
-                                        </xs:annotation>
-                                      </xs:element>
-                                      <xs:element name="Variables">
-                                        <xs:complexType>
-                                          <xs:sequence>
-                                            <xs:element name="Variable" maxOccurs="unbounded">
-                                              <xs:annotation>
-                                                <xs:appinfo>Marking Variable</xs:appinfo>
-                                                <xs:documentation xml:lang="en">
-                                                  Parameters of a single marked value.
-                                                </xs:documentation>
-                                              </xs:annotation>
-                                              <xs:complexType>
-                                                <xs:sequence>
-                                                  <xs:element name="Index" type="xs:int">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Index</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Index order of the variable. Unique for all variables in a specification.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Name" type="xs:string">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Name</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        The name of the variable. Unique for all variables in a specification.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Description</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional description of the variable.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Role" type="xs:string">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Role</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc)
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Type" type="xs:string">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Type</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Required: Values can be 'text', 'curved-text' or 'image'
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Width" type="xs:int">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Width</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Width of the variable's bounding box.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Height" type="xs:int">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Height</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Height of the variable's bounding box.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="PositionX" type="xs:int">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable X Coordinate</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        X coordinate of the top left corner of the variable's bounding box.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="PositionY" type="xs:int">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Y Coordinate</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Y coordinate of the top left corner of the variable's bounding box.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="DefaultValue" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Value</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        The default value of the variable.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="ValueFormat" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Format Mask</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="MaxLength" type="xs:int">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Maximum Length</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text`
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="FontSize">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Font Size</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="IsFixed" type="xs:boolean">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Fixed Variable Indicator</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Indicates if the variable value is static for the specification. The value can not be changed by instance.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="IsLaser" type="xs:boolean" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Laser marking Indicator</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Indicates if the value is laser etched into the product.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="IsInk" type="xs:boolean">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Ink Marking Indicator</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Required: Determines if a variable value will be inked onto the product (It is possible to ink both TEXT and LOGO)
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="LogoImageLocation" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Variable Logo Image Location</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: For use by the renderer. Only used when `Type` = "image". Location of the logo image file. the Logo Inditification number should be populated as the variable value.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="Radius" type="xs:int" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Radius of the curved text</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="CurveTextAttachTo" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Curved Text Orientation</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside'
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                  <xs:element name="CopyValueFrom" minOccurs="0" maxOccurs="1">
-                                                    <xs:annotation>
-                                                      <xs:appinfo>Value copy from variable</xs:appinfo>
-                                                      <xs:documentation xml:lang="en">
-                                                        Optional: Accepts the variable name of an existing varialble on this specification. It will set IsFixed to true and makes DefaultValue the same as the provided variable name.
-                                                      </xs:documentation>
-                                                    </xs:annotation>
-                                                  </xs:element>
-                                                </xs:sequence>
-                                              </xs:complexType>
-                                            </xs:element>
-                                          </xs:sequence>
-                                        </xs:complexType>
-                                      </xs:element>
-                                    </xs:sequence>
-                                  </xs:complexType>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="Colors">
-                            <xs:annotation>
-                              <xs:appinfo>Component Colors</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Valid colors of the component.
-                              </xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="Color" maxOccurs="unbounded">
-                                  <xs:annotation>
-                                    <xs:appinfo>Material Color</xs:appinfo>
-                                    <xs:documentation xml:lang="en">
-                                      Material Color
-                                    </xs:documentation>
-                                  </xs:annotation>
-                                  <xs:complexType>
-                                    <xs:sequence>
-                                      <xs:element name="ColorCode">
-                                        <xs:annotation>
-                                          <xs:appinfo>Color Code</xs:appinfo>
-                                          <xs:documentation xml:lang="en">
-                                            Identifying code of the Color
-                                          </xs:documentation>
-                                        </xs:annotation>
-                                      </xs:element>
-                                      <xs:element name="Name">
-                                        <xs:annotation>
-                                          <xs:appinfo>Color Name</xs:appinfo>
-                                          <xs:documentation xml:lang="en">
-                                            Name of the color.
-                                          </xs:documentation>
-                                        </xs:annotation>
-                                      </xs:element>
-                                      <xs:element name="HexCode">
-                                        <xs:annotation>
-                                          <xs:appinfo>Color Hexidecimal Value</xs:appinfo>
-                                          <xs:documentation xml:lang="en">
-                                            Hexidecimal Value of the color.
-                                          </xs:documentation>
-                                        </xs:annotation>
-                                      </xs:element>
-                                    </xs:sequence>
-                                  </xs:complexType>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Specification" type="SpecificationNode">
+    <xs:annotation>
+      <xs:appinfo>Marking Specification</xs:appinfo>
+      <xs:documentation xml:lang="en">
+        Marking specification for a product offering.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SpecificationNode">
+    <xs:sequence>
+      <xs:element name="Id">
+        <xs:annotation>
+          <xs:appinfo>Specification Identifier</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Unique identifier for the specification.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Name">
+        <xs:annotation>
+          <xs:appinfo>Specification Name</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Name of the specification.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+	  <xs:element name="MarkingCode" minOccurs="0" maxOccurs="1">
+		<xs:annotation>
+		  <xs:appinfo>Marking Code</xs:appinfo>
+		  <xs:documentation xml:lang="en">
+			Optional: The laser template.
+		  </xs:documentation>
+		</xs:annotation>
+	  </xs:element>
+      <xs:element name="Components">
+        <xs:annotation>
+          <xs:appinfo>Components</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Components included in this specificaiton.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Component" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:appinfo>Component</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Raw component definition
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Index">
+                    <xs:annotation>
+                      <xs:appinfo>Component Index</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Unique ID defining the order of the component.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Name">
+                    <xs:annotation>
+                      <xs:appinfo>Component Name</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Name of the component.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Description" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Component Description</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Description of the component
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ProductLine" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Component Product Line</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Product line, or brand, of the component.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Silhouette" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Silhouette image</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Optional: For use by the renderer. The silhouette is the filled component outline to be entirely recolored by the selected color with the outline placed on top.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Outline" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Outline image</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Color" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Selected Color</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Current selected color of the component.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Faces">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Face">
+                          <xs:annotation>
+                            <xs:appinfo>Component Face</xs:appinfo>
+                            <xs:documentation xml:lang="en">
+                              The side of the component being described. Chould be physical or otherwise (as in the RFID field of a component).
+                            </xs:documentation>
+                          </xs:annotation>
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="Name" type="xs:string">
+                                <xs:annotation>
+                                  <xs:appinfo>Face Name</xs:appinfo>
+                                  <xs:documentation xml:lang="en">
+                                    Indicates weather the variables are marked on the front or back of a component, or in the RFID field of the component. Values can be 'Front', 'Back', or 'RFID'
+                                  </xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                              <xs:element name="Variables">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="Variable" maxOccurs="unbounded">
+                                      <xs:annotation>
+                                        <xs:appinfo>Marking Variable</xs:appinfo>
+                                        <xs:documentation xml:lang="en">
+                                          Parameters of a single marked value.
+                                        </xs:documentation>
+                                      </xs:annotation>
+                                      <xs:complexType>
+                                        <xs:sequence>
+                                          <xs:element name="Index" type="xs:int">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Index</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Index order of the variable. Unique for all variables in a specification.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Name" type="xs:string">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Name</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                The name of the variable. Unique for all variables in a specification.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Description</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional description of the variable.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Role" type="xs:string">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Role</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc)
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Type" type="xs:string">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Type</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Required: Values can be 'text', 'curved-text' or 'image'
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Width" type="xs:int">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Width</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Width of the variable's bounding box.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Height" type="xs:int">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Height</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Height of the variable's bounding box.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="PositionX" type="xs:int">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable X Coordinate</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                X coordinate of the top left corner of the variable's bounding box.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="PositionY" type="xs:int">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Y Coordinate</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Y coordinate of the top left corner of the variable's bounding box.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="DefaultValue" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Value</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                The default value of the variable.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="ValueFormat" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Format Mask</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="MaxLength" type="xs:int">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Maximum Length</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text`
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="FontSize">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Font Size</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="IsFixed" type="xs:boolean">
+                                            <xs:annotation>
+                                              <xs:appinfo>Fixed Variable Indicator</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Indicates if the variable value is static for the specification. The value can not be changed by instance.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="IsLaser" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Laser marking Indicator</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Indicates if the value is laser etched into the product.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="IsInk" type="xs:boolean">
+                                            <xs:annotation>
+                                              <xs:appinfo>Ink Marking Indicator</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Required: Determines if a variable value will be inked onto the product (It is possible to ink both TEXT and LOGO)
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="LogoImageLocation" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Variable Logo Image Location</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: For use by the renderer. Only used when `Type` = "image". Location of the logo image file. the Logo Inditification number should be populated as the variable value.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="Radius" type="xs:int" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Radius of the curved text</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="CurveTextAttachTo" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Curved Text Orientation</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside'
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                          <xs:element name="CopyValueFrom" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Value copy from variable</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Optional: Accepts the variable name of an existing varialble on this specification. It will set IsFixed to true and makes DefaultValue the same as the provided variable name.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
+                                        </xs:sequence>
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="Colors">
+                    <xs:annotation>
+                      <xs:appinfo>Component Colors</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Valid colors of the component.
+                      </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Color" maxOccurs="unbounded">
+                          <xs:annotation>
+                            <xs:appinfo>Material Color</xs:appinfo>
+                            <xs:documentation xml:lang="en">
+                              Material Color
+                            </xs:documentation>
+                          </xs:annotation>
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="ColorCode">
+                                <xs:annotation>
+                                  <xs:appinfo>Color Code</xs:appinfo>
+                                  <xs:documentation xml:lang="en">
+                                    Identifying code of the Color
+                                  </xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                              <xs:element name="Name">
+                                <xs:annotation>
+                                  <xs:appinfo>Color Name</xs:appinfo>
+                                  <xs:documentation xml:lang="en">
+                                    Name of the color.
+                                  </xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                              <xs:element name="HexCode">
+                                <xs:annotation>
+                                  <xs:appinfo>Color Hexidecimal Value</xs:appinfo>
+                                  <xs:documentation xml:lang="en">
+                                    Hexidecimal Value of the color.
+                                  </xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>

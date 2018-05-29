@@ -10,25 +10,25 @@ import javax.xml.bind.Unmarshaller;
 public class FlexOrderStatus {
     public static class Parser
     {
-        public static com.allflex.api.flexorderstatus.OrderStatus Import(String filePath)
+        public static com.allflex.api.flexorderstatus.OrderStatusNode Import(String filePath)
         {
             try {
                 JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorder.Document.class);
                 Unmarshaller um = context.createUnmarshaller();
-                return (com.allflex.api.flexorderstatus.OrderStatus) um.unmarshal(new FileReader(filePath));
+                return (com.allflex.api.flexorderstatus.OrderStatusNode) um.unmarshal(new FileReader(filePath));
             } catch (Exception ex) {
                 Logger.getLogger(FlexOrder.class.getName()).log(Level.SEVERE, null, ex);
             }
             return null;
         }
         
-        public static String Export(com.allflex.api.flexorderstatus.OrderStatus flexOrderStatus) throws JAXBException
+        public static String Export(com.allflex.api.flexorderstatus.OrderStatusNode flexOrderStatus) throws JAXBException
         {
-            JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.OrderStatus.class);
+            JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.OrderStatusNode.class);
             return Common.asString(context, flexOrderStatus);
         }
         
-        public static void Save(com.allflex.api.flexorderstatus.OrderStatus flexOrderStatus, String filePath) throws JAXBException
+        public static void Save(com.allflex.api.flexorderstatus.OrderStatusNode flexOrderStatus, String filePath) throws JAXBException
         {
             JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorder.Document.class);
             Common.toFile(context, flexOrderStatus, filePath);

@@ -28,7 +28,7 @@ public class FlexSpec {
             return Common.asString(context, flexSpec);
         }
         
-        public static String Export(com.allflex.api.flexspec.Document.Specification flexSpec) throws JAXBException
+        public static String Export(com.allflex.api.flexspec.SpecificationNode flexSpec) throws JAXBException
         {
             JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorder.Document.class);
             return Common.asString(context, flexSpec);
@@ -40,7 +40,7 @@ public class FlexSpec {
             Common.toFile(context, flexSpec, filePath);
         }
         
-        public static void Save(com.allflex.api.flexspec.Document.Specification flexSpec, String filePath) throws JAXBException
+        public static void Save(com.allflex.api.flexspec.SpecificationNode flexSpec, String filePath) throws JAXBException
         {
             com.allflex.api.flexspec.Document doc = new com.allflex.api.flexspec.Document();
             doc.getSpecification().add(flexSpec);

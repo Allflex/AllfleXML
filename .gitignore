@@ -252,3 +252,5 @@ paket-files/
 .idea/
 *.sln.iml
 /com.allflex.api.data/nbproject/private/
+/com.allflex.api/build/
+/com.allflex.api/dist/

@@ -29,7 +29,7 @@ public class FlexOrder {
             return Common.asString(context, flexOrder);
         }
         
-        public static String Export(com.allflex.api.flexorder.OrderHeader flexOrder) throws JAXBException
+        public static String Export(com.allflex.api.flexorder.OrderHeaderNode flexOrder) throws JAXBException
         {
             JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorder.Document.class);
             return Common.asString(context, flexOrder);
@@ -41,7 +41,7 @@ public class FlexOrder {
             Common.toFile(context, flexOrder, filePath);
         }
         
-        public static void Save(com.allflex.api.flexorder.OrderHeader flexOrder, String filePath) throws JAXBException
+        public static void Save(com.allflex.api.flexorder.OrderHeaderNode flexOrder, String filePath) throws JAXBException
         {
             com.allflex.api.flexorder.Document doc = new com.allflex.api.flexorder.Document();
             doc.getOrderHeader().add(flexOrder);

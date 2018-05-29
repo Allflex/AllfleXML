@@ -3,6 +3,7 @@ package com.allflex.api;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
@@ -98,22 +99,24 @@ public class Common {
     
     public static List<Exception> ValidateOnline(String xml, String xsd){
         // TODO: Determine if xsd is URL or file path
+        Schema schema = null;
         
-        URL schemaFile = new URL("http://host:port/filename.xsd");
-        // webapp example xsd: 
-        // URL schemaFile = new URL("http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd");
-        // local file example:
-        // File schemaFile = new File("/location/to/localfile.xsd"); // etc.
-        
-        SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema;
         try {
-          schema = schemaFactory.newSchema(schemaFile);
-        } catch (SAXException e) {
+            URL schemaFile = new URL("http://host:port/filename.xsd");
+            // webapp example xsd:
+            // URL schemaFile = new URL("http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd");
+            // local file example:
+            // File schemaFile = new File("/location/to/localfile.xsd"); // etc.
+            
+            SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            schema = schemaFactory.newSchema(schemaFile);
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SAXException ex) {
+            Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        Source xmlFile = new StreamSource(new File("web.xml"));
-        
+        Source xmlFile = new StreamSource(new File(xml));
         return Validate(xmlFile, schema);
     }
     

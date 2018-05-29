@@ -23,33 +23,33 @@ import org.xml.sax.SAXException;
 
 public class Common {
     private static List<Exception> Validate(Source xml, Source xsd){
+        List<Exception> result = new LinkedList<>();
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(xsd);
-            return Validate(xml, schema);
+            result = Validate(xml, schema);
         } catch (SAXException ex) {
             Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
-             LinkedList<Exception> result = new LinkedList<Exception>();
             result.add(ex);
-            return result;
         }
+        return result;
     }
     
     private static List<Exception> Validate(Source xml, URL xsd){
+        List<Exception> result = new LinkedList<>();
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             Schema schema = factory.newSchema(xsd);
-            return Validate(xml, schema);
+            result = Validate(xml, schema);
         } catch (SAXException ex) {
             Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
-             LinkedList<Exception> result = new LinkedList<Exception>();
             result.add(ex);
-            return result;
         }
+        return result;
     }
     
     private static List<Exception> Validate(Source xml, Schema xsd){
-        final List<Exception> exceptions = new LinkedList<Exception>();
+        final List<Exception> exceptions = new LinkedList<>();
 
         try {
             Validator validator = xsd.newValidator();
@@ -75,10 +75,7 @@ public class Common {
             });
 
             validator.validate(xml);
-        } catch (SAXException ex) {
-            exceptions.add(ex);
-            Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
+        } catch (SAXException | IOException ex) {
             exceptions.add(ex);
             Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
         }

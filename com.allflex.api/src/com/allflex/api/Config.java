@@ -31,12 +31,12 @@ public enum Config {
     }
     
     private static Properties getProperties() throws IOException {
-        URL configFile = Config.class.getClass().getResource("/Configuration.config");;
-        InputStream configFileStream = configFile.openStream();
-        Properties p = new Properties();
-        p.load(configFileStream);
-        configFileStream.close();
-        
+        URL configFile = Config.class.getClass().getResource("/Configuration.config");
+        Properties p;
+        try (InputStream configFileStream = configFile.openStream()) {
+            p = new Properties();
+            p.load(configFileStream);
+        }
         return p;
     }
 }

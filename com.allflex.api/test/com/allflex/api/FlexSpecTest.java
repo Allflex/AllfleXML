@@ -1,5 +1,6 @@
 package com.allflex.api;
 
+import java.io.IOException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -27,11 +28,13 @@ public class FlexSpecTest {
     @After
     public void tearDown() {
     }
-
+    
     @Test
-    public void ImportFlexSpec2() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void ImportFlexSpec2() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\FlexSpec\\GTLF2_GSM2.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        com.allflex.api.flexorder.Document specification = com.allflex.api.FlexOrder.Parser.Import(path);
+        assertNotNull(specification);
     }
 
     @Test
@@ -47,14 +50,18 @@ public class FlexSpecTest {
     }
 
     @Test
-    public void FailedFlexSpecValidation() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void FailedFlexSpecValidation() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\FlexOrder\\sample0.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        boolean result = com.allflex.api.FlexSpec.Parser.Validate(path);
+        assertFalse(result);
     }
 
     @Test
-    public void PassedFlexSpecValidation() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void PassedFlexSpecValidation() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\FlexSpec\\GTLF2_GSM2.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        boolean result = com.allflex.api.FlexSpec.Parser.Validate(path);
+        assertTrue(result);
     }
 }

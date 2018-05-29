@@ -1,6 +1,6 @@
 package com.allflex.api;
 
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,7 +17,8 @@ public class FlexOrder {
             try {
                 JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorder.Document.class);
                 Unmarshaller um = context.createUnmarshaller();
-                return (com.allflex.api.flexorder.Document) um.unmarshal(new FileReader(filePath));
+                FileInputStream fr = new FileInputStream(filePath);
+                return (com.allflex.api.flexorder.Document) um.unmarshal(fr);
             } catch (Exception ex) {
                 Logger.getLogger(FlexOrder.class.getName()).log(Level.SEVERE, null, ex);
             }

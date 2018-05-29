@@ -12,26 +12,49 @@ public class FlexOrderStatusTest {
     public FlexOrderStatusTest() {
     }
     
-    @BeforeClass
+    @BeforeClass // runs once before any test cases
     public static void setUpClass() {
     }
     
-    @AfterClass
+    @AfterClass // runs once after all test cases
     public static void tearDownClass() {
     }
     
-    @Before
+    @Before // runs before each test case
     public void setUp() {
     }
     
-    @After
+    @After // runs after each test case
     public void tearDown() {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void ImportFlexOrderStatus1() {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
+    @Test
+    public void ExportFlexOrderStatus() {
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void SaveFlexOrderStatus() {
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void FailedFlexOrderValidation() {
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void PassedFlexOrderValidation() {
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
 }

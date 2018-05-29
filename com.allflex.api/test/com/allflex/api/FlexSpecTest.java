@@ -33,8 +33,9 @@ public class FlexSpecTest {
     public void ImportFlexSpec2() throws IOException {
         String path = "..\\AllfleXML.Test\\TestData\\FlexSpec\\GTLF2_GSM2.xml";
         path = new java.io.File(path).getCanonicalPath();
-        com.allflex.api.flexorder.Document specification = com.allflex.api.FlexOrder.Parser.Import(path);
-        assertNotNull(specification);
+        com.allflex.api.flexspec.Document specifications = com.allflex.api.FlexSpec.Parser.Import(path);
+        assertNotNull(specifications);
+        assertFalse(specifications.getSpecification().isEmpty());
     }
 
     @Test

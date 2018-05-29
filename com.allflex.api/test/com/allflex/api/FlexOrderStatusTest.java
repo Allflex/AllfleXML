@@ -1,5 +1,6 @@
 package com.allflex.api;
 
+import java.io.IOException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -29,9 +30,12 @@ public class FlexOrderStatusTest {
     }
 
     @Test
-    public void ImportFlexOrderStatus1() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void ImportFlexOrderStatus1() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\FlexOrderStatus\\sample1.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        com.allflex.api.flexorderstatus.Document orderStatus = com.allflex.api.FlexOrderStatus.Parser.Import(path);
+        assertNotNull(orderStatus);
+        assertFalse(orderStatus.getOrderStatus().isEmpty());
     }
 
     @Test
@@ -47,14 +51,18 @@ public class FlexOrderStatusTest {
     }
 
     @Test
-    public void FailedFlexOrderValidation() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void FailedFlexOrderStatusValidation() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\ID1Order\\sample0.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        boolean result = com.allflex.api.FlexOrderStatus.Parser.Validate(path);
+        assertFalse(result);
     }
 
     @Test
-    public void PassedFlexOrderValidation() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void PassedFlexOrderStatusValidation() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\FlexOrderStatus\\sample1.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        boolean result = com.allflex.api.FlexOrderStatus.Parser.Validate(path);
+        assertTrue(result);
     }
 }

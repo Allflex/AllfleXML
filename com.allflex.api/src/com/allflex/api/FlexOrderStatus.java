@@ -67,6 +67,11 @@ public class FlexOrderStatus {
             Common.toFile(context, flexOrderStatus, filePath);
         }
         
+        public static boolean ValidateContent(String content) {
+            List<Exception> exceptions = Common.ValidateContent(content, Config.FlexOrderStatusXSD.get());
+            return (exceptions != null && exceptions.isEmpty());
+        }
+        
         public static boolean Validate(String filePath) {
             List<Exception> exceptions = Common.ValidateOnline(filePath, Config.FlexOrderStatusXSD.get());
             return (exceptions != null && exceptions.isEmpty());

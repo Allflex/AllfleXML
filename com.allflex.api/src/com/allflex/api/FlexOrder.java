@@ -2,6 +2,9 @@ package com.allflex.api;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.StringReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -10,6 +13,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
 
 public class FlexOrder {
     public static class Parser
@@ -78,6 +83,11 @@ public class FlexOrder {
             com.allflex.api.flexorder.Document doc = tmp.createDocument();
             doc.getOrderHeader().add(flexOrder);
             Save(doc, filePath);
+        }
+        
+        public static boolean ValidateContent(String content) {
+            List<Exception> exceptions = Common.ValidateContent(content, Config.FlexOrderXSD.get());
+            return (exceptions != null && exceptions.isEmpty());
         }
         
         public static boolean Validate(String filePath) {

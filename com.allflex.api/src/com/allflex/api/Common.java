@@ -2,6 +2,7 @@ package com.allflex.api;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -22,7 +23,7 @@ import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
 
 public class Common {
-    private static List<Exception> Validate(Source xml, Source xsd){
+    public static List<Exception> Validate(Source xml, Source xsd){
         List<Exception> result = new LinkedList<>();
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
@@ -35,7 +36,7 @@ public class Common {
         return result;
     }
     
-    private static List<Exception> Validate(Source xml, URL xsd){
+    public static List<Exception> Validate(Source xml, URL xsd){
         List<Exception> result = new LinkedList<>();
         try {
             SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
@@ -48,7 +49,7 @@ public class Common {
         return result;
     }
     
-    private static List<Exception> Validate(Source xml, Schema xsd){
+    public static List<Exception> Validate(Source xml, Schema xsd){
         final List<Exception> exceptions = new LinkedList<>();
 
         try {
@@ -110,6 +111,21 @@ public class Common {
         return Validate(xmlFile, schema);
     }
     
+    public static List<Exception> ValidateContent(String content, String xsd) {
+        Schema schema = null;
+        
+        try {
+            URL schemaFile = new URL(xsd);
+            SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            schema = schemaFactory.newSchema(schemaFile);
+        } catch (MalformedURLException | SAXException ex) {
+            Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        Source xml = new StreamSource(new StringReader(content));
+        return Validate(xml, schema);
+    }
+        
     public static void toFile(JAXBContext pContext, Object pObject, String output) throws JAXBException {
         toFile(pContext, pObject, new File(output));
     }

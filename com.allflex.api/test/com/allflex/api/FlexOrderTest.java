@@ -1,6 +1,8 @@
 package com.allflex.api;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import javax.xml.bind.JAXBException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -147,15 +149,68 @@ public class FlexOrderTest {
     }
     
     @Test
-    public void ExportFlexOrder(){
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void ExportFlexOrder() throws JAXBException {
+        com.allflex.api.flexorder.ObjectFactory tmp = new com.allflex.api.flexorder.ObjectFactory();
+        
+        com.allflex.api.flexorder.OrderLineHeader orderLine = tmp.createOrderLineHeader();
+        orderLine.setSkuName("ANTXLSET3306LA");
+        orderLine.setQuantity(17);
+        
+        com.allflex.api.flexorder.OrderHeaderNode orderHeader = tmp.createOrderHeaderNode();
+        orderHeader.setCustomerNumber("testing");
+        // TODO: Set premise
+        orderHeader.setPO("123456");
+        orderHeader.setShipToName("Jane Doe");
+        orderHeader.setShipToPhone("5551234567");
+        orderHeader.setShipToAddress1("Rev. Calvin & Thelma Alcorn");
+        orderHeader.setShipToCity("Dallas");
+        orderHeader.setShipToState("TX");
+        orderHeader.setShipToPostalCode("76021");
+        orderHeader.setShipToCountry("US");
+        orderHeader.setShipMethod("UPS");
+        orderHeader.getOrderLineHeader().add(orderLine);
+        
+        com.allflex.api.flexorder.Document doc = tmp.createDocument();
+        doc.getOrderHeader().add(orderHeader);
+        
+        String content = com.allflex.api.FlexOrder.Parser.Export(doc);
+        
+        boolean result = com.allflex.api.FlexOrder.Parser.ValidateContent(content);
+        assertTrue(result);
     }
     
     @Test
-    public void SaveFlexOrder(){
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void SaveFlexOrder() throws JAXBException, FileNotFoundException{
+        com.allflex.api.flexorder.ObjectFactory tmp = new com.allflex.api.flexorder.ObjectFactory();
+        
+        com.allflex.api.flexorder.OrderLineHeader orderLine = tmp.createOrderLineHeader();
+        orderLine.setSkuName("ANTXLSET3306LA");
+        orderLine.setQuantity(17);
+        
+        com.allflex.api.flexorder.OrderHeaderNode orderHeader = tmp.createOrderHeaderNode();
+        orderHeader.setCustomerNumber("testing");
+        // TODO: Set premise
+        orderHeader.setPO("123456");
+        orderHeader.setShipToName("Jane Doe");
+        orderHeader.setShipToPhone("5551234567");
+        orderHeader.setShipToAddress1("Rev. Calvin & Thelma Alcorn");
+        orderHeader.setShipToCity("Dallas");
+        orderHeader.setShipToState("TX");
+        orderHeader.setShipToPostalCode("76021");
+        orderHeader.setShipToCountry("US");
+        orderHeader.setShipMethod("UPS");
+        orderHeader.getOrderLineHeader().add(orderLine);
+        
+        com.allflex.api.flexorder.Document doc1 = tmp.createDocument();
+        doc1.getOrderHeader().add(orderHeader);
+        
+        String fileName = "testFlexOrder.xml";
+        
+        com.allflex.api.FlexOrder.Parser.Save(doc1, fileName);
+        
+        com.allflex.api.flexorder.Document doc2 = com.allflex.api.FlexOrder.Parser.Import(fileName);
+        assertNotNull(doc2);
+        assertFalse(doc2.getOrderHeader().isEmpty());
     }
 
     @Test

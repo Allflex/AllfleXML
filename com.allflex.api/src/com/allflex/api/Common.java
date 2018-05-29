@@ -93,23 +93,16 @@ public class Common {
         StreamSource xsd = new StreamSource(xsdFile);
         return Validate(xml, xsd);
     }
-    
-    public static List<Exception> ValidateOnline(String xml, String xsd){
-        // TODO: Determine if xsd is URL or file path
+        
+    public static List<Exception> ValidateOnline(String xml, String xsd) {
+        // TODO: Determine if xsd is URL or file path, then File schemaFile = new File("/location/to/localfile.xsd");
         Schema schema = null;
         
         try {
-            URL schemaFile = new URL("http://host:port/filename.xsd");
-            // webapp example xsd:
-            // URL schemaFile = new URL("http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd");
-            // local file example:
-            // File schemaFile = new File("/location/to/localfile.xsd"); // etc.
-            
+            URL schemaFile = new URL(xsd);
             SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
             schema = schemaFactory.newSchema(schemaFile);
-        } catch (MalformedURLException ex) {
-            Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SAXException ex) {
+        } catch (MalformedURLException | SAXException ex) {
             Logger.getLogger(Common.class.getName()).log(Level.SEVERE, null, ex);
         }
         

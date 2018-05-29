@@ -1,6 +1,7 @@
 package com.allflex.api;
 
 import java.io.FileReader;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -48,9 +49,10 @@ public class FlexOrder {
             Save(doc, filePath);
         }
         
-        public static void Validate(String filePath)
+        public static boolean Validate(String filePath)
         {
-            
+            List<Exception> exceptions = Common.ValidateOnline(filePath, Config.FlexOrderXSD.get());
+            return (exceptions != null && exceptions.isEmpty());
         }
     }
 }

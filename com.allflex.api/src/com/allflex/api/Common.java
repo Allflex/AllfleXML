@@ -133,7 +133,7 @@ public class Common {
     public static void toFile(JAXBContext pContext, Object pObject, File output) throws JAXBException {
         Marshaller m = pContext.createMarshaller();
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
-        m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        //m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         m.marshal(pObject, output);
     }
     
@@ -143,6 +143,7 @@ public class Common {
         Marshaller m = pContext.createMarshaller();
         m.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        m.setProperty(Marshaller.JAXB_SCHEMA_LOCATION, "");
         m.marshal(pObject, sw);
 
         return sw.toString();

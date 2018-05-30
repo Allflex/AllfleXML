@@ -104,8 +104,8 @@ public class FlexSpecTest {
         f2v2.setCurveTextAttachTo(null);
         
         com.allflex.api.flexspec.Variables f2variables = tmp.createVariables();
-        f1variables.getVariable().add(f2v1);
-        f1variables.getVariable().add(f2v2);
+        f2variables.getVariable().add(f2v1);
+        f2variables.getVariable().add(f2v2);
         
         com.allflex.api.flexspec.Face face2 = tmp.createFace();
         face2.setName("Back");

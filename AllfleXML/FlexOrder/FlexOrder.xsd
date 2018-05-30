@@ -4,783 +4,261 @@
     <xs:annotation>
       <xs:appinfo>Document</xs:appinfo>
       <xs:documentation xml:lang="en">
-        Document Container
+        Document Container for multiple orders
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="OrderHeader" minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="OrderHeader" type="OrderHeaderNode" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>Order Header</xs:appinfo>
             <xs:documentation xml:lang="en">
               Order Header
             </xs:documentation>
           </xs:annotation>
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="CustomerNumber">
-                <xs:annotation>
-                  <xs:appinfo>Customer Account Number</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) The account number used to identify the buyer by the seller.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="15"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:choice maxOccurs="2">
-                <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                    <xs:appinfo>Premises Identification Number</xs:appinfo>
-                    <xs:documentation xml:lang="en">
-                      Official USDA Premises Identification Number (PIN)
-                    </xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                      <xs:minLength value="0"/>
-                      <xs:maxLength value="8"/>
-                    </xs:restriction>
-                  </xs:simpleType>
-                </xs:element>
-                <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                    <xs:appinfo>Order Notes</xs:appinfo>
-                    <xs:documentation xml:lang="en">
-                      Notes about the order.
-                    </xs:documentation>
-                  </xs:annotation>
-                </xs:element>
-              </xs:choice>
-              <xs:element name="PO">
-                <xs:annotation>
-                  <xs:appinfo>Purchase Order Number</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) Purchase Order Number used by the buyer to identify the order.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="21"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToName">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Name</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) Residence or buisness name of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="65"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToContact" type="xs:string" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Contact</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Depreciated) Name of the recipient of the order at the order's shipping destination. Unused by manufacture, please use ShipToName.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="ShipToPhone">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Contact Phone Number</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Telephone number where the shipping contact can be reached.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0"/>
-                    <xs:maxLength value="21"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToAddress1">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Address 1</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) Street address line #1 of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="61"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToAddress2" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Address 2</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Street address line #2 of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0"/>
-                    <xs:maxLength value="61"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToAddress3" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Address 3</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Street address line #3 of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0"/>
-                    <xs:maxLength value="61"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToCity">
-                <xs:annotation>
-                  <xs:appinfo>Shipping City</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) City of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="35"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToState">
-                <xs:annotation>
-                  <xs:appinfo>Shipping State</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) State of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="29"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToPostalCode">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Postal Code</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) Postal code of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="11"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ShipToCountry" type="xs:string">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Country</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Country of the order's shipping destination.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="IsRush" type="xs:boolean" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Rush Order</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Rush Order Flag.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="ShipMethod" type="xs:string" default="UPS">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Method</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    The package delivery company and method of consignment for order.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="ShippingAccountNumber" type="xs:string" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Shipping Account Number</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    The account number the buyer has with the package delivery company if the buyer is to be charged for shipping directly.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="EmailListError" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Email List for Errors</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Semicolon delimited list of email addresses to receive errors.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="EmailListTrackingInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Email List for Tracking Information</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Semicolon delimited list of email addresses to receive shipment confirmations.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="EmailListEIDInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Email List for Tag Manifest</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Semicolon delimited list of email addresses to receive tag manifests.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <!--<xs:element name="EmailListError" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Email List for Errors</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Semicolon delimited list of email addresses to receive errors.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:pattern value="(([a-zA-Z0-9_\-\.;]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3}))+"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="EmailListTrackingInfo" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Email List for Tracking Information</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Semicolon delimited list of email addresses to receive shipment confirmations.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:pattern value="(([a-zA-Z0-9_\-\.;]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3}))+"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="EmailListEIDInfo" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Email List for Tag Manifest</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Semicolon delimited list of email addresses to receive tag manifests.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:pattern value="(([a-zA-Z0-9_\-\.;]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3}))+"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>-->
-              <xs:element name="UserDefined" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:appinfo>User Defined Fields</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    User Defined Fields
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:appinfo>User Defined Field</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          User Defined Key/Value pair field
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:simpleContent>
-                          <xs:extension base="xs:string">
-                            <xs:attribute name="Key" type="xs:string" use="required">
-                              <xs:annotation>
-                                <xs:appinfo>User Defined Key</xs:appinfo>
-                                <xs:documentation xml:lang="en">
-                                  User Defined Key
-                                </xs:documentation>
-                              </xs:annotation>
-                            </xs:attribute>
-                          </xs:extension>
-                        </xs:simpleContent>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="WSOrderId" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>WSOrderId</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Internal use by the manufacture only.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Hold" type="xs:boolean" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Hold</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Used to indicate if the order is on hold.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element maxOccurs="unbounded" name="OrderLineHeader">
-                <xs:annotation>
-                  <xs:appinfo>Order Line Header</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Order Line
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="SkuName">
-                      <xs:annotation>
-                        <xs:appinfo>Stock Keeping Unit</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          (Required) SKU the buyer is ordering. Product Code or Item Number
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                          <xs:minLength value="1"/>
-                          <xs:maxLength value="31"/>
-                        </xs:restriction>
-                      </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>Premises Identification Number</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          (Depreciated) Official USDA Premises Identification Number (PIN)
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                          <xs:minLength value="0"/>
-                          <xs:maxLength value="8"/>
-                        </xs:restriction>
-                      </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="Quantity" type="xs:unsignedShort">
-                      <xs:annotation>
-                        <xs:appinfo>Quantity</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          (Required) The amount of the SKU being orderd.
-                        </xs:documentation>
-                      </xs:annotation>
-                    </xs:element>
-                    <xs:element name="UnitOfMeasure" type="xs:unsignedShort" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>UnitOfMeasure</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          Denomination of the Quantity.
-                        </xs:documentation>
-                      </xs:annotation>
-                    </xs:element>
-                    <xs:element name="Template" type="xs:string" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>Template</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          FlexSpec Specification Name
-                        </xs:documentation>
-                      </xs:annotation>
-                    </xs:element>
-                    <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>Job Notes</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          Notes about the order line.
-                        </xs:documentation>
-                      </xs:annotation>
-                    </xs:element>
-                    <xs:element name="UserDefined" minOccurs="0" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:appinfo>User Defined Fields</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          User Defined Fields
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
-                            <xs:annotation>
-                              <xs:appinfo>User Defined Field</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                User Defined Key/Value pair field
-                              </xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                              <xs:simpleContent>
-                                <xs:extension base="xs:string">
-                                  <xs:attribute name="Key" type="xs:string" use="required">
-                                    <xs:annotation>
-                                      <xs:appinfo>User Defined Key</xs:appinfo>
-                                      <xs:documentation xml:lang="en">
-                                        User Defined Key
-                                      </xs:documentation>
-                                    </xs:annotation>
-                                  </xs:attribute>
-                                </xs:extension>
-                              </xs:simpleContent>
-                            </xs:complexType>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="OrderLineCustom" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>Custom Order Line Details</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          (Deprecated) Custom details for an orderLine.
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element maxOccurs="unbounded" name="Variable" minOccurs="0">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Variable</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Key/Value pair of a marking variable.
-                              </xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="VariableName" type="xs:string">
-                                  <xs:annotation>
-                                    <xs:appinfo>Marking Variable Name</xs:appinfo>
-                                    <xs:documentation xml:lang="en">
-                                      Key of a marking variable.
-                                    </xs:documentation>
-                                  </xs:annotation>
-                                </xs:element>
-                                <xs:element name="VariableValue" type="xs:string">
-                                  <xs:annotation>
-                                    <xs:appinfo>Marking Variable Value</xs:appinfo>
-                                    <xs:documentation xml:lang="en">
-                                      Value of a marking variable.
-                                    </xs:documentation>
-                                  </xs:annotation>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Notes</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                (Depreciated) No longer used, please use order line notes.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="OrderLineMarkingDetail" minOccurs="0" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:appinfo>Marking Details</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          Marking details for a tag set.
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="Variable" maxOccurs="unbounded">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Variable</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Key/Value pair of a marking variable.
-                              </xs:documentation>
-                            </xs:annotation>
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="VariableName" type="xs:string">
-                                  <xs:annotation>
-                                    <xs:appinfo>Marking Variable Name</xs:appinfo>
-                                    <xs:documentation xml:lang="en">
-                                      Key of a marking variable.
-                                    </xs:documentation>
-                                  </xs:annotation>
-                                </xs:element>
-                                <xs:element name="VariableValue" type="xs:string">
-                                  <xs:annotation>
-                                    <xs:appinfo>Marking Variable Value</xs:appinfo>
-                                    <xs:documentation xml:lang="en">
-                                      Value of a marking variable.
-                                    </xs:documentation>
-                                  </xs:annotation>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Notes</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                (Depreciated) No longer used, please use order line notes.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="OrderHeader">
+  <xs:element name="OrderHeader" type="OrderHeaderNode">
     <xs:annotation>
       <xs:appinfo>Order Header</xs:appinfo>
       <xs:documentation xml:lang="en">
         Order Header
       </xs:documentation>
     </xs:annotation>
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="CustomerNumber">
+  </xs:element>
+  <xs:complexType name="OrderHeaderNode">
+    <xs:sequence>
+      <xs:element name="CustomerNumber">
+        <xs:annotation>
+          <xs:appinfo>Customer Account Number</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) The account number used to identify the buyer by the seller.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="15"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:choice maxOccurs="2">
+        <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:appinfo>Customer Account Number</xs:appinfo>
+            <xs:appinfo>Premises Identification Number</xs:appinfo>
             <xs:documentation xml:lang="en">
-              (Required) The account number used to identify the buyer by the seller.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="15"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:choice maxOccurs="2">
-          <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:appinfo>Premises Identification Number</xs:appinfo>
-              <xs:documentation xml:lang="en">
-                Official USDA Premises Identification Number (PIN)
-              </xs:documentation>
-            </xs:annotation>
-            <xs:simpleType>
-              <xs:restriction base="xs:string">
-                <xs:minLength value="0"/>
-                <xs:maxLength value="8"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:element>
-          <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:appinfo>Order Notes</xs:appinfo>
-              <xs:documentation xml:lang="en">
-                Notes about the order.
-              </xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:choice>
-        <xs:element name="PO">
-          <xs:annotation>
-            <xs:appinfo>Purchase Order Number</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Required) Purchase Order Number used by the buyer to identify the order.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="21"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToName">
-          <xs:annotation>
-            <xs:appinfo>Shipping Name</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Required) Residence or buisness name of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="65"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToContact" type="xs:string" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Shipping Contact</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Depreciated) Name of the recipient of the order at the order's shipping destination. Unused by manufacture, please use ShipToName.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ShipToPhone">
-          <xs:annotation>
-            <xs:appinfo>Shipping Contact Phone Number</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Telephone number where the shipping contact can be reached.
+              Official USDA Premises Identification Number (PIN)
             </xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:string">
               <xs:minLength value="0"/>
-              <xs:maxLength value="21"/>
+              <xs:maxLength value="8"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element name="ShipToAddress1">
+        <xs:element name="Comments" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-            <xs:appinfo>Shipping Address 1</xs:appinfo>
+            <xs:appinfo>Order Notes</xs:appinfo>
             <xs:documentation xml:lang="en">
-              (Required) Street address line #1 of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="61"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToAddress2" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Shipping Address 2</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Street address line #2 of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="0"/>
-              <xs:maxLength value="61"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToAddress3" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Shipping Address 3</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Street address line #3 of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="0"/>
-              <xs:maxLength value="61"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToCity">
-          <xs:annotation>
-            <xs:appinfo>Shipping City</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Required) City of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="35"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToState">
-          <xs:annotation>
-            <xs:appinfo>Shipping State</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Required) State of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="29"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToPostalCode">
-          <xs:annotation>
-            <xs:appinfo>Shipping Postal Code</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Required) Postal code of the order's shipping destination.
-            </xs:documentation>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:minLength value="1"/>
-              <xs:maxLength value="11"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="ShipToCountry" type="xs:string">
-          <xs:annotation>
-            <xs:appinfo>Shipping Country</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Country of the order's shipping destination.
+              Notes about the order.
             </xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="IsRush" type="xs:boolean" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Rush Order</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Rush Order Flag.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ShipMethod" type="xs:string" default="UPS">
-          <xs:annotation>
-            <xs:appinfo>Shipping Method</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              The package delivery company and method of consignment for order.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="ShippingAccountNumber" type="xs:string" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Shipping Account Number</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              The account number the buyer has with the package delivery company if the buyer is to be charged for shipping directly.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="EmailListError" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Email List for Errors</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Semicolon delimited list of email addresses to receive errors.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="EmailListTrackingInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Email List for Tracking Information</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Semicolon delimited list of email addresses to receive shipment confirmations.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="EmailListEIDInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Email List for Tag Manifest</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Semicolon delimited list of email addresses to receive tag manifests.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <!--<xs:element name="EmailListError" nillable="true" minOccurs="0" maxOccurs="1">
+      </xs:choice>
+      <xs:element name="PO">
+        <xs:annotation>
+          <xs:appinfo>Purchase Order Number</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) Purchase Order Number used by the buyer to identify the order.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="21"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToName">
+        <xs:annotation>
+          <xs:appinfo>Shipping Name</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) Residence or buisness name of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="65"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToContact" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Shipping Contact</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Depreciated) Name of the recipient of the order at the order's shipping destination. Unused by manufacture, please use ShipToName.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ShipToPhone">
+        <xs:annotation>
+          <xs:appinfo>Shipping Contact Phone Number</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Telephone number where the shipping contact can be reached.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="21"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToAddress1">
+        <xs:annotation>
+          <xs:appinfo>Shipping Address 1</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) Street address line #1 of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="61"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToAddress2" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Shipping Address 2</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Street address line #2 of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="61"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToAddress3" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Shipping Address 3</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Street address line #3 of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="0"/>
+            <xs:maxLength value="61"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToCity">
+        <xs:annotation>
+          <xs:appinfo>Shipping City</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) City of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="35"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToState">
+        <xs:annotation>
+          <xs:appinfo>Shipping State</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) State of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="29"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToPostalCode">
+        <xs:annotation>
+          <xs:appinfo>Shipping Postal Code</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Required) Postal code of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="11"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ShipToCountry" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>Shipping Country</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Country of the order's shipping destination.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="IsRush" type="xs:boolean" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Rush Order</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Rush Order Flag.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ShipMethod" type="xs:string" default="UPS">
+        <xs:annotation>
+          <xs:appinfo>Shipping Method</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            The package delivery company and method of consignment for order.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ShippingAccountNumber" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Shipping Account Number</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            The account number the buyer has with the package delivery company if the buyer is to be charged for shipping directly.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EmailListError" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Email List for Errors</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Semicolon delimited list of email addresses to receive errors.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EmailListTrackingInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Email List for Tracking Information</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Semicolon delimited list of email addresses to receive shipment confirmations.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EmailListEIDInfo" type="xs:anyURI" nillable="true" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Email List for Tag Manifest</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Semicolon delimited list of email addresses to receive tag manifests.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <!--<xs:element name="EmailListError" nillable="true" minOccurs="0" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>Email List for Errors</xs:appinfo>
             <xs:documentation xml:lang="en">
@@ -819,259 +297,192 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>-->
-        <xs:element name="UserDefined" minOccurs="0" maxOccurs="unbounded">
-          <xs:annotation>
-            <xs:appinfo>User Defined Fields</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              User Defined Fields
-            </xs:documentation>
-          </xs:annotation>
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Field" maxOccurs="unbounded">
+      <xs:element name="UserDefined" type="UserDefinedNode" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>User Defined Fields</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            User Defined Fields
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="WSOrderId" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>WSOrderId</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Internal use by the manufacture only.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Hold" type="xs:boolean" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Hold</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Used to indicate if the order is on hold.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="OrderLineHeader">
+        <xs:annotation>
+          <xs:appinfo>Order Line Header</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Order Line
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="SkuName">
+              <xs:annotation>
+                <xs:appinfo>Stock Keeping Unit</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  (Required) SKU the buyer is ordering. Product Code or Item Number
+                </xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="1"/>
+                  <xs:maxLength value="31"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>Premises Identification Number</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  (Depreciated) Official USDA Premises Identification Number (PIN)
+                </xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:minLength value="0"/>
+                  <xs:maxLength value="8"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="Quantity" type="xs:unsignedShort">
+              <xs:annotation>
+                <xs:appinfo>Quantity</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  (Required) The amount of the SKU being orderd.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="UnitOfMeasure" type="xs:unsignedShort" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>UnitOfMeasure</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  (Required) Denomination of the Quantity.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Template" type="xs:string" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>Template</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  FlexSpec Specification Name
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>Job Notes</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Notes about the order line.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefined" type="UserDefinedNode" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>User Defined Fields</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  User Defined Fields
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="OrderLineCustom" type="VariablesNode" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>Custom Order Line Details</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  (Deprecated) Custom details for an orderLine.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="OrderLineMarkingDetail" type="VariablesNode" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:appinfo>Marking Details</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Marking details for a tag set.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UserDefinedNode">
+    <xs:sequence>
+      <xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>User Defined Field</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            User Defined Key/Value pair field
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="Key" type="xs:string" use="required">
                 <xs:annotation>
-                  <xs:appinfo>User Defined Field</xs:appinfo>
+                  <xs:appinfo>User Defined Key</xs:appinfo>
                   <xs:documentation xml:lang="en">
-                    User Defined Key/Value pair field
+                    User Defined Key
                   </xs:documentation>
                 </xs:annotation>
-                <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="xs:string">
-                      <xs:attribute name="Key" type="xs:string" use="required">
-                        <xs:annotation>
-                          <xs:appinfo>User Defined Key</xs:appinfo>
-                          <xs:documentation xml:lang="en">
-                            User Defined Key
-                          </xs:documentation>
-                        </xs:annotation>
-                      </xs:attribute>
-                    </xs:extension>
-                  </xs:simpleContent>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="WSOrderId" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>WSOrderId</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              (Depreciated) Internal use by the manufacture only.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="Hold" type="xs:boolean" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>Hold</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Used to indicate if the order is on hold.
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element maxOccurs="unbounded" name="OrderLineHeader">
-          <xs:annotation>
-            <xs:appinfo>Order Line Header</xs:appinfo>
-            <xs:documentation xml:lang="en">
-              Order Line
-            </xs:documentation>
-          </xs:annotation>
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="SkuName">
-                <xs:annotation>
-                  <xs:appinfo>Stock Keeping Unit</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) SKU the buyer is ordering.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="1"/>
-                    <xs:maxLength value="31"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="PremiseID" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Premises Identification Number</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Depreciated) Official USDA Premises Identification Number (PIN)
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:minLength value="0"/>
-                    <xs:maxLength value="8"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Quantity" type="xs:unsignedShort">
-                <xs:annotation>
-                  <xs:appinfo>Quantity</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) The amount of the SKU being orderd.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="UnitOfMeasure" type="xs:unsignedShort" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>UnitOfMeasure</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Required) Denomination of Quantity.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Template" type="xs:string" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Template</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Deprecated) Special Marking Details (Color, Template, Drawing)
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Job Notes</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Notes about the order line.
-                  </xs:documentation>
-                </xs:annotation>
-              </xs:element>
-              <xs:element name="UserDefined" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:appinfo>User Defined Fields</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    User Defined Fields
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="Field" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:appinfo>User Defined Field</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          User Defined Key/Value pair field
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:simpleContent>
-                          <xs:extension base="xs:string">
-                            <xs:attribute name="Key" type="xs:string" use="required">
-                              <xs:annotation>
-                                <xs:appinfo>User Defined Key</xs:appinfo>
-                                <xs:documentation xml:lang="en">
-                                  User Defined Key
-                                </xs:documentation>
-                              </xs:annotation>
-                            </xs:attribute>
-                          </xs:extension>
-                        </xs:simpleContent>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="OrderLineCustom" minOccurs="0" maxOccurs="1">
-                <xs:annotation>
-                  <xs:appinfo>Custom Order Line Details</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    (Deprecated) Custom details for an orderLine.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="Variable" minOccurs="0">
-                      <xs:annotation>
-                        <xs:appinfo>Marking Variable</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          Key/Value pair of a marking variable.
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="VariableName" type="xs:string" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Variable Name</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Key of a marking variable.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="VariableValue" type="xs:string" minOccurs="0" maxOccurs="1">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Variable Value</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Value of a marking variable.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>Marking Notes</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          (Depreciated) No longer used, please use order line notes.
-                        </xs:documentation>
-                      </xs:annotation>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="OrderLineMarkingDetail" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                  <xs:appinfo>Marking Details</xs:appinfo>
-                  <xs:documentation xml:lang="en">
-                    Marking details for a tag set.
-                  </xs:documentation>
-                </xs:annotation>
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="Variable" maxOccurs="unbounded">
-                      <xs:annotation>
-                        <xs:appinfo>Marking Variable</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          Key/Value pair of a marking variable.
-                        </xs:documentation>
-                      </xs:annotation>
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="VariableName" type="xs:string">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Variable Name</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Key of a marking variable.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="VariableValue" type="xs:string">
-                            <xs:annotation>
-                              <xs:appinfo>Marking Variable Value</xs:appinfo>
-                              <xs:documentation xml:lang="en">
-                                Value of a marking variable.
-                              </xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
-                      <xs:annotation>
-                        <xs:appinfo>Marking Notes</xs:appinfo>
-                        <xs:documentation xml:lang="en">
-                          (Depreciated) No longer used, please use order line notes.
-                        </xs:documentation>
-                      </xs:annotation>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+              </xs:attribute>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VariablesNode">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="Variable" minOccurs="0">
+        <xs:annotation>
+          <xs:appinfo>Marking Variable</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Key/Value pair of a marking variable.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VariableName" type="xs:string">
+              <xs:annotation>
+                <xs:appinfo>Marking Variable Name</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Key of a marking variable.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="VariableValue" type="xs:string">
+              <xs:annotation>
+                <xs:appinfo>Marking Variable Value</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Value of a marking variable.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Comment" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Marking Notes</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            (Depreciated) No longer used, please use order line notes.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>

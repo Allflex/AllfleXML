@@ -297,7 +297,7 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>-->
-      <xs:element name="UserDefined" type="UserDefinedNode" minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="UserDefined" type="UserDefinedNode" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>User Defined Fields</xs:appinfo>
           <xs:documentation xml:lang="en">
@@ -366,7 +366,7 @@
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:element name="UnitOfMeasure" type="xs:unsignedShort">
+            <xs:element name="UnitOfMeasure" type="xs:unsignedShort" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>UnitOfMeasure</xs:appinfo>
                 <xs:documentation xml:lang="en">
@@ -390,7 +390,7 @@
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:element name="UserDefined" type="UserDefinedNode" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="UserDefined" type="UserDefinedNode" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>User Defined Fields</xs:appinfo>
                 <xs:documentation xml:lang="en">

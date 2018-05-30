@@ -1,6 +1,15 @@
 package com.allflex.api;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
+import java.util.Locale;
+import javax.xml.bind.JAXBException;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -9,6 +18,66 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FlexOrderStatusTest {
+    private static com.allflex.api.flexorderstatus.Document getOrderStatus() throws DatatypeConfigurationException, ParseException {
+        com.allflex.api.flexorderstatus.ObjectFactory tmp = new com.allflex.api.flexorderstatus.ObjectFactory();
+        
+        com.allflex.api.flexorderstatus.ContainerNode container1 = tmp.createContainerNode();
+        container1.setID("B123");
+        container1.setType("Bag");
+        
+        com.allflex.api.flexorderstatus.TagManifest manifest1 = tmp.createTagManifest();
+        manifest1.setContainer(container1);
+        
+        com.allflex.api.flexorderstatus.OrderLine orderLine1 = tmp.createOrderLine();
+        orderLine1.setLineNumber(123456);
+        orderLine1.setItemNumber("Test");
+        orderLine1.setQuantity(3);
+        orderLine1.setProgress(0);
+        orderLine1.setStatus("Confirmed");
+        orderLine1.getTagManifests().add(manifest1);
+        
+        //com.allflex.api.flexorderstatus.OrderLine orderLine2 = tmp.createOrderLine();
+        
+        com.allflex.api.flexorderstatus.Address address1 = tmp.createAddress();
+        address1.setName("John H. Smith");
+        address1.setAddress1("123 Main Street");
+        address1.setCity("Everytown");
+        address1.setState("TX");
+        address1.setPostalCode("12345");
+        address1.setCountry("USA");
+        
+        com.allflex.api.flexorderstatus.Shipment shipment1 = tmp.createShipment();
+        shipment1.setShipMethod("UPS");
+        shipment1.setShippingAccountNumber("98765432");
+        shipment1.setFreightAmount(14.56);
+        shipment1.setTrackingNumber("Z3242FFSD324326SA");
+        GregorianCalendar c = new GregorianCalendar();
+        c.setTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).parse("1992-01-02 07:05:45"));
+        XMLGregorianCalendar date2 = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+        shipment1.setShippingDate(date2);
+        shipment1.setAddress(address1);
+        shipment1.getOrderLines().add(orderLine1);
+        //shipment1.getOrderLines().add(orderLine2);
+        
+        com.allflex.api.flexorderstatus.Messages messages = tmp.createMessages();
+        messages.getErrorMessages().add("This is a test message");
+        
+        com.allflex.api.flexorderstatus.OrderStatus status = tmp.createOrderStatus();
+        status.setWSOrderId("8432fe3a-ef38-45bf-af81-f73a5ae7eb8c");
+        status.setPO("3432564");
+        status.setMasterId(123456);
+        status.setOrderId("CC123456");
+        status.setStatus("Confirmed");
+        status.setCustomerNumber("12345");
+        status.setProgress(67);
+        status.getShipments().add(shipment1);
+        status.setMessages(messages);
+        
+        com.allflex.api.flexorderstatus.Document doc = tmp.createDocument();
+        doc.getOrderStatuses().add(status);
+        
+        return doc;
+    }
     
     public FlexOrderStatusTest() {
     }
@@ -39,15 +108,24 @@ public class FlexOrderStatusTest {
     }
 
     @Test
-    public void ExportFlexOrderStatus() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void ExportFlexOrderStatus() throws JAXBException, DatatypeConfigurationException, ParseException {
+        com.allflex.api.flexorderstatus.Document doc = getOrderStatus();
+        String content = com.allflex.api.FlexOrderStatus.Parser.Export(doc);
+        
+        boolean result = com.allflex.api.FlexOrderStatus.Parser.ValidateContent(content);
+        assertTrue(result);
     }
 
     @Test
-    public void SaveFlexOrderStatus() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void SaveFlexOrderStatus() throws JAXBException, FileNotFoundException, DatatypeConfigurationException, ParseException {
+        String fileName = "testFlexOrderStatus.xml";
+        com.allflex.api.flexorderstatus.Document doc1 = getOrderStatus();
+        
+        com.allflex.api.FlexOrderStatus.Parser.Save(doc1, fileName);
+        
+        com.allflex.api.flexorderstatus.Document doc2 = com.allflex.api.FlexOrderStatus.Parser.Import(fileName);
+        assertNotNull(doc2);
+        assertFalse(doc2.getOrderStatuses().isEmpty());
     }
 
     @Test

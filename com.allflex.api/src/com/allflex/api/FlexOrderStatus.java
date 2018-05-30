@@ -55,9 +55,19 @@ public class FlexOrderStatus {
             return null;
         }
         
-        public static String Export(com.allflex.api.flexorderstatus.OrderStatusNode flexOrderStatus) throws JAXBException {
+        public static String Export(com.allflex.api.flexorderstatus.Document flexOrderStatus) throws JAXBException {
             JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.ObjectFactory.class);
             return Common.asString(context, flexOrderStatus);
+        }
+        
+        public static String Export(com.allflex.api.flexorderstatus.OrderStatus flexOrderStatus) throws JAXBException {
+            JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.ObjectFactory.class);
+            return Common.asString(context, flexOrderStatus);
+        }
+        
+        public static void Save(com.allflex.api.flexorderstatus.Document flexOrderStatus, String filePath) throws JAXBException {
+            JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.ObjectFactory.class);
+            Common.toFile(context, flexOrderStatus, filePath);
         }
         
         public static void Save(com.allflex.api.flexorderstatus.OrderStatusNode flexOrderStatus, String filePath) throws JAXBException {

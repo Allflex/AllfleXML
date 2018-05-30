@@ -16,14 +16,14 @@ public class FlexSpec {
         public static com.allflex.api.flexspec.Document Import(String filePath) throws FileNotFoundException {
             com.allflex.api.flexspec.ObjectFactory tmp = new com.allflex.api.flexspec.ObjectFactory();
             com.allflex.api.flexspec.Document result = tmp.createDocument();
-            List<com.allflex.api.flexspec.SpecificationNode> sp = result.getSpecification();
+            List<com.allflex.api.flexspec.Specification> sp = result.getSpecifications();
             
-            List<com.allflex.api.flexspec.SpecificationNode> docs = ImportDocument(filePath);
+            List<com.allflex.api.flexspec.Specification> docs = ImportDocument(filePath);
             if(docs != null) {
                 sp.addAll(docs);
             }
             
-            com.allflex.api.flexspec.SpecificationNode spec = ImportSingle(filePath);
+            com.allflex.api.flexspec.Specification spec = ImportSingle(filePath);
             if(spec != null) {
                 sp.add(spec);
             }
@@ -31,13 +31,13 @@ public class FlexSpec {
             return result;
         }
         
-        private static List<com.allflex.api.flexspec.SpecificationNode> ImportDocument(String filePath){
+        private static List<com.allflex.api.flexspec.Specification> ImportDocument(String filePath){
             try {
                 JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexspec.ObjectFactory.class);
                 Unmarshaller um = context.createUnmarshaller();
                 FileInputStream fr = new FileInputStream(filePath);
                 com.allflex.api.flexspec.Document doc = (com.allflex.api.flexspec.Document) um.unmarshal(fr);
-                return doc.getSpecification();
+                return doc.getSpecifications();
             } catch (Exception ex) {
                 Logger.getLogger(FlexSpec.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -45,12 +45,12 @@ public class FlexSpec {
             return null;
         }
         
-        private static com.allflex.api.flexspec.SpecificationNode ImportSingle(String filePath){
+        private static com.allflex.api.flexspec.Specification ImportSingle(String filePath){
             try {
                 JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexspec.ObjectFactory.class);
                 Unmarshaller um = context.createUnmarshaller();
                 FileInputStream fr = new FileInputStream(filePath);
-                JAXBElement<com.allflex.api.flexspec.SpecificationNode> doc = (JAXBElement<com.allflex.api.flexspec.SpecificationNode>) um.unmarshal(fr);
+                JAXBElement<com.allflex.api.flexspec.Specification> doc = (JAXBElement<com.allflex.api.flexspec.Specification>) um.unmarshal(fr);
                 return doc.getValue();
             } catch (Exception ex) {
                 Logger.getLogger(FlexSpec.class.getName()).log(Level.SEVERE, null, ex);
@@ -64,7 +64,7 @@ public class FlexSpec {
             return Common.asString(context, flexSpec);
         }
         
-        public static String Export(com.allflex.api.flexspec.SpecificationNode flexSpec) throws JAXBException {
+        public static String Export(com.allflex.api.flexspec.Specification flexSpec) throws JAXBException {
             JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexspec.ObjectFactory.class);
             return Common.asString(context, flexSpec);
         }
@@ -74,10 +74,10 @@ public class FlexSpec {
             Common.toFile(context, flexSpec, filePath);
         }
         
-        public static void Save(com.allflex.api.flexspec.SpecificationNode flexSpec, String filePath) throws JAXBException {
+        public static void Save(com.allflex.api.flexspec.Specification flexSpec, String filePath) throws JAXBException {
             com.allflex.api.flexspec.ObjectFactory tmp = new com.allflex.api.flexspec.ObjectFactory();
             com.allflex.api.flexspec.Document doc = tmp.createDocument();
-            doc.getSpecification().add(flexSpec);
+            doc.getSpecifications().add(flexSpec);
             Save(doc, filePath);
         }
         

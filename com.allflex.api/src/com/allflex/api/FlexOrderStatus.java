@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
@@ -16,14 +15,14 @@ public class FlexOrderStatus {
         public static com.allflex.api.flexorderstatus.Document Import(String filePath) throws FileNotFoundException {
             com.allflex.api.flexorderstatus.ObjectFactory tmp = new com.allflex.api.flexorderstatus.ObjectFactory();
             com.allflex.api.flexorderstatus.Document result = tmp.createDocument();
-            List<com.allflex.api.flexorderstatus.OrderStatusNode> sp = result.getOrderStatus();
+            List<com.allflex.api.flexorderstatus.OrderStatus> sp = result.getOrderStatuses();
             
-            List<com.allflex.api.flexorderstatus.OrderStatusNode> docs = ImportDocument(filePath);
+            List<com.allflex.api.flexorderstatus.OrderStatus> docs = ImportDocument(filePath);
             if(docs != null) {
                 sp.addAll(docs);
             }
             
-            com.allflex.api.flexorderstatus.OrderStatusNode status = ImportSingle(filePath);
+            com.allflex.api.flexorderstatus.OrderStatus status = ImportSingle(filePath);
             if(status != null) {
                 sp.add(status);
             }
@@ -31,26 +30,25 @@ public class FlexOrderStatus {
             return result;
         }
         
-        private static List<com.allflex.api.flexorderstatus.OrderStatusNode> ImportDocument(String filePath) {
+        private static List<com.allflex.api.flexorderstatus.OrderStatus> ImportDocument(String filePath) {
             try {
                 JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.ObjectFactory.class);
                 Unmarshaller um = context.createUnmarshaller();
                 FileInputStream fr = new FileInputStream(filePath);
                 com.allflex.api.flexorderstatus.Document doc = (com.allflex.api.flexorderstatus.Document) um.unmarshal(fr);
-                return doc.getOrderStatus();
+                return doc.getOrderStatuses();
             } catch (Exception ex) {
                 Logger.getLogger(FlexOrderStatus.class.getName()).log(Level.SEVERE, null, ex);
             }
             return null;
         }
         
-        private static com.allflex.api.flexorderstatus.OrderStatusNode ImportSingle(String filePath) {
+        private static com.allflex.api.flexorderstatus.OrderStatus ImportSingle(String filePath) {
             try {
                 JAXBContext context = JAXBContext.newInstance(com.allflex.api.flexorderstatus.ObjectFactory.class);
                 Unmarshaller um = context.createUnmarshaller();
                 FileInputStream fr = new FileInputStream(filePath);
-                JAXBElement<com.allflex.api.flexorderstatus.OrderStatusNode> value = (JAXBElement<com.allflex.api.flexorderstatus.OrderStatusNode>) um.unmarshal(fr);
-                return value.getValue();
+                return (com.allflex.api.flexorderstatus.OrderStatus) um.unmarshal(fr);
             } catch (Exception ex) {
                 Logger.getLogger(FlexOrderStatus.class.getName()).log(Level.SEVERE, null, ex);
             }

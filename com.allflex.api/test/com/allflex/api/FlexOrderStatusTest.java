@@ -35,7 +35,7 @@ public class FlexOrderStatusTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorderstatus.Document orderStatus = com.allflex.api.FlexOrderStatus.Parser.Import(path);
         assertNotNull(orderStatus);
-        assertFalse(orderStatus.getOrderStatus().isEmpty());
+        assertFalse(orderStatus.getOrderStatuses().isEmpty());
     }
 
     @Test

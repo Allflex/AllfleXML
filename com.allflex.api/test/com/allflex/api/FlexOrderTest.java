@@ -37,7 +37,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -46,7 +46,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -55,7 +55,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -64,7 +64,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -73,7 +73,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -82,7 +82,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -91,7 +91,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -100,7 +100,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -109,7 +109,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -118,7 +118,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
         
     @Test
@@ -127,7 +127,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
     
     @Test
@@ -136,7 +136,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
     
     @Test
@@ -145,7 +145,7 @@ public class FlexOrderTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorder.Document order = com.allflex.api.FlexOrder.Parser.Import(path);
         assertNotNull(order);
-        assertFalse(order.getOrderHeader().isEmpty());
+        assertFalse(order.getOrderHeaders().isEmpty());
     }
     
     @Test
@@ -156,7 +156,7 @@ public class FlexOrderTest {
         orderLine.setSkuName("ANTXLSET3306LA");
         orderLine.setQuantity(17);
         
-        com.allflex.api.flexorder.OrderHeaderNode orderHeader = tmp.createOrderHeaderNode();
+        com.allflex.api.flexorder.OrderHeader orderHeader = tmp.createOrderHeader();
         orderHeader.setCustomerNumber("testing");
         // TODO: Set premise
         orderHeader.setPO("123456");
@@ -168,10 +168,10 @@ public class FlexOrderTest {
         orderHeader.setShipToPostalCode("76021");
         orderHeader.setShipToCountry("US");
         orderHeader.setShipMethod("UPS");
-        orderHeader.getOrderLineHeader().add(orderLine);
+        orderHeader.getOrderLineHeaders().add(orderLine);
         
         com.allflex.api.flexorder.Document doc = tmp.createDocument();
-        doc.getOrderHeader().add(orderHeader);
+        doc.getOrderHeaders().add(orderHeader);
         
         String content = com.allflex.api.FlexOrder.Parser.Export(doc);
         
@@ -187,7 +187,7 @@ public class FlexOrderTest {
         orderLine.setSkuName("ANTXLSET3306LA");
         orderLine.setQuantity(17);
         
-        com.allflex.api.flexorder.OrderHeaderNode orderHeader = tmp.createOrderHeaderNode();
+        com.allflex.api.flexorder.OrderHeader orderHeader = tmp.createOrderHeader();
         orderHeader.setCustomerNumber("testing");
         // TODO: Set premise
         orderHeader.setPO("123456");
@@ -199,10 +199,10 @@ public class FlexOrderTest {
         orderHeader.setShipToPostalCode("76021");
         orderHeader.setShipToCountry("US");
         orderHeader.setShipMethod("UPS");
-        orderHeader.getOrderLineHeader().add(orderLine);
+        orderHeader.getOrderLineHeaders().add(orderLine);
         
         com.allflex.api.flexorder.Document doc1 = tmp.createDocument();
-        doc1.getOrderHeader().add(orderHeader);
+        doc1.getOrderHeaders().add(orderHeader);
         
         String fileName = "testFlexOrder.xml";
         
@@ -210,7 +210,7 @@ public class FlexOrderTest {
         
         com.allflex.api.flexorder.Document doc2 = com.allflex.api.FlexOrder.Parser.Import(fileName);
         assertNotNull(doc2);
-        assertFalse(doc2.getOrderHeader().isEmpty());
+        assertFalse(doc2.getOrderHeaders().isEmpty());
     }
 
     @Test

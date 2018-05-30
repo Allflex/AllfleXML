@@ -58,8 +58,8 @@ public class FlexSpecTest {
         f1v2.setCurveTextAttachTo(null);
         
         com.allflex.api.flexspec.Variables f1variables = tmp.createVariables();
-        f1variables.getVariable().add(f1v1);
-        f1variables.getVariable().add(f1v2);
+        f1variables.getVariables().add(f1v1);
+        f1variables.getVariables().add(f1v2);
                 
         com.allflex.api.flexspec.Face face1 = tmp.createFace();
         face1.setName("Front");
@@ -104,16 +104,16 @@ public class FlexSpecTest {
         f2v2.setCurveTextAttachTo(null);
         
         com.allflex.api.flexspec.Variables f2variables = tmp.createVariables();
-        f2variables.getVariable().add(f2v1);
-        f2variables.getVariable().add(f2v2);
+        f2variables.getVariables().add(f2v1);
+        f2variables.getVariables().add(f2v2);
         
         com.allflex.api.flexspec.Face face2 = tmp.createFace();
         face2.setName("Back");
         face2.setVariables(f2variables);
         
         com.allflex.api.flexspec.Faces faces = tmp.createFaces();
-        faces.getFace().add(face1);
-        faces.getFace().add(face2);
+        faces.getFaces().add(face1);
+        faces.getFaces().add(face2);
         
         com.allflex.api.flexspec.Color color1 = tmp.createColor();
         color1.setColorCode("Y");
@@ -126,8 +126,8 @@ public class FlexSpecTest {
         color2.setHexCode("71cfeb");
         
         com.allflex.api.flexspec.Colors colors = tmp.createColors();
-        colors.getColor().add(color1);
-        colors.getColor().add(color2);
+        colors.getColors().add(color1);
+        colors.getColors().add(color2);
         
         com.allflex.api.flexspec.Component comp = tmp.createComponent();
         comp.setIndex(1);
@@ -140,15 +140,15 @@ public class FlexSpecTest {
         comp.setFaces(faces);
         
         com.allflex.api.flexspec.Components comps = tmp.createComponents();
-        comps.getComponent().add(comp);
+        comps.getComponents().add(comp);
         
-        com.allflex.api.flexspec.SpecificationNode spec = tmp.createSpecificationNode();
+        com.allflex.api.flexspec.Specification spec = tmp.createSpecification();
         spec.setId("Testing");
         spec.setName("Testing_Elements");
         spec.setComponents(comps);
         
         com.allflex.api.flexspec.Document doc = tmp.createDocument();
-        doc.getSpecification().add(spec);
+        doc.getSpecifications().add(spec);
         
         return doc;
     }
@@ -175,7 +175,7 @@ public class FlexSpecTest {
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexspec.Document specifications = com.allflex.api.FlexSpec.Parser.Import(path);
         assertNotNull(specifications);
-        assertFalse(specifications.getSpecification().isEmpty());
+        assertFalse(specifications.getSpecifications().isEmpty());
     }
 
     @Test
@@ -196,7 +196,7 @@ public class FlexSpecTest {
         
         com.allflex.api.flexspec.Document spec2 = com.allflex.api.FlexSpec.Parser.Import(fileName);
         assertNotNull(spec2);
-        assertFalse(spec2.getSpecification().isEmpty());
+        assertFalse(spec2.getSpecifications().isEmpty());
     }
 
     @Test

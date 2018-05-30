@@ -12,6 +12,33 @@ import static org.junit.Assert.*;
 
 public class FlexOrderTest {
     
+    private static com.allflex.api.flexorder.Document getOrder() {
+        com.allflex.api.flexorder.ObjectFactory tmp = new com.allflex.api.flexorder.ObjectFactory();
+        
+        com.allflex.api.flexorder.OrderLineHeader orderLine = tmp.createOrderLineHeader();
+        orderLine.setSkuName("ANTXLSET3306LA");
+        orderLine.setQuantity(17);
+        
+        com.allflex.api.flexorder.OrderHeader orderHeader = tmp.createOrderHeader();
+        orderHeader.setCustomerNumber("testing");
+        // TODO: Set premise
+        orderHeader.setPO("123456");
+        orderHeader.setShipToName("Jane Doe");
+        orderHeader.setShipToPhone("5551234567");
+        orderHeader.setShipToAddress1("Rev. Calvin & Thelma Alcorn");
+        orderHeader.setShipToCity("Dallas");
+        orderHeader.setShipToState("TX");
+        orderHeader.setShipToPostalCode("76021");
+        orderHeader.setShipToCountry("US");
+        orderHeader.setShipMethod("UPS");
+        orderHeader.getOrderLineHeaders().add(orderLine);
+        
+        com.allflex.api.flexorder.Document doc = tmp.createDocument();
+        doc.getOrderHeaders().add(orderHeader);
+        
+        return doc;
+    }
+    
     public FlexOrderTest() {
     }
     
@@ -150,29 +177,7 @@ public class FlexOrderTest {
     
     @Test
     public void ExportFlexOrder() throws JAXBException {
-        com.allflex.api.flexorder.ObjectFactory tmp = new com.allflex.api.flexorder.ObjectFactory();
-        
-        com.allflex.api.flexorder.OrderLineHeader orderLine = tmp.createOrderLineHeader();
-        orderLine.setSkuName("ANTXLSET3306LA");
-        orderLine.setQuantity(17);
-        
-        com.allflex.api.flexorder.OrderHeader orderHeader = tmp.createOrderHeader();
-        orderHeader.setCustomerNumber("testing");
-        // TODO: Set premise
-        orderHeader.setPO("123456");
-        orderHeader.setShipToName("Jane Doe");
-        orderHeader.setShipToPhone("5551234567");
-        orderHeader.setShipToAddress1("Rev. Calvin & Thelma Alcorn");
-        orderHeader.setShipToCity("Dallas");
-        orderHeader.setShipToState("TX");
-        orderHeader.setShipToPostalCode("76021");
-        orderHeader.setShipToCountry("US");
-        orderHeader.setShipMethod("UPS");
-        orderHeader.getOrderLineHeaders().add(orderLine);
-        
-        com.allflex.api.flexorder.Document doc = tmp.createDocument();
-        doc.getOrderHeaders().add(orderHeader);
-        
+        com.allflex.api.flexorder.Document doc = getOrder();
         String content = com.allflex.api.FlexOrder.Parser.Export(doc);
         
         boolean result = com.allflex.api.FlexOrder.Parser.ValidateContent(content);
@@ -181,30 +186,8 @@ public class FlexOrderTest {
     
     @Test
     public void SaveFlexOrder() throws JAXBException, FileNotFoundException{
-        com.allflex.api.flexorder.ObjectFactory tmp = new com.allflex.api.flexorder.ObjectFactory();
-        
-        com.allflex.api.flexorder.OrderLineHeader orderLine = tmp.createOrderLineHeader();
-        orderLine.setSkuName("ANTXLSET3306LA");
-        orderLine.setQuantity(17);
-        
-        com.allflex.api.flexorder.OrderHeader orderHeader = tmp.createOrderHeader();
-        orderHeader.setCustomerNumber("testing");
-        // TODO: Set premise
-        orderHeader.setPO("123456");
-        orderHeader.setShipToName("Jane Doe");
-        orderHeader.setShipToPhone("5551234567");
-        orderHeader.setShipToAddress1("Rev. Calvin & Thelma Alcorn");
-        orderHeader.setShipToCity("Dallas");
-        orderHeader.setShipToState("TX");
-        orderHeader.setShipToPostalCode("76021");
-        orderHeader.setShipToCountry("US");
-        orderHeader.setShipMethod("UPS");
-        orderHeader.getOrderLineHeaders().add(orderLine);
-        
-        com.allflex.api.flexorder.Document doc1 = tmp.createDocument();
-        doc1.getOrderHeaders().add(orderHeader);
-        
         String fileName = "testFlexOrder.xml";
+        com.allflex.api.flexorder.Document doc1 = getOrder();
         
         com.allflex.api.FlexOrder.Parser.Save(doc1, fileName);
         

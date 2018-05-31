@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OrderStatus>
+  <WSOrderId>8432fe3a-ef38-45bf-af81-f73a5ae7eb8c</WSOrderId>
+  <PO>3432564</PO>
+  <MasterId>123456</MasterId>
+  <OrderId>CC123456</OrderId>
+  <Status>Confirmed</Status>
+  <CustomerNumber>12345</CustomerNumber>
+  <Progress>67</Progress>
+  <Shipment>
+    <ShipMethod>UPS</ShipMethod>
+    <ShippingAccountNumber>98765432A</ShippingAccountNumber>
+    <FreightAmount>14.56</FreightAmount>
+    <TrackingNumber>1Z3242FFSD324326SA</TrackingNumber>
+    <ShippingDate>2004-04-12T13:20:00</ShippingDate>
+    <Address>
+      <Name>Joe H. Smith</Name>
+      <Address1>123 Main St.</Address1>
+      <Address2></Address2>
+      <Address3></Address3>
+      <City>Everytown</City>
+      <State>TX</State>
+      <PostalCode>12345</PostalCode>
+      <Country>USA</Country>
+    </Address>
+    <OrderLine>
+      <LineNumber>123456</LineNumber>
+      <ItemNumber>Test</ItemNumber>
+      <Quantity>2</Quantity>
+      <Template>ExampleTemplate</Template>
+      <Status>Confirmed</Status>
+      <TagManifest>
+        <Container>
+          <ID>C0001</ID>
+          <Type>Case</Type>
+          <Container>
+            <ID>B0001</ID>
+            <Type>Bag</Type>
+            <Tags>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456789</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>123</Value>
+                </Variable>
+              </TagSet>
+              <TagSet>
+                <Variable>
+                  <Name>EID</Name>
+                  <Value>985000123456790</Value>
+                </Variable>
+                <Variable>
+                  <Name>Management</Name>
+                  <Value>124</Value>
+                </Variable>
+              </TagSet>
+            </Tags>
+          </Container>
+        </Container>
+      </TagManifest>
+    </OrderLine>
+  </Shipment>
+  <Messages>
+    <Message>Bad order entry</Message>
+  </Messages>
+  <Messages>
+    <Message>Bad order entry</Message>
+  </Messages>
+</OrderStatus>

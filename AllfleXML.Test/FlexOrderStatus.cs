@@ -29,6 +29,15 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void ImportFlexOrderStatus10562808()
+        {
+            var order = AllfleXML.FlexOrderStatus.Parser.Import(@"TestData\FlexOrderStatus\10562808_status.xml");
+            Assert.IsNotNull(order);
+            Assert.IsNotNull(order.OrderId);
+            Assert.IsTrue(!string.IsNullOrWhiteSpace(order.OrderId));
+        }
+
+        [TestMethod]
         public void ImportFlexOrderStatus1Bad()
         {
             AllfleXML.FlexOrderStatus.OrderStatus order = null;

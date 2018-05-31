@@ -360,7 +360,7 @@
                     </xs:annotation>
                     <xs:complexType>
                       <xs:sequence>
-                        <xs:element name="Container" type="ContainerNode">
+                        <xs:element name="Container" type="ContainerNode" minOccurs="0" maxOccurs="unbounded">
                           <xs:annotation>
                             <xs:appinfo>Packaging Container</xs:appinfo>
                             <xs:documentation xml:lang="en">

@@ -176,11 +176,14 @@ namespace AllfleXML.FlexOrderStatus
         /// Order Messages.  
         /// </value>
         [XmlElement("Messages")]
-        public List<Message> Messages { get; set; }
+        public Messages Messages { get; set; }
     }
-
+    
+    /// <summary>
+    /// Messages for this order
+    /// </summary>
     [Serializable]
-    public class Message
+    public class Messages
     {
         /// <summary>
         /// Gets or sets the actual error message.
@@ -189,7 +192,16 @@ namespace AllfleXML.FlexOrderStatus
         /// The particular error message set by the system. 
         /// </value>
         [XmlElement("ErrorMessage")]
-        public string ErrorMessage { get; set; }
+        public List<string> ErrorMessage { get; set; }
+
+        /// <summary>
+        /// Gets or sets the message.
+        /// </summary>
+        /// <value>
+        /// The particular message set by the system. 
+        /// </value>
+        [XmlElement("Message")]
+        public List<string> Message { get; set; }
     }
 
     /// <summary>

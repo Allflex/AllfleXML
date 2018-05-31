@@ -18,7 +18,50 @@ namespace AllfleXML.Test
             Assert.IsNotNull(order.WSOrderId);
             Assert.IsTrue(!string.IsNullOrWhiteSpace(order.WSOrderId));
         }
-        
+
+        [TestMethod]
+        public void ImportFlexOrderStatus2()
+        {
+            var order = AllfleXML.FlexOrderStatus.Parser.Import(@"TestData\FlexOrderStatus\sample2.xml");
+            Assert.IsNotNull(order);
+            Assert.IsNotNull(order.WSOrderId);
+            Assert.IsTrue(!string.IsNullOrWhiteSpace(order.WSOrderId));
+        }
+
+        [TestMethod]
+        public void ImportFlexOrderStatus1Bad()
+        {
+            AllfleXML.FlexOrderStatus.OrderStatus order = null;
+            Exception err = null;
+            try
+            {
+                order = AllfleXML.FlexOrderStatus.Parser.Import(@"TestData\FlexOrderStatus\sample1bad.xml");
+            }
+            catch (Exception ex)
+            {
+                err = ex;
+            }
+            Assert.IsNull(order);
+            Assert.IsNotNull(err);
+        }
+
+        [TestMethod]
+        public void ImportFlexOrderStatus2Bad()
+        {
+            AllfleXML.FlexOrderStatus.OrderStatus order = null;
+            Exception err = null;
+            try
+            {
+                order = AllfleXML.FlexOrderStatus.Parser.Import(@"TestData\FlexOrderStatus\sample2bad.xml");
+            }
+            catch (Exception ex)
+            {
+                err = ex;
+            }
+            Assert.IsNull(order);
+            Assert.IsNotNull(err);
+        }
+
         [TestMethod]
         public void ExportFlexOrder()
         {
@@ -81,12 +124,9 @@ namespace AllfleXML.Test
 
                     }
                 },
-                Messages = new List<Message>
+                Messages = new AllfleXML.FlexOrderStatus.Messages()
                 {
-                    new AllfleXML.FlexOrderStatus.Message()
-                    {
-                        ErrorMessage = "This is a test message"
-                    }
+                    Message = new List<string> { "This is 1 test message", "This is 2 test message" }
                 }
             };
 
@@ -156,12 +196,9 @@ namespace AllfleXML.Test
                         }
                     }
                 },
-                Messages = new List<Message>
+                Messages = new AllfleXML.FlexOrderStatus.Messages()
                 {
-                    new AllfleXML.FlexOrderStatus.Message()
-                    {
-                        ErrorMessage = "This is a test message"
-                    }
+                    Message = new List<string> { "This is a test message" }
                 }
             };
 

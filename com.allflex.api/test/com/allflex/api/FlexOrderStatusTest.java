@@ -26,7 +26,7 @@ public class FlexOrderStatusTest {
         container1.setType("Bag");
         
         com.allflex.api.flexorderstatus.TagManifest manifest1 = tmp.createTagManifest();
-        manifest1.setContainer(container1);
+        manifest1.getContainers().add(container1);
         
         com.allflex.api.flexorderstatus.OrderLine orderLine1 = tmp.createOrderLine();
         orderLine1.setLineNumber(123456);
@@ -101,6 +101,15 @@ public class FlexOrderStatusTest {
     @Test
     public void ImportFlexOrderStatus1() throws IOException {
         String path = "..\\AllfleXML.Test\\TestData\\FlexOrderStatus\\sample1.xml";
+        path = new java.io.File(path).getCanonicalPath();
+        com.allflex.api.flexorderstatus.Document orderStatus = com.allflex.api.FlexOrderStatus.Parser.Import(path);
+        assertNotNull(orderStatus);
+        assertFalse(orderStatus.getOrderStatuses().isEmpty());
+    }
+    
+    @Test
+    public void ImportFlexOrderStatus2() throws IOException {
+        String path = "..\\AllfleXML.Test\\TestData\\FlexOrderStatus\\sample2.xml";
         path = new java.io.File(path).getCanonicalPath();
         com.allflex.api.flexorderstatus.Document orderStatus = com.allflex.api.FlexOrderStatus.Parser.Import(path);
         assertNotNull(orderStatus);

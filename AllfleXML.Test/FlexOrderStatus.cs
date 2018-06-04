@@ -72,7 +72,7 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
-        public void ExportFlexOrder()
+        public void ExportFlexOrderStatus()
         {
             var order = new AllfleXML.FlexOrderStatus.OrderStatus
             {
@@ -147,7 +147,7 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
-        public void SaveFlexOrder()
+        public void SaveFlexOrderStatus()
         {
             var order = new AllfleXML.FlexOrderStatus.OrderStatus
             {

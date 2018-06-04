@@ -24,7 +24,7 @@
     <xs:annotation>
       <xs:appinfo>Order Status</xs:appinfo>
       <xs:documentation xml:lang="en">
-        Reports all available information on an Orders current status. Including Shipment and Tag Manifest information
+        Reports all available information on an Order's current status. Including Shipment and Tag Manifest information
       </xs:documentation>
     </xs:annotation>
   </xs:element>
@@ -351,7 +351,7 @@
                       </xs:documentation>
                     </xs:annotation>
                   </xs:element>
-                  <xs:element name="TagManifest" minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="TagManifest" minOccurs="0" maxOccurs="1">
                     <xs:annotation>
                       <xs:appinfo>Tag Manifest</xs:appinfo>
                       <xs:documentation xml:lang="en">
@@ -437,7 +437,7 @@
         <xs:annotation>
           <xs:appinfo>Tags</xs:appinfo>
           <xs:documentation xml:lang="en">
-            List of product and their definitions
+            Tags within this container
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>

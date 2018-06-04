@@ -87,6 +87,26 @@ namespace AllfleXML.FlexOrderStatus
         }
     }
 
+    /// <summary>
+    /// Reports all available information on an Order's current status. Including Shipment and Tag Manifest information
+    /// </summary>
+    [Serializable]
+    [XmlRoot]
+    public class Document
+    {
+        /// <summary>
+        /// Gets or sets the Order Statuses
+        /// </summary>
+        /// <value>
+        /// The Order Statuses
+        /// </value>
+        [XmlElement("OrderStatus")]
+        public List<OrderStatus> OrderStatuses { get; set; }
+    }
+
+    /// <summary>
+    /// Reports all available information on an Order's current status. Including Shipment and Tag Manifest information
+    /// </summary>
     [Serializable]
     [XmlRoot]
     public class OrderStatus
@@ -283,6 +303,9 @@ namespace AllfleXML.FlexOrderStatus
         public List<OrderLine> OrderLines { get; set; }
     }
 
+    /// <summary>
+    /// Address that shipment is sent to.
+    /// </summary>
     [Serializable]
     public class Address
     {
@@ -372,6 +395,9 @@ namespace AllfleXML.FlexOrderStatus
         public string Country { get; set; }
     }
 
+    /// <summary>
+    /// Order Line
+    /// </summary>
     [Serializable]
     public class OrderLine
     {
@@ -442,6 +468,9 @@ namespace AllfleXML.FlexOrderStatus
         public TagManifest TagManifest { get; set; }
     }
     
+    /// <summary>
+    /// Post production list of tags and their variable values.
+    /// </summary>
     [Serializable]
     public class TagManifest
     {
@@ -455,6 +484,9 @@ namespace AllfleXML.FlexOrderStatus
         public List<Container> Containers { get; set; }
     }
 
+    /// <summary>
+    /// Container holding tags, or other containers.
+    /// </summary>
     [Serializable]
     public class Container
     {
@@ -476,6 +508,9 @@ namespace AllfleXML.FlexOrderStatus
         [XmlElement("Type")]
         public string Type { get; set; }
 
+        /// <summary>
+        /// Tags within this container
+        /// </summary>
         [XmlElement("Tags")]
         public Tags Tags { get; set; }
 
@@ -489,6 +524,9 @@ namespace AllfleXML.FlexOrderStatus
         public List<Container> ChildContainers { get; set; }
     }
 
+    /// <summary>
+    /// Tags
+    /// </summary>
     [Serializable]
     public class Tags
     {
@@ -502,6 +540,9 @@ namespace AllfleXML.FlexOrderStatus
         public List<TagSet> TagSets { get; set; }
     }
     
+    /// <summary>
+    /// Individual Set of Tags
+    /// </summary>
     [Serializable]
     public class TagSet
     {
@@ -515,6 +556,9 @@ namespace AllfleXML.FlexOrderStatus
         public List<Variable> Variables { get; set; }
     }
 
+    /// <summary>
+    /// Variables that are marked or programmed to a tag set.
+    /// </summary>
     [Serializable]
     public class Variable
     {
@@ -537,6 +581,9 @@ namespace AllfleXML.FlexOrderStatus
         public string Value { get; set; }
     }
     
+    /// <summary>
+    /// Type of Containers
+    /// </summary>
     public enum ContainerType
     {
         Pallet,
@@ -544,10 +591,17 @@ namespace AllfleXML.FlexOrderStatus
         Bag
     }
 
+    /// <summary>
+    /// Type of Manifests
+    /// </summary>
     public enum ManifestType
     {
         Serial,
         EID,
-        Management
+        TSU,
+        Management,
+        Registration,
+        Text,
+        Logo,
     }
 }

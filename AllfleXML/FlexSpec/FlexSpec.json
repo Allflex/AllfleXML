@@ -11,6 +11,7 @@
         "outline": "SM-Outline.png",
         "features": [],
         "color": "Y",
+        "fixedColor":  "true",
         "colors": [
           {
             "ColorCode": "Y",
@@ -122,6 +123,7 @@
         "outline": "SXF-Outline.png",
         "features": [],
         "color": "PK",
+        "fixedColor": "false",
         "colors": [
           {
             "ColorCode": "Y",
@@ -256,4 +258,3 @@
       }
     ]
 }
-

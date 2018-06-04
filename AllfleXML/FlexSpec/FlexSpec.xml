@@ -11,6 +11,7 @@
         <Silhouette>http://localhost:8576/content/images/Renderer/SM-Silhouette.png</Silhouette>
         <Outline>http://localhost:8576/content/images/Renderer/SM-Outline.png</Outline>
         <Color>Y</Color>
+        <FixedColor>true</FixedColor>
         <Faces>
           <Face>
             <Name>Front</Name>
@@ -115,6 +116,7 @@
         <Silhouette>http://localhost:8576/content/images/Renderer/SXF-Silhouette.png</Silhouette>
         <Outline>http://localhost:8576/content/images/Renderer/SXF-Outline.png</Outline>
         <Color>PK</Color>
+        <FixedColor>false</FixedColor>
         <Faces>
           <Face>
             <Name>Front</Name>

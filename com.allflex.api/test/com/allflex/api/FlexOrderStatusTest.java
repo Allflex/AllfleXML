@@ -34,7 +34,7 @@ public class FlexOrderStatusTest {
         orderLine1.setQuantity(3);
         orderLine1.setProgress(0);
         orderLine1.setStatus("Confirmed");
-        orderLine1.getTagManifests().add(manifest1);
+        orderLine1.setTagManifest(manifest1);
         
         //com.allflex.api.flexorderstatus.OrderLine orderLine2 = tmp.createOrderLine();
         

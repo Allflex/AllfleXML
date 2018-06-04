@@ -51,8 +51,7 @@ namespace AllfleXML.FlexSpec
 
             return result;
         }
-
-
+        
         public static XDocument Export(this Specification specification)
         {
             return Export(new Document { Specifications = new List<Specification> { specification } });
@@ -137,6 +136,7 @@ namespace AllfleXML.FlexSpec
     /// Marking specification for a product offering.
     /// </summary>
     [Serializable]
+    [XmlRoot]
     public class Specification
     {
         /// <summary>
@@ -226,7 +226,7 @@ namespace AllfleXML.FlexSpec
         public string Color { get; set; }
 
         /// <summary>
-        /// Gets or sets the item number.
+        /// Gets or sets the  Sku, Product Code, or ItemNumber (ERP Reference) of the raw component.
         /// </summary>
         [XmlElement("ItemNumber")]
         public string ItemNumber { get; set; }
@@ -241,8 +241,7 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         public List<Color> Colors { get; set; }
     }
-
-
+    
     /// <summary>
     /// Material Color
     /// </summary>

@@ -293,6 +293,13 @@ namespace AllfleXML.FlexSpec
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets the Outline.
+        /// Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.
+        /// </summary>
+        [XmlElement("Outline")]
+        public string Outline { get; set; }
+
+        /// <summary>
         /// Gets or sets the name of the components.
         /// </summary>
         public List<Variable> Variables { get; set; }

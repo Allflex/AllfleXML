@@ -156,6 +156,14 @@
                                   </xs:documentation>
                                 </xs:annotation>
                               </xs:element>
+                              <xs:element name="Outline" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                  <xs:appinfo>Outline image</xs:appinfo>
+                                  <xs:documentation xml:lang="en">
+                                    Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.
+                                  </xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
                               <xs:element name="Variables">
                                 <xs:complexType>
                                   <xs:sequence>

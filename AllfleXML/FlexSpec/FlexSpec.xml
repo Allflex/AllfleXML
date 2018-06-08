@@ -15,6 +15,7 @@
         <Faces>
           <Face>
             <Name>Front</Name>
+            <Outline>http://localhost:8576/content/images/Renderer/SM-Outline.png</Outline>
             <Variables>
               <Variable>
                 <Index>0</Index> <!-- Unique ID for all variables in the <Specification> -->
@@ -120,6 +121,7 @@
         <Faces>
           <Face>
             <Name>Front</Name>
+            <Outline>http://localhost:8576/content/images/Renderer/SXF-Outline.png</Outline>
             <Variables>
               <Variable>
                 <Index>2</Index> <!-- Unique ID for all variables in the <Specification> -->
@@ -141,6 +143,29 @@
                 <Radius>32</Radius> <!-- Optional: Only used when `Type` = "curved-text". Value indicates wideness of curved text -->
                 <CurveTextAttachTo>outside</CurveTextAttachTo> <!-- Optional: Only used when `Type` = "curved-text". Values can be 'inside' or 'outside' -->
               </Variable>
+              <Variable>
+                <Index>3</Index> <!-- Unique ID for all variables in the <Specification> -->
+                <Name>var4</Name> <!-- Descriptive name for variable -->
+                <Description /> <!-- Optional Description of the variable -->
+                <Role>Management</Role> <!-- Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc) -->
+                <Type>text</Type> <!-- Required: Values can be 'text', 'curved-text' or 'image' -->
+                <Width>140</Width> <!-- width of the bounding box -->
+                <Height>135</Height> <!-- Height of the bounding box -->
+                <PositionX>78</PositionX> <!-- Position of top-left corner of boudning box on the X axis -->
+                <PositionY>320</PositionY> <!-- Position of top-left corner of boudning box on the Y axis -->
+                <DefaultValue>D1</DefaultValue> <!-- The Variable's Default Value -->
+                <ValueFormat /> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates formatting of the `Text` value '#' = character, '_' = space insert -->
+                <MaxLength>0</MaxLength> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the maximum length of `Text` -->
+                <FontSize>0</FontSize> <!-- Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font -->
+                <IsFixed>false</IsFixed> <!-- Variable value is static for the specification, can not be changed by instance. -->
+                <IsInk>true</IsInk> <!-- Required: it IS possible to ink both TEXT and LOGO -->
+              </Variable>
+            </Variables>
+          </Face>
+          <Face>
+            <Name>Back</Name>
+            <Outline>http://localhost:8576/content/images/Renderer/SXF-back-Outline.png</Outline>
+            <Variables>
               <Variable>
                 <Index>3</Index> <!-- Unique ID for all variables in the <Specification> -->
                 <Name>var4</Name> <!-- Descriptive name for variable -->

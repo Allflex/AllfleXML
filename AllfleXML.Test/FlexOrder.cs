@@ -118,6 +118,23 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void ImportFlexOrder12bad()
+        {
+            AllfleXML.FlexOrder.Document order = null;
+            System.Xml.Schema.XmlSchemaValidationException ex = null;
+            try
+            {
+                order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample12bad.xml");
+            }
+            catch (System.Xml.Schema.XmlSchemaValidationException e)
+            {
+                ex = e;
+            }
+            Assert.IsNull(order);
+            Assert.IsNotNull(ex);
+        }
+
+        [TestMethod]
         public void ImportFlexOrderEmptyUserDefined()
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample11.xml");

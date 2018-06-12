@@ -563,5 +563,25 @@ namespace AllfleXML.FlexOrder
         /// </value>
         [XmlElement("VariableValue")]
         public string Value { get; set; }
+        /// <summary>
+        /// Gets or sets the Prefix.
+        /// </summary>
+        [XmlElement("Prefix")]
+        public string Prefix { get; set; }
+        /// <summary>
+        /// Marking Variable Start Range Value
+        /// </summary>
+        [XmlElement("RangeStart")]
+        public int? RangeStart { get;set;}
+        /// <summary>
+        /// Marking Variable End Range Value
+        /// </summary>
+        [XmlElement("RangeEnd")]
+        public int? RangeEnd { get;set;}
+        /// <summary>
+        /// Gets or sets the Suffix.
+        /// </summary>
+        [XmlElement("Suffix")]
+        public string Suffix { get;set;}
     }
 }

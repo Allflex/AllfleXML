@@ -464,14 +464,52 @@
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:element name="VariableValue" type="xs:string">
-              <xs:annotation>
-                <xs:appinfo>Marking Variable Value</xs:appinfo>
-                <xs:documentation xml:lang="en">
-                  Value of a marking variable.
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
+            <xs:choice maxOccurs="1">
+              <xs:sequence>
+                <xs:element name="VariableValue" type="xs:string">
+                  <xs:annotation>
+                    <xs:appinfo>Marking Variable Value</xs:appinfo>
+                    <xs:documentation xml:lang="en">
+                      Value of a marking variable.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+              </xs:sequence>
+              <xs:sequence>
+                <xs:element name="Prefix" type="xs:string" minOccurs="0" maxOccurs="1">
+                  <xs:annotation>
+                    <xs:appinfo>Marking Variable Prefix</xs:appinfo>
+                    <xs:documentation xml:lang="en">
+                      Prefix of a marking variable.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="RangeStart" type="xs:int">
+                  <xs:annotation>
+                    <xs:appinfo>Marking Variable Start Range Value</xs:appinfo>
+                    <xs:documentation xml:lang="en">
+                      Start Value of the numerical range for a marking variable.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="RangeEnd" type="xs:int">
+                  <xs:annotation>
+                    <xs:appinfo>Marking Variable End Range Value</xs:appinfo>
+                    <xs:documentation xml:lang="en">
+                      End Value of the numerical range for a marking variable.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="Suffix" type="xs:string" minOccurs="0" maxOccurs="1">
+                  <xs:annotation>
+                    <xs:appinfo>Marking Variable Prefix</xs:appinfo>
+                    <xs:documentation xml:lang="en">
+                      Prefix of a marking variable.
+                    </xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+              </xs:sequence>
+            </xs:choice>
           </xs:sequence>
         </xs:complexType>
       </xs:element>

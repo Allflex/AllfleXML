@@ -100,6 +100,24 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void ImportFlexOrder10()
+        {
+            var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample10.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.OrderHeaders.Any());
+            Assert.IsTrue(order.OrderHeaders.Select(o => o.OrderLineHeaders.Any()).All(o => o));
+        }
+
+        [TestMethod]
+        public void ImportFlexOrder12()
+        {
+            var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample12.xml");
+            Assert.IsNotNull(order);
+            Assert.IsTrue(order.OrderHeaders.Any());
+            Assert.IsTrue(order.OrderHeaders.Select(o => o.OrderLineHeaders.Any()).All(o => o));
+        }
+
+        [TestMethod]
         public void ImportFlexOrderEmptyUserDefined()
         {
             var order = AllfleXML.FlexOrder.Parser.Import(@"TestData\FlexOrder\sample11.xml");

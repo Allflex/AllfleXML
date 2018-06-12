@@ -564,6 +564,11 @@ namespace AllfleXML.FlexOrder
         [XmlElement("VariableValue")]
         public string Value { get; set; }
         /// <summary>
+        /// Provides the ability to format the alphanumeric value of the variable.
+        /// </summary>
+        [XmlElement("ValueMask")]
+        public string Mask { get; set; }
+        /// <summary>
         /// Gets or sets the Prefix.
         /// </summary>
         [XmlElement("Prefix")]

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <OrderHeader>
+    <CustomerNumber>1234</CustomerNumber>
+    <PremiseID />
+    <Comments>Order notes can be placed here.</Comments>
+    <PO>062615</PO>
+    <ShipToName>A BAR C LIVESTOCK INC</ShipToName>
+    <ShipToContact />
+    <ShipToPhone />
+    <ShipToAddress1>1250 2nd St</ShipToAddress1>
+    <ShipToAddress2 />
+    <ShipToAddress3 />
+    <ShipToCity>Gravity</ShipToCity>
+    <ShipToState>IA</ShipToState>
+    <ShipToPostalCode>50848</ShipToPostalCode>
+    <ShipToCountry />
+    <IsRush>false</IsRush>
+    <ShipMethod>UPS</ShipMethod>
+    <ShippingAccountNumber />
+    <EmailListError />
+    <EmailListTrackingInfo />
+    <EmailListEIDInfo />
+    <WSOrderId />
+    <OrderLineHeader>
+      <SkuName>APP-UTT</SkuName>
+      <Quantity>1</Quantity>
+      <Template />
+      <Comment />
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <SkuName>TESET25-ALC-7</SkuName>
+      <Quantity>1000</Quantity>
+      <Template />
+      <Comment>Job notes go here</Comment>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>BG</VariableName>
+          <VariableValue>JA</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <RangeStart>1001</RangeStart>
+          <RangeEnd>2000</RangeEnd>
+        </Variable>
+        <Comment />
+      </OrderLineMarkingDetail>
+    </OrderLineHeader>
+    <OrderLineHeader>
+      <SkuName>TESET65-ALC-7</SkuName>
+      <Quantity>3</Quantity>
+      <Template />
+      <Comment>Job notes go here</Comment>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>BG</VariableName>
+          <VariableValue>JA</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>111</VariableValue>
+        </Variable>
+        <Comment />
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>BG</VariableName>
+          <VariableValue>JA</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>2222</VariableValue>
+        </Variable>
+        <Comment />
+      </OrderLineMarkingDetail>
+      <OrderLineMarkingDetail>
+        <Variable>
+          <VariableName>BG</VariableName>
+          <VariableValue>JA</VariableValue>
+        </Variable>
+        <Variable>
+          <VariableName>Management</VariableName>
+          <VariableValue>33333</VariableValue>
+        </Variable>
+        <Comment />
+      </OrderLineMarkingDetail>
+    </OrderLineHeader>
+  </OrderHeader>
+</Document>

@@ -10,7 +10,6 @@ namespace AllfleXML.Test
     [TestClass]
     public class FlexSpec
     {
-        /*
         //GXF72_DL
         [TestMethod]
         public void ImportFlexSpec0()
@@ -30,13 +29,22 @@ namespace AllfleXML.Test
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
         }
-        */
 
         //GTLF2_GSM2
         [TestMethod]
         public void ImportFlexSpec2()
         {
             var specification = Parser.Import(@"TestData\FlexSpec\GTLF2_GSM2.xml");
+            Assert.IsNotNull(specification);
+            Assert.IsTrue(specification.Specifications.Any());
+            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
+        }
+
+        //840HDXLFS3SM
+        [TestMethod]
+        public void ImportFlexSpec6()
+        {
+            var specification = Parser.Import(@"TestData\FlexSpec\840HDXLFS3SM.xml");
             Assert.IsNotNull(specification);
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
@@ -72,17 +80,7 @@ namespace AllfleXML.Test
             Assert.IsTrue(specification.Specifications.Any());
             Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
         }
-
-        //840HDXLFS3SM
-        [TestMethod]
-        public void ImportFlexSpec6()
-        {
-            var specification = Parser.Import(@"TestData\FlexSpec\840HDXLFS3SM.xml");
-            Assert.IsNotNull(specification);
-            Assert.IsTrue(specification.Specifications.Any());
-            Assert.IsTrue(specification.Specifications.Select(o => o.Components.Any()).All(o => o));
-        }
-
+        
         //NF_US840STF1SM
         [TestMethod]
         public void ImportFlexSpec7()
@@ -173,6 +171,21 @@ namespace AllfleXML.Test
                                         LogoImageLocation = string.Empty,
                                         Radius = 51,
                                         CurveTextAttachTo = string.Empty
+                                    },
+                                    new Variable
+                                    {
+                                        Index = 0,
+                                        Name = "var1",
+                                        Role = "registration",
+                                        Type = "Text",
+                                        Width = 56,
+                                        Height = 12,
+                                        PositionX = 8,
+                                        PositionY = 7,
+                                        DefaultValue = "1234567890",
+                                        FontSize = "20",
+                                        IsInk = true,
+                                        IsLaser = true
                                     }
                                 }
                             }
@@ -279,9 +292,16 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
-        public void FailedFlexSpecValidation()
+        public void FailedFlexSpecValidation1()
         {
             var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexOrder\sample0.xml");
+            Assert.IsFalse(result.Item1);
+        }
+
+        [TestMethod]
+        public void FailedFlexSpecValidation2()
+        {
+            var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexSpec\FeedlotSpecifications-fail.xml");
             Assert.IsFalse(result.Item1);
         }
 

@@ -46,14 +46,14 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-	  <xs:element name="MarkingCode" minOccurs="0" maxOccurs="1">
-		<xs:annotation>
-		  <xs:appinfo>Marking Code</xs:appinfo>
-		  <xs:documentation xml:lang="en">
-			Optional: The laser template.
-		  </xs:documentation>
-		</xs:annotation>
-	  </xs:element>
+      <xs:element name="MarkingCode" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Marking Code</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Optional: The laser template. Legacy compatibility as the marking code should match the name of the specification.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="Components">
         <xs:annotation>
           <xs:appinfo>Components</xs:appinfo>

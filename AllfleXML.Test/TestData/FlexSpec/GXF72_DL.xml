@@ -7,7 +7,7 @@
         <Index>1</Index>
         <Name>XF</Name>
         <ProductLine>Allflex</ProductLine>
-        <Shilouette>XF-Silhouette.png</Shilouette>
+        <Silhouette>XF-Silhouette.png</Silhouette>
         <Outline>XF-Outline.png</Outline>
         <Faces>
           <ComponentFace>

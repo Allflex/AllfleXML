@@ -1,0 +1,892 @@
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Specification>
+    <Name>FL12</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>FL</Name>
+        <Description>FEEDLOT</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
+        <Faces>
+          <Face>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>Text1</Name>
+                <Description>Text</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>250</Width>
+                <Height>40</Height>
+                <PositionX>23</PositionX>
+                <PositionY>235</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>7</MaxLength>
+                <FontSize>45</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>2</Index>
+                <Name>Number2</Name>
+                <Description>Var</Description>
+                <Role>Number</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>140</Height>
+                <PositionX>10</PositionX>
+                <PositionY>280</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>54</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+            </Variables>
+          </Face>
+        </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BD</ColorCode>
+            <Name>BURGUNDY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>F</ColorCode>
+            <Name>BEIGE/FAWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GT</ColorCode>
+            <Name>GOLD</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GY</ColorCode>
+            <Name>GRAY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LB</ColorCode>
+            <Name>LIGHT BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LG</ColorCode>
+            <Name>LIGHT GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LO</ColorCode>
+            <Name>LIGHT ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LP</ColorCode>
+            <Name>LIGHT PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LPK</ColorCode>
+            <Name>LIGHT PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>NG</ColorCode>
+            <Name>NEON GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>RS</ColorCode>
+            <Name>RUST</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>TQ</ColorCode>
+            <Name>TURQUOISE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
+      </Component>
+    </Components>
+  </Specification>
+  <Specification>
+    <Name>FL13</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>FL</Name>
+        <Description>FEEDLOT</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
+        <Faces>
+          <Face>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>LogoBig1</Name>
+                <Description>Logo</Description>
+                <Role>LogoBig</Role>
+                <Type>Image</Type>
+                <Width>100</Width>
+                <Height>95</Height>
+                <PositionX>100</PositionX>
+                <PositionY>200</PositionY>
+                <DefaultValue>ilogo.png</DefaultValue>
+                <ValueFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>2</Index>
+                <Name>Text2</Name>
+                <Description>Text</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>80</Height>
+                <PositionX>10</PositionX>
+                <PositionY>300</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>6</MaxLength>
+                <FontSize>2</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>3</Index>
+                <Name>Barcode3</Name>
+                <Description />
+                <Role>Barcode</Role>
+                <Type>Text</Type>
+                <Width>200</Width>
+                <Height>25</Height>
+                <PositionX>50</PositionX>
+                <PositionY>385</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>2</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom>@2</CopyValueFrom>
+              </Variable>
+            </Variables>
+          </Face>
+        </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BD</ColorCode>
+            <Name>BURGUNDY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>F</ColorCode>
+            <Name>BEIGE/FAWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GT</ColorCode>
+            <Name>GOLD</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GY</ColorCode>
+            <Name>GRAY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LB</ColorCode>
+            <Name>LIGHT BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LG</ColorCode>
+            <Name>LIGHT GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LO</ColorCode>
+            <Name>LIGHT ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LP</ColorCode>
+            <Name>LIGHT PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LPK</ColorCode>
+            <Name>LIGHT PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>NG</ColorCode>
+            <Name>NEON GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>RS</ColorCode>
+            <Name>RUST</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>TQ</ColorCode>
+            <Name>TURQUOISE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
+      </Component>
+    </Components>
+  </Specification>
+  <Specification>
+    <Name>FL19</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>FL</Name>
+        <Description>FEEDLOT</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
+        <Faces>
+          <Face>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>Number1</Name>
+                <Description>Var</Description>
+                <Role>Number</Role>
+                <Type>Text</Type>
+                <Width>275</Width>
+                <Height>110</Height>
+                <PositionX>10</PositionX>
+                <PositionY>240</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>41</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>2</Index>
+                <Name>Text2</Name>
+                <Description>Text</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>255</Width>
+                <Height>24</Height>
+                <PositionX>20</PositionX>
+                <PositionY>360</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>69</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+              <Variable>
+                <Index>3</Index>
+                <Name>Text3</Name>
+                <Description>Text</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>255</Width>
+                <Height>24</Height>
+                <PositionX>20</PositionX>
+                <PositionY>392</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>20</MaxLength>
+                <FontSize>77</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+            </Variables>
+          </Face>
+        </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BD</ColorCode>
+            <Name>BURGUNDY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>F</ColorCode>
+            <Name>BEIGE/FAWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GT</ColorCode>
+            <Name>GOLD</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GY</ColorCode>
+            <Name>GRAY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LB</ColorCode>
+            <Name>LIGHT BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LG</ColorCode>
+            <Name>LIGHT GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LO</ColorCode>
+            <Name>LIGHT ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LP</ColorCode>
+            <Name>LIGHT PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LPK</ColorCode>
+            <Name>LIGHT PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>NG</ColorCode>
+            <Name>NEON GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>RS</ColorCode>
+            <Name>RUST</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>TQ</ColorCode>
+            <Name>TURQUOISE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
+      </Component>
+    </Components>
+  </Specification>
+  <Specification>
+    <Name>FL18</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>FL</Name>
+        <Description>FEEDLOT</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
+        <Faces>
+          <Face>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>Number1</Name>
+                <Description>Var</Description>
+                <Role>Number</Role>
+                <Type>Text</Type>
+                <Width>275</Width>
+                <Height>171</Height>
+                <PositionX>10</PositionX>
+                <PositionY>244</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>45</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+            </Variables>
+          </Face>
+        </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BD</ColorCode>
+            <Name>BURGUNDY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>F</ColorCode>
+            <Name>BEIGE/FAWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GT</ColorCode>
+            <Name>GOLD</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GY</ColorCode>
+            <Name>GRAY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LB</ColorCode>
+            <Name>LIGHT BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LG</ColorCode>
+            <Name>LIGHT GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LO</ColorCode>
+            <Name>LIGHT ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LP</ColorCode>
+            <Name>LIGHT PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LPK</ColorCode>
+            <Name>LIGHT PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>NG</ColorCode>
+            <Name>NEON GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>RS</ColorCode>
+            <Name>RUST</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>TQ</ColorCode>
+            <Name>TURQUOISE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
+      </Component>
+    </Components>
+  </Specification>
+  <Specification>
+    <Name>FL17_DL</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>FL</Name>
+        <Description>FEEDLOT</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
+        <Faces>
+          <Face>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>3</Index>
+                <Name>Number3</Name>
+                <Description>Ink Management Numbe</Description>
+                <Role>Number</Role>
+                <Type>Text</Type>
+                <Width>275</Width>
+                <Height>122</Height>
+                <PositionX>10</PositionX>
+                <PositionY>290</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>26</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom />
+              </Variable>
+            </Variables>
+          </Face>
+          <Face>
+            <Name>Back</Name>
+            <Variables>
+              <Variable>
+                <Index>6</Index>
+                <Name>Number6</Name>
+                <Description>Ink Management Numbe</Description>
+                <Role>Number</Role>
+                <Type>Text</Type>
+                <Width>275</Width>
+                <Height>122</Height>
+                <PositionX>10</PositionX>
+                <PositionY>290</PositionY>
+                <DefaultValue />
+                <ValueFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>26</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
+                <Radius xsi:nil="true" />
+                <CopyValueFrom>@3</CopyValueFrom>
+              </Variable>
+            </Variables>
+          </Face>
+        </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BD</ColorCode>
+            <Name>BURGUNDY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>F</ColorCode>
+            <Name>BEIGE/FAWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GT</ColorCode>
+            <Name>GOLD</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>GY</ColorCode>
+            <Name>GRAY</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LB</ColorCode>
+            <Name>LIGHT BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LG</ColorCode>
+            <Name>LIGHT GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LO</ColorCode>
+            <Name>LIGHT ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LP</ColorCode>
+            <Name>LIGHT PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LPK</ColorCode>
+            <Name>LIGHT PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>NG</ColorCode>
+            <Name>NEON GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>RS</ColorCode>
+            <Name>RUST</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>TQ</ColorCode>
+            <Name>TURQUOISE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
+      </Component>
+    </Components>
+  </Specification>
+</Document>

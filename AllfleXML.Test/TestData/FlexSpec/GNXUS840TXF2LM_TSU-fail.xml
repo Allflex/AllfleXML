@@ -1,0 +1,491 @@
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Specification>
+    <Id>0</Id>
+    <Name>GNXUS840TXF2LM_TSU</Name>
+    <Components>
+      <Component>
+        <Index>1</Index>
+        <Name>TXF</Name>
+        <ProductLine>Allflex</ProductLine>
+        <Shilouette>TXF-Silhouette.png</Shilouette>
+        <Outline>TXF-Outline.png</Outline>
+        <Faces>
+          <ComponentFace>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>1</Index>
+                <Name>Comp1var1USSHIELD</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>30</Width>
+                <Height>30</Height>
+                <PositionX>130</PositionX>
+                <PositionY>76</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>2</Index>
+                <Name>Comp1var2CRILOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>30</Width>
+                <Height>30</Height>
+                <PositionX>130</PositionX>
+                <PositionY>111</PositionY>
+                <TextFormat />
+                <MaxLength>1</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>3</Index>
+                <Name>Comp1var3PROGEIDVISUAL</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>160</Width>
+                <Height>30</Height>
+                <PositionX>65</PositionX>
+                <PositionY>150</PositionY>
+                <Text />
+                <TextFormat>###_###_###_###_###</TextFormat>
+                <MaxLength>19</MaxLength>
+                <FontSize>3</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>4</Index>
+                <Name>Comp1var4ALLFLEXHDXLOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>60</Width>
+                <Height>30</Height>
+                <PositionX>5</PositionX>
+                <PositionY>190</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>5</Index>
+                <Name>Comp1var5UNLAWFULTOREMOVE</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>210</Width>
+                <Height>30</Height>
+                <PositionX>75</PositionX>
+                <PositionY>190</PositionY>
+                <Text>UNLAWFUL TO REMOVE</Text>
+                <TextFormat />
+                <MaxLength>18</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>1</Index>
+                <Name>Comp1var1MGTNUMBER</Name>
+                <Role>Number    </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>150</Height>
+                <PositionX>5</PositionX>
+                <PositionY>230</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>True</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+        </Faces>
+      </Component>
+      <Component>
+        <Index>2</Index>
+        <Name>LM</Name>
+        <ProductLine>Allflex</ProductLine>
+        <Shilouette>LM-Silhouette.png</Shilouette>
+        <Outline>LM-Outline.png</Outline>
+        <Faces>
+          <ComponentFace>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>9</Index>
+                <Name>Comp2var9USSHIELD</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>40</Width>
+                <Height>45</Height>
+                <PositionX>69</PositionX>
+                <PositionY>75</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>10</Index>
+                <Name>Comp2var10CRILOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>40</Width>
+                <Height>30</Height>
+                <PositionX>120</PositionX>
+                <PositionY>82</PositionY>
+                <TextFormat />
+                <MaxLength>1</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>11</Index>
+                <Name>Comp2var11AllflexHDXLOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>36</Width>
+                <Height>25</Height>
+                <PositionX>7</PositionX>
+                <PositionY>125</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>12</Index>
+                <Name>Comp2var12UNLAWFULTOREMOVE</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>170</Width>
+                <Height>25</Height>
+                <PositionX>50</PositionX>
+                <PositionY>125</PositionY>
+                <Text>UNLAWFUL TO REMOVE</Text>
+                <TextFormat />
+                <MaxLength>18</MaxLength>
+                <FontSize>3</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>15</Index>
+                <Name>Comp2var15MGTNUMBER</Name>
+                <Role>Number    </Role>
+                <Type>Text</Type>
+                <Width>215</Width>
+                <Height>120</Height>
+                <PositionX>5</PositionX>
+                <PositionY>155</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>True</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+        </Faces>
+      </Component>
+      <Component>
+        <Index>3</Index>
+        <Name>TXF</Name>
+        <ProductLine>Allflex</ProductLine>
+        <Shilouette>TXF-Silhouette.png</Shilouette>
+        <Outline>TXF-Outline.png</Outline>
+        <Faces>
+          <ComponentFace>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>16</Index>
+                <Name>Comp3var16USSHIELD</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>30</Width>
+                <Height>30</Height>
+                <PositionX>130</PositionX>
+                <PositionY>76</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>17</Index>
+                <Name>Comp3var17CRILOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>30</Width>
+                <Height>30</Height>
+                <PositionX>130</PositionX>
+                <PositionY>111</PositionY>
+                <TextFormat />
+                <MaxLength>1</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>18</Index>
+                <Name>Comp3var18PROGEIDVISUAL</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>160</Width>
+                <Height>30</Height>
+                <PositionX>65</PositionX>
+                <PositionY>150</PositionY>
+                <Text />
+                <TextFormat>###_###_###_###_###</TextFormat>
+                <MaxLength>19</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>19</Index>
+                <Name>Comp3var19AllflexHDXLOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>60</Width>
+                <Height>30</Height>
+                <PositionX>5</PositionX>
+                <PositionY>190</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>20</Index>
+                <Name>Comp3var20UNLAWFULTOREMOVE</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>210</Width>
+                <Height>30</Height>
+                <PositionX>75</PositionX>
+                <PositionY>190</PositionY>
+                <Text>UNLAWFUL TO REMOVE</Text>
+                <TextFormat />
+                <MaxLength>18</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>23</Index>
+                <Name>Comp3var23MGTNUMBER</Name>
+                <Role>Number    </Role>
+                <Type>Text</Type>
+                <Width>280</Width>
+                <Height>150</Height>
+                <PositionX>5</PositionX>
+                <PositionY>230</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>True</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+        </Faces>
+      </Component>
+      <Component>
+        <Index>4</Index>
+        <Name>LM</Name>
+        <ProductLine>Allflex</ProductLine>
+        <Shilouette>LM-Silhouette.png</Shilouette>
+        <Outline>LM-Outline.png</Outline>
+        <Faces>
+          <ComponentFace>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>24</Index>
+                <Name>Comp4var24USSHIELD</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>40</Width>
+                <Height>45</Height>
+                <PositionX>69</PositionX>
+                <PositionY>75</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>25</Index>
+                <Name>Comp4var25CRILOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>40</Width>
+                <Height>30</Height>
+                <PositionX>120</PositionX>
+                <PositionY>82</PositionY>
+                <TextFormat />
+                <MaxLength>1</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>26</Index>
+                <Name>Comp4var26AllflexHDXLOGO</Name>
+                <Role>Text      </Role>
+                <Type>Image</Type>
+                <Width>36</Width>
+                <Height>25</Height>
+                <PositionX>7</PositionX>
+                <PositionY>125</PositionY>
+                <TextFormat />
+                <MaxLength>10</MaxLength>
+                <FontSize>9</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>27</Index>
+                <Name>Comp4var27UNLAWFULTOREMOVE</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>170</Width>
+                <Height>25</Height>
+                <PositionX>50</PositionX>
+                <PositionY>125</PositionY>
+                <Text>UNLAWFUL TO REMOVE</Text>
+                <TextFormat />
+                <MaxLength>18</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>30</Index>
+                <Name>Comp4var30MGTNUMBER</Name>
+                <Role>Number    </Role>
+                <Type>Text</Type>
+                <Width>215</Width>
+                <Height>120</Height>
+                <PositionX>5</PositionX>
+                <PositionY>155</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>True</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+        </Faces>
+      </Component>
+      <Component>
+        <Index>5</Index>
+        <Name>TSU</Name>
+        <ProductLine>Allflex</ProductLine>
+        <Shilouette>TSU.png</Shilouette>
+        <Outline>TSU.png</Outline>
+        <Faces>
+          <ComponentFace>
+            <Name>Front</Name>
+            <Variables>
+              <Variable>
+                <Index>31</Index>
+                <Name>Comp5var31PROGEIDVISUAL</Name>
+                <Role>DataMatrix</Role>
+                <Type>Image</Type>
+                <Width>16</Width>
+                <Height>16</Height>
+                <PositionX>147</PositionX>
+                <PositionY>49</PositionY>
+                <Text>999123456789012</Text>
+                <TextFormat />
+                <MaxLength>19</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>32</Index>
+                <Name>Comp5var32EIDPROG</Name>
+                <Role>OTP       </Role>
+                <Type>Text</Type>
+                <Width>0</Width>
+                <Height>0</Height>
+                <PositionX>0</PositionX>
+                <PositionY>0</PositionY>
+                <Text>999123456789012</Text>
+                <TextFormat />
+                <MaxLength>15</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+              <Variable>
+                <Index>36</Index>
+                <Name>Comp5var36MGTNUMBER</Name>
+                <Role>Text      </Role>
+                <Type>Text</Type>
+                <Width>50</Width>
+                <Height>15</Height>
+                <PositionX>15</PositionX>
+                <PositionY>57</PositionY>
+                <Text />
+                <TextFormat />
+                <MaxLength>5</MaxLength>
+                <FontSize>2</FontSize>
+                <IsInk>False</IsInk>
+                <Radius>0</Radius>
+                <CurveTextAttachTo />
+              </Variable>
+            </Variables>
+          </ComponentFace>
+        </Faces>
+      </Component>
+    </Components>
+  </Specification>
+</Document>

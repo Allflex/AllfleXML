@@ -51,8 +51,7 @@ namespace AllfleXML.FlexSpec
 
             return result;
         }
-
-
+        
         public static XDocument Export(this Specification specification)
         {
             return Export(new Document { Specifications = new List<Specification> { specification } });
@@ -113,7 +112,6 @@ namespace AllfleXML.FlexSpec
             var result = new Tuple<bool, string>(isValid, message);
             return result;
         }
-
     }
 
     /// <summary>
@@ -158,10 +156,10 @@ namespace AllfleXML.FlexSpec
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of the marking code/laser template.
+        /// Gets or sets the name of the marking code/laser template. Optional: The laser template. Legacy compatibility as the marking code should match the name of the specification.
         /// </summary>
         /// <value>
-        /// The Name of the marking code/laser template.
+        /// The Name of the marking code/laser template. Optional: The laser template. Legacy compatibility as the marking code should match the name of the specification.
         /// </value>
         [XmlElement("MarkingCode")]
         public string MarkingCode { get; set; }
@@ -436,6 +434,8 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("Radius")]
         public int? Radius { get; set; }
+        [XmlIgnore]
+        public bool RadiusSpecified => Radius.HasValue;
 
         /// <summary>
         /// Gets or sets the CurveTextAttachTo.

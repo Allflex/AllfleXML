@@ -577,12 +577,16 @@ namespace AllfleXML.FlexOrder
         /// Marking Variable Start Range Value
         /// </summary>
         [XmlElement("RangeStart")]
-        public int? RangeStart { get;set;}
+        public int? RangeStart { get; set; }
+        [XmlIgnore]
+        public bool RangeStartSpecified => RangeStart.HasValue;
         /// <summary>
         /// Marking Variable End Range Value
         /// </summary>
         [XmlElement("RangeEnd")]
-        public int? RangeEnd { get;set;}
+        public int? RangeEnd { get;set; }
+        [XmlIgnore]
+        public bool RangeEndSpecified => RangeEnd.HasValue;
         /// <summary>
         /// Gets or sets the Suffix.
         /// </summary>

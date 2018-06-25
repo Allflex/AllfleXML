@@ -1,400 +1,622 @@
 <Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Specification>
-    <Id>0</Id>
+    <Id />
     <Name>840HDXLFS3SM</Name>
     <Components>
       <Component>
         <Index>1</Index>
         <Name>TFI</Name>
-        <ProductLine>Allflex</ProductLine>
-        <Shilouette>TFI-Silhouette.png</Shilouette>
-        <Outline>TFI-Outline.png</Outline>
+        <Description>TAMPERPROOF HDX EID</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <Color>W</Color>
+        <FixedColor>false</FixedColor>
         <Faces>
-          <ComponentFace>
+          <Face>
             <Name>Front</Name>
             <Variables>
               <Variable>
                 <Index>1</Index>
-                <Name>Comp1var1PROGEIDVISUAL</Name>
-                <Role>Text      </Role>
-                <Type>CurvedText</Type>
-                <Width>0</Width>
-                <Height>0</Height>
-                <PositionX>10</PositionX>
-                <PositionY>7</PositionY>
-                <Text />
-                <TextFormat>###_###_###_###_###</TextFormat>
+                <Name>Text1</Name>
+                <Description>PROG EID VISUAL</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>80</Width>
+                <Height>15</Height>
+                <PositionX>18</PositionX>
+                <PositionY>87</PositionY>
+                <DefaultValue>999123456789012</DefaultValue>
+                <ValueFormat>###_###_###_###_###</ValueFormat>
                 <MaxLength>19</MaxLength>
-                <FontSize>20</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>50</Radius>
-                <CurveTextAttachTo>inside</CurveTextAttachTo>
-              </Variable>
-              <Variable>
-                <Index>2</Index>
-                <Name>Comp1var2EIDPROG</Name>
-                <Role>OTP       </Role>
-                <Type>CurvedText</Type>
-                <Width>0</Width>
-                <Height>0</Height>
-                <PositionX>10</PositionX>
-                <PositionY>7</PositionY>
-                <Text>999123456789012</Text>
-                <TextFormat />
-                <MaxLength>19</MaxLength>
-                <FontSize>20</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>50</Radius>
-                <CurveTextAttachTo>inside</CurveTextAttachTo>
+                <FontSize>0</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <CopyValueFrom>@2</CopyValueFrom>
               </Variable>
               <Variable>
                 <Index>3</Index>
-                <Name>Comp1var3ALLFLEXHDXLOGO</Name>
-                <Role>Text      </Role>
+                <Name>Text3</Name>
+                <Description>ALLFLEX HDX LOGO</Description>
+                <Role>Text</Role>
                 <Type>Image</Type>
                 <Width>36</Width>
                 <Height>18</Height>
                 <PositionX>25</PositionX>
                 <PositionY>9</PositionY>
-                <TextFormat />
+                <DefaultValue>allflex1.png</DefaultValue>
+                <ValueFormat />
                 <MaxLength>10</MaxLength>
                 <FontSize>9</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>4</Index>
-                <Name>Comp1var4USSHIELD</Name>
-                <Role>Text      </Role>
+                <Name>Text4</Name>
+                <Description>US SHIELD</Description>
+                <Role>Text</Role>
                 <Type>Image</Type>
                 <Width>18</Width>
                 <Height>18</Height>
                 <PositionX>70</PositionX>
                 <PositionY>12</PositionY>
-                <TextFormat />
+                <DefaultValue>usda.png</DefaultValue>
+                <ValueFormat />
                 <MaxLength>10</MaxLength>
                 <FontSize>9</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
             </Variables>
-          </ComponentFace>
+          </Face>
+          <Face>
+            <Name>RFID</Name>
+            <Variables>
+              <Variable>
+                <Index>2</Index>
+                <Name>OTP2</Name>
+                <Description>EIDPROG</Description>
+                <Role>OTP</Role>
+                <Type>Text</Type>
+                <Width>0</Width>
+                <Height>0</Height>
+                <PositionX>0</PositionX>
+                <PositionY>0</PositionY>
+                <DefaultValue>999123456789012</DefaultValue>
+                <ValueFormat />
+                <MaxLength>19</MaxLength>
+                <FontSize>0</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+              </Variable>
+            </Variables>
+          </Face>
         </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
       </Component>
       <Component>
         <Index>2</Index>
         <Name>ESM</Name>
-        <ProductLine>Allflex</ProductLine>
-        <Shilouette>ESM-Silhouette.png</Shilouette>
-        <Outline>ESM-Outline.png</Outline>
+        <Description>EXTENDED SMALL MALE</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <Color>W</Color>
+        <FixedColor>false</FixedColor>
         <Faces>
-          <ComponentFace>
+          <Face>
             <Name>Front</Name>
             <Variables>
               <Variable>
                 <Index>5</Index>
-                <Name>Comp2var5UNLAWFUL</Name>
-                <Role>Text      </Role>
+                <Name>Text5</Name>
+                <Description>UNLAWFUL</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>60</Width>
                 <Height>12</Height>
                 <PositionX>36</PositionX>
                 <PositionY>14</PositionY>
-                <Text>UNLAWFUL</Text>
-                <TextFormat />
+                <DefaultValue>UNLAWFUL</DefaultValue>
+                <ValueFormat />
                 <MaxLength>8</MaxLength>
                 <FontSize>9</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>6</Index>
-                <Name>Comp2var6TOREMOVE</Name>
-                <Role>Text      </Role>
+                <Name>Text6</Name>
+                <Description>TO REMOVE</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>56</Width>
                 <Height>12</Height>
                 <PositionX>40</PositionX>
                 <PositionY>28</PositionY>
-                <Text>TO REMOVE</Text>
-                <TextFormat />
+                <DefaultValue>TO REMOVE</DefaultValue>
+                <ValueFormat />
                 <MaxLength>9</MaxLength>
                 <FontSize>9</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>7</Index>
-                <Name>Comp2var7USSHIELD</Name>
-                <Role>Text      </Role>
+                <Name>Text7</Name>
+                <Description>US SHIELD</Description>
+                <Role>Text</Role>
                 <Type>Image</Type>
                 <Width>18</Width>
                 <Height>18</Height>
                 <PositionX>15</PositionX>
                 <PositionY>24</PositionY>
-                <TextFormat />
+                <DefaultValue>usda.png</DefaultValue>
+                <ValueFormat />
                 <MaxLength>10</MaxLength>
                 <FontSize>9</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>8</Index>
-                <Name>Comp2var8MGTNUMBER</Name>
-                <Role>Text      </Role>
-                <Type>CurvedText</Type>
-                <Width>0</Width>
-                <Height>0</Height>
-                <PositionX>31</PositionX>
-                <PositionY>40</PositionY>
-                <Text />
-                <TextFormat />
+                <Name>Text8</Name>
+                <Description>MGT NUMBER</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>60</Width>
+                <Height>20</Height>
+                <PositionX>29</PositionX>
+                <PositionY>64</PositionY>
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>5</MaxLength>
-                <FontSize>17</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>28</Radius>
-                <CurveTextAttachTo>inside</CurveTextAttachTo>
+                <FontSize>0</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <CopyValueFrom>@16@17@18</CopyValueFrom>
               </Variable>
               <Variable>
                 <Index>9</Index>
-                <Name>Comp2var9PROGEIDVISUAL</Name>
-                <Role>Text      </Role>
-                <Type>CurvedText</Type>
-                <Width>0</Width>
-                <Height>0</Height>
-                <PositionX>5</PositionX>
-                <PositionY>6</PositionY>
-                <Text />
-                <TextFormat>###_###_###_###_###</TextFormat>
+                <Name>Text9</Name>
+                <Description>PROG EID VISUAL</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>100</Width>
+                <Height>15</Height>
+                <PositionX>8</PositionX>
+                <PositionY>88</PositionY>
+                <DefaultValue>999123456789012</DefaultValue>
+                <ValueFormat>###_###_###_###_###</ValueFormat>
                 <MaxLength>19</MaxLength>
-                <FontSize>20</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>54</Radius>
-                <CurveTextAttachTo>inside</CurveTextAttachTo>
+                <FontSize>0</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <CopyValueFrom>@2</CopyValueFrom>
               </Variable>
               <Variable>
                 <Index>1</Index>
-                <Name>Comp2var1REGISTRATIONNUMBER</Name>
-                <Role>RegNumber </Role>
-                <Type>CurvedText</Type>
+                <Name>RegNumber1</Name>
+                <Description>REGISTRATION NUMBER</Description>
+                <Role>RegNumber</Role>
+                <Type>Text</Type>
                 <Width>0</Width>
                 <Height>0</Height>
-                <PositionX>20</PositionX>
-                <PositionY>23</PositionY>
-                <Text />
-                <TextFormat />
+                <PositionX>0</PositionX>
+                <PositionY>0</PositionY>
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
-                <FontSize>23</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>40</Radius>
-                <CurveTextAttachTo>outside</CurveTextAttachTo>
+                <FontSize>0</FontSize>
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
             </Variables>
-          </ComponentFace>
+          </Face>
         </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>CP</ColorCode>
+            <Name>CLASSIC PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
       </Component>
       <Component>
         <Index>3</Index>
         <Name>TLF</Name>
-        <ProductLine>Allflex</ProductLine>
-        <Shilouette>TLF-Silhouette.png</Shilouette>
-        <Outline>TLF-Outline.png</Outline>
+        <Description>TAMPERPROOF LARGE FEMALE</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
         <Faces>
-          <ComponentFace>
+          <Face>
             <Name>Front</Name>
             <Variables>
               <Variable>
                 <Index>4</Index>
-                <Name>Comp3var4LOGO</Name>
-                <Role>Text      </Role>
+                <Name>Text4</Name>
+                <Description>LOGO</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>65</Width>
                 <Height>30</Height>
                 <PositionX>80</PositionX>
                 <PositionY>82</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>1</MaxLength>
                 <FontSize>9</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>5</Index>
-                <Name>Comp3var5PROPERTYID</Name>
-                <Role>Text      </Role>
+                <Name>Text5</Name>
+                <Description>PROPERTY ID</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>50</Width>
                 <Height>15</Height>
                 <PositionX>60</PositionX>
                 <PositionY>115</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>14</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>13</Index>
-                <Name>Comp3var13PROGEIDVISUAL</Name>
-                <Role>Text      </Role>
+                <Name>Text13</Name>
+                <Description>PROG EID VISUAL</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>145</Width>
                 <Height>20</Height>
                 <PositionX>40</PositionX>
                 <PositionY>135</PositionY>
-                <Text />
-                <TextFormat>###_###_###_###_###</TextFormat>
+                <DefaultValue>123456789012</DefaultValue>
+                <ValueFormat>###_###_###_###_###</ValueFormat>
                 <MaxLength>19</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <CopyValueFrom>@2(4)</CopyValueFrom>
               </Variable>
               <Variable>
                 <Index>2</Index>
-                <Name>Comp3var2CUSTOM1</Name>
-                <Role>Text      </Role>
+                <Name>Text2</Name>
+                <Description>CUSTOM 1</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>0</Width>
                 <Height>0</Height>
                 <PositionX>0</PositionX>
                 <PositionY>0</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>3</Index>
-                <Name>Comp3var3CUSTOM2</Name>
-                <Role>Text      </Role>
+                <Name>Text3</Name>
+                <Description>CUSTOM 2</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>0</Width>
                 <Height>0</Height>
                 <PositionX>0</PositionX>
                 <PositionY>0</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>6</Index>
-                <Name>Comp3var6MGTNUMBER</Name>
-                <Role>Number    </Role>
+                <Name>Number6</Name>
+                <Description>MGT NUMBER</Description>
+                <Role>Number</Role>
                 <Type>Text</Type>
                 <Width>210</Width>
                 <Height>120</Height>
                 <PositionX>7</PositionX>
                 <PositionY>185</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>5</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>True</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>true</IsInk>
               </Variable>
             </Variables>
-          </ComponentFace>
+          </Face>
         </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>CP</ColorCode>
+            <Name>CLASSIC PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
       </Component>
       <Component>
         <Index>4</Index>
         <Name>SM</Name>
-        <ProductLine>Allflex</ProductLine>
-        <Shilouette>SM-Silhouette.png</Shilouette>
-        <Outline>SM-Outline.png</Outline>
+        <Description>SMALL MALE</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
         <Faces>
-          <ComponentFace>
+          <Face>
             <Name>Front</Name>
             <Variables>
               <Variable>
                 <Index>19</Index>
-                <Name>Comp4var19PROPERTYID</Name>
-                <Role>Text      </Role>
-                <Type>CurvedText</Type>
-                <Width>0</Width>
-                <Height>0</Height>
-                <PositionX>20</PositionX>
-                <PositionY>23</PositionY>
-                <Text />
-                <TextFormat />
+                <Name>Text19</Name>
+                <Description>PROPERTY ID</Description>
+                <Role>Text</Role>
+                <Type>Text</Type>
+                <Width>100</Width>
+                <Height>15</Height>
+                <PositionX>9</PositionX>
+                <PositionY>9</PositionY>
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>14</MaxLength>
-                <FontSize>23</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>40</Radius>
-                <CurveTextAttachTo>outside</CurveTextAttachTo>
+                <FontSize>0</FontSize>
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <CopyValueFrom>@12</CopyValueFrom>
               </Variable>
               <Variable>
                 <Index>6</Index>
-                <Name>Comp4var6MGTNUMBER</Name>
-                <Role>Text      </Role>
+                <Name>Text6</Name>
+                <Description>MGT NUMBER</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>100</Width>
                 <Height>30</Height>
                 <PositionX>9</PositionX>
                 <PositionY>42</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>21</Index>
-                <Name>Comp4var21MGTNUMBER(Double)</Name>
-                <Role>Text      </Role>
+                <Name>Text21</Name>
+                <Description>MGT NUMBER(Double)</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>100</Width>
                 <Height>30</Height>
                 <PositionX>9</PositionX>
                 <PositionY>42</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>5</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>22</Index>
-                <Name>Comp4var22PROGEIDVISUAL</Name>
-                <Role>Text      </Role>
+                <Name>Text22</Name>
+                <Description>PROG EID VISUAL</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>100</Width>
                 <Height>15</Height>
                 <PositionX>9</PositionX>
                 <PositionY>90</PositionY>
-                <Text />
-                <TextFormat>###_###_###_###_###</TextFormat>
+                <DefaultValue>123456789012</DefaultValue>
+                <ValueFormat>###_###_###_###_###</ValueFormat>
                 <MaxLength>19</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>true</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
+                <CopyValueFrom>@2(4)</CopyValueFrom>
               </Variable>
             </Variables>
-          </ComponentFace>
+          </Face>
         </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>CP</ColorCode>
+            <Name>CLASSIC PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>LG</ColorCode>
+            <Name>LIGHT GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>M</ColorCode>
+            <Name>MAGENTA</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>P</ColorCode>
+            <Name>PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
       </Component>
     </Components>
   </Specification>

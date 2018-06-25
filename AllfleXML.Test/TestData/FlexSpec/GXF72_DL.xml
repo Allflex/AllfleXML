@@ -1,194 +1,260 @@
 <Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Specification>
-    <Id>0</Id>
+    <Id />
     <Name>GXF72_DL</Name>
     <Components>
       <Component>
         <Index>1</Index>
         <Name>XF</Name>
-        <ProductLine>Allflex</ProductLine>
-        <Shilouette>XF-Silhouette.png</Shilouette>
-        <Outline>XF-Outline.png</Outline>
+        <Description>MAXI FEMALE</Description>
+        <ProductLine>ALLFLEX</ProductLine>
+        <Silhouette />
+        <Outline />
+        <FixedColor>false</FixedColor>
         <Faces>
-          <ComponentFace>
+          <Face>
             <Name>Front</Name>
             <Variables>
               <Variable>
                 <Index>1</Index>
-                <Name>Comp1var1CustomerImage</Name>
-                <Role>LogoSmall </Role>
+                <Name>LogoSmall1</Name>
+                <Description>Customer Image</Description>
+                <Role>LogoSmall</Role>
                 <Type>Image</Type>
                 <Width>90</Width>
                 <Height>60</Height>
                 <PositionX>103</PositionX>
                 <PositionY>93</PositionY>
-                <TextFormat />
+                <DefaultValue>logo.png</DefaultValue>
+                <ValueFormat />
                 <MaxLength>10</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>2</Index>
-                <Name>Comp1var2VARTEXT-20-1</Name>
-                <Role>Text      </Role>
+                <Name>Text2</Name>
+                <Description>VAR TEXT - 20 - 1</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>186</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>3</Index>
-                <Name>Comp1var3VARTEXT-20-2</Name>
-                <Role>Text      </Role>
+                <Name>Text3</Name>
+                <Description>VAR TEXT - 20 - 2</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>237</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>4</Index>
-                <Name>Comp1var4VARTEXT-20-3</Name>
-                <Role>Text      </Role>
+                <Name>Text4</Name>
+                <Description>VAR TEXT - 20 - 3</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>288</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>5</Index>
-                <Name>Comp1var5VARTEXT-20-4</Name>
-                <Role>Text      </Role>
+                <Name>Text5</Name>
+                <Description>VAR TEXT - 20 - 4</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>339</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
             </Variables>
-          </ComponentFace>
-          <ComponentFace>
+          </Face>
+          <Face>
             <Name>Back</Name>
             <Variables>
               <Variable>
                 <Index>6</Index>
-                <Name>Comp1var6CustomerImage</Name>
-                <Role>LogoSmall </Role>
+                <Name>LogoSmall6</Name>
+                <Description>Customer Image</Description>
+                <Role>LogoSmall</Role>
                 <Type>Image</Type>
                 <Width>90</Width>
                 <Height>60</Height>
                 <PositionX>103</PositionX>
                 <PositionY>93</PositionY>
-                <TextFormat />
+                <DefaultValue>logo.png</DefaultValue>
+                <ValueFormat />
                 <MaxLength>10</MaxLength>
                 <FontSize>0</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>7</Index>
-                <Name>Comp1var7VARTEXT-20-5</Name>
-                <Role>Text      </Role>
+                <Name>Text7</Name>
+                <Description>VAR TEXT - 20 - 5</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>186</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>8</Index>
-                <Name>Comp1var8VARTEXT-20-6</Name>
-                <Role>Text      </Role>
+                <Name>Text8</Name>
+                <Description>VAR TEXT - 20 - 6</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>237</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>9</Index>
-                <Name>Comp1var9VARTEXT-20-7</Name>
-                <Role>Text      </Role>
+                <Name>Text9</Name>
+                <Description>VAR TEXT - 20 - 7</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>288</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
               <Variable>
                 <Index>10</Index>
-                <Name>Comp1var10VARTEXT-20-8</Name>
-                <Role>Text      </Role>
+                <Name>Text10</Name>
+                <Description>VAR TEXT - 20 - 8</Description>
+                <Role>Text</Role>
                 <Type>Text</Type>
                 <Width>280</Width>
                 <Height>50</Height>
                 <PositionX>5</PositionX>
                 <PositionY>339</PositionY>
-                <Text />
-                <TextFormat />
+                <DefaultValue />
+                <ValueFormat />
                 <MaxLength>20</MaxLength>
                 <FontSize>10</FontSize>
-                <IsInk>False</IsInk>
-                <Radius>0</Radius>
-                <CurveTextAttachTo />
+                <IsFixed>false</IsFixed>
+                <IsLaser>true</IsLaser>
+                <IsInk>false</IsInk>
               </Variable>
             </Variables>
-          </ComponentFace>
+          </Face>
         </Faces>
+        <Colors>
+          <Color>
+            <ColorCode>B</ColorCode>
+            <Name>BLUE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>BR</ColorCode>
+            <Name>BROWN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>CP</ColorCode>
+            <Name>CLASSIC PURPLE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>G</ColorCode>
+            <Name>GREEN</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>K</ColorCode>
+            <Name>BLACK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>O</ColorCode>
+            <Name>ORANGE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>PK</ColorCode>
+            <Name>PINK</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>R</ColorCode>
+            <Name>RED</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>W</ColorCode>
+            <Name>WHITE</Name>
+            <HexCode />
+          </Color>
+          <Color>
+            <ColorCode>Y</ColorCode>
+            <Name>YELLOW</Name>
+            <HexCode />
+          </Color>
+        </Colors>
       </Component>
     </Components>
   </Specification>

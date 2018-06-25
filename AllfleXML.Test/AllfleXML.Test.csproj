@@ -132,6 +132,9 @@
     <Content Include="TestData\FlexSpec\FeedlotSpecifications-fail.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\FlexSpec\GNXUS840TXF2LM_TSU-fail.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\FlexSpec\GNXUS840TXF2LM_TSU.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

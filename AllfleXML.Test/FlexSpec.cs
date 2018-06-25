@@ -306,6 +306,13 @@ namespace AllfleXML.Test
         }
 
         [TestMethod]
+        public void FailedFlexSpecValidation3()
+        {
+            var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexSpec\GNXUS840TXF2LM_TSU-fail.xml");
+            Assert.IsFalse(result.Item1);
+        }
+        
+        [TestMethod]
         public void PassedFlexSpecValidation()
         {
             var result = AllfleXML.FlexSpec.Parser.Validate(@"TestData\FlexSpec\GTLF2_GSM2.xml");

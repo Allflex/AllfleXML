@@ -401,6 +401,13 @@ namespace AllfleXML.FlexSpec
         public string FontSize { get; set; }
 
         /// <summary>
+        /// Gets or sets the IsCentered.
+        /// Indicates if the variable value is centered based on the max length for the specification. The value can not be changed by instance.
+        /// </summary>
+        [XmlElement("IsCentered")]
+        public bool IsCentered { get; set; } = false;
+
+        /// <summary>
         /// Gets or sets the IsFixed.
         /// Indicates if the variable value is static for the specification. The value can not be changed by instance.
         /// </summary>

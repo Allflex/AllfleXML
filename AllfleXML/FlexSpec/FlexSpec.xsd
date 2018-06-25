@@ -280,6 +280,14 @@
                                               </xs:documentation>
                                             </xs:annotation>
                                           </xs:element>
+                                          <xs:element name="IsCentered" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                              <xs:appinfo>Centered Variable Value Indicator</xs:appinfo>
+                                              <xs:documentation xml:lang="en">
+                                                Indicates if the variable value is centered based on the max length for the specification. The value can not be changed by instance.
+                                              </xs:documentation>
+                                            </xs:annotation>
+                                          </xs:element>
                                           <xs:element name="IsFixed" type="xs:boolean">
                                             <xs:annotation>
                                               <xs:appinfo>Fixed Variable Indicator</xs:appinfo>

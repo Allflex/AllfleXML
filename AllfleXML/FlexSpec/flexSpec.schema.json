@@ -1,5 +1,6 @@
 ﻿{
   "$id": "https://github.com/Allflex/AllfleXML/blob/json/AllfleXML/FlexSpec/flexSpec.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "JSON Schema for FlexSpec",
   "description": "Marking specification for a product offering.",
   "type": "object",

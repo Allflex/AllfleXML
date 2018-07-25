@@ -129,4 +129,9 @@
     <MSBuild Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Projects="$(ProjectPath)" Properties="Configuration=Debug461;Platform=$(Platform)" />
     <MSBuild Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Projects="$(ProjectPath)" Properties="Configuration=Release461;Platform=$(Platform)" />
   </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties FlexSpec_4flexSpec_1schema_1json__JSONSchema="http://json-schema.org/draft-04/schema" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

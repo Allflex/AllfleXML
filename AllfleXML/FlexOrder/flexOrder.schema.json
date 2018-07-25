@@ -1,5 +1,6 @@
 ﻿{
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://github.com/Allflex/AllfleXML/blob/json/AllfleXML/FlexSpec/flexOrder.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "JSON Schema for my JSON file format",
 
   "type": "object",

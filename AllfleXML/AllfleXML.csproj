@@ -97,6 +97,7 @@
   <ItemGroup>
     <None Include="FlexOrder\FlexOrder.xps" />
     <None Include="FlexOrderStatus\FlexOrderStatus.xps" />
+    <None Include="FlexSpec\flexSpec.schema.json" />
     <None Include="ID1Order\ID1Order.xps" />
     <None Include="LaserTag\LaserTag.xps" />
   </ItemGroup>

@@ -1,0 +1,233 @@
+﻿{
+  "$id": "https://github.com/Allflex/AllfleXML/blob/json/AllfleXML/FlexSpec/flexSpec.schema.json",
+  "title": "JSON Schema for FlexSpec",
+  "description": "Marking specification for a product offering.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "Specification Identifier",
+      "description": "Unique identifier for the specification.",
+      "type": "string"
+    },
+    "name": {
+      "title": "Specification Name",
+      "description": "Name of the specification.",
+      "type": "string"
+    },
+    "markingCode": {
+      "title": "Marking Code",
+      "description": "Optional: The laser template. Legacy compatibility as the marking code should match the name of the specification.",
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "title": "Component",
+        "description": "Raw material definition",
+        "type": "object",
+        "properites": {
+          "index": {
+            "title": "Component Index",
+            "description": "Unique ID defining the order of the component.",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Component Name",
+            "description": "Name of the component.",
+            "type": "string"
+          },
+          "description": {
+            "title": "Component Description",
+            "description": "Description of the component",
+            "type": "string"
+          },
+          "productLine": {
+            "title": "Component Product Line",
+            "description": "Product line, or brand, of the component.",
+            "type": "string"
+          },
+          "silhouette": {
+            "title": "Silhouette image",
+            "description": "Optional: For use by the renderer. The silhouette is the filled component outline to be entirely recolored by the selected color with the outline placed on top.",
+            "type": "string"
+          },
+          "outline": {
+            "title": "Outline image",
+            "description": "Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.",
+            "type": "string"
+          },
+          "color": {
+            "title": "Selected Color",
+            "description": "Current selected color of the component.",
+            "type": "string"
+          },
+          "fixedColor": {
+            "title": "Fixed Color",
+            "description": "Flag that determines if the color of this component is choosen by the customer or by the specification.",
+            "type": "boolean"
+          },
+          "colors": {
+            "type": "array",
+            "item": {
+              "title": "Material Color",
+              "description": "Material Color",
+              "type": "object",
+              "properties": {
+                "colorCode": {
+                  "title": "Color Code",
+                  "description": "Identifying code of the Color",
+                  "type": "string"
+                },
+                "name": {
+                  "title": "Color Name",
+                  "description": "Name of the color.",
+                  "type": "string"
+                },
+                "hexCode": {
+                  "title": "Color Hexidecimal Value",
+                  "description": "Hexidecimal Value of the color.",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "faces": {
+            "type": "array",
+            "items": {
+              "title": "Component Face",
+              "description": "The side of the component being described. Chould be physical or otherwise (as in the RFID field of a component).",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "title": "Face Name",
+                  "description": "Indicates weather the variables are marked on the front or back of a component, or in the RFID field of the component. Values can be 'Front', 'Back', or 'RFID'",
+                  "type": "string"
+                },
+                "outline": {
+                  "title": "Outline image",
+                  "description": "Optional: For use by the renderer. The outline is the component shadows and definition lines to be placed on top of the silhouette to give it a raised, 3D effect.",
+                  "type": "string"
+                },
+                "variables": {
+                  "type": "array",
+                  "items": {
+                    "title": "Marking Variable",
+                    "description": "Parameters of a single marked value.",
+                    "type": "object",
+                    "properties": {
+                      "index": {
+                        "title": "Variable Index",
+                        "description": "Index order of the variable. Unique for all variables in a specification.",
+                        "type": "integer"
+                      },
+                      "name": {
+                        "title": "Variable Name",
+                        "description": "The name of the variable. Unique for all variables in a specification.",
+                        "type": "string"
+                      },
+                      "description": {
+                        "title": "Variable Description",
+                        "description": "Optional description of the variable.",
+                        "type": "string"
+                      },
+                      "role": {
+                        "title": "Variable Role",
+                        "description": "Significance of the variable (Management number, Registration Number, Serial Number, One Time Programmable/Electronic Identification, Animal Identification Number, etc)",
+                        "type": "string"
+                      },
+                      "type": {
+                        "title": "Variable Type",
+                        "description": "Required: Values can be 'text', 'curved-text' or 'image'",
+                        "type": "string"
+                      },
+                      "width": {
+                        "title": "Variable Width",
+                        "description": "Width of the variable's bounding box.",
+                        "type": "integer"
+                      },
+                      "height": {
+                        "title": "Variable Height",
+                        "description": "Height of the variable's bounding box.",
+                        "type": "integer"
+                      },
+                      "positionX": {
+                        "title": "Variable X Coordinate",
+                        "description": "X coordinate of the top left corner of the variable's bounding box.",
+                        "type": "integer"
+                      },
+                      "positionY": {
+                        "title": "Variable Y Coordinate",
+                        "description": "Y coordinate of the top left corner of the variable's bounding box.",
+                        "type": "integer"
+                      },
+                      "defaultValue": {
+                        "title": "Variable Value",
+                        "description": "The default value of the variable.",
+                        "type": "string"
+                      },
+                      "valueFormat": {
+                        "title": "Variable Format Mask",
+                        "description": "Optional: Only used when `Type` = \"text\" or \"curved-text\". Value indicates formatting of the `Text` value '#' = character, '_' = space insert",
+                        "type": "string"
+                      },
+                      "maxLength": {
+                        "title": "Variable Maximum Length",
+                        "description": "Optional: Only used when `Type` = \"text\" or \"curved-text\". Value indicates the maximum length of `Text`",
+                        "type": "integer"
+                      },
+                      "fontSize": {
+                        "title": "Variable Font Size",
+                        "description": "Optional: Only used when `Type` = \"text\" or \"curved-text\". Value indicates the size of the font",
+                        "type": "int"
+                      },
+                      "isCentered": {
+                        "title": "Centered Variable Value Indicator",
+                        "description": "Indicates if the variable value is centered based on the max length for the specification. The value can not be changed by instance.",
+                        "type": "boolean"
+                      },
+                      "isFixed": {
+                        "title": "Fixed Variable Indicator",
+                        "description": "Indicates if the variable value is static for the specification. The value can not be changed by instance.",
+                        "type": "boolean"
+                      },
+                      "isLaser": {
+                        "title": "Laser marking Indicator",
+                        "description": "Indicates if the value is laser etched into the product.",
+                        "type": "boolean"
+                      },
+                      "isInk": {
+                        "title": "Ink Marking Indicator",
+                        "description": "Required: Determines if a variable value will be inked onto the product (It is possible to ink both TEXT and LOGO)",
+                        "type": "boolean"
+                      },
+                      "logoImageLocation": {
+                        "title": "Variable Logo Image Location",
+                        "description": "Optional: For use by the renderer. Only used when `Type` = \"image\". Location of the logo image file. the Logo Inditification number should be populated as the variable value.",
+                        "type": "string"
+                      },
+                      "radius": {
+                        "title": "Radius of the curved text",
+                        "description": "Optional: Only used when `Type` = \"curved-text\". Value indicates wideness of curved text",
+                        "type": "integer"
+                      },
+                      "curveTextAttachTo": {
+                        "title": "Curved Text Orientation",
+                        "description": "Optional: Only used when `Type` = \"curved-text\". Values can be 'inside' or 'outside'",
+                        "type": "string"
+                      },
+                      "copyValueFrom": {
+                        "title": "Value copy from variable",
+                        "description": "Optional: Accepts the variable name of an existing varialble on this specification. It will set IsFixed to true and makes DefaultValue the same as the provided variable name.",
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

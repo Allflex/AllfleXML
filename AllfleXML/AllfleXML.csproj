@@ -92,7 +92,11 @@
     <Content Include="LaserTag\LaserTag.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FlexSpec\FlexSpec.json" />
+    <None Include="FlexOrderStatus\flexOrderStatus.json" />
+    <None Include="FlexOrderStatus\flexOrderStatus.schema.json" />
+    <None Include="FlexOrder\flexOrder.json" />
+    <None Include="FlexOrder\flexOrder.schema.json" />
+    <None Include="FlexSpec\flexSpec.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FlexOrder\FlexOrder.xps" />

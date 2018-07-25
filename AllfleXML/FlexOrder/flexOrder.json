@@ -1,0 +1,218 @@
+﻿{
+  "customerNumber": "CustomerNumber1",
+  "comments": "Comments1",
+  "po": "PO1",
+  "shipToName": "ShipToName1",
+  "shipToContact": "ShipToContact1",
+  "shipToPhone": "ShipToPhone1",
+  "shipToAddress1": "ShipToAddress11",
+  "shipToAddress2": "ShipToAddress21",
+  "shipToAddress3": "ShipToAddress31",
+  "shipToCity": "ShipToCity1",
+  "shipToState": "ShipToState1",
+  "shipToPostalCode": "ShipToPost1",
+  "shipToCountry": "ShipToCountry1",
+  "isRush": "true",
+  "shipMethod": "UPS",
+  "shippingAccountNumber": "ShippingAccountNumber1",
+  "emailListError": "errors1@example.com;errors2@example.com",
+  "emailListTrackingInfo": "tracking1@example.com;tracking2@example.com",
+  "emailListEIDInfo": "manifest@example.com",
+  "userDefined": [
+    {
+      "key": "Field1",
+      "value": "ABCDEF"
+    },
+    {
+      "key": "Field2",
+      "value": "123456"
+    },
+    {
+      "key": "Field3",
+      "value": "ABC123"
+    }
+  ],
+  "wsOrderId": "orderIdentifierFromTheAPI",
+  "orderLineHeaders": [
+    {
+      "skuName": "SkuName1",
+      "quantity": "0",
+      "unitOfMeasure": "0",
+      "template": "Template1",
+      "comment": "Comment1",
+      "orderLineMarkingDetails": [
+        {
+          "variables": [
+            {
+              "variableName": "VariableName1",
+              "variableValue": "VariableValue1"
+            },
+            {
+              "variableName": "VariableName2",
+              "variableValue": "VariableValue2"
+            },
+            {
+              "variableName": "VariableName3",
+              "variableValue": "VariableValue3"
+            }
+          ],
+          "comment": "Comment1"
+        },
+        {
+          "variables": [
+            {
+              "variableName": "VariableName4",
+              "variableValue": "VariableValue4"
+            },
+            {
+              "variableName": "VariableName5",
+              "variableValue": "VariableValue5"
+            },
+            {
+              "variableName": "VariableName6",
+              "variableValue": "VariableValue6"
+            }
+          ],
+          "comment": "Comment2"
+        },
+        {
+          "variables": [
+            {
+              "variableName": "VariableName7",
+              "variableValue": "VariableValue7"
+            },
+            {
+              "variableName": "VariableName8",
+              "variableValue": "VariableValue8"
+            },
+            {
+              "variableName": "VariableName9",
+              "variableValue": "VariableValue9"
+            }
+          ],
+          "comment": "Comment3"
+        }
+      ]
+    },
+    {
+      "skuName": "SkuName2",
+      "quantity": "65535",
+      "unitOfMeasure": "1",
+      "template": "Template2",
+      "comment": "Comment2",
+      "orderLineMarkingDetails": [
+        {
+          "variables": [
+            {
+              "variableName": "VariableName10",
+              "variableValue": "VariableValue10"
+            },
+            {
+              "variableName": "VariableName11",
+              "variableValue": "VariableValue11"
+            },
+            {
+              "variableName": "VariableName12",
+              "variableValue": "VariableValue12"
+            }
+          ],
+          "comment": "Comment4"
+        },
+        {
+          "variables": [
+            {
+              "variableName": "VariableName13",
+              "variableValue": "VariableValue13"
+            },
+            {
+              "variableName": "VariableName14",
+              "variableValue": "VariableValue14"
+            },
+            {
+              "variableName": "VariableName15",
+              "variableValue": "VariableValue15"
+            }
+          ],
+          "comment": "Comment5"
+        },
+        {
+          "variables": [
+            {
+              "variableName": "VariableName16",
+              "variableValue": "VariableValue16"
+            },
+            {
+              "variableName": "VariableName17",
+              "variableValue": "VariableValue17"
+            },
+            {
+              "variableName": "VariableName18",
+              "variableValue": "VariableValue18"
+            }
+          ],
+          "comment": "Comment6"
+        }
+      ]
+    },
+    {
+      "skuName": "SkuName3",
+      "quantity": "1",
+      "unitOfMeasure": "1",
+      "template": "Template3",
+      "comment": "Comment3",
+      "orderLineMarkingDetails": [
+        {
+          "variables": [
+            {
+              "variableName": "VariableName19",
+              "variableValue": "VariableValue19"
+            },
+            {
+              "variableName": "VariableName20",
+              "variableValue": "VariableValue20"
+            },
+            {
+              "variableName": "VariableName21",
+              "variableValue": "VariableValue21"
+            }
+          ],
+          "comment": "Comment7"
+        },
+        {
+          "variables": [
+            {
+              "variableName": "VariableName22",
+              "variableValue": "VariableValue22"
+            },
+            {
+              "variableName": "VariableName23",
+              "variableValue": "VariableValue23"
+            },
+            {
+              "variableName": "VariableName24",
+              "variableValue": "VariableValue24"
+            }
+          ],
+          "comment": "Comment8"
+        },
+        {
+          "variables": [
+            {
+              "variableName": "VariableName25",
+              "variableValue": "VariableValue25"
+            },
+            {
+              "variableName": "VariableName26",
+              "variableValue": "VariableValue26"
+            },
+            {
+              "variableName": "VariableName27",
+              "variableValue": "VariableValue27"
+            }
+          ],
+          "comment": "Comment9"
+        }
+      ]
+    }
+  ]
+}

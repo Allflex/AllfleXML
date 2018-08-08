@@ -131,15 +131,6 @@ namespace AllfleXML.FlexOrderStatus
         public string OrderId { get; set; }
 
         /// <summary>
-        /// Gets or sets the status of the order.
-        /// </summary>
-        /// <value>
-        /// The status.
-        /// </value>
-        [XmlElement("Status")]
-        public string Status { get; set; }
-
-        /// <summary>
         /// Gets or sets the Customer Number of the order.
         /// </summary>
         /// <value>
@@ -147,6 +138,15 @@ namespace AllfleXML.FlexOrderStatus
         /// </value>
         [XmlElement("CustomerNumber")]
         public string CustomerNumber { get; set; }
+
+        /// <summary>
+        /// Gets or sets the status of the order.
+        /// </summary>
+        /// <value>
+        /// The status.
+        /// </value>
+        [XmlElement("Status")]
+        public string Status { get; set; }
 
         /// <summary>
         /// Gets or sets the progress percentage of the order.
@@ -375,6 +375,15 @@ namespace AllfleXML.FlexOrderStatus
     [Serializable]
     public class OrderLine
     {
+        /// <summary>
+        /// Unique identifier of an order.
+        /// </summary>
+        /// <value>
+        /// The API Global Unique Identifier
+        /// </value>
+        [XmlElement("WSOrderLineId", IsNullable = false)]
+        public string WSOrderLineId { get; set; }
+
         /// <summary>
         /// Gets or sets the order line number.
         /// </summary>

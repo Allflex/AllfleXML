@@ -4,8 +4,8 @@
   <PO>3432564</PO>
   <MasterId>123456</MasterId>
   <OrderId>CC123456</OrderId>
-  <Status>Confirmed</Status>
   <CustomerNumber>12345</CustomerNumber>
+  <Status>Confirmed</Status>
   <Progress>67</Progress>
   <Shipment>
     <ShipMethod>UPS</ShipMethod>

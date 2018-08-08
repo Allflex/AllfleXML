@@ -34,7 +34,7 @@
         <xs:annotation>
           <xs:appinfo>WSOrderId</xs:appinfo>
           <xs:documentation xml:lang="en">
-            (Depreciated) Internal use by the manufacture only.
+            Internal use by the manufacture only.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -292,6 +292,14 @@
               </xs:annotation>
               <xs:complexType>
                 <xs:sequence>
+                  <xs:element name="WSOrderLineId" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>WSOrderLineId</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Internal use by the manufacture only.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
                   <xs:element name="LineNumber">
                     <xs:annotation>
                       <xs:appinfo>Line Number</xs:appinfo>

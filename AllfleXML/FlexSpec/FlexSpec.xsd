@@ -58,7 +58,7 @@
         <xs:annotation>
           <xs:appinfo>Components</xs:appinfo>
           <xs:documentation xml:lang="en">
-            Components included in this specificaiton.
+            Components, raw materials, or blank tags included in this specificaiton.
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>

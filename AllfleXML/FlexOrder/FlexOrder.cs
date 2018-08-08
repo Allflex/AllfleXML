@@ -347,7 +347,7 @@ namespace AllfleXML.FlexOrder
         /// The ws order identifier.
         /// </value>
         [XmlElement("WSOrderId")]
-        public string WSOrderId { get; set; } // TODO: Remove from specification
+        public string WSOrderId { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether [order hold].
@@ -414,6 +414,15 @@ namespace AllfleXML.FlexOrder
     [Serializable]
     public class OrderLineHeader
     {
+        /// <summary>
+        /// Gets or sets the ws order identifier.
+        /// </summary>
+        /// <value>
+        /// The ws order identifier.
+        /// </value>
+        [XmlElement("WSOrderLineId")]
+        public string WSOrderLineId { get; set; }
+
         /// <summary>
         /// Gets or sets the name of the sku.
         /// </summary>

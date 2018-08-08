@@ -80,8 +80,8 @@ namespace AllfleXML.Test
                 PO = "3432564",
                 MasterId = 123456,
                 OrderId = "CC123456",
-                Status = "Confirmed",
                 CustomerNumber = "12345",
+                Status = "Confirmed",
                 Progress = 67,
                 Shipment = new List<Shipment>()
                 {

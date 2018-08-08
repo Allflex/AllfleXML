@@ -119,7 +119,7 @@
                       "index": {
                         "title": "Variable Index",
                         "description": "Index order of the variable. Unique for all variables in a specification.",
-                        "type": "integer"
+                        "type": "number"
                       },
                       "name": {
                         "title": "Variable Name",
@@ -174,7 +174,7 @@
                       "maxLength": {
                         "title": "Variable Maximum Length",
                         "description": "Optional: Only used when `Type` = \"text\" or \"curved-text\". Value indicates the maximum length of `Text`",
-                        "type": "integer"
+                        "type": "number"
                       },
                       "fontSize": {
                         "title": "Variable Font Size",

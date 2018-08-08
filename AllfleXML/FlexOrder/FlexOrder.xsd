@@ -510,9 +510,9 @@
                 </xs:element>
                 <xs:element name="Suffix" type="xs:string" minOccurs="0" maxOccurs="1">
                   <xs:annotation>
-                    <xs:appinfo>Marking Variable Prefix</xs:appinfo>
+                    <xs:appinfo>Marking Variable Suffix</xs:appinfo>
                     <xs:documentation xml:lang="en">
-                      Prefix of a marking variable.
+                      Suffix of a marking variable.
                     </xs:documentation>
                   </xs:annotation>
                 </xs:element>

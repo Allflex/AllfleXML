@@ -1,21 +1,297 @@
 ﻿{
   "$id": "https://github.com/Allflex/AllfleXML/blob/json/AllfleXML/FlexSpec/flexOrder.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "JSON Schema for my JSON file format",
-
+  "title": "JSON Schema for an Order Header",
+  "description": "Order Header",
   "type": "object",
-
   "properties": {
-    "name": {
+    "customerNumber": {
+      "title": "Customer Account Number",
+      "description": "(Required) The account number used to identify the buyer by the seller.",
       "type": "string",
-      "description": "This shows up in tooltips for the 'name' property."
+      "minLength": 1,
+      "maxLength": 15
     },
-    "versions": {
+    "premiseID": {
+      "title": "Premises Identification Number",
+      "description": "Official USDA Premises Identification Number (PIN)",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 8
+    },
+    "comments": {
+      "title": "Order Notes",
+      "description": "Notes about the order.",
+      "type": "string"
+    },
+    "po": {
+      "title": "Purchase Order Number",
+      "description": "(Required) Purchase Order Number used by the buyer to identify the order.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 21
+    },
+    "shipToName": {
+      "title": "Shipping Name",
+      "description": "(Required) Residence or buisness name of the order's shipping destination.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 65
+    },
+    "shipToContact": {
+      "title": "Shipping Contact",
+      "description": "(Depreciated) Name of the recipient of the order at the order's shipping destination. Unused by manufacture, please use ShipToName.",
+      "type": "string"
+    },
+    "shipToPhone": {
+      "title": "Shipping Contact Phone Number",
+      "description": "Telephone number where the shipping contact can be reached.",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 21
+    },
+    "shipToAddress1": {
+      "title": "Shipping Address 1",
+      "description": "(Required) Street address line #1 of the order's shipping destination.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 61
+    },
+    "shipToAddress2": {
+      "title": "Shipping Address 2",
+      "description": "Street address line #2 of the order's shipping destination.",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 61
+    },
+    "shipToAddress3": {
+      "title": "Shipping Address 3",
+      "description": "Street address line #3 of the order's shipping destination.",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 61
+    },
+    "shipToCity": {
+      "title": "Shipping City",
+      "description": "(Required) City of the order's shipping destination.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 35
+    },
+    "shipToState": {
+      "title": "Shipping State",
+      "description": "(Required) State of the order's shipping destination.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 29
+    },
+    "shipToPostalCode": {
+      "title": "Shipping Postal Code",
+      "description": "(Required) Postal code of the order's shipping destination.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 11
+    },
+    "shipToCountry": {
+      "title": "Shipping Country",
+      "description": "Country of the order's shipping destination.",
+      "type": "string"
+    },
+    "isRush": {
+      "title": "Rush Order",
+      "description": "Rush Order Flag.",
+      "type": "boolean"
+    },
+    "shipMethod": {
+      "title": "Shipping Method",
+      "description": "The package delivery company and method of consignment for order.",
+      "type": "string",
+      "default": "UPS"
+    },
+    "shippingAccountNumber": {
+      "title": "Shipping Account Number",
+      "description": "The account number the buyer has with the package delivery company if the buyer is to be charged for shipping directly.",
+      "type": "string"
+    },
+    "emailListError": {
+      "title": "Email List for Errors",
+      "description": "Semicolon delimited list of email addresses to receive errors.",
+      "type": "string"
+    },
+    "emailListTrackingInfo": {
+      "title": "Email List for Tracking Information",
+      "description": "Semicolon delimited list of email addresses to receive shipment confirmations.",
+      "type": "string"
+    },
+    "emailListEIDInfo": {
+      "title": "Email List for Tag Manifest",
+      "description": "Semicolon delimited list of email addresses to receive tag manifests.",
+      "type": "string"
+    },
+    "userDefined": {
+      "title": "User Defined Fields",
+      "description": "User Defined Fields",
       "type": "array",
-      "description": "An array of version numbers.",
-      "minItems": 1,
+      "items": { "$ref": "#/definitions/field" }
+    },
+    "wsOrderId": {
+      "title": "WSOrderId",
+      "description": "Internal use by the manufacture only.",
+      "type": "string"
+    },
+    "hold": {
+      "title": "Hold",
+      "description": "Used to indicate if the order is on hold.",
+      "type": "boolean"
+    },
+    "orderLineHeaders": {
+      "type": "array",
       "items": {
-        "type": "number"
+        "title": "Order Line Header",
+        "description": "Order Line",
+        "type": "object",
+        "properties": {
+          "skuName": {
+            "title": "Stock Keeping Unit",
+            "description": "(Required) SKU the buyer is ordering. Product Code or Item Number",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 31
+          },
+          "premiseID": {
+            "title": "Premises Identification Number",
+            "description": "(Depreciated) Official USDA Premises Identification Number (PIN)",
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 8
+          },
+          "quantity": {
+            "title": "Quantity",
+            "description": "(Required) The amount of the SKU being orderd.",
+            "type": "number",
+            "minimum": 0
+          },
+          "unitOfMeasure": {
+            "title": "UnitOfMeasure",
+            "description": "(Required) Denomination of the Quantity.",
+            "type": "number",
+            "minimum": 0
+          },
+          "template": {
+            "title": "Template",
+            "description": "FlexSpec Specification Name",
+            "type": "string"
+          },
+          "comment": {
+            "title": "Job Notes",
+            "description": "Notes about the order line.",
+            "type": "string"
+          },
+          "userDefined": {
+            "title": "User Defined Fields",
+            "description": "User Defined Fields",
+            "type": "array",
+            "items": { "$ref": "#/definitions/field" }
+          },
+          "orderLineCustom": {
+            "title": "Custom Order Line Details",
+            "description": "(Deprecated) Custom details for an orderLine.",
+            "type": "array",
+            "items": { "$ref": "#/definitions/tagSet" }
+          },
+          "orderLineMarkingDetail": {
+            "title": "Marking Details",
+            "description": "Marking details for a tag set.",
+            "type": "array",
+            "items": { "$ref": "#/definitions/tagSet" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "field": {
+      "title": "User Defined Field",
+      "description": "User Defined Key/Value pair field",
+      "type": "object",
+      "properties": {
+        "key": {
+          "title": "User Defined Key",
+          "type": "string"
+        },
+        "value": {
+          "title": "User Defined Value",
+          "type": "string"
+        }
+      }
+    },
+    "tagSet": {
+      "title": "Tag Set",
+      "description": "Marking Details for a single product.",
+      "type": "object",
+      "properties": {
+        "variable": {
+          "title": "Marking Variables",
+          "description": "Key/Value pair of marking varaible",
+          "type": "object",
+          "oneOf": [
+            {
+              "properties": {
+                "variableName": {
+                  "title": "Marking Variable Name",
+                  "description": "Key of a marking variable.",
+                  "type": "string"
+                },
+                "variableValue": {
+                  "title": "Marking Variable Value",
+                  "description": "Value of a marking variable.",
+                  "type": "string"
+                }
+              },
+              "required": [ "variableName", "variableValue" ]
+            },
+            {
+              "properties": {
+                "variableName": {
+                  "title": "Marking Variable Name",
+                  "description": "Key of a marking variable.",
+                  "type": "string"
+                },
+                "valueMask": {
+                  "title": "Marking Variable Value Mask",
+                  "description": "Provides the ability to format the alphanumeric value of the variable.",
+                  "type": "string"
+                },
+                "prefix": {
+                  "title": "Marking Variable Prefix",
+                  "description": "Prefix of a marking variable.",
+                  "type": "string"
+                },
+                "rangeStart": {
+                  "title": "Marking Variable Start Range Value",
+                  "description": "Start Value of the numerical range for a marking variable.",
+                  "type": "integer"
+                },
+                "rangeEnd": {
+                  "title": "Marking Variable End Range Value",
+                  "description": "End Value of the numerical range for a marking variable.",
+                  "type": "integer"
+                },
+                "suffix": {
+                  "title": "Marking Variable Suffix",
+                  "description": "Suffix of a marking variable.",
+                  "type": "string"
+                }
+              },
+              "required": [ "variableName", "rangeStart", "rangeEnd" ]
+            }
+          ]
+        },
+        "comment": {
+          "title": "Marking Notes",
+          "description": "(Depreciated) No longer used, please use order line notes.",
+          "type": "string"
+        }
       }
     }
   }

@@ -68,20 +68,20 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="Status" type="xs:string" minOccurs="1">
-        <xs:annotation>
-          <xs:appinfo>Order Status</xs:appinfo>
-          <xs:documentation xml:lang="en">
-            Current Status of the order
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <!-- TODO: Enum -->
       <xs:element name="CustomerNumber" type="xs:string" minOccurs="1">
         <xs:annotation>
           <xs:appinfo>Customer Number</xs:appinfo>
           <xs:documentation xml:lang="en">
             The Customer number for the customer who is receiving the status of their order.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <!-- TODO: Enum -->
+      <xs:element name="Status" type="xs:string" minOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Order Status</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Current Status of the order
           </xs:documentation>
         </xs:annotation>
       </xs:element>

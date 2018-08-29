@@ -88,6 +88,14 @@
                       </xs:documentation>
                     </xs:annotation>
                   </xs:element>
+                  <xs:element name="ItemNumber" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Item Number</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Item number reference in the ERP
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
                   <xs:element name="Description" minOccurs="0" maxOccurs="1">
                     <xs:annotation>
                       <xs:appinfo>Component Description</xs:appinfo>
@@ -409,6 +417,323 @@
             </xs:element>
           </xs:sequence>
         </xs:complexType>
+      </xs:element>
+      <xs:element name="Packaging" type="PackagingOptionNode" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>Packaging Option</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Packaging option definition for the specification.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PackagingOptionNode">
+    <xs:sequence>
+      <xs:element name="Id">
+        <xs:annotation>
+          <xs:appinfo>Packaging Identifier</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Unique identifier for the packaging option.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Name">
+        <xs:annotation>
+          <xs:appinfo>Packaging Name</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Name of the packaging option.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Description" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Packaging Description</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Description of the packaging option.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="UnitOfMeasure" type="xs:unsignedShort">
+        <xs:annotation>
+          <xs:appinfo>UnitOfMeasure</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Denomination of the Quantity.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Instruction" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Instructions on how to package product.</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Instructions for the packaging option.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Container" type="PackagingContainerNode" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>Packaging Container</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Packaging container, such as a pallet, case, box, bag, etc.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PackagingContainerNode">
+    <xs:sequence>
+      <xs:element name="ItemNumber" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Item Number</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Item number reference in the ERP
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Description" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Packaging Description</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Description of the packaging container.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Type">
+        <xs:annotation>
+          <xs:appinfo>Container Type</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Could be a frieght car, truck, pallet, case, box, bag, etc.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MaxQuantity" type="xs:int" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>MaxQuantity</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            The maximum total amount of tag sets. Even if the tag sets are not directly in this container, though in this case the element is not necessary.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Dimensions" type="DimensionNode" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Container Size</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Size, shape, and orientation of the packaging container.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Components">
+        <xs:annotation>
+          <xs:appinfo>Components in this container</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            List of components in this container
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Component" minOccurs="1" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:appinfo>Component in this container</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  One of the components in this container.
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Index">
+                    <xs:annotation>
+                      <xs:appinfo>Component Index</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Unique ID defining the order of the component.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Dimensions" type="DimensionNode" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                      <xs:appinfo>Container Size</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Size, shape, and orientation of the packaging container.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Container" type="PackagingContainerNode" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>Packaging Container</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Packaging container, such as a pallet, case, box, bag, etc.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DimensionNode">
+    <xs:sequence>
+      <xs:element name="BoundingBox" type="PointNode">
+        <xs:annotation>
+          <xs:appinfo>Boudning Box</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Minimum size of a rectangular prism that will contain the object being described.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Origin" type="PointNode">
+        <xs:annotation>
+          <xs:appinfo>Origin Point</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Point of which to scale, rotate, or otherwise transform an object.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Weight" type="WeightNode" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Weight</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Weight, or how heavy an object is.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Orientation" type="OrientationNode" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Orientation</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            The attitude, or angles of rotation, for an object
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Voids" minOccurs="0" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Void" minOccurs="1" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:appinfo>Voided area</xs:appinfo>
+                <xs:documentation xml:lang="en">
+                  Voided area from the bounding box.
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BoundingBox" type="PointNode">
+                    <xs:annotation>
+                      <xs:appinfo>Boudning Box</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Minimum size of a rectangular prism that will contain the object being described.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Origin" type="PointNode">
+                    <xs:annotation>
+                      <xs:appinfo>Origin Point</xs:appinfo>
+                      <xs:documentation xml:lang="en">
+                        Point of which to scale, rotate, or otherwise transform an object.
+                      </xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="WeightNode">
+    <xs:sequence>
+      <xs:element name="Value" type="xs:decimal" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Weight Value</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Weight, or how heavy an object is.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="UOM" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Unit of Measurement</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Unit of measurement for Weight
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OrientationNode">
+    <xs:sequence>
+      <xs:element name="X" type="xs:decimal" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>X rotation</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Roll. the plane angle offset on the longitudinal, or x axis.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Y" type="xs:decimal" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Y rotation</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Yaw. the plane angle offset on the normal, or y axis.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Z" type="xs:decimal" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Z rotation</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Pitch. the plane angle offset on the lateral, or z axis.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="UOM" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Unit of Measurement</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Plane angle unit of measurement.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PointNode">
+    <xs:sequence>
+      <xs:element name="X" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>X coordinate</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            In the case of a point, it is the x corrdinate value.
+            In the case of distance, it is the length value.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Y" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>Y coordinate</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            In the case of a point, it is the y corrdinate value.
+            In the case of distance, it is the height value.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Z" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>Z coordinate</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            In the case of a point, it is the z corrdinate value.
+            In the case of distance, it is the width, or depth value.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="UOM" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>Unit of Measurement</xs:appinfo>
+          <xs:documentation xml:lang="en">
+            Unit of measurement for Distance
+          </xs:documentation>
+        </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>

@@ -235,5 +235,53 @@
         </Colors>
       </Component>
     </Components>
+    <Packaging>
+      <Id>GUID</Id>
+      <Name>Packaging</Name>
+      <UnitOfMeasure>0</UnitOfMeasure>
+      <Instruction>This is plain english description of how to package this material off the laser.</Instruction>
+      <Container>
+        <ItemNumber></ItemNumber>
+        <Description></Description>
+        <Type>Bag</Type>
+        <Size>
+          <Width>6</Width>
+          <Length>8</Length>
+          <Height>.004</Height>
+        </Size>
+        <Documents>
+          <!-- used for Labels, or cattle cards, or tag manifests, or packing lists, etc. -->
+          <Document>
+            <Id>GUID</Id>
+            <Name>EidLabelProfile</Name>
+            <Template>EIDCASE-TXV</Template>
+            <Type>Label</Type>
+            <Size>
+              <Width>2.75</Width>
+              <Length>1.5</Length>
+            </Size>
+            <Variables>
+              <Variable>
+                <Name></Name>
+                <Value></Value>
+              </Variable>
+            </Variables>
+          </Document>
+          <Document></Document>
+        </Documents>
+        <!-- if final packaging level -->
+        <MaxQuantity></MaxQuantity> <!-- // How many tag sets is accomodated by this container (if any) -->
+        <Components>
+          <Component>1</Component> <!-- coorolates to the index of hte component in the marking -->
+          <Component>2</Component> <!-- coorolates to the index of hte component in the marking -->
+        </Components>
+        <!-- end if final packaging level-->
+        <!-- else -->
+        <Container>
+          <!-- redundant -->
+        </Container>
+        <!-- end else -->
+      </Container>
+    </Packaging>
   </Specification>
 </Document>

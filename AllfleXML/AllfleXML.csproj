@@ -1,127 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E0162D6-311A-4620-BC2C-FDE0223AFA1C}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AllfleXML</RootNamespace>
-    <AssemblyName>AllfleXML</AssemblyName>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.8.0</Version>
+    <Authors>Allflex USA, Inc.</Authors>
+    <Company>Allflex USA, Inc.</Company>
+    <Copyright>Copyright Allflex USA, Inc 2018</Copyright>
+    <PackageLicenseUrl>https://creativecommons.org/licenses/by-nc-nd/4.0/</PackageLicenseUrl>
+    <PackageProjectUrl>https://developers.allflex.global/</PackageProjectUrl>
+    <PackageIconUrl>https://developers.allflex.global/Images/AllfleXML.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Allflex/AllfleXML</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <Description>The current supported XML Libraries for handling orders</Description>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <DocumentationFile>bin\Debug\AllfleXML.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <DocumentationFile>bin\Release\AllfleXML.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug45|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug45\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release45|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release45\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug461|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug461\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release461|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release461\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Xml" />
+    <None Remove="FlexOrderStatus\FlexOrderStatus.xsd" />
+    <None Remove="FlexOrder\FlexOrder.xsd" />
+    <None Remove="FlexSpec\FlexSpec.xsd" />
+    <None Remove="ID1Order\ID1Order.xsd" />
+    <None Remove="LaserTag\LaserTag.xsd" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="FlexOrder\FlexOrder.cs" />
-    <Compile Include="FlexOrderStatus\FlexOrderStatus.cs" />
-    <Compile Include="FlexSpec\FlexSpec.cs" />
-    <Compile Include="ID1Order\ID1Order.cs" />
-    <Compile Include="LaserTag\LaserTag.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FlexOrderStatus\FlexOrderStatus.xsd" />
+    <EmbeddedResource Include="FlexOrder\FlexOrder.xsd" />
+    <EmbeddedResource Include="FlexSpec\FlexSpec.xsd" />
+    <EmbeddedResource Include="ID1Order\ID1Order.xsd" />
+    <EmbeddedResource Include="LaserTag\LaserTag.xsd" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="FlexOrder\FlexOrder.xml" />
-    <Content Include="FlexOrderStatus\FlexOrderStatus.xml" />
-    <Content Include="FlexSpec\FlexSpec.xml" />
-    <Content Include="ID1Order\ID1Order.xml" />
-    <Content Include="LaserTag\LaserTag.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FlexSpec\FlexSpec.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FlexOrder\FlexOrder.xps" />
-    <None Include="FlexOrderStatus\FlexOrderStatus.xps" />
-    <None Include="ID1Order\ID1Order.xps" />
-    <None Include="LaserTag\LaserTag.xps" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="FlexOrder\FlexOrder.xsd">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FlexOrderStatus\FlexOrderStatus.xsd">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FlexSpec\FlexSpec.xsd">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ID1Order\ID1Order.xsd">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LaserTag\LaserTag.xsd">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterBuild">
-    <MSBuild Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Projects="$(ProjectPath)" Properties="Configuration=Debug45;Platform=$(Platform)" />
-    <MSBuild Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Projects="$(ProjectPath)" Properties="Configuration=Release45;Platform=$(Platform)" />
-    <MSBuild Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Projects="$(ProjectPath)" Properties="Configuration=Debug461;Platform=$(Platform)" />
-    <MSBuild Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Projects="$(ProjectPath)" Properties="Configuration=Release461;Platform=$(Platform)" />
-  </Target>
+
 </Project>

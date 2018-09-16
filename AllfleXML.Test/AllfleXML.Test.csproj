@@ -212,12 +212,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
-      <Project>{5e0162d6-311a-4620-bc2c-fde0223afa1c}</Project>
-      <Name>AllfleXML</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="TestData\DATFile\sample1.dat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -243,7 +237,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AllfleXML\AllfleXML.csproj">
+      <Project>{d7880c3a-b89c-4ad6-a4a0-1451450ffa4f}</Project>
+      <Name>AllfleXML</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -275,6 +275,14 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("HexCode")]
         public string HexCode { get; set; }
+        
+        /// <summary>
+        /// Gets or sets the Destron ColorCode.
+        /// Destron Value of the color.
+        /// </summary>
+        /// 
+        [XmlElement("DestronCode")]
+        public string DestronCode { get; set; }
     }
 
     /// <summary>
@@ -399,6 +407,13 @@ namespace AllfleXML.FlexSpec
         /// </summary>
         [XmlElement("FontSize")]
         public string FontSize { get; set; }
+
+        /// <summary>
+        /// Gets or sets the FontFace.
+        /// Optional: Only used when `Type` = "text" or "curved-text". Value indicates the size of the font
+        /// </summary>
+        [XmlElement("FontFace")]
+        public string FontFace { get; set; }
 
         /// <summary>
         /// Gets or sets the IsCentered.

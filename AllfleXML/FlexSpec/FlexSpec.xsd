@@ -136,7 +136,7 @@
                       </xs:documentation>
                     </xs:annotation>
                   </xs:element>
-                  <xs:element name="Faces">
+                  <xs:element name="Faces" minOccurs="0" maxOccurs="1">
                     <xs:complexType>
                       <xs:sequence>
                         <xs:element name="Face" maxOccurs="unbounded">

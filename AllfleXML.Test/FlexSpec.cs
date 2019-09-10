@@ -254,7 +254,7 @@ namespace AllfleXML.Test
                         {
                             new Face
                             {
-                                Name = "Front",
+                                Name = "Front",                                
                                 Variables = new List<Variable>
                                 {
                                     new Variable
@@ -275,7 +275,7 @@ namespace AllfleXML.Test
                                         IsLaser = true,
                                         IsInk = false,
                                         Radius = 51,
-                                        CurveTextAttachTo = "outside"
+                                        CurveTextAttachTo = "outside"                                        
                                     }
                                 }
                             }
